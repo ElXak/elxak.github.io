@@ -23,85 +23,51 @@
     line-height: 1.65;
     font-size: 17px;
   }
-  .wrap {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 0 22px 88px;
-  }
-  header {
-    border-top: 4px solid var(--brand);
-    background: var(--bg);
-    margin-bottom: 14px;
-  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 22px 88px; }
+  header { border-top: 4px solid var(--brand); background: var(--bg); margin-bottom: 14px; }
   .head-inner {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 34px 22px 26px;
+    max-width: 720px; margin: 0 auto; padding: 30px 22px 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
   }
   .eyebrow {
-    font-size: 13px;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    color: var(--brand);
-    font-weight: 600;
-    margin: 0 0 10px;
+    font-size: 14px; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--brand); font-weight: 700; margin: 0;
   }
-  h1 {
-    font-size: 30px;
-    line-height: 1.2;
-    margin: 0 0 8px;
-    letter-spacing: -0.01em;
+  .switch { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; background: var(--paper); }
+  .switch button {
+    appearance: none; border: 0; background: transparent; cursor: pointer;
+    font: inherit; font-size: 14px; font-weight: 600; color: var(--muted);
+    padding: 6px 14px; border-radius: 999px; transition: background .15s, color .15s;
   }
-  .meta {
-    color: var(--muted);
-    font-size: 15px;
-    margin: 0;
-  }
-  main {
-    background: var(--bg);
-    border: 1px solid var(--line);
-    border-radius: 14px;
-    padding: 8px 30px 34px;
-  }
-  h2 {
-    font-size: 20px;
-    margin: 34px 0 10px;
-    padding-top: 4px;
-  }
-  h2 .n {
-    color: var(--brand);
-    font-variant-numeric: tabular-nums;
-    margin-right: 10px;
-    font-weight: 700;
-  }
+  .switch button:hover { color: var(--ink); }
+  .switch button[aria-pressed="true"] { background: var(--brand); color: #fff; }
+  .switch button:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+  .titlebar { max-width: 720px; margin: 0 auto; padding: 0 22px 6px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .meta { color: var(--muted); font-size: 15px; margin: 0; }
+
+  main { background: var(--bg); border: 1px solid var(--line); border-radius: 14px; padding: 8px 30px 34px; margin-top: 14px; }
+  h2 { font-size: 20px; margin: 34px 0 10px; padding-top: 4px; }
+  h2 .n { color: var(--brand); font-variant-numeric: tabular-nums; margin-right: 10px; font-weight: 700; }
   p { margin: 0 0 14px; }
   ul { margin: 0 0 14px; padding-left: 22px; }
   li { margin: 6px 0; }
   a { color: var(--brand); }
-  .lead {
-    font-size: 18px;
-    color: var(--ink);
-  }
-  .note {
-    background: var(--paper);
-    border-left: 3px solid var(--brand);
-    padding: 14px 18px;
-    border-radius: 0 8px 8px 0;
-    margin: 18px 0;
-    font-size: 16px;
-    color: var(--muted);
-  }
+  .lead { font-size: 18px; color: var(--ink); }
+  .note { background: var(--paper); border-left: 3px solid var(--brand); padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 18px 0; font-size: 16px; color: var(--muted); }
   .fill { color: #b3261e; font-weight: 600; }
-  footer {
-    text-align: center;
-    color: var(--muted);
-    font-size: 14px;
-    margin-top: 30px;
-  }
+  footer { text-align: center; color: var(--muted); font-size: 14px; margin-top: 30px; }
+
+  [data-lang] { display: none; }
+  [data-lang].active { display: block; }
+
   @media (max-width: 560px) {
     body { font-size: 16px; }
     h1 { font-size: 25px; }
     main { padding: 6px 18px 26px; border-radius: 12px; }
+    .head-inner { padding: 24px 18px 18px; }
+    .titlebar { padding: 0 18px 6px; }
   }
 </style>
 </head>
@@ -109,57 +75,208 @@
   <header>
     <div class="head-inner">
       <p class="eyebrow">Шпаргалки</p>
-      <h1>Политика конфиденциальности</h1>
-      <p class="meta">Дата вступления в силу: 21 июня 2026 г.</p>
+      <div class="switch" role="group" aria-label="Language / Забон / Язык">
+        <button type="button" data-set="ru" aria-pressed="true">RU</button>
+        <button type="button" data-set="en" aria-pressed="false">EN</button>
+        <button type="button" data-set="tj" aria-pressed="false">TJ</button>
+      </div>
     </div>
   </header>
 
   <div class="wrap">
-    <main>
-      <p class="lead">Приложение «Шпаргалки» — это офлайн-справочник для подготовки школьников. Мы уважаем вашу конфиденциальность и стремимся обрабатывать минимум данных. Этот документ объясняет, какие данные приложение использует и как именно.</p>
 
-      <h2><span class="n">1.</span>Какие данные обрабатывает приложение</h2>
-      <p>Приложение работает полностью офлайн. Все данные хранятся <strong>только на вашем устройстве</strong> и никуда не передаются. К ним относятся:</p>
-      <ul>
-        <li><strong>Избранные карточки</strong> — отмеченные вами темы и материалы;</li>
-        <li><strong>Прогресс по тестам и режиму повторения</strong> — результаты самопроверки;</li>
-        <li><strong>Настройки приложения</strong> — выбранный язык интерфейса (русский, английский, таджикский) и тема оформления.</li>
-      </ul>
-      <p>Эти данные нужны исключительно для работы приложения на вашем устройстве. Они не отправляются на наши серверы, не передаются третьим лицам и не используются для идентификации пользователя.</p>
+    <!-- ============ RUSSIAN ============ -->
+    <div data-lang="ru" class="active">
+      <div class="titlebar">
+        <h1>Политика конфиденциальности</h1>
+        <p class="meta">Дата вступления в силу: 21 июня 2026 г.</p>
+      </div>
+      <main>
+        <p class="lead">Приложение «Шпаргалки» — это офлайн-справочник для подготовки школьников. Мы уважаем вашу конфиденциальность и стремимся обрабатывать минимум данных. Этот документ объясняет, какие данные приложение использует и как именно.</p>
 
-      <h2><span class="n">2.</span>Какие данные мы НЕ собираем</h2>
-      <p>Приложение не собирает и не запрашивает персональные данные. В частности, мы не собираем:</p>
-      <ul>
-        <li>имя, адрес электронной почты, номер телефона;</li>
-        <li>данные о местоположении;</li>
-        <li>контакты, фотографии, файлы и другое содержимое устройства;</li>
-        <li>идентификаторы устройства в рекламных или аналитических целях.</li>
-      </ul>
-      <p>Регистрация и создание учётной записи не требуются.</p>
+        <h2><span class="n">1.</span>Какие данные обрабатывает приложение</h2>
+        <p>Приложение работает полностью офлайн. Все данные хранятся <strong>только на вашем устройстве</strong> и никуда не передаются. К ним относятся:</p>
+        <ul>
+          <li><strong>Избранные карточки</strong> — отмеченные вами темы и материалы;</li>
+          <li><strong>Прогресс по тестам и режиму повторения</strong> — результаты самопроверки;</li>
+          <li><strong>Настройки приложения</strong> — выбранный язык интерфейса (русский, английский, таджикский) и тема оформления.</li>
+        </ul>
+        <p>Эти данные нужны исключительно для работы приложения на вашем устройстве. Они не отправляются на наши серверы, не передаются третьим лицам и не используются для идентификации пользователя.</p>
 
-      <h2><span class="n">3.</span>Разрешения устройства</h2>
-      <p>Для основной работы приложению не требуется доступ к камере, микрофону, контактам, местоположению или хранилищу с личными файлами. Если в будущих версиях появятся функции, требующие дополнительных разрешений, мы запросим их только при необходимости и обновим эту политику.</p>
+        <h2><span class="n">2.</span>Какие данные мы НЕ собираем</h2>
+        <p>Приложение не собирает и не запрашивает персональные данные. В частности, мы не собираем:</p>
+        <ul>
+          <li>имя, адрес электронной почты, номер телефона;</li>
+          <li>данные о местоположении;</li>
+          <li>контакты, фотографии, файлы и другое содержимое устройства;</li>
+          <li>идентификаторы устройства в рекламных или аналитических целях.</li>
+        </ul>
+        <p>Регистрация и создание учётной записи не требуются.</p>
 
-      <h2><span class="n">4.</span>Дети и школьники</h2>
-      <p>Приложение предназначено для учащихся, в том числе несовершеннолетних. Поскольку приложение не собирает персональные данные ни от каких пользователей, оно не собирает их и от детей. Мы не создаём профилей пользователей и не отслеживаем поведение.</p>
+        <h2><span class="n">3.</span>Разрешения устройства</h2>
+        <p>Для основной работы приложению не требуется доступ к камере, микрофону, контактам, местоположению или хранилищу с личными файлами. Если в будущих версиях появятся функции, требующие дополнительных разрешений, мы запросим их только при необходимости и обновим эту политику.</p>
 
-      <h2><span class="n">5.</span>Сторонние сервисы</h2>
-      <p>На текущий момент приложение не использует сторонние сервисы аналитики, рекламы или сбора данных.</p>
-      <div class="note">Если в будущих версиях будут добавлены реклама, аналитика или другие сторонние сервисы (например, рекламные SDK), эта политика будет обновлена с описанием того, какие данные они обрабатывают, до выпуска соответствующей версии.</div>
+        <h2><span class="n">4.</span>Дети и школьники</h2>
+        <p>Приложение предназначено для учащихся, в том числе несовершеннолетних. Поскольку приложение не собирает персональные данные ни от каких пользователей, оно не собирает их и от детей. Мы не создаём профилей пользователей и не отслеживаем поведение.</p>
 
-      <h2><span class="n">6.</span>Хранение и безопасность данных</h2>
-      <p>Все пользовательские данные хранятся локально в памяти вашего устройства. Вы можете удалить их в любой момент, очистив данные приложения в настройках устройства или удалив приложение. Поскольку данные не покидают устройство, их безопасность определяется защитой самого устройства.</p>
+        <h2><span class="n">5.</span>Сторонние сервисы</h2>
+        <p>На текущий момент приложение не использует сторонние сервисы аналитики, рекламы или сбора данных.</p>
+        <div class="note">Если в будущих версиях будут добавлены реклама, аналитика или другие сторонние сервисы (например, рекламные SDK), эта политика будет обновлена с описанием того, какие данные они обрабатывают, до выпуска соответствующей версии.</div>
 
-      <h2><span class="n">7.</span>Изменения в политике</h2>
-      <p>Мы можем периодически обновлять эту политику конфиденциальности. При существенных изменениях мы обновим дату вступления в силу в начале документа и, при необходимости, сообщим об изменениях в самом приложении или в описании на странице Google Play.</p>
+        <h2><span class="n">6.</span>Хранение и безопасность данных</h2>
+        <p>Все пользовательские данные хранятся локально в памяти вашего устройства. Вы можете удалить их в любой момент, очистив данные приложения в настройках устройства или удалив приложение. Поскольку данные не покидают устройство, их безопасность определяется защитой самого устройства.</p>
 
-      <h2><span class="n">8.</span>Контакты</h2>
-      <p>Если у вас есть вопросы об этой политике конфиденциальности или об обработке данных, свяжитесь с нами:</p>
-      <p>Электронная почта: <a href="mailto:your-email@example.com"><span class="fill">your-email@example.com</span></a><br>
-      Разработчик: <span class="fill">[укажите имя разработчика или название]</span></p>
-    </main>
+        <h2><span class="n">7.</span>Изменения в политике</h2>
+        <p>Мы можем периодически обновлять эту политику конфиденциальности. При существенных изменениях мы обновим дату вступления в силу в начале документа и, при необходимости, сообщим об изменениях в самом приложении или в описании на странице Google Play.</p>
 
-    <footer>© 2026 Шпаргалки. Все права защищены.</footer>
+        <h2><span class="n">8.</span>Контакты</h2>
+        <p>Если у вас есть вопросы об этой политике конфиденциальности или об обработке данных, свяжитесь с нами:</p>
+        <p>Электронная почта: <a href="mailto:your-email@example.com"><span class="fill">your-email@example.com</span></a><br>
+        Разработчик: <span class="fill">[укажите имя разработчика или название]</span></p>
+      </main>
+      <footer>© 2026 Шпаргалки. Все права защищены.</footer>
+    </div>
+
+    <!-- ============ ENGLISH ============ -->
+    <div data-lang="en">
+      <div class="titlebar">
+        <h1>Privacy Policy</h1>
+        <p class="meta">Effective date: June 21, 2026</p>
+      </div>
+      <main>
+        <p class="lead">“Шпаргалки” is an offline study reference app for school students. We respect your privacy and aim to process as little data as possible. This document explains what data the app uses and how.</p>
+
+        <h2><span class="n">1.</span>What data the app processes</h2>
+        <p>The app works fully offline. All data is stored <strong>only on your device</strong> and is not transmitted anywhere. This includes:</p>
+        <ul>
+          <li><strong>Favorite cards</strong> — topics and materials you have marked;</li>
+          <li><strong>Quiz and review progress</strong> — your self-check results;</li>
+          <li><strong>App settings</strong> — your chosen interface language (Russian, English, Tajik) and theme.</li>
+        </ul>
+        <p>This data is used solely to run the app on your device. It is not sent to our servers, not shared with third parties, and not used to identify you.</p>
+
+        <h2><span class="n">2.</span>What we do NOT collect</h2>
+        <p>The app does not collect or request personal data. In particular, we do not collect:</p>
+        <ul>
+          <li>name, email address, or phone number;</li>
+          <li>location data;</li>
+          <li>contacts, photos, files, or other device content;</li>
+          <li>device identifiers for advertising or analytics purposes.</li>
+        </ul>
+        <p>No registration or account is required.</p>
+
+        <h2><span class="n">3.</span>Device permissions</h2>
+        <p>The app does not require access to your camera, microphone, contacts, location, or personal file storage for its core functionality. If future versions introduce features that need additional permissions, we will request them only when necessary and update this policy.</p>
+
+        <h2><span class="n">4.</span>Children and students</h2>
+        <p>The app is intended for students, including minors. Because the app does not collect personal data from any user, it does not collect it from children either. We do not build user profiles or track behavior.</p>
+
+        <h2><span class="n">5.</span>Third-party services</h2>
+        <p>At present, the app does not use any third-party analytics, advertising, or data-collection services.</p>
+        <div class="note">If future versions add advertising, analytics, or other third-party services (for example, advertising SDKs), this policy will be updated to describe what data they process before that version is released.</div>
+
+        <h2><span class="n">6.</span>Data storage and security</h2>
+        <p>All user data is stored locally on your device. You can delete it at any time by clearing the app’s data in your device settings or by uninstalling the app. Since the data never leaves your device, its security depends on the protection of the device itself.</p>
+
+        <h2><span class="n">7.</span>Changes to this policy</h2>
+        <p>We may update this privacy policy from time to time. For significant changes, we will update the effective date at the top of this document and, if necessary, notify you within the app or in the Google Play listing.</p>
+
+        <h2><span class="n">8.</span>Contact</h2>
+        <p>If you have questions about this privacy policy or about how data is processed, contact us:</p>
+        <p>Email: <a href="mailto:your-email@example.com"><span class="fill">your-email@example.com</span></a><br>
+        Developer: <span class="fill">[your name or title]</span></p>
+      </main>
+      <footer>© 2026 Шпаргалки. All rights reserved.</footer>
+    </div>
+
+    <!-- ============ TAJIK ============ -->
+    <div data-lang="tj">
+      <div class="titlebar">
+        <h1>Сиёсати махфият</h1>
+        <p class="meta">Санаи эътибор пайдо кардан: 21 июни соли 2026</p>
+      </div>
+      <main>
+        <p class="lead">«Шпаргалки» — ин барномаи офлайнии маълумотдиҳӣ барои омодагии хонандагони мактаб мебошад. Мо махфияти шуморо эҳтиром мекунем ва кӯшиш мекунем, ки ҳадди ақали маълумотро коркард намоем. Ин ҳуҷҷат шарҳ медиҳад, ки барнома кадом маълумотро ва чӣ тавр истифода мебарад.</p>
+
+        <h2><span class="n">1.</span>Барнома кадом маълумотро коркард мекунад</h2>
+        <p>Барнома комилан офлайн кор мекунад. Ҳамаи маълумот <strong>танҳо дар дастгоҳи шумо</strong> нигоҳ дошта мешавад ва ба ҷое фиристода намешавад. Ба онҳо дохил мешаванд:</p>
+        <ul>
+          <li><strong>Кортҳои баргузида</strong> — мавзӯъ ва маводҳое, ки шумо қайд кардаед;</li>
+          <li><strong>Пешрафт дар тестҳо ва ҳолати такрор</strong> — натиҷаҳои худсанҷӣ;</li>
+          <li><strong>Танзимоти барнома</strong> — забони интерфейси интихобшуда (русӣ, англисӣ, тоҷикӣ) ва тарҳи ороиш.</li>
+        </ul>
+        <p>Ин маълумот танҳо барои кори барнома дар дастгоҳи шумо лозим аст. Онҳо ба серверҳои мо фиристода намешаванд, ба шахсони сеюм дода намешаванд ва барои муайян кардани корбар истифода намешаванд.</p>
+
+        <h2><span class="n">2.</span>Мо кадом маълумотро ҶАМЪ НАМЕКУНЕМ</h2>
+        <p>Барнома маълумоти шахсиро ҷамъ намекунад ва дархост намекунад. Аз ҷумла, мо ҷамъ намекунем:</p>
+        <ul>
+          <li>ном, суроғаи почтаи электронӣ, рақами телефон;</li>
+          <li>маълумот дар бораи ҷойгиршавӣ (макон);</li>
+          <li>контактҳо, аксҳо, файлҳо ва дигар мӯҳтавои дастгоҳ;</li>
+          <li>идентификаторҳои дастгоҳ барои мақсадҳои реклама ё таҳлил.</li>
+        </ul>
+        <p>Бақайдгирӣ ва сохтани ҳисоб талаб карда намешавад.</p>
+
+        <h2><span class="n">3.</span>Иҷозатҳои дастгоҳ</h2>
+        <p>Барои кори асосӣ ба барнома дастрасӣ ба камера, микрофон, контактҳо, ҷойгиршавӣ ё захираи файлҳои шахсӣ лозим нест. Агар дар версияҳои оянда функсияҳое пайдо шаванд, ки иҷозатҳои иловагӣ талаб мекунанд, мо онҳоро танҳо ҳангоми зарурат дархост мекунем ва ин сиёсатро навсозӣ менамоем.</p>
+
+        <h2><span class="n">4.</span>Кӯдакон ва хонандагон</h2>
+        <p>Барнома барои хонандагон, аз ҷумла ноболиғон пешбинӣ шудааст. Азбаски барнома аз ҳеҷ як корбар маълумоти шахсӣ ҷамъ намекунад, онро аз кӯдакон низ ҷамъ намекунад. Мо профили корбаронро намесозем ва рафтори онҳоро пайгирӣ намекунем.</p>
+
+        <h2><span class="n">5.</span>Хидматҳои тарафи сеюм</h2>
+        <p>Дар айни замон барнома ягон хидмати таҳлил, реклама ё ҷамъоварии маълумоти тарафи сеюмро истифода намебарад.</p>
+        <div class="note">Агар дар версияҳои оянда реклама, таҳлил ё дигар хидматҳои тарафи сеюм (масалан, SDK-ҳои рекламавӣ) илова карда шаванд, ин сиёсат пеш аз барориши он версия бо тавсифи он ки онҳо кадом маълумотро коркард мекунанд, навсозӣ карда мешавад.</div>
+
+        <h2><span class="n">6.</span>Нигоҳдорӣ ва амнияти маълумот</h2>
+        <p>Ҳамаи маълумоти корбар дар хотираи дастгоҳи шумо ба таври маҳаллӣ нигоҳ дошта мешавад. Шумо метавонед онро дар ҳар вақт тавассути тоза кардани маълумоти барнома дар танзимоти дастгоҳ ё нест кардани барнома нобуд созед. Азбаски маълумот дастгоҳро тарк намекунад, амнияти он аз ҳифзи худи дастгоҳ вобаста аст.</p>
+
+        <h2><span class="n">7.</span>Тағйирот дар сиёсат</h2>
+        <p>Мо метавонем ин сиёсати махфиятро вақт ба вақт навсозӣ кунем. Ҳангоми тағйироти муҳим мо санаи эътибор пайдо карданро дар аввали ҳуҷҷат навсозӣ мекунем ва ҳангоми зарурат дар худи барнома ё дар саҳифаи Google Play хабар медиҳем.</p>
+
+        <h2><span class="n">8.</span>Тамос</h2>
+        <p>Агар шумо дар бораи ин сиёсати махфият ё коркарди маълумот савол дошта бошед, бо мо тамос гиред:</p>
+        <p>Почтаи электронӣ: <a href="mailto:your-email@example.com"><span class="fill">your-email@example.com</span></a><br>
+        Таҳиягар: <span class="fill">[номи таҳиягар ё унвонро нависед]</span></p>
+      </main>
+      <footer>© 2026 Шпаргалки. Ҳамаи ҳуқуқҳо ҳифз шудаанд.</footer>
+    </div>
+
   </div>
+
+  <script>
+    (function () {
+      var titles = {
+        ru: "Политика конфиденциальности — Шпаргалки",
+        en: "Privacy Policy — Шпаргалки",
+        tj: "Сиёсати махфият — Шпаргалки"
+      };
+      var htmlLang = { ru: "ru", en: "en", tj: "tg" };
+      var buttons = document.querySelectorAll(".switch button");
+      var panels = document.querySelectorAll("[data-lang]");
+
+      function setLang(lang) {
+        panels.forEach(function (p) {
+          p.classList.toggle("active", p.getAttribute("data-lang") === lang);
+        });
+        buttons.forEach(function (b) {
+          b.setAttribute("aria-pressed", b.getAttribute("data-set") === lang ? "true" : "false");
+        });
+        document.documentElement.lang = htmlLang[lang] || "ru";
+        if (titles[lang]) document.title = titles[lang];
+      }
+
+      buttons.forEach(function (b) {
+        b.addEventListener("click", function () { setLang(b.getAttribute("data-set")); });
+      });
+
+      var initial = "ru";
+      try {
+        var nav = (navigator.language || "").toLowerCase();
+        if (nav.indexOf("tg") === 0 || nav.indexOf("tj") === 0) initial = "tj";
+        else if (nav.indexOf("en") === 0) initial = "en";
+      } catch (e) {}
+      setLang(initial);
+    })();
+  </script>
 </body>
 </html>
