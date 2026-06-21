@@ -74,7 +74,7 @@
 <body>
   <header>
     <div class="head-inner">
-      <p class="eyebrow">Шпаргалки</p>
+      <p class="eyebrow" id="brandName">Шпаргалки</p>
       <div class="switch" role="group" aria-label="Language / Забон / Язык">
         <button type="button" data-set="ru" aria-pressed="true">RU</button>
         <button type="button" data-set="en" aria-pressed="false">EN</button>
@@ -132,7 +132,7 @@
         <h2><span class="n">8.</span>Контакты</h2>
         <p>Если у вас есть вопросы об этой политике конфиденциальности или об обработке данных, свяжитесь с нами:</p>
         <p>Электронная почта: <a href="mailto:gelxak@gmail.com"><span class="fill">gelxak@gmail.com</span></a><br>
-        Разработчик: <span class="fill">Элмурод Бобоев</span></p>
+        Разработчик: <span class="fill">Бобоев Элмурод</span></p>
       </main>
       <footer>© 2026 Шпаргалки. Все права защищены.</footer>
     </div>
@@ -144,7 +144,7 @@
         <p class="meta">Effective date: June 21, 2026</p>
       </div>
       <main>
-        <p class="lead">“Cheat sheets” is an offline study reference app for school students. We respect your privacy and aim to process as little data as possible. This document explains what data the app uses and how.</p>
+        <p class="lead">“Cheat Sheets” is an offline study reference app for school students. We respect your privacy and aim to process as little data as possible. This document explains what data the app uses and how.</p>
 
         <h2><span class="n">1.</span>What data the app processes</h2>
         <p>The app works fully offline. All data is stored <strong>only on your device</strong> and is not transmitted anywhere. This includes:</p>
@@ -186,7 +186,7 @@
         <p>Email: <a href="mailto:gelxak@gmail.com"><span class="fill">gelxak@gmail.com</span></a><br>
         Developer: <span class="fill">Elmurod BOBOEV</span></p>
       </main>
-      <footer>© 2026 Шпаргалки. All rights reserved.</footer>
+      <footer>© 2026 Cheat Sheets. All rights reserved.</footer>
     </div>
 
     <!-- ============ TAJIK ============ -->
@@ -238,19 +238,25 @@
         <p>Почтаи электронӣ: <a href="mailto:gelxak@gmail.com"><span class="fill">gelxak@gmail.com</span></a><br>
         Таҳиягар: <span class="fill">Элмурод Бобоев</span></p>
       </main>
-      <footer>© 2026 Шпаргалки. Ҳамаи ҳуқуқҳо ҳифз шудаанд.</footer>
+      <footer>© 2026 Шпаргалкаҳо. Ҳамаи ҳуқуқҳо ҳифз шудаанд.</footer>
     </div>
 
   </div>
 
   <script>
     (function () {
+      var names = {
+        ru: "Шпаргалки",
+        en: "Cheat Sheets",
+        tj: "Шпаргалкаҳо"
+      };
       var titles = {
         ru: "Политика конфиденциальности — Шпаргалки",
-        en: "Privacy Policy — Шпаргалки",
-        tj: "Сиёсати махфият — Шпаргалки"
+        en: "Privacy Policy — Cheat Sheets",
+        tj: "Сиёсати махфият — Шпаргалкаҳо"
       };
       var htmlLang = { ru: "ru", en: "en", tj: "tg" };
+      var brandEl = document.getElementById("brandName");
       var buttons = document.querySelectorAll(".switch button");
       var panels = document.querySelectorAll("[data-lang]");
 
@@ -261,6 +267,7 @@
         buttons.forEach(function (b) {
           b.setAttribute("aria-pressed", b.getAttribute("data-set") === lang ? "true" : "false");
         });
+        if (brandEl && names[lang]) brandEl.textContent = names[lang];
         document.documentElement.lang = htmlLang[lang] || "ru";
         if (titles[lang]) document.title = titles[lang];
       }
