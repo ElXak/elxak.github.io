@@ -32,7 +32,9 @@
   .eyebrow {
     font-size: 14px; letter-spacing: .12em; text-transform: uppercase;
     color: var(--brand); font-weight: 700; margin: 0;
+    text-decoration: none; transition: opacity .15s;
   }
+  a.eyebrow:hover { text-decoration: underline; text-underline-offset: 3px; opacity: .85; }
   .switch { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; background: var(--paper); }
   .switch button {
     appearance: none; border: 0; background: transparent; cursor: pointer;
@@ -74,7 +76,7 @@
 <body>
   <header>
     <div class="head-inner">
-      <p class="eyebrow"><a href"index.html" id="brandName">Шпаргалки</a></p>
+      <a class="eyebrow" id="brandName" href="index.html" title="Шпаргалки">Шпаргалки</a>
       <div class="switch" role="group" aria-label="Language / Забон / Язык">
         <button type="button" data-set="ru" aria-pressed="true">RU</button>
         <button type="button" data-set="en" aria-pressed="false">EN</button>
