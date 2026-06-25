@@ -113,6 +113,15 @@
   }
   .nav-links a:hover { color: var(--accent); }
   .nav-links .idx { color: var(--faint); margin-right: 4px; }
+  .nav-right { display: flex; align-items: center; gap: 22px; }
+  .lang-switch { display: flex; gap: 3px; border: 1px solid var(--border); border-radius: 999px; padding: 3px; background: var(--surface); }
+  .lang-btn {
+    font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.04em;
+    color: var(--muted); background: transparent; border: none; cursor: pointer;
+    padding: 5px 11px; border-radius: 999px; transition: color 0.2s, background 0.2s;
+  }
+  .lang-btn:hover { color: var(--text); }
+  .lang-btn.active { color: #1a1205; background: var(--accent); font-weight: 600; }
 
   /* ════════ HERO ════════ */
   .hero { padding: 120px 0 96px; }
@@ -428,12 +437,19 @@
 <header>
   <div class="wrap nav">
     <div class="brand">~/<b>elxak</b>.dev</div>
-    <nav class="nav-links">
-      <a href="#about"><span class="idx">01</span>о себе</a>
-      <a href="#stack"><span class="idx">02</span>стек</a>
-      <a href="#projects"><span class="idx">03</span>проекты</a>
-      <a href="#contact"><span class="idx">04</span>контакты</a>
-    </nav>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="#about"><span class="idx">01</span><span data-i18n="nav.about">о себе</span></a>
+        <a href="#stack"><span class="idx">02</span><span data-i18n="nav.stack">стек</span></a>
+        <a href="#projects"><span class="idx">03</span><span data-i18n="nav.projects">проекты</span></a>
+        <a href="#contact"><span class="idx">04</span><span data-i18n="nav.contact">контакты</span></a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button class="lang-btn active" data-lang="ru" type="button">RU</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+        <button class="lang-btn" data-lang="tj" type="button">TJ</button>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -443,13 +459,13 @@
   <div class="hero-scrim" aria-hidden="true"></div>
   <div class="wrap">
     <div class="hero-text">
-      <div class="status"><span class="dot"></span>открыт к новым проектам</div>
-      <h1>Элмурод<br><span class="accent">Бобоев</span></h1>
+      <div class="status"><span class="dot"></span><span data-i18n="hero.status">открыт к новым проектам</span></div>
+      <h1 data-i18n="hero.name">Элмурод<br><span class="accent">Бобоев</span></h1>
       <div class="typed-line"><span class="prompt">$ </span><span id="typed"></span><span class="cursor"></span></div>
       <!-- ← ЗАМЕНИТЕ описание -->
-      <p class="lede">Проектирую и собираю веб-приложения — от идеи и интерфейса до бэкенда и деплоя. Люблю аккуратный код и понятные решения.</p>
+      <p class="lede" data-i18n="hero.lede">Проектирую и собираю веб-приложения — от идеи и интерфейса до бэкенда и деплоя. Люблю аккуратный код и понятные решения.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="mailto:gelxak@gmail.com">Написать мне →</a>
+        <a class="btn btn-primary" href="mailto:gelxak@gmail.com" data-i18n="hero.write">Написать мне →</a>
         <a class="btn btn-ghost" href="https://github.com/ElXak" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
@@ -459,19 +475,19 @@
 <!-- ════════ ABOUT ════════ -->
 <section class="block" id="about">
   <div class="wrap reveal">
-    <div class="eyebrow"><span class="slash">// 01 —</span> о себе</div>
-    <h2 class="section-head">Кто я и чем занимаюсь</h2>
+    <div class="eyebrow"><span class="slash">// 01 —</span> <span data-i18n="about.eyebrow">о себе</span></div>
+    <h2 class="section-head" data-i18n="about.head">Кто я и чем занимаюсь</h2>
     <div class="about-grid">
       <div>
         <!-- ← ЗАМЕНИТЕ текст о себе -->
-        <p><strong>Разработчик</strong> с опытом в создании веб-сервисов. Прохожу путь от первого наброска до продакшена: проектирую архитектуру, пишу фронтенд и бэкенд, настраиваю деплой.</p>
-        <p>Мне важно, чтобы продукт был не только рабочим, но и приятным — быстрым, понятным и поддерживаемым. В свободное время веду пет-проекты и разбираюсь в новых инструментах.</p>
+        <p data-i18n="about.p1"><strong>Разработчик</strong> с опытом в создании веб-сервисов. Прохожу путь от первого наброска до продакшена: проектирую архитектуру, пишу фронтенд и бэкенд, настраиваю деплой.</p>
+        <p data-i18n="about.p2">Мне важно, чтобы продукт был не только рабочим, но и приятным — быстрым, понятным и поддерживаемым. В свободное время веду пет-проекты и разбираюсь в новых инструментах.</p>
       </div>
       <div class="facts">
         <!-- ← ЗАМЕНИТЕ факты -->
-        <div class="fact"><div class="k">опыт</div><div class="v"><span>5+</span> лет в разработке</div></div>
-        <div class="fact"><div class="k">фокус</div><div class="v">Full-stack / Web</div></div>
-        <div class="fact"><div class="k">локация</div><div class="v">Душанбе · удалённо</div></div>
+        <div class="fact"><div class="k" data-i18n="fact.exp.k">опыт</div><div class="v"><span>5+</span> <span data-i18n="fact.exp.v">лет в разработке</span></div></div>
+        <div class="fact"><div class="k" data-i18n="fact.focus.k">фокус</div><div class="v">Full-stack / Web</div></div>
+        <div class="fact"><div class="k" data-i18n="fact.loc.k">локация</div><div class="v" data-i18n="fact.loc.v">Душанбе · удалённо</div></div>
       </div>
     </div>
   </div>
@@ -480,24 +496,24 @@
 <!-- ════════ STACK ════════ -->
 <section class="block" id="stack">
   <div class="wrap reveal">
-    <div class="eyebrow"><span class="slash">// 02 —</span> стек</div>
-    <h2 class="section-head">Технологии</h2>
+    <div class="eyebrow"><span class="slash">// 02 —</span> <span data-i18n="stack.eyebrow">стек</span></div>
+    <h2 class="section-head" data-i18n="stack.head">Технологии</h2>
     <!-- ← ЗАМЕНИТЕ свои технологии -->
     <div class="stack-grid">
       <div class="stack-card">
-        <h3>языки</h3>
+        <h3 data-i18n="stack.languages">языки</h3>
         <div class="chips"><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">Python</span><span class="chip">Go</span></div>
       </div>
       <div class="stack-card">
-        <h3>фронтенд</h3>
+        <h3 data-i18n="stack.frontend">фронтенд</h3>
         <div class="chips"><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Vue</span><span class="chip">Tailwind</span></div>
       </div>
       <div class="stack-card">
-        <h3>бэкенд</h3>
+        <h3 data-i18n="stack.backend">бэкенд</h3>
         <div class="chips"><span class="chip">Node.js</span><span class="chip">PostgreSQL</span><span class="chip">Redis</span><span class="chip">REST / GraphQL</span></div>
       </div>
       <div class="stack-card">
-        <h3>инструменты</h3>
+        <h3 data-i18n="stack.tools">инструменты</h3>
         <div class="chips"><span class="chip">Docker</span><span class="chip">Git</span><span class="chip">Linux</span><span class="chip">CI/CD</span></div>
       </div>
     </div>
@@ -507,8 +523,8 @@
 <!-- ════════ PROJECTS ════════ -->
 <section class="block" id="projects">
   <div class="wrap reveal">
-    <div class="eyebrow"><span class="slash">// 03 —</span> проекты</div>
-    <h2 class="section-head">Избранные работы</h2>
+    <div class="eyebrow"><span class="slash">// 03 —</span> <span data-i18n="projects.eyebrow">проекты</span></div>
+    <h2 class="section-head" data-i18n="projects.head">Избранные работы</h2>
     <!-- ← ЗАМЕНИТЕ проекты (название, описание, теги, ссылку) -->
     <div class="projects">
       <!-- Шпаргалки — баннер встроен в файл (base64) -->
@@ -520,19 +536,19 @@
                onerror="this.style.display='none';this.parentElement.classList.add('no-img');">
           <div class="media-fallback">
             <span class="fb-title">Шпаргалки</span>
-            <span class="fb-sub">offline · 3 языка · бесплатно</span>
+            <span class="fb-sub" data-i18n="feat.sub">offline · 3 языка · бесплатно</span>
           </div>
         </div>
         <div class="feat-body">
           <div class="num">001</div>
           <div>
             <h3>Шпаргалки <span class="badge">Google Play</span></h3>
-            <p>Офлайн-приложение со школьной программой для учеников Таджикистана: карточки-шпаргалки по предметам, режим тестов и озвучка. Три языка — русский, английский, таджикский. Все данные хранятся локально, без аккаунтов и сбора данных.</p>
+            <p data-i18n="feat.desc">Офлайн-приложение со школьной программой для учеников Таджикистана: карточки-шпаргалки по предметам, режим тестов и озвучка. Три языка — русский, английский, таджикский. Все данные хранятся локально, без аккаунтов и сбора данных.</p>
             <div class="tags"><span>Flutter</span><span>·</span><span>Dart</span><span>·</span><span>SQLite</span><span>·</span><span>Android</span></div>
             <div class="feat-actions">
               <!-- ← замените на свою ссылку из Play Console, если отличается -->
               <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.ebo.cheatsheets" target="_blank" rel="noopener">Google Play →</a>
-              <a class="btn btn-ghost" href="/cheatsheets/index.html">Page</a>
+              <a class="btn btn-ghost" href="/cheatsheets/index.html" data-i18n="feat.page">Page</a>
               <a class="btn btn-ghost" href="https://github.com/ElXak/cheatsheets-app" target="_blank" rel="noopener">GitHub</a>
             </div>
           </div>
@@ -542,8 +558,8 @@
       <a class="project" href="#" target="_blank" rel="noopener">
         <div class="num">002</div>
         <div>
-          <h3>Ещё один проект</h3>
-          <p>Опишите результат в цифрах, если есть: ускорил загрузку, вырастил конверсию, упростил процесс.</p>
+          <h3 data-i18n="proj2.title">Ещё один проект</h3>
+          <p data-i18n="proj2.desc">Опишите результат в цифрах, если есть: ускорил загрузку, вырастил конверсию, упростил процесс.</p>
           <div class="tags"><span>Next.js</span><span>·</span><span>TypeScript</span><span>·</span><span>Docker</span></div>
         </div>
         <div class="arrow">↗</div>
@@ -551,8 +567,8 @@
       <a class="project" href="#" target="_blank" rel="noopener">
         <div class="num">003</div>
         <div>
-          <h3>Пет-проект</h3>
-          <p>Можно показать что-то для души — то, что лучше всего отражает ваш стиль и интересы.</p>
+          <h3 data-i18n="proj3.title">Пет-проект</h3>
+          <p data-i18n="proj3.desc">Можно показать что-то для души — то, что лучше всего отражает ваш стиль и интересы.</p>
           <div class="tags"><span>Python</span><span>·</span><span>API</span></div>
         </div>
         <div class="arrow">↗</div>
@@ -564,9 +580,9 @@
 <!-- ════════ CONTACT ════════ -->
 <section class="block" id="contact">
   <div class="wrap reveal">
-    <div class="eyebrow"><span class="slash">// 04 —</span> контакты</div>
-    <h2 class="section-head">Свяжемся</h2>
-    <p class="contact-lede">Открыт к интересным задачам, фрилансу и сотрудничеству. Напишите — отвечаю быстро.</p>
+    <div class="eyebrow"><span class="slash">// 04 —</span> <span data-i18n="contact.eyebrow">контакты</span></div>
+    <h2 class="section-head" data-i18n="contact.head">Свяжемся</h2>
+    <p class="contact-lede" data-i18n="contact.lede">Открыт к интересным задачам, фрилансу и сотрудничеству. Напишите — отвечаю быстро.</p>
     <div class="links">
       <a class="link-card" href="mailto:gelxak@gmail.com">
         <span><span class="label">email</span><span class="val">gelxak@gmail.com</span></span><span>→</span>
@@ -587,36 +603,193 @@
 <!-- ════════ FOOTER ════════ -->
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;width:100%;">
-    <span>© 2026 Элмурод Бобоев</span>
-    <span>собрано вручную · build 1.0</span>
+    <span data-i18n="footer.name">© 2026 Элмурод Бобоев</span>
+    <span><span data-i18n="footer.build">собрано вручную</span> · build 3.5</span>
   </div>
 </footer>
 
 <script>
-  // Печатающийся подзаголовок ← ЗАМЕНИТЕ фразы на свои
-  (function () {
-    var phrases = ["Full-stack разработчик", "автор пет-проектов", "пишу чистый код"];
+  var REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  var I18N = {
+  "ru": {
+    "_title": "Элмурод Бобоев — разработчик",
+    "nav.about": "о себе",
+    "nav.stack": "стек",
+    "nav.projects": "проекты",
+    "nav.contact": "контакты",
+    "hero.status": "открыт к новым проектам",
+    "hero.lede": "Проектирую и собираю веб-приложения — от идеи и интерфейса до бэкенда и деплоя. Люблю аккуратный код и понятные решения.",
+    "hero.write": "Написать мне →",
+    "about.eyebrow": "о себе",
+    "about.head": "Кто я и чем занимаюсь",
+    "about.p1": "<strong>Разработчик</strong> с опытом в создании веб-сервисов. Прохожу путь от первого наброска до продакшена: проектирую архитектуру, пишу фронтенд и бэкенд, настраиваю деплой.",
+    "about.p2": "Мне важно, чтобы продукт был не только рабочим, но и приятным — быстрым, понятным и поддерживаемым. В свободное время веду пет-проекты и разбираюсь в новых инструментах.",
+    "fact.exp.k": "опыт",
+    "fact.exp.v": "лет в разработке",
+    "fact.focus.k": "фокус",
+    "fact.loc.k": "локация",
+    "fact.loc.v": "Душанбе · удалённо",
+    "stack.eyebrow": "стек",
+    "stack.head": "Технологии",
+    "stack.languages": "языки",
+    "stack.frontend": "фронтенд",
+    "stack.backend": "бэкенд",
+    "stack.tools": "инструменты",
+    "projects.eyebrow": "проекты",
+    "projects.head": "Избранные работы",
+    "feat.sub": "offline · 3 языка · бесплатно",
+    "feat.desc": "Офлайн-приложение со школьной программой для учеников Таджикистана: карточки-шпаргалки по предметам, режим тестов и озвучка. Три языка — русский, английский, таджикский. Все данные хранятся локально, без аккаунтов и сбора данных.",
+    "feat.page": "Страница",
+    "proj2.title": "Ещё один проект",
+    "proj2.desc": "Опишите результат в цифрах, если есть: ускорил загрузку, вырастил конверсию, упростил процесс.",
+    "proj3.title": "Пет-проект",
+    "proj3.desc": "Можно показать что-то для души — то, что лучше всего отражает ваш стиль и интересы.",
+    "contact.eyebrow": "контакты",
+    "contact.head": "Свяжемся",
+    "contact.lede": "Открыт к интересным задачам, фрилансу и сотрудничеству. Напишите — отвечаю быстро.",
+    "footer.build": "собрано вручную",
+    "hero.name": "Элмурод<br><span class=\"accent\">Бобоев</span>",
+    "footer.name": "© 2026 Элмурод Бобоев"
+  },
+  "en": {
+    "_title": "Elmurod Boboev — developer",
+    "nav.about": "about",
+    "nav.stack": "stack",
+    "nav.projects": "projects",
+    "nav.contact": "contacts",
+    "hero.status": "open to new projects",
+    "hero.lede": "I design and build web applications — from idea and interface to backend and deployment. I love clean code and clear solutions.",
+    "hero.write": "Get in touch →",
+    "about.eyebrow": "about",
+    "about.head": "Who I am and what I do",
+    "about.p1": "<strong>A developer</strong> experienced in building web services. I take a product all the way from the first sketch to production: I design the architecture, write the frontend and backend, and set up deployment.",
+    "about.p2": "It matters to me that a product is not just functional but pleasant — fast, clear and maintainable. In my free time I build side projects and explore new tools.",
+    "fact.exp.k": "experience",
+    "fact.exp.v": "years in development",
+    "fact.focus.k": "focus",
+    "fact.loc.k": "location",
+    "fact.loc.v": "Dushanbe · remote",
+    "stack.eyebrow": "stack",
+    "stack.head": "Technologies",
+    "stack.languages": "languages",
+    "stack.frontend": "frontend",
+    "stack.backend": "backend",
+    "stack.tools": "tools",
+    "projects.eyebrow": "projects",
+    "projects.head": "Selected work",
+    "feat.sub": "offline · 3 languages · free",
+    "feat.desc": "An offline app with the school curriculum for students in Tajikistan: subject cheat-sheet cards, a test mode and audio. Three languages — Russian, English, Tajik. All data is stored locally, with no accounts and no data collection.",
+    "feat.page": "Page",
+    "proj2.title": "Another project",
+    "proj2.desc": "Describe the outcome in numbers if you can: faster load times, higher conversion, a simpler process.",
+    "proj3.title": "Side project",
+    "proj3.desc": "Show something you made for fun — whatever best reflects your style and interests.",
+    "contact.eyebrow": "contacts",
+    "contact.head": "Let's connect",
+    "contact.lede": "Open to interesting problems, freelance and collaboration. Drop me a line — I reply quickly.",
+    "footer.build": "handcrafted",
+    "hero.name": "Elmurod<br><span class=\"accent\">BOBOEV</span>",
+    "footer.name": "© 2026 Elmurod Boboev"
+  },
+  "tj": {
+    "_title": "Элмурод Бобоев — барномасоз",
+    "nav.about": "дар бораи ман",
+    "nav.stack": "стек",
+    "nav.projects": "лоиҳаҳо",
+    "nav.contact": "тамос",
+    "hero.status": "ба лоиҳаҳои нав омода",
+    "hero.lede": "Веб-барномаҳоро тарроҳӣ ва месозам — аз ғоя ва интерфейс то бэкенд ва деплой. Коди тозаву ҳалли фаҳморо дӯст медорам.",
+    "hero.write": "Ба ман нависед →",
+    "about.eyebrow": "дар бораи ман",
+    "about.head": "Ман кӣ ҳастам ва бо чӣ машғулам",
+    "about.p1": "<strong>Барномасоз</strong> бо таҷриба дар сохтани веб-сервисҳо. Маҳсулотро аз тарҳи аввал то продакшн мебарам: меъмориро тарроҳӣ мекунам, фронтенд ва бэкенд менависам, деплойро танзим мекунам.",
+    "about.p2": "Барои ман муҳим аст, ки маҳсулот на танҳо корӣ, балки гуворо бошад — тез, фаҳмо ва нигоҳдоришаванда. Дар вақти холӣ лоиҳаҳои шахсӣ мебарам ва абзорҳои навро меомӯзам.",
+    "fact.exp.k": "таҷриба",
+    "fact.exp.v": "сол дар барномасозӣ",
+    "fact.focus.k": "тамаркуз",
+    "fact.loc.k": "ҷойгиршавӣ",
+    "fact.loc.v": "Душанбе · аз дур",
+    "stack.eyebrow": "стек",
+    "stack.head": "Технологияҳо",
+    "stack.languages": "забонҳо",
+    "stack.frontend": "фронтенд",
+    "stack.backend": "бэкенд",
+    "stack.tools": "абзорҳо",
+    "projects.eyebrow": "лоиҳаҳо",
+    "projects.head": "Корҳои интихобшуда",
+    "feat.sub": "офлайн · 3 забон · ройгон",
+    "feat.desc": "Барномаи офлайн бо барномаи таълимии мактабӣ барои хонандагони Тоҷикистон: кортҳои шпаргалка аз фанҳо, режими тест ва овоздиҳӣ. Се забон — русӣ, англисӣ, тоҷикӣ. Ҳамаи маълумот маҳаллӣ нигоҳ дошта мешавад, бе аккаунт ва бе ҷамъоварии маълумот.",
+    "feat.page": "Саҳифа",
+    "proj2.title": "Лоиҳаи дигар",
+    "proj2.desc": "Натиҷаро бо рақамҳо тавсиф кунед, агар бошад: боркуниро тезонд, конверсияро афзуд, равандро сода кард.",
+    "proj3.title": "Лоиҳаи шахсӣ",
+    "proj3.desc": "Чизе барои дил нишон диҳед — он чи услуб ва шавқу ҳаваси шуморо беҳтар инъикос мекунад.",
+    "contact.eyebrow": "тамос",
+    "contact.head": "Дар тамос шавем",
+    "contact.lede": "Ба масъалаҳои ҷолиб, фриланс ва ҳамкорӣ омода. Нависед — зуд ҷавоб медиҳам.",
+    "footer.build": "бо даст сохта шудааст",
+    "hero.name": "Элмурод<br><span class=\"accent\">Бобоев</span>",
+    "footer.name": "© 2026 Элмурод Бобоев"
+  }
+};
+  var TYPED = {
+  "ru": [
+    "Full-stack разработчик",
+    "автор пет-проектов",
+    "пишу чистый код"
+  ],
+  "en": [
+    "Full-stack developer",
+    "maker of side projects",
+    "I write clean code"
+  ],
+  "tj": [
+    "Барномасози Full-stack",
+    "муаллифи лоиҳаҳои шахсӣ",
+    "коди тозаву фаҳмо менависам"
+  ]
+};
+
+  var typedTimer = null;
+  function startTyped(phrases) {
     var el = document.getElementById("typed");
     if (!el) return;
-
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      el.textContent = phrases[0];
-      return;
-    }
-
+    if (typedTimer) { clearTimeout(typedTimer); typedTimer = null; }
+    if (REDUCED) { el.textContent = phrases[0]; return; }
     var p = 0, c = 0, deleting = false;
-    function tick() {
+    (function tick() {
       var word = phrases[p];
       el.textContent = word.slice(0, c);
-      if (!deleting && c < word.length) { c++; setTimeout(tick, 70); }
-      else if (!deleting && c === word.length) { deleting = true; setTimeout(tick, 1600); }
-      else if (deleting && c > 0) { c--; setTimeout(tick, 35); }
-      else { deleting = false; p = (p + 1) % phrases.length; setTimeout(tick, 350); }
-    }
-    tick();
-  })();
+      if (!deleting && c < word.length) { c++; typedTimer = setTimeout(tick, 70); }
+      else if (!deleting && c === word.length) { deleting = true; typedTimer = setTimeout(tick, 1600); }
+      else if (deleting && c > 0) { c--; typedTimer = setTimeout(tick, 35); }
+      else { deleting = false; p = (p + 1) % phrases.length; typedTimer = setTimeout(tick, 350); }
+    })();
+  }
 
-  // Появление блоков при скролле
+  function setLang(lang) {
+    var dict = I18N[lang];
+    if (!dict) return;
+    document.documentElement.lang = (lang === "tj" ? "tg" : lang);
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var k = el.getAttribute("data-i18n");
+      if (dict[k] != null) el.innerHTML = dict[k];
+    });
+    if (dict._title) document.title = dict._title;
+    document.querySelectorAll(".lang-btn").forEach(function (b) {
+      b.classList.toggle("active", b.getAttribute("data-lang") === lang);
+    });
+    startTyped(TYPED[lang] || TYPED.ru);
+  }
+
+  document.querySelectorAll(".lang-btn").forEach(function (b) {
+    b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
+  });
+
+  setLang("ru");
+
+  // Reveal blocks on scroll
   (function () {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
