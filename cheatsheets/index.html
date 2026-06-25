@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Шпаргалки — школьная программа в твоём телефоне</title>
-<meta name="description" content="Карточки по школьным предметам, режим тестов для самопроверки и три языка (русский, английский, таджикский). Всё работает офлайн.">
+<meta id="metaDesc" name="description" content="Карточки по школьным предметам, режим тестов для самопроверки и три языка (русский, английский, таджикский). Всё работает офлайн.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -40,15 +40,24 @@
     background: rgba(255,255,255,.82); backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--line);
   }
-  .nav { display: flex; align-items: center; justify-content: space-between; height: 70px; }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 70px; gap: 16px; }
   .brand { display: flex; align-items: center; gap: 11px; font-family: var(--font-display); font-weight: 700; font-size: 19px; }
   .brand svg { display: block; }
   .nav-links { display: flex; align-items: center; gap: 30px; }
   .nav-links a { font-size: 15px; font-weight: 600; color: var(--muted); transition: color .15s; }
   .nav-links a:hover { color: var(--ink); }
+  .nav-right { display: flex; align-items: center; gap: 14px; }
+  .switch { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; background: var(--paper); }
+  .switch button {
+    appearance: none; border: 0; background: transparent; cursor: pointer;
+    font: inherit; font-size: 13px; font-weight: 700; color: var(--muted);
+    padding: 6px 12px; border-radius: 999px; transition: background .15s, color .15s;
+  }
+  .switch button:hover { color: var(--ink); }
+  .switch button[aria-pressed="true"] { background: var(--brand); color: #fff; }
   .nav-cta {
     background: var(--ink); color: #fff; padding: 10px 18px; border-radius: 11px;
-    font-weight: 700; font-size: 14px; transition: transform .15s, background .15s;
+    font-weight: 700; font-size: 14px; transition: transform .15s, background .15s; white-space: nowrap;
   }
   .nav-cta:hover { background: #1b2c5c; transform: translateY(-1px); }
 
@@ -89,7 +98,7 @@
   .ghost svg { transition: transform .15s; }
   .ghost:hover svg { transform: translateX(3px); }
   .trust { margin-top: 26px; display: flex; gap: 20px; flex-wrap: wrap; color: var(--muted); font-size: 14px; font-weight: 600; }
-  .trust span { display: inline-flex; align-items: center; gap: 7px; }
+  .trust span.t { display: inline-flex; align-items: center; gap: 7px; }
   .trust svg { color: var(--brand); }
 
   /* ---------- flip card signature ---------- */
@@ -175,7 +184,7 @@
   .checklist li { display: flex; gap: 14px; align-items: flex-start; font-size: 16.5px; }
   .checklist .ck { flex: none; width: 26px; height: 26px; border-radius: 8px; background: #E7F8F1; color: var(--ok); display: grid; place-items: center; margin-top: 2px; }
   .checklist b { font-weight: 700; }
-  .checklist span { color: var(--muted); }
+  .checklist span.txt { color: var(--muted); }
   .panel { background: var(--paper); border: 1px solid var(--line); border-radius: 22px; padding: 30px; }
   .qrow { display: flex; align-items: center; justify-content: space-between; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin-bottom: 12px; }
   .qrow:last-child { margin-bottom: 0; }
@@ -231,6 +240,7 @@
     .feat-grid { grid-template-columns: 1fr; }
     .cta-box { padding: 48px 26px; }
     .foot-links { gap: 40px; }
+    .nav-cta { display: none; }
   }
 </style>
 </head>
@@ -239,21 +249,28 @@
   <!-- ===== HEADER ===== -->
   <header class="site-head">
     <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="Шпаргалки">
+      <a class="brand" href="#top" aria-label="Cheat Sheets">
         <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
           <rect x="6" y="9" width="20" height="15" rx="3.5" transform="rotate(-9 6 9)" fill="#9FB8FF"/>
           <rect x="8" y="8" width="20" height="15" rx="3.5" fill="#0D4CCF"/>
           <path d="M12.5 13.5h11M12.5 17.5h7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
         </svg>
-        Шпаргалки
+        <span data-i18n="brand">Шпаргалки</span>
       </a>
-      <nav class="nav-links" aria-label="Основная навигация">
-        <a href="#features">Возможности</a>
-        <a href="#subjects">Предметы</a>
-        <a href="#languages">Языки</a>
-        <a href="#quiz">Тесты</a>
+      <nav class="nav-links" aria-label="nav">
+        <a href="#features" data-i18n="nav_features">Возможности</a>
+        <a href="#subjects" data-i18n="nav_subjects">Предметы</a>
+        <a href="#languages" data-i18n="nav_languages">Языки</a>
+        <a href="#quiz" data-i18n="nav_quiz">Тесты</a>
       </nav>
-      <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.ebo.cheatsheets">Скачать</a>
+      <div class="nav-right">
+        <div class="switch" role="group" aria-label="Language / Забон / Язык">
+          <button type="button" data-set="ru" aria-pressed="true">RU</button>
+          <button type="button" data-set="en" aria-pressed="false">EN</button>
+          <button type="button" data-set="tj" aria-pressed="false">TJ</button>
+        </div>
+        <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.ebo.cheatsheets" data-i18n="nav_cta">Скачать</a>
+      </div>
     </div>
   </header>
 
@@ -263,49 +280,49 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow"><span class="dot"></span>Бесплатно · Офлайн · 3 языка</span>
-        <h1>Школьная программа <span class="hl">под рукой</span></h1>
-        <p class="sub">Карточки по предметам, режим тестов для самопроверки и поддержка русского, английского и таджикского — и всё это работает без интернета.</p>
+        <span class="eyebrow"><span class="dot"></span><span data-i18n="hero_eyebrow">Бесплатно · Офлайн · 3 языка</span></span>
+        <h1 data-i18n="hero_h1">Школьная программа <span class="hl">под рукой</span></h1>
+        <p class="sub" data-i18n="hero_sub">Карточки по предметам, режим тестов для самопроверки и поддержка русского, английского и таджикского — и всё это работает без интернета.</p>
         <div class="hero-actions">
           <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.ebo.cheatsheets">
             <span class="pg" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24"><path d="M3.6 2.4 13.2 12 3.6 21.6c-.4-.2-.6-.6-.6-1.1V3.5c0-.5.2-.9.6-1.1Z" fill="#1FBC6B"/><path d="M16.8 8.6 13.2 12l3.6 3.4 3.7-2.1c.9-.5.9-1.7 0-2.2l-3.7-2.5Z" fill="#FFC107"/><path d="m13.2 12-9.6 9.6c.3.2.7.2 1.1 0l11.4-6.6-2.9-3Z" fill="#EA4335"/><path d="M13.2 12 3.6 2.4c.4-.2.8-.2 1.1 0L16.1 9l-2.9 3Z" fill="#4285F4"/></svg>
             </span>
-            <span><small>Скоро в</small><b>Google Play</b></span>
+            <span><small data-i18n="btn_soon">Скоро в</small><b>Google Play</b></span>
           </a>
-          <a class="ghost" href="#features">Что внутри
+          <a class="ghost" href="#features"><span data-i18n="hero_more">Что внутри</span>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
         <div class="trust">
-          <span><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Работает без сети</span>
-          <span><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Без рекламы и регистрации</span>
+          <span class="t"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="trust1">Работает без сети</span></span>
+          <span class="t"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="trust2">Без рекламы и регистрации</span></span>
         </div>
       </div>
 
       <!-- signature: interactive flashcard -->
       <div class="card-stage">
-        <button class="card3d" id="flipcard" aria-label="Карточка: нажми, чтобы перевернуть и увидеть решение">
+        <button class="card3d" id="flipcard" aria-label="card">
           <div class="card3d-inner">
             <div class="face front">
-              <span class="tag subj">Алгебра</span>
-              <span class="label">Реши уравнение</span>
+              <span class="tag subj" data-i18n="card_subj">Алгебра</span>
+              <span class="label" data-i18n="card_label">Реши уравнение</span>
               <span class="eq">2x + 5 = 13</span>
               <span class="flip-hint">
                 <span class="ico" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                Нажми, чтобы увидеть решение
+                <span data-i18n="flip_hint">Нажми, чтобы увидеть решение</span>
               </span>
             </div>
             <div class="face back">
-              <span class="tag ans">Решение</span>
+              <span class="tag ans" data-i18n="card_ans">Решение</span>
               <div class="steps">
                 <div class="step"><i>1</i><span>2x = 13 − 5 = 8</span></div>
                 <div class="step"><i>2</i><span>x = 8 ÷ 2</span></div>
               </div>
               <span class="res">x = 4</span>
               <div class="grade" aria-hidden="true">
-                <span class="yes">Знал</span>
-                <span class="no">Не знал</span>
+                <span class="yes" data-i18n="grade_yes">Знал</span>
+                <span class="no" data-i18n="grade_no">Не знал</span>
               </div>
             </div>
           </div>
@@ -318,40 +335,40 @@
   <section class="features" id="features">
     <div class="wrap">
       <div class="sec-head">
-        <span class="sec-eyebrow">Возможности</span>
-        <h2>Всё для подготовки — в одном приложении</h2>
-        <p>Понятные материалы, активная самопроверка и удобство в дороге, даже когда нет связи.</p>
+        <span class="sec-eyebrow" data-i18n="nav_features">Возможности</span>
+        <h2 data-i18n="feat_head">Всё для подготовки — в одном приложении</h2>
+        <p data-i18n="feat_sub">Понятные материалы, активная самопроверка и удобство в дороге, даже когда нет связи.</p>
       </div>
       <div class="feat-grid">
         <div class="feat">
           <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2"/><path d="M7 19h12a2 2 0 0 0 2-2V9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <h3>Карточки по темам</h3>
-          <p>Краткие и наглядные карточки по каждой теме школьной программы — без воды.</p>
+          <h3 data-i18n="f1h">Карточки по темам</h3>
+          <p data-i18n="f1p">Краткие и наглядные карточки по каждой теме школьной программы — без воды.</p>
         </div>
         <div class="feat">
           <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 11l2.5 2.5L16 9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="2"/></svg></div>
-          <h3>Режим теста и повторения</h3>
-          <p>Проверяй себя: открывай ответ по запросу и отмечай «Знал» или «Не знал».</p>
+          <h3 data-i18n="f2h">Режим теста и повторения</h3>
+          <p data-i18n="f2p">Проверяй себя: открывай ответ по запросу и отмечай «Знал» или «Не знал».</p>
         </div>
         <div class="feat">
           <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3v10m0 0 4-4m-4 4-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <h3>Работает офлайн</h3>
-          <p>Всё содержимое уже внутри приложения. Интернет нужен только для обновлений.</p>
+          <h3 data-i18n="f3h">Работает офлайн</h3>
+          <p data-i18n="f3p">Всё содержимое уже внутри приложения. Интернет нужен только для обновлений.</p>
         </div>
         <div class="feat">
           <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18" stroke="currentColor" stroke-width="2"/></svg></div>
-          <h3>Три языка</h3>
-          <p>Русский, английский и таджикский — переключай интерфейс и материалы одним касанием.</p>
+          <h3 data-i18n="f4h">Три языка</h3>
+          <p data-i18n="f4p">Русский, английский и таджикский — переключай интерфейс и материалы одним касанием.</p>
         </div>
         <div class="feat">
           <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 17l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
-          <h3>Избранное и сложность</h3>
-          <p>Сохраняй важные темы и ориентируйся по уровню сложности: лёгкий, средний, сложный.</p>
+          <h3 data-i18n="f5h">Избранное и сложность</h3>
+          <p data-i18n="f5p">Сохраняй важные темы и ориентируйся по уровню сложности: лёгкий, средний, сложный.</p>
         </div>
         <div class="feat">
           <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 9v6h4l5 4V5L8 9H4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M17 9a4 4 0 0 1 0 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <h3>Озвучка материала</h3>
-          <p>Слушай темы вслух — удобно повторять по дороге в школу или перед сном.</p>
+          <h3 data-i18n="f6h">Озвучка материала</h3>
+          <p data-i18n="f6p">Слушай темы вслух — удобно повторять по дороге в школу или перед сном.</p>
         </div>
       </div>
     </div>
@@ -361,22 +378,22 @@
   <section id="subjects">
     <div class="wrap">
       <div class="sec-head">
-        <span class="sec-eyebrow">Предметы</span>
-        <h2>Организовано по школьной программе</h2>
-        <p>Материалы разбиты по предметам и темам — легко найти именно то, что нужно к завтрашнему уроку.</p>
+        <span class="sec-eyebrow" data-i18n="nav_subjects">Предметы</span>
+        <h2 data-i18n="subj_head">Организовано по школьной программе</h2>
+        <p data-i18n="subj_sub">Материалы разбиты по предметам и темам — легко найти именно то, что нужно к завтрашнему уроку.</p>
       </div>
       <div class="chips">
-        <span class="chip"><span class="em">➗</span>Алгебра</span>
-        <span class="chip"><span class="em">📐</span>Геометрия</span>
-        <span class="chip"><span class="em">⚛️</span>Физика</span>
-        <span class="chip"><span class="em">🧪</span>Химия</span>
-        <span class="chip"><span class="em">🧬</span>Биология</span>
-        <span class="chip"><span class="em">🌍</span>География</span>
-        <span class="chip"><span class="em">📜</span>История</span>
-        <span class="chip"><span class="em">📖</span>Русский язык</span>
-        <span class="chip"><span class="em">🔤</span>Английский язык</span>
-        <span class="chip"><span class="em">💻</span>Информатика</span>
-        <span class="chip" style="color:var(--muted)">и другие предметы…</span>
+        <span class="chip"><span class="em">➗</span><span data-i18n="s_alg">Алгебра</span></span>
+        <span class="chip"><span class="em">📐</span><span data-i18n="s_geo">Геометрия</span></span>
+        <span class="chip"><span class="em">⚛️</span><span data-i18n="s_phy">Физика</span></span>
+        <span class="chip"><span class="em">🧪</span><span data-i18n="s_chem">Химия</span></span>
+        <span class="chip"><span class="em">🧬</span><span data-i18n="s_bio">Биология</span></span>
+        <span class="chip"><span class="em">🌍</span><span data-i18n="s_geog">География</span></span>
+        <span class="chip"><span class="em">📜</span><span data-i18n="s_hist">История</span></span>
+        <span class="chip"><span class="em">📖</span><span data-i18n="s_rus">Русский язык</span></span>
+        <span class="chip"><span class="em">🔤</span><span data-i18n="s_eng">Английский язык</span></span>
+        <span class="chip"><span class="em">💻</span><span data-i18n="s_cs">Информатика</span></span>
+        <span class="chip" style="color:var(--muted)" data-i18n="s_more">и другие предметы…</span>
       </div>
     </div>
   </section>
@@ -385,20 +402,20 @@
   <section id="quiz">
     <div class="wrap split">
       <div>
-        <span class="sec-eyebrow">Активная учёба</span>
-        <h2 style="font-size:clamp(28px,3.6vw,40px);margin:14px 0 0;">Не просто читай — проверяй себя</h2>
-        <p style="color:var(--muted);font-size:18px;margin:16px 0 0;">Режим теста превращает карточки в тренажёр: задание показывается первым, а решение открывается только когда ты сам готов.</p>
+        <span class="sec-eyebrow" data-i18n="quiz_eyebrow">Активная учёба</span>
+        <h2 style="font-size:clamp(28px,3.6vw,40px);margin:14px 0 0;" data-i18n="quiz_head">Не просто читай — проверяй себя</h2>
+        <p style="color:var(--muted);font-size:18px;margin:16px 0 0;" data-i18n="quiz_sub">Режим теста превращает карточки в тренажёр: задание показывается первым, а решение открывается только когда ты сам готов.</p>
         <ul class="checklist">
-          <li><span class="ck"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Ответ по запросу.</b> Сначала думаешь сам, потом открываешь решение.</span></li>
-          <li><span class="ck"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Самооценка «Знал / Не знал».</b> Отмечаешь результат и видишь итог в конце.</span></li>
-          <li><span class="ck"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Гибкий охват.</b> Тренируйся по всем темам, по избранному или по одному предмету.</span></li>
+          <li><span class="ck"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="txt" data-i18n="check1"><b>Ответ по запросу.</b> Сначала думаешь сам, потом открываешь решение.</span></li>
+          <li><span class="ck"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="txt" data-i18n="check2"><b>Самооценка «Знал / Не знал».</b> Отмечаешь результат и видишь итог в конце.</span></li>
+          <li><span class="ck"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="txt" data-i18n="check3"><b>Гибкий охват.</b> Тренируйся по всем темам, по избранному или по одному предмету.</span></li>
         </ul>
       </div>
       <div class="panel" aria-hidden="true">
-        <div class="qrow"><span class="qt">Линейные уравнения</span><span class="pill easy">Лёгкий</span></div>
-        <div class="qrow"><span class="qt">Теорема Пифагора</span><span class="pill med">Средний</span></div>
-        <div class="qrow"><span class="qt">Квадратные уравнения</span><span class="pill hard">Сложный</span></div>
-        <div class="qrow"><span class="qt">Законы Ньютона</span><span class="fav"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 17l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg></span></div>
+        <div class="qrow"><span class="qt" data-i18n="q1">Линейные уравнения</span><span class="pill easy" data-i18n="lvl_easy">Лёгкий</span></div>
+        <div class="qrow"><span class="qt" data-i18n="q2">Теорема Пифагора</span><span class="pill med" data-i18n="lvl_med">Средний</span></div>
+        <div class="qrow"><span class="qt" data-i18n="q3">Квадратные уравнения</span><span class="pill hard" data-i18n="lvl_hard">Сложный</span></div>
+        <div class="qrow"><span class="qt" data-i18n="q4">Законы Ньютона</span><span class="fav"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 17l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg></span></div>
       </div>
     </div>
   </section>
@@ -407,27 +424,27 @@
   <section class="langs" id="languages">
     <div class="wrap">
       <div class="sec-head">
-        <span class="sec-eyebrow">Языки</span>
-        <h2>Учись на родном языке</h2>
-        <p>И интерфейс, и содержание карточек доступны на трёх языках — переключение одним касанием.</p>
+        <span class="sec-eyebrow" data-i18n="nav_languages">Языки</span>
+        <h2 data-i18n="langs_head">Учись на родном языке</h2>
+        <p data-i18n="langs_sub">И интерфейс, и содержание карточек доступны на трёх языках — переключение одним касанием.</p>
       </div>
       <div class="lang-grid">
         <div class="lang-card">
           <span class="code">RU · Русский</span>
-          <h3>Русский</h3>
-          <p>Полный интерфейс и материалы.</p>
+          <h3 data-i18n="l_ru">Русский</h3>
+          <p data-i18n="l_desc">Полный интерфейс и материалы.</p>
           <p class="phrase">«Реши уравнение»</p>
         </div>
         <div class="lang-card">
           <span class="code">EN · English</span>
-          <h3>Английский</h3>
-          <p>Full interface and content.</p>
+          <h3 data-i18n="l_en">Английский</h3>
+          <p data-i18n="l_desc">Полный интерфейс и материалы.</p>
           <p class="phrase">“Solve the equation”</p>
         </div>
         <div class="lang-card">
           <span class="code">TJ · Тоҷикӣ</span>
-          <h3>Таджикский</h3>
-          <p>Интерфейс ва маводҳо пурра.</p>
+          <h3 data-i18n="l_tj">Таджикский</h3>
+          <p data-i18n="l_desc">Полный интерфейс и материалы.</p>
           <p class="phrase">«Муодиларо ҳал кунед»</p>
         </div>
       </div>
@@ -438,13 +455,13 @@
   <div class="cta-band" id="download">
     <div class="wrap">
       <div class="cta-box">
-        <h2>Готовься умнее, а не дольше</h2>
-        <p>Скачай «Шпаргалки» и носи всю школьную программу в кармане — бесплатно и без интернета.</p>
-        <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.ebo.cheatsheets" aria-label="Скачать в Google Play">
+        <h2 data-i18n="cta_head">Готовься умнее, а не дольше</h2>
+        <p data-i18n="cta_sub">Скачай «Шпаргалки» и носи всю школьную программу в кармане — бесплатно и без интернета.</p>
+        <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.ebo.cheatsheets" aria-label="Google Play">
           <span class="pg" aria-hidden="true">
             <svg width="18" height="18" viewBox="0 0 24 24"><path d="M3.6 2.4 13.2 12 3.6 21.6c-.4-.2-.6-.6-.6-1.1V3.5c0-.5.2-.9.6-1.1Z" fill="#fff"/><path d="M16.8 8.6 13.2 12l3.6 3.4 3.7-2.1c.9-.5.9-1.7 0-2.2l-3.7-2.5Z" fill="#FFC107"/><path d="m13.2 12-9.6 9.6c.3.2.7.2 1.1 0l11.4-6.6-2.9-3Z" fill="#EA4335"/><path d="M13.2 12 3.6 2.4c.4-.2.8-.2 1.1 0L16.1 9l-2.9 3Z" fill="#4285F4"/></svg>
           </span>
-          <span><small>Скоро в</small><b>Google Play</b></span>
+          <span><small data-i18n="btn_soon">Скоро в</small><b>Google Play</b></span>
         </a>
       </div>
     </div>
@@ -461,39 +478,197 @@
               <rect x="8" y="8" width="20" height="15" rx="3.5" fill="#0D4CCF"/>
               <path d="M12.5 13.5h11M12.5 17.5h7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
             </svg>
-            Шпаргалки
+            <span data-i18n="brand">Шпаргалки</span>
           </a>
-          <p>Офлайн-приложение для подготовки школьников. Карточки, тесты и три языка.</p>
+          <p data-i18n="foot_about">Офлайн-приложение для подготовки школьников. Карточки, тесты и три языка.</p>
         </div>
         <div class="foot-links">
           <div class="foot-col">
-            <h4>Приложение</h4>
-            <a href="#features">Возможности</a>
-            <a href="#subjects">Предметы</a>
-            <a href="#quiz">Режим тестов</a>
-            <a href="https://play.google.com/store/apps/details?id=com.ebo.cheatsheets">Скачать</a>
+            <h4 data-i18n="foot_app">Приложение</h4>
+            <a href="#features" data-i18n="nav_features">Возможности</a>
+            <a href="#subjects" data-i18n="nav_subjects">Предметы</a>
+            <a href="#quiz" data-i18n="foot_quiz">Режим тестов</a>
+            <a href="https://play.google.com/store/apps/details?id=com.ebo.cheatsheets" data-i18n="nav_cta">Скачать</a>
           </div>
           <div class="foot-col">
-            <h4>Документы</h4>
-            <a href="privacy-policy.html">Политика конфиденциальности</a>
-            <a href="mailto:gelxak@gmail.com">Связаться с нами</a>
+            <h4 data-i18n="foot_legal">Документы</h4>
+            <a href="privacy-policy.html" data-i18n="foot_privacy">Политика конфиденциальности</a>
+            <a href="mailto:gelxak@gmail.com" data-i18n="foot_contact">Связаться с нами</a>
           </div>
         </div>
       </div>
       <div class="foot-bottom">
-        <span>© 2026 Шпаргалки. Все права защищены.</span>
-        <span>Сделано для учеников Таджикистана 🇹🇯</span>
+        <span data-i18n="foot_copy">© 2026 Шпаргалки. Все права защищены.</span>
+        <span data-i18n="foot_made">Сделано для учеников Таджикистана 🇹🇯</span>
       </div>
     </div>
   </footer>
 
   <script>
+    // flip card
     var card = document.getElementById('flipcard');
-    if (card) {
-      card.addEventListener('click', function () {
-        card.classList.toggle('is-flipped');
+    if (card) card.addEventListener('click', function () { card.classList.toggle('is-flipped'); });
+
+    // ----- i18n -----
+    var T = {
+      ru: {
+        __title: "Шпаргалки — школьная программа в твоём телефоне",
+        __desc: "Карточки по школьным предметам, режим тестов для самопроверки и три языка (русский, английский, таджикский). Всё работает офлайн.",
+        brand: "Шпаргалки",
+        nav_features: "Возможности", nav_subjects: "Предметы", nav_languages: "Языки", nav_quiz: "Тесты", nav_cta: "Скачать",
+        hero_eyebrow: "Бесплатно · Офлайн · 3 языка",
+        hero_h1: "Школьная программа <span class=\"hl\">под рукой</span>",
+        hero_sub: "Карточки по предметам, режим тестов для самопроверки и поддержка русского, английского и таджикского — и всё это работает без интернета.",
+        btn_soon: "Скоро в", hero_more: "Что внутри",
+        trust1: "Работает без сети", trust2: "Без рекламы и регистрации",
+        card_subj: "Алгебра", card_label: "Реши уравнение", flip_hint: "Нажми, чтобы увидеть решение",
+        card_ans: "Решение", grade_yes: "Знал", grade_no: "Не знал",
+        feat_head: "Всё для подготовки — в одном приложении",
+        feat_sub: "Понятные материалы, активная самопроверка и удобство в дороге, даже когда нет связи.",
+        f1h: "Карточки по темам", f1p: "Краткие и наглядные карточки по каждой теме школьной программы — без воды.",
+        f2h: "Режим теста и повторения", f2p: "Проверяй себя: открывай ответ по запросу и отмечай «Знал» или «Не знал».",
+        f3h: "Работает офлайн", f3p: "Всё содержимое уже внутри приложения. Интернет нужен только для обновлений.",
+        f4h: "Три языка", f4p: "Русский, английский и таджикский — переключай интерфейс и материалы одним касанием.",
+        f5h: "Избранное и сложность", f5p: "Сохраняй важные темы и ориентируйся по уровню сложности: лёгкий, средний, сложный.",
+        f6h: "Озвучка материала", f6p: "Слушай темы вслух — удобно повторять по дороге в школу или перед сном.",
+        subj_head: "Организовано по школьной программе",
+        subj_sub: "Материалы разбиты по предметам и темам — легко найти именно то, что нужно к завтрашнему уроку.",
+        s_alg: "Алгебра", s_geo: "Геометрия", s_phy: "Физика", s_chem: "Химия", s_bio: "Биология",
+        s_geog: "География", s_hist: "История", s_rus: "Русский язык", s_eng: "Английский язык", s_cs: "Информатика",
+        s_more: "и другие предметы…",
+        quiz_eyebrow: "Активная учёба", quiz_head: "Не просто читай — проверяй себя",
+        quiz_sub: "Режим теста превращает карточки в тренажёр: задание показывается первым, а решение открывается только когда ты сам готов.",
+        check1: "<b>Ответ по запросу.</b> Сначала думаешь сам, потом открываешь решение.",
+        check2: "<b>Самооценка «Знал / Не знал».</b> Отмечаешь результат и видишь итог в конце.",
+        check3: "<b>Гибкий охват.</b> Тренируйся по всем темам, по избранному или по одному предмету.",
+        q1: "Линейные уравнения", q2: "Теорема Пифагора", q3: "Квадратные уравнения", q4: "Законы Ньютона",
+        lvl_easy: "Лёгкий", lvl_med: "Средний", lvl_hard: "Сложный",
+        langs_head: "Учись на родном языке",
+        langs_sub: "И интерфейс, и содержание карточек доступны на трёх языках — переключение одним касанием.",
+        l_ru: "Русский", l_en: "Английский", l_tj: "Таджикский", l_desc: "Полный интерфейс и материалы.",
+        cta_head: "Готовься умнее, а не дольше",
+        cta_sub: "Скачай «Шпаргалки» и носи всю школьную программу в кармане — бесплатно и без интернета.",
+        foot_about: "Офлайн-приложение для подготовки школьников. Карточки, тесты и три языка.",
+        foot_app: "Приложение", foot_quiz: "Режим тестов", foot_legal: "Документы",
+        foot_privacy: "Политика конфиденциальности", foot_contact: "Связаться с нами",
+        foot_copy: "© 2026 Шпаргалки. Все права защищены.", foot_made: "Сделано для учеников Таджикистана 🇹🇯"
+      },
+      en: {
+        __title: "Cheat Sheets — your school curriculum in your pocket",
+        __desc: "Study cards by school subject, a self-test mode and three languages (Russian, English, Tajik). Works completely offline.",
+        brand: "Cheat Sheets",
+        nav_features: "Features", nav_subjects: "Subjects", nav_languages: "Languages", nav_quiz: "Tests", nav_cta: "Download",
+        hero_eyebrow: "Free · Offline · 3 languages",
+        hero_h1: "Your school subjects <span class=\"hl\">in your pocket</span>",
+        hero_sub: "Subject cards, a self-test mode and support for Russian, English and Tajik — and it all works without the internet.",
+        btn_soon: "Coming soon to", hero_more: "What's inside",
+        trust1: "Works without a network", trust2: "No ads, no sign-up",
+        card_subj: "Algebra", card_label: "Solve the equation", flip_hint: "Tap to see the solution",
+        card_ans: "Solution", grade_yes: "Knew it", grade_no: "Didn't know",
+        feat_head: "Everything you need to study — in one app",
+        feat_sub: "Clear material, active self-testing and convenience on the go, even with no connection.",
+        f1h: "Topic cards", f1p: "Short, clear cards for every topic of the school curriculum — no fluff.",
+        f2h: "Test & review mode", f2p: "Test yourself: reveal the answer on demand and mark “Knew it” or “Didn't know”.",
+        f3h: "Works offline", f3p: "All the content is already inside the app. Internet is only needed for updates.",
+        f4h: "Three languages", f4p: "Russian, English and Tajik — switch the interface and content with a single tap.",
+        f5h: "Favorites & difficulty", f5p: "Save important topics and navigate by difficulty: easy, medium, hard.",
+        f6h: "Text-to-speech", f6p: "Listen to topics out loud — handy for reviewing on the way to school or before bed.",
+        subj_head: "Organized by the school curriculum",
+        subj_sub: "Content is split by subjects and topics — easy to find exactly what you need for tomorrow's lesson.",
+        s_alg: "Algebra", s_geo: "Geometry", s_phy: "Physics", s_chem: "Chemistry", s_bio: "Biology",
+        s_geog: "Geography", s_hist: "History", s_rus: "Russian", s_eng: "English", s_cs: "Computer science",
+        s_more: "and more subjects…",
+        quiz_eyebrow: "Active learning", quiz_head: "Don't just read — test yourself",
+        quiz_sub: "Test mode turns cards into a trainer: the task comes first, and the solution opens only when you're ready.",
+        check1: "<b>Answer on demand.</b> First you think for yourself, then reveal the solution.",
+        check2: "<b>Self-rating “Knew it / Didn't know”.</b> Mark your result and see the summary at the end.",
+        check3: "<b>Flexible scope.</b> Practice all topics, your favorites, or a single subject.",
+        q1: "Linear equations", q2: "Pythagorean theorem", q3: "Quadratic equations", q4: "Newton's laws",
+        lvl_easy: "Easy", lvl_med: "Medium", lvl_hard: "Hard",
+        langs_head: "Study in your own language",
+        langs_sub: "Both the interface and the card content are available in three languages — switch with a single tap.",
+        l_ru: "Russian", l_en: "English", l_tj: "Tajik", l_desc: "Full interface and content.",
+        cta_head: "Study smarter, not longer",
+        cta_sub: "Download Cheat Sheets and carry your whole school curriculum in your pocket — free and offline.",
+        foot_about: "An offline app for school students. Cards, tests and three languages.",
+        foot_app: "App", foot_quiz: "Test mode", foot_legal: "Legal",
+        foot_privacy: "Privacy Policy", foot_contact: "Contact us",
+        foot_copy: "© 2026 Cheat Sheets. All rights reserved.", foot_made: "Made for students of Tajikistan 🇹🇯"
+      },
+      tj: {
+        __title: "Шпаргалкаҳо — барномаи мактабӣ дар телефони шумо",
+        __desc: "Кортҳо аз фанҳои мактабӣ, ҳолати худсанҷӣ ва се забон (русӣ, англисӣ, тоҷикӣ). Комилан офлайн кор мекунад.",
+        brand: "Шпаргалкаҳо",
+        nav_features: "Имкониятҳо", nav_subjects: "Фанҳо", nav_languages: "Забонҳо", nav_quiz: "Тестҳо", nav_cta: "Зеркашӣ",
+        hero_eyebrow: "Ройгон · Офлайн · 3 забон",
+        hero_h1: "Барномаи мактабӣ <span class=\"hl\">дар дасти шумо</span>",
+        hero_sub: "Кортҳо аз фанҳо, ҳолати худсанҷӣ ва дастгирии русӣ, англисӣ ва тоҷикӣ — ва ҳамаи ин бе интернет кор мекунад.",
+        btn_soon: "Ба зудӣ дар", hero_more: "Чӣ дар дохил",
+        trust1: "Бе шабака кор мекунад", trust2: "Бе реклама ва бақайдгирӣ",
+        card_subj: "Алгебра", card_label: "Муодиларо ҳал кунед", flip_hint: "Барои дидани ҳал зер кунед",
+        card_ans: "Ҳал", grade_yes: "Донистам", grade_no: "Намедонистам",
+        feat_head: "Ҳама чиз барои омӯзиш — дар як барнома",
+        feat_sub: "Маводи фаҳмо, худсанҷии фаъол ва қулайӣ дар роҳ, ҳатто вақте ки пайваст нест.",
+        f1h: "Кортҳо аз рӯи мавзӯъ", f1p: "Кортҳои мухтасар ва возеҳ барои ҳар мавзӯи барномаи мактабӣ — бе изофот.",
+        f2h: "Ҳолати тест ва такрор", f2p: "Худро санҷед: ҷавобро ҳангоми зарурат кушоед ва «Донистам» ё «Намедонистам»-ро қайд кунед.",
+        f3h: "Офлайн кор мекунад", f3p: "Тамоми мӯҳтаво аллакай дар барнома аст. Интернет танҳо барои навсозӣ лозим аст.",
+        f4h: "Се забон", f4p: "Русӣ, англисӣ ва тоҷикӣ — интерфейс ва маводро бо як ламс иваз кунед.",
+        f5h: "Баргузида ва мураккабӣ", f5p: "Мавзӯъҳои муҳимро нигоҳ доред ва аз рӯи сатҳи мураккабӣ равона шавед: осон, миёна, мушкил.",
+        f6h: "Садонок кардани матн", f6p: "Мавзӯъҳоро бо овоз гӯш кунед — барои такрор дар роҳи мактаб ё пеш аз хоб қулай аст.",
+        subj_head: "Аз рӯи барномаи мактабӣ ташкил шудааст",
+        subj_sub: "Мӯҳтаво аз рӯи фанҳо ва мавзӯъҳо тақсим шудааст — ёфтани он чизе ки барои дарси фардо лозим аст, осон.",
+        s_alg: "Алгебра", s_geo: "Геометрия", s_phy: "Физика", s_chem: "Химия", s_bio: "Биология",
+        s_geog: "География", s_hist: "Таърих", s_rus: "Забони русӣ", s_eng: "Забони англисӣ", s_cs: "Информатика",
+        s_more: "ва фанҳои дигар…",
+        quiz_eyebrow: "Омӯзиши фаъол", quiz_head: "Танҳо нахонед — худро санҷед",
+        quiz_sub: "Ҳолати тест кортҳоро ба тренажёр табдил медиҳад: аввал супориш нишон дода мешавад, ҳал танҳо вақте ки шумо тайёред кушода мешавад.",
+        check1: "<b>Ҷавоб ҳангоми дархост.</b> Аввал худатон фикр мекунед, баъд ҳалро мекушоед.",
+        check2: "<b>Худбаҳодиҳии «Донистам / Намедонистам».</b> Натиҷаро қайд мекунед ва дар охир ҷамъбастро мебинед.",
+        check3: "<b>Фарогирии чандир.</b> Аз ҳама мавзӯъҳо, аз баргузида ё аз як фан машқ кунед.",
+        q1: "Муодилаҳои хаттӣ", q2: "Теоремаи Пифагор", q3: "Муодилаҳои квадратӣ", q4: "Қонунҳои Нютон",
+        lvl_easy: "Осон", lvl_med: "Миёна", lvl_hard: "Мушкил",
+        langs_head: "Бо забони модарии худ омӯзед",
+        langs_sub: "Ҳам интерфейс ва ҳам мӯҳтавои кортҳо ба се забон дастрасанд — иваз бо як ламс.",
+        l_ru: "Русӣ", l_en: "Англисӣ", l_tj: "Тоҷикӣ", l_desc: "Интерфейс ва маводи пурра.",
+        cta_head: "Оқилона омӯзед, на дарозтар",
+        cta_sub: "«Шпаргалкаҳо»-ро зеркашӣ кунед ва тамоми барномаи мактабиро дар ҷайбатон баред — ройгон ва бе интернет.",
+        foot_about: "Барномаи офлайн барои омодагии хонандагон. Кортҳо, тестҳо ва се забон.",
+        foot_app: "Барнома", foot_quiz: "Ҳолати тест", foot_legal: "Ҳуҷҷатҳо",
+        foot_privacy: "Сиёсати махфият", foot_contact: "Бо мо тамос гиред",
+        foot_copy: "© 2026 Шпаргалкаҳо. Ҳамаи ҳуқуқҳо ҳифз шудаанд.", foot_made: "Барои хонандагони Тоҷикистон сохта шудааст 🇹🇯"
+      }
+    };
+
+    var htmlLang = { ru: "ru", en: "en", tj: "tg" };
+    var buttons = document.querySelectorAll(".switch button");
+
+    function applyLang(lang) {
+      var dict = T[lang]; if (!dict) return;
+      document.documentElement.lang = htmlLang[lang] || "ru";
+      if (dict.__title) document.title = dict.__title;
+      var md = document.getElementById("metaDesc");
+      if (md && dict.__desc) md.setAttribute("content", dict.__desc);
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {
+        var k = el.getAttribute("data-i18n");
+        if (dict[k] !== undefined) el.innerHTML = dict[k];
+      });
+      buttons.forEach(function (b) {
+        b.setAttribute("aria-pressed", b.getAttribute("data-set") === lang ? "true" : "false");
       });
     }
+
+    buttons.forEach(function (b) {
+      b.addEventListener("click", function () { applyLang(b.getAttribute("data-set")); });
+    });
+
+    // initial language from the browser, default Russian
+    var initial = "ru";
+    try {
+      var nav = (navigator.language || "").toLowerCase();
+      if (nav.indexOf("tg") === 0 || nav.indexOf("tj") === 0) initial = "tj";
+      else if (nav.indexOf("en") === 0) initial = "en";
+    } catch (e) {}
+    applyLang(initial);
   </script>
 </body>
 </html>
