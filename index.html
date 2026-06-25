@@ -308,6 +308,53 @@
   }
   .project:hover .arrow { color: var(--accent); transform: translate(3px, -3px); }
 
+  /* Featured project (Шпаргалки) */
+  .project.featured { display: block; padding: 0; overflow: hidden; }
+  .project.featured:hover { transform: none; border-color: var(--accent-line); }
+  .project-media {
+    position: relative;
+    aspect-ratio: 1024 / 500;
+    background: linear-gradient(135deg, #0d4ccf 0%, #0a347e 100%);
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+  }
+  .project-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .media-fallback {
+    position: absolute; inset: 0;
+    display: none;
+    flex-direction: column; align-items: center; justify-content: center; gap: 10px;
+    text-align: center; padding: 24px;
+  }
+  .project-media.no-img .media-fallback { display: flex; }
+  .media-fallback .fb-title {
+    font-family: var(--display); font-weight: 600; color: #fff;
+    font-size: clamp(2rem, 6vw, 3.4rem); letter-spacing: -0.02em;
+  }
+  .media-fallback .fb-sub {
+    font-family: var(--mono); font-size: 0.82rem; color: rgba(255,255,255,0.82);
+    text-transform: uppercase; letter-spacing: 0.1em;
+  }
+  .feat-body {
+    display: grid;
+    grid-template-columns: 56px 1fr auto;
+    gap: 24px;
+    align-items: start;
+    padding: 26px 28px;
+  }
+  .feat-body .num { font-family: var(--mono); color: var(--faint); font-size: 0.9rem; padding-top: 4px; }
+  .feat-body h3 { font-family: var(--display); font-size: 1.3rem; font-weight: 600; margin-bottom: 8px; }
+  .feat-body p { color: var(--muted); font-size: 0.98rem; margin-bottom: 14px; max-width: 60ch; }
+  .feat-body .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+  .feat-body .tags span { font-family: var(--mono); font-size: 0.74rem; color: var(--faint); }
+  .feat-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .badge {
+    font-family: var(--mono); font-size: 0.66rem; font-weight: 500;
+    color: var(--accent); border: 1px solid var(--accent-line);
+    background: var(--accent-soft); padding: 3px 9px; border-radius: 999px;
+    margin-left: 10px; letter-spacing: 0.04em; text-transform: uppercase;
+    vertical-align: middle; white-space: nowrap;
+  }
+
   /* Contact */
   .contact-lede { color: var(--muted); font-size: 1.1rem; max-width: 50ch; margin-bottom: 36px; }
   .links { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; max-width: 620px; }
@@ -362,6 +409,8 @@
     .project { grid-template-columns: 1fr; gap: 12px; }
     .project .num { display: none; }
     .project .arrow { display: none; }
+    .feat-body { grid-template-columns: 1fr; gap: 12px; padding: 22px; }
+    .feat-body .num, .feat-body .arrow { display: none; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -462,15 +511,33 @@
     <h2 class="section-head">Избранные работы</h2>
     <!-- ← ЗАМЕНИТЕ проекты (название, описание, теги, ссылку) -->
     <div class="projects">
-      <a class="project" href="#" target="_blank" rel="noopener">
-        <div class="num">001</div>
-        <div>
-          <h3>Название проекта</h3>
-          <p>Короткое описание: что это, какую задачу решает и какую роль вы в нём сыграли.</p>
-          <div class="tags"><span>React</span><span>·</span><span>Node.js</span><span>·</span><span>PostgreSQL</span></div>
+      <!-- Шпаргалки — баннер: положите play_feature_1024x500.png рядом с index.html -->
+      <div class="project featured">
+        <div class="project-media">
+          <img src="play_feature_1024x500.png"
+               alt="Шпаргалки — школьная программа под рукой"
+               loading="lazy"
+               onerror="this.style.display='none';this.parentElement.classList.add('no-img');">
+          <div class="media-fallback">
+            <span class="fb-title">Шпаргалки</span>
+            <span class="fb-sub">offline · 3 языка · бесплатно</span>
+          </div>
         </div>
-        <div class="arrow">↗</div>
-      </a>
+        <div class="feat-body">
+          <div class="num">001</div>
+          <div>
+            <h3>Шпаргалки <span class="badge">Google Play</span></h3>
+            <p>Офлайн-приложение со школьной программой для учеников Таджикистана: карточки-шпаргалки по предметам, режим тестов и озвучка. Три языка — русский, английский, таджикский. Все данные хранятся локально, без аккаунтов и сбора данных.</p>
+            <div class="tags"><span>Flutter</span><span>·</span><span>Dart</span><span>·</span><span>SQLite</span><span>·</span><span>Android</span></div>
+            <div class="feat-actions">
+              <!-- ← замените на свою ссылку из Play Console, если отличается -->
+              <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.ebo.cheatsheets" target="_blank" rel="noopener">Google Play →</a>
+              <a class="btn btn-ghost" href="https://github.com/ElXak" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+          <div class="arrow">↗</div>
+        </div>
+      </div>
       <a class="project" href="#" target="_blank" rel="noopener">
         <div class="num">002</div>
         <div>
