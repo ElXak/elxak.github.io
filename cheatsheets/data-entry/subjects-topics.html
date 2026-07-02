@@ -167,6 +167,9 @@ pre.json-view{margin:0;font-family:var(--font-mono);font-size:11.5px;line-height
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
 footer.foot{flex:0 0 auto;padding:8px 20px;background:var(--ink);color:#8891AA;font-size:11px;text-align:center;}
 footer.foot b{color:#C7CDE0;}
+footer.foot .copyright{margin-top:3px;}
+footer.foot .copyright a{color:#8891AA;text-decoration:underline;text-decoration-color:rgba(136,145,170,.4);transition:color .15s ease;}
+footer.foot .copyright a:hover{color:#F3EEE0;}
 </style>
 </head>
 <body>
@@ -260,6 +263,7 @@ footer.foot b{color:#C7CDE0;}
   <footer class="foot">
     Инструмент не отправляет данные никуда, кроме файла, который вы скачиваете сами. Готовые файлы кладите в
     <b>content/subjects.json</b> и <b>content/topics.json</b>, затем пересоберите контент как обычно.
+    <div class="copyright">© <a href="../../index.html">@ElXak</a></div>
   </footer>
 </div>
 
