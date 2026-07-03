@@ -6,17 +6,21 @@
 <title>Предметы и темы · Шпаргалкаҳо</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0&display=block" rel="stylesheet">
 <style>
-/* ============================= ТОКЕНЫ (в тон data-entry/index.html) ============================= */
+/* ============================= ТОКЕНЫ (в тон elxak.github.io/cheatsheets) ============================= */
 :root{
-  --ink:#0B1220; --paper:#F3EEE0; --paper-2:#EAE3CE; --card-face:#FFFDF7; --surface:#FFFFFF;
-  --brand:#0D4CCF; --brand-ink:#0A3AA0; --brand-tint:#E7EEFC; --rule:#C1443B;
-  --amber:#9A6A16; --amber-bg:#FBF0DA; --red:#B03A31; --red-bg:#FBEAE8;
-  --green:#2F6E4C; --green-bg:#E7F3EC; --muted:#6B6455; --border:#DFD5B8; --border-soft:#EAE2CB;
-  --focus:#0D4CCF; --radius-sm:8px; --radius-md:12px; --radius-lg:18px;
-  --shadow-card:0 1px 2px rgba(11,18,32,.04), 0 8px 24px -12px rgba(11,18,32,.18);
+  --brand:#0D4CCF; --brand-700:#0A3AA8; --ink:#0E1A3D; --muted:#5b6685;
+  --paper:#F2F6FF; --paper-2:#E9F0FF; --line:#DCE4F7; --bg:#ffffff;
+  --accent:#FFD23F; --ok:#12B886; --amber:#B7791F; --amber-bg:#FFF6E0;
+  --red:#b3261e; --red-bg:#FBE9E7;
+  /* алиасы для обратной совместимости внутренних имён компонентов */
+  --surface:var(--bg); --card-face:var(--bg); --brand-ink:var(--brand-700); --brand-tint:var(--paper-2);
+  --green:var(--ok); --green-bg:#E7F8F1; --border:var(--line); --border-soft:var(--line); --focus:var(--brand);
+  --radius-sm:10px; --radius-md:14px; --radius-lg:20px;
+  --shadow-card:0 1px 2px rgba(14,26,61,.04), 0 8px 20px -14px rgba(14,26,61,.18);
+  --shadow-lift:0 24px 48px -28px rgba(14,26,61,.4);
   --font-display:'Unbounded','Manrope','Noto Sans',sans-serif;
   --font-body:'Manrope','Noto Sans',sans-serif;
   --font-mono:'JetBrains Mono',ui-monospace,Consolas,monospace;
@@ -45,8 +49,12 @@ button.btn{
 button.btn:hover{background:var(--paper-2);}
 button.btn:active{transform:translateY(1px);}
 button.btn:focus-visible{box-shadow:0 0 0 3px rgba(13,76,207,.25);border-color:var(--focus);}
-button.btn.primary{background:var(--brand);border-color:var(--brand);color:#fff;}
-button.btn.primary:hover{background:var(--brand-ink);}
+button.btn.primary{
+  background:var(--brand);border-color:var(--brand);color:#fff;
+  box-shadow:0 12px 26px -14px rgba(13,76,207,.6);transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+button.btn.primary:hover{background:var(--brand-700);transform:translateY(-1px);box-shadow:0 16px 32px -14px rgba(13,76,207,.65);}
+button.btn.primary:active{transform:translateY(0);}
 button.btn.ghost{background:transparent;border-color:transparent;padding:6px 8px;}
 button.btn.ghost:hover{background:var(--paper-2);}
 button.btn.danger{color:var(--red);}
@@ -58,14 +66,18 @@ button.icon-btn:hover{background:var(--paper-2);color:var(--ink);}
 hr.sep{border:none;border-top:1px solid var(--border-soft);margin:14px 0;}
 
 .app-shell{display:flex;flex-direction:column;height:100vh;}
-header.topbar{display:flex;align-items:center;gap:14px;padding:12px 20px;background:var(--ink);color:#F3EEE0;flex:0 0 auto;}
-.wordmark{font-family:var(--font-display);font-weight:600;font-size:17px;letter-spacing:.01em;display:flex;align-items:center;gap:9px;}
-.wordmark .hole{width:9px;height:9px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#8f96a8,#3d4453 65%);box-shadow:inset 0 1px 1px rgba(0,0,0,.5);flex:0 0 auto;}
+header.topbar{
+  display:flex;align-items:center;gap:14px;padding:12px 20px;
+  background:rgba(255,255,255,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  color:var(--ink);border-bottom:1px solid var(--line);flex:0 0 auto;
+}
+.wordmark{font-family:var(--font-display);font-weight:700;font-size:17px;letter-spacing:-0.01em;display:flex;align-items:center;gap:9px;color:var(--ink);}
+.wordmark svg{display:block;flex:0 0 auto;}
 .topbar nav{display:flex;gap:4px;margin-left:8px;}
-.topbar nav a{color:#B9C0D6;text-decoration:none;font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:99px;transition:background .15s ease,color .15s ease;}
-.topbar nav a:hover{background:#1B2338;color:#fff;}
+.topbar nav a{color:var(--muted);text-decoration:none;font-size:12.5px;font-weight:700;padding:6px 11px;border-radius:99px;transition:background .15s ease,color .15s ease;}
+.topbar nav a:hover{background:var(--paper);color:var(--ink);}
 .topbar nav a.current{background:var(--brand);color:#fff;}
-.topbar .tag{margin-left:auto;font-family:var(--font-mono);font-size:11px;color:#9AA3BC;border:1px solid #333B52;padding:3px 8px;border-radius:99px;}
+.topbar .tag{margin-left:auto;font-family:var(--font-mono);font-size:11px;color:var(--muted);border:1px solid var(--line);padding:3px 8px;border-radius:99px;background:var(--paper);}
 
 .workbench{flex:1 1 auto;display:grid;grid-template-columns:300px 1fr 380px;min-height:0;}
 @media (max-width:1180px){.workbench{grid-template-columns:270px 1fr 340px;}}
@@ -132,7 +144,7 @@ header.topbar{display:flex;align-items:center;gap:14px;padding:12px 20px;backgro
 .topic-row.expanded .chevron{transform:rotate(90deg);}
 .chevron{transition:transform .15s ease;display:inline-flex;color:var(--muted);}
 
-.l10n-editor{border:1px solid var(--border-soft);border-radius:var(--radius-sm);padding:10px;background:#FCFAF3;}
+.l10n-editor{border:1px solid var(--border-soft);border-radius:var(--radius-sm);padding:10px;background:var(--paper);}
 .l10n-editor-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;gap:8px;}
 .l10n-editor-top .field-label{margin:0;}
 .toggle-switch{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted);cursor:pointer;user-select:none;}
@@ -140,7 +152,7 @@ header.topbar{display:flex;align-items:center;gap:14px;padding:12px 20px;backgro
 .l10n-lang-grid{display:flex;flex-direction:column;gap:8px;}
 .l10n-lang-row{display:flex;gap:8px;align-items:flex-start;}
 .lang-badge{flex:0 0 30px;height:30px;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:10.5px;font-weight:700;border-radius:6px;background:var(--paper-2);color:var(--muted);margin-top:1px;}
-.lang-badge.ru{color:#0D4CCF;} .lang-badge.en{color:#2F6E4C;} .lang-badge.tj{color:#B03A31;}
+.lang-badge.ru{color:var(--brand);} .lang-badge.en{color:var(--ok);} .lang-badge.tj{color:var(--red);}
 
 /* ---- Правая панель: валидация + JSON ---- */
 .pane.side{background:var(--paper-2);}
@@ -153,7 +165,7 @@ header.topbar{display:flex;align-items:center;gap:14px;padding:12px 20px;backgro
 .file-tab.active{background:var(--brand);border-color:var(--brand);color:#fff;}
 .side-half-body{flex:1;overflow-y:auto;padding:14px;}
 pre.json-view{margin:0;font-family:var(--font-mono);font-size:11.5px;line-height:1.6;white-space:pre-wrap;word-break:break-word;color:var(--ink);}
-.json-view .k{color:var(--brand-ink);} .json-view .s{color:#2F6E4C;} .json-view .n{color:#9A6A16;} .json-view .p{color:var(--muted);}
+.json-view .k{color:var(--brand-ink);} .json-view .s{color:var(--ok);} .json-view .n{color:var(--amber);} .json-view .p{color:var(--muted);}
 .json-toolbar{display:flex;gap:6px;padding:0 14px 12px;flex:0 0 auto;}
 
 .validation-list{list-style:none;margin:0 0 12px;padding:0;display:flex;flex-direction:column;gap:6px;}
@@ -163,14 +175,14 @@ pre.json-view{margin:0;font-family:var(--font-mono);font-size:11.5px;line-height
 .validation-item .dot{flex:0 0 auto;margin-top:3px;font-size:10px;}
 .validation-ok{display:flex;align-items:center;gap:8px;color:var(--green);font-size:12.5px;font-weight:600;background:var(--green-bg);padding:8px 10px;border-radius:8px;}
 
-.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%) translateY(12px);background:var(--ink);color:#F3EEE0;padding:10px 18px;border-radius:99px;font-size:13px;font-weight:600;box-shadow:0 8px 24px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:opacity .2s ease, transform .2s ease;z-index:50;}
+.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%) translateY(12px);background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:99px;font-size:13px;font-weight:600;box-shadow:0 8px 24px rgba(14,26,61,.3);opacity:0;pointer-events:none;transition:opacity .2s ease, transform .2s ease;z-index:50;}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
-footer.foot{flex:0 0 auto;padding:8px 20px;background:var(--ink);color:#8891AA;font-size:11px;text-align:center;}
-footer.foot b{color:#C7CDE0;}
+footer.foot{flex:0 0 auto;padding:10px 20px;background:var(--bg);color:var(--muted);font-size:11px;text-align:center;border-top:1px solid var(--line);}
+footer.foot b{color:var(--ink);}
 footer.foot .copyright{margin-top:3px;}
 footer.foot .credit{margin-top:2px;}
-footer.foot .credit a{color:rgb(13,76,207);text-decoration:none;transition:color .15s ease;}
-footer.foot .credit a:hover{color:#F3EEE0;}
+footer.foot .credit a{color:var(--brand);font-weight:700;text-decoration:none;transition:color .15s ease;}
+footer.foot .credit a:hover{color:var(--brand-700);}
 </style>
 </head>
 <body>
@@ -180,7 +192,14 @@ footer.foot .credit a:hover{color:#F3EEE0;}
     <button class="hamburger icon-btn" id="btnHamburger" title="Меню" aria-label="Меню">
       <span class="material-symbols-outlined">menu</span>
     </button>
-    <div class="wordmark"><span class="hole"></span> Предметы и темы</div>
+    <div class="wordmark">
+      <svg width="26" height="26" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+        <rect x="6" y="9" width="20" height="15" rx="3.5" transform="rotate(-9 6 9)" fill="#9FB8FF"/>
+        <rect x="8" y="8" width="20" height="15" rx="3.5" fill="#0D4CCF"/>
+        <path d="M12.5 13.5h11M12.5 17.5h7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      Предметы и темы
+    </div>
     <nav>
       <a href="index.html">Карточки</a>
       <a href="subjects-topics.html" class="current">Предметы и темы</a>
@@ -429,7 +448,7 @@ function createL10nEditor(container, {label, get, set, multiline=false, placehol
 /* =============================== Иконка+цвет =============================== */
 function iconGlyph(name){ return ICON_RESOLVE[name] || 'school'; }
 function subjectSwatch(subject, size){
-  const sw = el('div', {class:'subject-swatch', style:`width:${size}px;height:${size}px;background:${subject.color||'#6B6455'};`});
+  const sw = el('div', {class:'subject-swatch', style:`width:${size}px;height:${size}px;background:${subject.color||'#5b6685'};`});
   sw.appendChild(el('span', {class:'material-symbols-outlined', style:`font-size:${Math.round(size*0.55)}px;`, text: iconGlyph(subject.icon)}));
   return sw;
 }
@@ -472,7 +491,7 @@ function renderSubjectList(){
 }
 
 document.getElementById('btnAddSubject').addEventListener('click', () => {
-  S.subjects.push({id:'', name:'', icon:'school', color:'#6B6455', order:S.subjects.length});
+  S.subjects.push({id:'', name:'', icon:'school', color:'#5b6685', order:S.subjects.length});
   S.activeSubjectIndex = S.subjects.length-1;
   renderSubjectList(); renderEditor(); scheduleSideEffects(); showMobilePane('editor');
 });
@@ -522,8 +541,8 @@ function renderEditor(){
   colorField.appendChild(el('label', {class:'field-label', text:'Цвет (#RRGGBB)'}));
   const colorRow = el('div', {class:'two-col'});
   const colorPicker = el('input', {type:'color', oninput:(e)=>{ subj.color=e.target.value; colorHex.value=e.target.value; refreshPreview(); scheduleSideEffects(); }});
-  colorPicker.value = HEX_RE.test(subj.color) ? subj.color : '#6b6455';
-  const colorHex = el('input', {class:'mono', placeholder:'#2563EB', oninput:(e)=>{
+  colorPicker.value = HEX_RE.test(subj.color) ? subj.color : '#5b6685';
+  const colorHex = el('input', {class:'mono', placeholder:'#0D4CCF', oninput:(e)=>{
     subj.color = e.target.value; if (HEX_RE.test(e.target.value)) colorPicker.value = e.target.value;
     refreshPreview(); scheduleSideEffects();
   }});

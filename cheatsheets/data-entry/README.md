@@ -8,6 +8,12 @@
 - **`subjects-topics.html`** — редактор предметов и тем
   (`content/subjects.json` и `content/topics.json`).
 
+Визуально оба файла оформлены в стиле лендинга приложения
+(`elxak.github.io/cheatsheets/index.html`): те же токены — `--brand:#0D4CCF`,
+`--ink:#0E1A3D`, `--paper:#F2F6FF`, `--accent:#FFD23F`, шрифты Unbounded +
+Manrope, сквозная шапка со стеклянным блюром и тот же футер «Разработан
+~/elxak.dev».
+
 ## Как открыть
 
 **Вариант A — просто открыть файл.** Дважды кликните `index.html` или
