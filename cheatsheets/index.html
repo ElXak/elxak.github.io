@@ -195,6 +195,26 @@
   .qrow .pill.hard { color: #b3261e; background: #FBE9E7; }
   .qrow .fav { color: var(--accent); }
 
+  /* ---------- contribute (data entry) ---------- */
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 11px; background: var(--brand); color: #fff;
+    padding: 15px 26px; border-radius: 15px; font-weight: 700; font-size: 16px;
+    transition: transform .15s, box-shadow .15s; box-shadow: 0 16px 34px -16px rgba(13,76,207,.6);
+  }
+  .btn-secondary:hover { transform: translateY(-2px); box-shadow: 0 22px 40px -16px rgba(13,76,207,.6); }
+  .field-row { margin-bottom: 16px; }
+  .field-row label {
+    display: block; font-size: 12.5px; font-weight: 800; color: var(--muted);
+    margin-bottom: 7px; text-transform: uppercase; letter-spacing: .05em;
+  }
+  .field-box {
+    background: #fff; border: 1px solid var(--line); border-radius: 12px;
+    padding: 12px 14px; font-size: 15.5px; font-weight: 600; color: var(--ink);
+  }
+  .field-box.big { min-height: 58px; color: var(--muted); font-weight: 500; }
+  .draft-note { display: flex; align-items: center; gap: 8px; margin-top: 6px; font-size: 13.5px; font-weight: 700; color: var(--ok); }
+  .submit-mock { margin-top: 18px; background: var(--ink); color: #fff; text-align: center; padding: 13px; border-radius: 12px; font-weight: 700; font-size: 15px; }
+
   /* ---------- final cta ---------- */
   .cta-band { padding: 84px 0; }
   .cta-box {
@@ -262,6 +282,7 @@
         <a href="#subjects" data-i18n="nav_subjects">Предметы</a>
         <a href="#languages" data-i18n="nav_languages">Языки</a>
         <a href="#quiz" data-i18n="nav_quiz">Тесты</a>
+        <a href="#contribute" data-i18n="nav_contribute">Учителям</a>
       </nav>
       <div class="nav-right">
         <div class="switch" role="group" aria-label="Language / Забон / Язык">
@@ -451,6 +472,48 @@
     </div>
   </section>
 
+  <!-- ===== CONTRIBUTE (DATA ENTRY TOOL) ===== -->
+  <section id="contribute">
+    <div class="wrap split">
+      <div>
+        <span class="sec-eyebrow" data-i18n="contrib_eyebrow">Для учителей и авторов</span>
+        <h2 style="font-size:clamp(28px,3.6vw,40px);margin:14px 0 0;" data-i18n="contrib_head">Помогите пополнить базу карточек</h2>
+        <p style="color:var(--muted);font-size:18px;margin:16px 0 0;" data-i18n="contrib_sub">Мы приглашаем учителей и авторов предлагать новые карточки через простую веб-форму — прямо в браузере, без установки программ.</p>
+        <ul class="checklist">
+          <li><span class="ck"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="txt" data-i18n="contrib_c1"><b>Веб-форма без установки.</b> Открывается в браузере на компьютере или телефоне.</span></li>
+          <li><span class="ck"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="txt" data-i18n="contrib_c2"><b>Черновики сохраняются локально.</b> Можно закрыть вкладку и продолжить позже.</span></li>
+          <li><span class="ck"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="txt" data-i18n="contrib_c3"><b>Проверка перед публикацией.</b> Все материалы проходят модерацию перед добавлением в приложение.</span></li>
+        </ul>
+        <div style="margin-top:30px;">
+          <a class="btn-secondary" href="data-entry/index.html">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20h9" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5Z" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/></svg>
+            <span data-i18n="contrib_cta">Открыть инструмент</span>
+          </a>
+        </div>
+      </div>
+      <div class="panel" aria-hidden="true">
+        <div style="font-weight:700;font-size:15px;color:var(--muted);margin-bottom:18px;" data-i18n="contrib_panel_head">Новая карточка</div>
+        <div class="field-row">
+          <label data-i18n="contrib_f_subject">Предмет</label>
+          <div class="field-box" data-i18n="s_alg">Алгебра</div>
+        </div>
+        <div class="field-row">
+          <label data-i18n="contrib_f_topic">Тема</label>
+          <div class="field-box" data-i18n="q3">Квадратные уравнения</div>
+        </div>
+        <div class="field-row">
+          <label data-i18n="contrib_f_text">Текст карточки</label>
+          <div class="field-box big" data-i18n="contrib_f_placeholder">Определение, формула, пример решения…</div>
+        </div>
+        <div class="draft-note">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-i18n="contrib_draft">Черновик сохранён локально</span>
+        </div>
+        <div class="submit-mock" data-i18n="contrib_submit">Отправить на проверку</div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== DOWNLOAD CTA ===== -->
   <div class="cta-band" id="download">
     <div class="wrap">
@@ -520,7 +583,7 @@
         __title: "Шпаргалки — школьная программа в твоём телефоне",
         __desc: "Карточки по школьным предметам, режим тестов для самопроверки и три языка (русский, английский, таджикский). Всё работает офлайн.",
         brand: "Шпаргалки",
-        nav_features: "Возможности", nav_subjects: "Предметы", nav_languages: "Языки", nav_quiz: "Тесты", nav_cta: "Скачать",
+        nav_features: "Возможности", nav_subjects: "Предметы", nav_languages: "Языки", nav_quiz: "Тесты", nav_cta: "Скачать", nav_contribute: "Учителям",
         hero_eyebrow: "Бесплатно · Офлайн · 3 языка",
         hero_h1: "Школьная программа <span class=\"hl\">под рукой</span>",
         hero_sub: "Карточки по предметам, режим тестов для самопроверки и поддержка русского, английского и таджикского — и всё это работает без интернета.",
@@ -551,6 +614,15 @@
         langs_head: "Учись на родном языке",
         langs_sub: "И интерфейс, и содержание карточек доступны на трёх языках — переключение одним касанием.",
         l_ru: "Русский", l_en: "Английский", l_tj: "Таджикский", l_desc: "Полный интерфейс и материалы.",
+        contrib_eyebrow: "Для учителей и авторов", contrib_head: "Помогите пополнить базу карточек",
+        contrib_sub: "Мы приглашаем учителей и авторов предлагать новые карточки через простую веб-форму — прямо в браузере, без установки программ.",
+        contrib_c1: "<b>Веб-форма без установки.</b> Открывается в браузере на компьютере или телефоне.",
+        contrib_c2: "<b>Черновики сохраняются локально.</b> Можно закрыть вкладку и продолжить позже.",
+        contrib_c3: "<b>Проверка перед публикацией.</b> Все материалы проходят модерацию перед добавлением в приложение.",
+        contrib_cta: "Открыть инструмент", contrib_panel_head: "Новая карточка",
+        contrib_f_subject: "Предмет", contrib_f_topic: "Тема", contrib_f_text: "Текст карточки",
+        contrib_f_placeholder: "Определение, формула, пример решения…",
+        contrib_draft: "Черновик сохранён локально", contrib_submit: "Отправить на проверку",
         cta_head: "Готовься умнее, а не дольше",
         cta_sub: "Скачай «Шпаргалки» и носи всю школьную программу в кармане — бесплатно и без интернета.",
         foot_about: "Офлайн-приложение для подготовки школьников. Карточки, тесты и три языка.",
@@ -564,7 +636,7 @@
         __title: "Cheat Sheets — your school curriculum in your pocket",
         __desc: "Study cards by school subject, a self-test mode and three languages (Russian, English, Tajik). Works completely offline.",
         brand: "Cheat Sheets",
-        nav_features: "Features", nav_subjects: "Subjects", nav_languages: "Languages", nav_quiz: "Tests", nav_cta: "Download",
+        nav_features: "Features", nav_subjects: "Subjects", nav_languages: "Languages", nav_quiz: "Tests", nav_cta: "Download", nav_contribute: "For teachers",
         hero_eyebrow: "Free · Offline · 3 languages",
         hero_h1: "Your school subjects <span class=\"hl\">in your pocket</span>",
         hero_sub: "Subject cards, a self-test mode and support for Russian, English and Tajik — and it all works without the internet.",
@@ -595,6 +667,15 @@
         langs_head: "Study in your own language",
         langs_sub: "Both the interface and the card content are available in three languages — switch with a single tap.",
         l_ru: "Russian", l_en: "English", l_tj: "Tajik", l_desc: "Full interface and content.",
+        contrib_eyebrow: "For teachers & authors", contrib_head: "Help us grow the content library",
+        contrib_sub: "We invite teachers and authors to suggest new cards through a simple web form — right in the browser, no installation needed.",
+        contrib_c1: "<b>No-install web form.</b> Opens right in your browser on desktop or phone.",
+        contrib_c2: "<b>Drafts save locally.</b> Close the tab and pick up right where you left off.",
+        contrib_c3: "<b>Reviewed before publishing.</b> All submissions are checked before they're added to the app.",
+        contrib_cta: "Open the tool", contrib_panel_head: "New card",
+        contrib_f_subject: "Subject", contrib_f_topic: "Topic", contrib_f_text: "Card content",
+        contrib_f_placeholder: "Definition, formula, worked example…",
+        contrib_draft: "Draft saved locally", contrib_submit: "Submit for review",
         cta_head: "Study smarter, not longer",
         cta_sub: "Download Cheat Sheets and carry your whole school curriculum in your pocket — free and offline.",
         foot_about: "An offline app for school students. Cards, tests and three languages.",
@@ -608,7 +689,7 @@
         __title: "Шпаргалкаҳо — барномаи мактабӣ дар телефони шумо",
         __desc: "Кортҳо аз фанҳои мактабӣ, ҳолати худсанҷӣ ва се забон (русӣ, англисӣ, тоҷикӣ). Комилан офлайн кор мекунад.",
         brand: "Шпаргалкаҳо",
-        nav_features: "Имкониятҳо", nav_subjects: "Фанҳо", nav_languages: "Забонҳо", nav_quiz: "Тестҳо", nav_cta: "Зеркашӣ",
+        nav_features: "Имкониятҳо", nav_subjects: "Фанҳо", nav_languages: "Забонҳо", nav_quiz: "Тестҳо", nav_cta: "Зеркашӣ", nav_contribute: "Ба муаллимон",
         hero_eyebrow: "Ройгон · Офлайн · 3 забон",
         hero_h1: "Барномаи мактабӣ <span class=\"hl\">дар дасти шумо</span>",
         hero_sub: "Кортҳо аз фанҳо, ҳолати худсанҷӣ ва дастгирии русӣ, англисӣ ва тоҷикӣ — ва ҳамаи ин бе интернет кор мекунад.",
@@ -639,6 +720,15 @@
         langs_head: "Бо забони модарии худ омӯзед",
         langs_sub: "Ҳам интерфейс ва ҳам мӯҳтавои кортҳо ба се забон дастрасанд — иваз бо як ламс.",
         l_ru: "Русӣ", l_en: "Англисӣ", l_tj: "Тоҷикӣ", l_desc: "Интерфейс ва маводи пурра.",
+        contrib_eyebrow: "Барои муаллимон ва муаллифон", contrib_head: "Ба пур кардани мундариҷа кӯмак кунед",
+        contrib_sub: "Мо муаллимон ва муаллифонро даъват мекунем, ки тавассути шакли соддаи вебӣ кортҳои нав пешниҳод кунанд — мустақим дар браузер, бе насби барнома.",
+        contrib_c1: "<b>Шакли вебӣ бе насб.</b> Дар браузери компютер ё телефон кушода мешавад.",
+        contrib_c2: "<b>Пешнависҳо маҳаллӣ нигоҳ дошта мешаванд.</b> Метавонед варақаро пӯшед ва баъдтар идома диҳед.",
+        contrib_c3: "<b>Пеш аз нашр санҷида мешавад.</b> Ҳамаи маводи пешниҳодшуда пеш аз илова шудан ба барнома тафтиш карда мешавад.",
+        contrib_cta: "Кушодани абзор", contrib_panel_head: "Корти нав",
+        contrib_f_subject: "Фан", contrib_f_topic: "Мавзӯъ", contrib_f_text: "Матни корт",
+        contrib_f_placeholder: "Таъриф, формула, намунаи ҳал…",
+        contrib_draft: "Пешнавис маҳаллӣ нигоҳ дошта шуд", contrib_submit: "Барои санҷиш фиристодан",
         cta_head: "Оқилона омӯзед, на дарозтар",
         cta_sub: "«Шпаргалкаҳо»-ро зеркашӣ кунед ва тамоми барномаи мактабиро дар ҷайбатон баред — ройгон ва бе интернет.",
         foot_about: "Барномаи офлайн барои омодагии хонандагон. Кортҳо, тестҳо ва се забон.",
