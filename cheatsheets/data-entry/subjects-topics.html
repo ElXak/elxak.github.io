@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Предметы и темы · Шпаргалкаҳо</title>
+<title>Предметы и темы · Шпаргалки</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -77,7 +77,14 @@ header.topbar{
 .topbar nav a{color:var(--muted);text-decoration:none;font-size:12.5px;font-weight:700;padding:6px 11px;border-radius:99px;transition:background .15s ease,color .15s ease;}
 .topbar nav a:hover{background:var(--paper);color:var(--ink);}
 .topbar nav a.current{background:var(--brand);color:#fff;}
-.topbar .tag{margin-left:auto;font-family:var(--font-mono);font-size:11px;color:var(--muted);border:1px solid var(--line);padding:3px 8px;border-radius:99px;background:var(--paper);}
+.switch{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--paper);margin-left:auto;}
+.switch button{
+  appearance:none;border:0;background:transparent;cursor:pointer;font:inherit;font-size:12px;font-weight:700;
+  color:var(--muted);padding:5px 11px;border-radius:999px;transition:background .15s,color .15s;
+}
+.switch button:hover{color:var(--ink);}
+.switch button[aria-pressed="true"]{background:var(--brand);color:#fff;}
+.topbar .tag{font-family:var(--font-mono);font-size:11px;color:var(--muted);border:1px solid var(--line);padding:3px 8px;border-radius:99px;background:var(--paper);}
 
 .workbench{flex:1 1 auto;display:grid;grid-template-columns:300px 1fr 380px;min-height:0;}
 @media (max-width:1180px){.workbench{grid-template-columns:270px 1fr 340px;}}
@@ -180,9 +187,8 @@ pre.json-view{margin:0;font-family:var(--font-mono);font-size:11.5px;line-height
 footer.foot{flex:0 0 auto;padding:10px 20px;background:var(--bg);color:var(--muted);font-size:11px;text-align:center;border-top:1px solid var(--line);}
 footer.foot b{color:var(--ink);}
 footer.foot .copyright{margin-top:3px;}
-footer.foot .credit{margin-top:2px;}
-footer.foot .credit a{color:var(--brand);font-weight:700;text-decoration:none;transition:color .15s ease;}
-footer.foot .credit a:hover{color:var(--brand-700);}
+footer.foot .copyright a{color:var(--brand);font-weight:700;text-decoration:none;transition:color .15s ease;}
+footer.foot .copyright a:hover{color:var(--brand-700);}
 </style>
 </head>
 <body>
@@ -198,18 +204,23 @@ footer.foot .credit a:hover{color:var(--brand-700);}
         <rect x="8" y="8" width="20" height="15" rx="3.5" fill="#0D4CCF"/>
         <path d="M12.5 13.5h11M12.5 17.5h7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
       </svg>
-      Предметы и темы
+      <span data-i18n="brand">Предметы и темы</span>
     </div>
     <nav>
-      <a href="index.html">Карточки</a>
-      <a href="subjects-topics.html" class="current">Предметы и темы</a>
+      <a href="index.html" data-i18n="nav_cards">Карточки</a>
+      <a href="subjects-topics.html" class="current" data-i18n="nav_subjects_topics">Предметы и темы</a>
     </nav>
+    <div class="switch" role="group" aria-label="Language / Забон / Язык">
+      <button type="button" data-set="ru" aria-pressed="true">RU</button>
+      <button type="button" data-set="en" aria-pressed="false">EN</button>
+      <button type="button" data-set="tj" aria-pressed="false">TJ</button>
+    </div>
     <div class="tag" id="statsTag">0 предметов · 0 тем</div>
   </header>
 
   <div class="tabbar">
-    <button class="btn small" data-mobile-tab="rail">Предметы</button>
-    <button class="btn small" data-mobile-tab="editor">Редактор</button>
+    <button class="btn small" data-mobile-tab="rail" data-i18n="tab_subjects">Предметы</button>
+    <button class="btn small" data-mobile-tab="editor" data-i18n="tab_editor">Редактор</button>
     <button class="btn small" data-mobile-tab="side">JSON</button>
   </div>
 
@@ -219,20 +230,20 @@ footer.foot .credit a:hover{color:var(--brand-700);}
     <div class="pane rail mobile-active" data-pane="rail">
       <div class="pane-scroll">
         <div class="rail-section">
-          <h3>Загрузить существующие файлы</h3>
+          <h3 data-i18n="rail_load_header">Загрузить существующие файлы</h3>
           <div class="rail-upload">
-            <label class="btn small" for="fileSubjects">📄 Загрузить subjects.json</label>
+            <label class="btn small" for="fileSubjects" data-i18n="btn_load_subjects">📄 Загрузить subjects.json</label>
             <input type="file" id="fileSubjects" accept="application/json" style="display:none">
-            <div class="file-status" id="statusSubjects">не загружено — можно начать с нуля</div>
-            <label class="btn small" for="fileTopics">📄 Загрузить topics.json</label>
+            <div class="file-status" id="statusSubjects" data-i18n="status_subjects_default">не загружено — можно начать с нуля</div>
+            <label class="btn small" for="fileTopics" data-i18n="btn_load_topics">📄 Загрузить topics.json</label>
             <input type="file" id="fileTopics" accept="application/json" style="display:none">
-            <div class="file-status" id="statusTopics">не загружено — можно начать с нуля</div>
+            <div class="file-status" id="statusTopics" data-i18n="status_topics_default">не загружено — можно начать с нуля</div>
           </div>
         </div>
 
         <div class="rail-section">
           <div class="topics-header" style="margin:0 0 8px;">
-            <h3>Предметы</h3>
+            <h3 data-i18n="rail_subjects_header">Предметы</h3>
             <div class="spacer"></div>
             <button class="icon-btn" id="btnAddSubject" title="Добавить предмет"><span class="material-symbols-outlined">add_circle</span></button>
           </div>
@@ -245,8 +256,8 @@ footer.foot .credit a:hover{color:var(--brand-700);}
     <div class="pane editor" data-pane="editor">
       <div class="pane-scroll" id="editorScroll">
         <div class="empty-state" id="emptyState">
-          <div class="big">Выберите предмет слева или добавьте новый</div>
-          <div>После этого здесь появится форма предмета и список его тем.</div>
+          <div class="big" data-i18n="empty_title">Выберите предмет слева или добавьте новый</div>
+          <div data-i18n="empty_body">После этого здесь появится форма предмета и список его тем.</div>
         </div>
         <div id="editorContent" style="display:none;"></div>
       </div>
@@ -257,7 +268,7 @@ footer.foot .credit a:hover{color:var(--brand-700);}
       <div class="side-split">
         <div class="side-half">
           <div class="side-half-head">
-            Проверка
+            <span data-i18n="validation_header">Проверка</span>
           </div>
           <div class="side-half-body" id="validationBody"></div>
         </div>
@@ -271,8 +282,8 @@ footer.foot .credit a:hover{color:var(--brand-700);}
           </div>
           <div class="side-half-body" style="padding-bottom:0;" id="jsonBody"></div>
           <div class="json-toolbar">
-            <button class="btn small ghost" id="btnCopyJson">Копировать</button>
-            <button class="btn small primary" id="btnDownloadJson">Скачать файл</button>
+            <button class="btn small ghost" id="btnCopyJson" data-i18n="btn_copy">Копировать</button>
+            <button class="btn small primary" id="btnDownloadJson" data-i18n="btn_download">Скачать файл</button>
           </div>
         </div>
       </div>
@@ -281,10 +292,9 @@ footer.foot .credit a:hover{color:var(--brand-700);}
   </div>
 
   <footer class="foot">
-    Инструмент не отправляет данные никуда, кроме файла, который вы скачиваете сами. Готовые файлы кладите в
-    <b>content/subjects.json</b> и <b>content/topics.json</b>, затем пересоберите контент как обычно.
-    <div class="copyright">© Шпаргалкаҳо</div>
-    <div class="credit">Разработан <a href="../../index.html">~/elxak.dev</a></div>
+    <span data-i18n-html="footer_note_html">Инструмент не отправляет данные никуда, кроме файла, который вы скачиваете сами. Готовые файлы кладите в
+    <b>content/subjects.json</b> и <b>content/topics.json</b>, затем пересоберите контент как обычно.</span>
+    <div class="copyright"><span data-i18n="footer_copy">© 2026 Шпаргалки</span> · <span data-i18n="footer_dev">Разработан</span> <a href="../../index.html">~/elxak.dev</a></div>
   </footer>
 </div>
 
@@ -293,7 +303,7 @@ footer.foot .credit a:hover{color:var(--brand-700);}
 <script>
 'use strict';
 /* =========================================================================
-   Редактор предметов и тем «Шпаргалкаҳо» — офлайн, один файл, без сервера.
+   Редактор предметов и тем «Шпаргалки» — офлайн, один файл, без сервера.
    Экспортирует subjects.json / topics.json, соответствующие
    schema/content-schema.json проекта ($defs/subject, $defs/topic).
    ========================================================================= */
@@ -304,35 +314,49 @@ const ID_RE = /^[a-z0-9]+(-[a-z0-9]+)*(\.[a-z0-9]+(-[a-z0-9]+)*)*$/;
 const TYPO_RE = /[А-Яа-яёЁҲҳҶҷҒғӢӣҚқӮӯ][A-Za-z]|[A-Za-z][А-Яа-яёЁҲҳҶҷҒғӢӣҚқӮӯ]/;
 const HEX_RE = /^#[0-9a-fA-F]{6}$/;
 const DIFFICULTIES = ['easy','medium','hard'];
-const DIFFICULTY_LABELS = {easy:'Лёгкая', medium:'Средняя', hard:'Сложная'};
 
+/* ============================================================================
+   Локализация ИНТЕРФЕЙСА инструмента — см. подробный комментарий в index.html.
+============================================================================ */
+let UI_LANG = 'ru';
+const UI_LANG_KEY = 'de:uiLang';
+function t(key, ...args){
+  const dict = T[UI_LANG] || T.ru;
+  const v = (key in dict) ? dict[key] : T.ru[key];
+  if (v === undefined) return key;
+  return typeof v === 'function' ? v(...args) : v;
+}
+function difficultyLabel(d){
+  return {easy:t('diff_easy'), medium:t('diff_medium'), hard:t('diff_hard')}[d] || d;
+}
 // Точное соответствие карте byName в lib/screens.dart (_subjectIcon) —
 // какую иконку реально покажет приложение для каждого доступного имени.
+// Значение — ключ перевода описания, а не сам текст.
 const ICON_OPTIONS = [
-  ['functions','functions','Функции'],
-  ['calculate','calculate','Калькулятор'],
-  ['square_foot','square_foot','Линейка (геометрия)'],
-  ['bolt','bolt','Молния (физика)'],
-  ['science','science','Колба (химия/наука)'],
-  ['biotech','biotech','Биотех'],
-  ['computer','computer','Компьютер'],
-  ['public','public','Глобус (география)'],
-  ['menu_book','menu_book','Книга'],
-  ['auto_stories','auto_stories','Раскрытая книга'],
-  ['history_edu','history_edu','История'],
-  ['groups','groups','Группы (обществознание)'],
-  ['eco','eco','Лист (биология/экология)'],
-  ['language','language','Язык'],
-  ['translate','translate','Перевод'],
-  ['account_balance','account_balance','Институт'],
-  ['gavel','gavel','Молоток судьи (право)'],
-  ['description','description','Документ'],
-  ['build','build','Инструменты (технология)'],
-  ['architecture','architecture','Черчение'],
-  ['palette','palette','Палитра (ИЗО)'],
-  ['music_note','music_note','Музыка'],
-  ['nights_stay','nights_stay','Ночь (астрономия)'],
-  ['school','school','Школа (по умолчанию)'],
+  ['functions','functions','icon_functions'],
+  ['calculate','calculate','icon_calculate'],
+  ['square_foot','square_foot','icon_ruler'],
+  ['bolt','bolt','icon_bolt'],
+  ['science','science','icon_flask'],
+  ['biotech','biotech','icon_biotech'],
+  ['computer','computer','icon_computer'],
+  ['public','public','icon_globe'],
+  ['menu_book','menu_book','icon_book'],
+  ['auto_stories','auto_stories','icon_open_book'],
+  ['history_edu','history_edu','icon_history'],
+  ['groups','groups','icon_groups'],
+  ['eco','eco','icon_leaf'],
+  ['language','language','icon_language'],
+  ['translate','translate','icon_translate'],
+  ['account_balance','account_balance','icon_institute'],
+  ['gavel','gavel','icon_gavel'],
+  ['description','description','icon_document'],
+  ['build','build','icon_tools'],
+  ['architecture','architecture','icon_drawing'],
+  ['palette','palette','icon_palette'],
+  ['music_note','music_note','icon_music'],
+  ['nights_stay','nights_stay','icon_night'],
+  ['school','school','icon_school'],
 ];
 // строковое имя icon -> реальная Material-лигатура, которую отрисует Flutter
 const ICON_RESOLVE = {
@@ -343,6 +367,183 @@ const ICON_RESOLVE = {
   translate:'translate', account_balance:'account_balance', gavel:'gavel', description:'description',
   build:'build', architecture:'architecture', palette:'palette', music_note:'music_note',
   nights_stay:'nights_stay', school:'school',
+};
+
+const T = {
+  ru: {
+    brand:'Предметы и темы', nav_cards:'Карточки', nav_subjects_topics:'Предметы и темы',
+    l10n_toggle:'разный текст по языкам', l10n_placeholder:'Текст (одинаковый на всех языках)…',
+    id_placeholder:'например: math',
+    tab_subjects:'Предметы', tab_editor:'Редактор',
+    rail_load_header:'Загрузить существующие файлы',
+    btn_load_subjects:'📄 Загрузить subjects.json', status_subjects_default:'не загружено — можно начать с нуля',
+    btn_load_topics:'📄 Загрузить topics.json', status_topics_default:'не загружено — можно начать с нуля',
+    rail_subjects_header:'Предметы', btn_add_subject_title:'Добавить предмет',
+    empty_title:'Выберите предмет слева или добавьте новый',
+    empty_body:'После этого здесь появится форма предмета и список его тем.',
+    validation_header:'Проверка', btn_copy:'Копировать', btn_download:'Скачать файл',
+    footer_note_html:'Инструмент не отправляет данные никуда, кроме файла, который вы скачиваете сами. Готовые файлы кладите в <b>content/subjects.json</b> и <b>content/topics.json</b>, затем пересоберите контент как обычно.',
+    footer_copy:'© 2026 Шпаргалки', footer_dev:'Разработан',
+    stats_tag:(ns,nt)=>`${ns} предметов · ${nt} тем`,
+    confirm_delete_subject:(name)=>`Удалить предмет «${name}» и все его темы из списка?`,
+    confirm_delete_topic:(name)=>`Удалить тему «${name}»?`,
+    btn_up:'Вверх', btn_down:'Вниз', btn_delete_subject:'Удалить предмет', btn_delete_topic:'Удалить тему',
+    field_id_label:'ID предмета', field_name_label:'Название предмета',
+    field_icon_label:'Иконка', field_preview_label:'Превью', field_color_label:'Цвет (#RRGGBB)',
+    topics_header:'Темы предмета', btn_add_topic:'+ Добавить тему',
+    no_topics_msg:'Пока нет тем — добавьте первую.',
+    field_topic_id_label:'ID темы', field_topic_title_label:'Название темы',
+    field_grade_label:'Класс', opt_grade_none:'— не указан —', grade_option:(n)=>`${n} класс`,
+    field_difficulty_label:'Сложность', opt_difficulty_none:'— не указана —',
+    diff_easy:'Лёгкая', diff_medium:'Средняя', diff_hard:'Сложная',
+    grade_badge:(n)=>`${n} кл.`,
+    topic_count:(n)=>`${n} тем`,
+    no_subject_fallback:'(без названия)', no_topic_fallback:'(без названия)',
+    validation_ok:'✓ Ошибок и предупреждений не найдено', validation_hint_empty:'Добавьте предмет, чтобы начать.',
+    v_typo:(p)=>`Похоже на опечатку (латиница слиплась с кириллицей): ${p}`,
+    v_missing_l10n:(langs,p)=>`Не хватает перевода (${langs}): ${p}`,
+    v_no_id:(p)=>`Не указан id: ${p}`, v_bad_id:(p,id)=>`id не в формате kebab-case: ${p} (${id})`,
+    v_dup_subject_id:(id)=>`Повторяющийся id предмета: ${id}`,
+    v_no_name:(p)=>`Не указано название: ${p}`,
+    v_bad_color:(p,c)=>`Некорректный цвет (нужен #RRGGBB): ${p} (${c})`,
+    v_subject_no_topics:(name)=>`У предмета «${name}» нет ни одной темы`,
+    v_topic_no_id:(p)=>`Не указан id: ${p}`, v_topic_bad_id:(p,id)=>`id не в формате kebab-case.namespace: ${p} (${id})`,
+    v_dup_topic_id:(id)=>`Повторяющийся id темы: ${id}`,
+    v_no_subject_id:(p)=>`Не указан subjectId: ${p}`, v_subject_not_found:(id,p)=>`subjectId «${id}» не найден среди предметов: ${p}`,
+    v_id_prefix_hint:(subjectId,p,id)=>`id обычно начинается с «${subjectId}.»: ${p} (${id})`,
+    v_no_topic_title:(p)=>`Не указано название темы: ${p}`,
+    v_grade_range:(p)=>`Класс вне диапазона 1–12: ${p}`,
+    v_bad_difficulty:(p)=>`Некорректная сложность: ${p}`,
+    toast_subjects_loaded:'subjects.json загружен', toast_topics_loaded:'topics.json загружен',
+    toast_bad_subjects_file:'Не удалось прочитать subjects.json', toast_bad_topics_file:'Не удалось прочитать topics.json',
+    toast_json_copied:'JSON скопирован в буфер обмена', toast_copy_failed:'Не удалось скопировать — скопируйте вручную из панели',
+    toast_file_downloaded:(name)=>`Файл «${name}.json» скачан`,
+    toast_draft_restored:'Восстановлен черновик из прошлой сессии',
+    status_autoloaded:(n)=>`автозагружено: ${n} записей`,
+    icon_functions:'Функции', icon_calculate:'Калькулятор', icon_ruler:'Линейка (геометрия)', icon_bolt:'Молния (физика)',
+    icon_flask:'Колба (химия/наука)', icon_biotech:'Биотех', icon_computer:'Компьютер', icon_globe:'Глобус (география)',
+    icon_book:'Книга', icon_open_book:'Раскрытая книга', icon_history:'История', icon_groups:'Группы (обществознание)',
+    icon_leaf:'Лист (биология/экология)', icon_language:'Язык', icon_translate:'Перевод', icon_institute:'Институт',
+    icon_gavel:'Молоток судьи (право)', icon_document:'Документ', icon_tools:'Инструменты (технология)',
+    icon_drawing:'Черчение', icon_palette:'Палитра (ИЗО)', icon_music:'Музыка', icon_night:'Ночь (астрономия)',
+    icon_school:'Школа (по умолчанию)',
+  },
+  en: {
+    brand:'Subjects & Topics', nav_cards:'Cards', nav_subjects_topics:'Subjects & topics',
+    l10n_toggle:'different text per language', l10n_placeholder:'Text (same in every language)…',
+    id_placeholder:'e.g.: math',
+    tab_subjects:'Subjects', tab_editor:'Editor',
+    rail_load_header:'Load existing files',
+    btn_load_subjects:'📄 Load subjects.json', status_subjects_default:'not loaded — you can start from scratch',
+    btn_load_topics:'📄 Load topics.json', status_topics_default:'not loaded — you can start from scratch',
+    rail_subjects_header:'Subjects', btn_add_subject_title:'Add subject',
+    empty_title:'Select a subject on the left or add a new one',
+    empty_body:'The subject form and its topic list will appear here.',
+    validation_header:'Validation', btn_copy:'Copy', btn_download:'Download file',
+    footer_note_html:'This tool never sends data anywhere except the file you download yourself. Put the finished files in <b>content/subjects.json</b> and <b>content/topics.json</b>, then rebuild content as usual.',
+    footer_copy:'© 2026 Cheat Sheets', footer_dev:'Developed by',
+    stats_tag:(ns,nt)=>`${ns} subjects · ${nt} topics`,
+    confirm_delete_subject:(name)=>`Delete subject "${name}" and all of its topics?`,
+    confirm_delete_topic:(name)=>`Delete topic "${name}"?`,
+    btn_up:'Up', btn_down:'Down', btn_delete_subject:'Delete subject', btn_delete_topic:'Delete topic',
+    field_id_label:'Subject ID', field_name_label:'Subject name',
+    field_icon_label:'Icon', field_preview_label:'Preview', field_color_label:'Color (#RRGGBB)',
+    topics_header:'Subject topics', btn_add_topic:'+ Add topic',
+    no_topics_msg:'No topics yet — add the first one.',
+    field_topic_id_label:'Topic ID', field_topic_title_label:'Topic name',
+    field_grade_label:'Grade', opt_grade_none:'— not set —', grade_option:(n)=>`Grade ${n}`,
+    field_difficulty_label:'Difficulty', opt_difficulty_none:'— not set —',
+    diff_easy:'Easy', diff_medium:'Medium', diff_hard:'Hard',
+    grade_badge:(n)=>`Gr. ${n}`,
+    topic_count:(n)=>`${n} topics`,
+    no_subject_fallback:'(untitled)', no_topic_fallback:'(untitled)',
+    validation_ok:'✓ No errors or warnings found', validation_hint_empty:'Add a subject to get started.',
+    v_typo:(p)=>`Looks like a typo (Latin letters glued to Cyrillic): ${p}`,
+    v_missing_l10n:(langs,p)=>`Missing translation (${langs}): ${p}`,
+    v_no_id:(p)=>`Id not set: ${p}`, v_bad_id:(p,id)=>`id is not kebab-case: ${p} (${id})`,
+    v_dup_subject_id:(id)=>`Duplicate subject id: ${id}`,
+    v_no_name:(p)=>`Name not set: ${p}`,
+    v_bad_color:(p,c)=>`Invalid color (need #RRGGBB): ${p} (${c})`,
+    v_subject_no_topics:(name)=>`Subject "${name}" has no topics`,
+    v_topic_no_id:(p)=>`Id not set: ${p}`, v_topic_bad_id:(p,id)=>`id is not kebab-case.namespace: ${p} (${id})`,
+    v_dup_topic_id:(id)=>`Duplicate topic id: ${id}`,
+    v_no_subject_id:(p)=>`subjectId not set: ${p}`, v_subject_not_found:(id,p)=>`subjectId "${id}" not found among subjects: ${p}`,
+    v_id_prefix_hint:(subjectId,p,id)=>`id usually starts with "${subjectId}.": ${p} (${id})`,
+    v_no_topic_title:(p)=>`Topic name not set: ${p}`,
+    v_grade_range:(p)=>`Grade outside 1–12 range: ${p}`,
+    v_bad_difficulty:(p)=>`Invalid difficulty: ${p}`,
+    toast_subjects_loaded:'subjects.json loaded', toast_topics_loaded:'topics.json loaded',
+    toast_bad_subjects_file:'Could not read subjects.json', toast_bad_topics_file:'Could not read topics.json',
+    toast_json_copied:'JSON copied to clipboard', toast_copy_failed:'Could not copy — copy manually from the panel',
+    toast_file_downloaded:(name)=>`File "${name}.json" downloaded`,
+    toast_draft_restored:'Restored draft from a previous session',
+    status_autoloaded:(n)=>`auto-loaded: ${n} entries`,
+    icon_functions:'Functions', icon_calculate:'Calculator', icon_ruler:'Ruler (geometry)', icon_bolt:'Lightning (physics)',
+    icon_flask:'Flask (chemistry/science)', icon_biotech:'Biotech', icon_computer:'Computer', icon_globe:'Globe (geography)',
+    icon_book:'Book', icon_open_book:'Open book', icon_history:'History', icon_groups:'Groups (social studies)',
+    icon_leaf:'Leaf (biology/ecology)', icon_language:'Language', icon_translate:'Translation', icon_institute:'Institution',
+    icon_gavel:'Gavel (law)', icon_document:'Document', icon_tools:'Tools (technology)',
+    icon_drawing:'Drafting', icon_palette:'Palette (art)', icon_music:'Music', icon_night:'Night (astronomy)',
+    icon_school:'School (default)',
+  },
+  tj: {
+    brand:'Фанҳо ва мавзӯъҳо', nav_cards:'Кортҳо', nav_subjects_topics:'Фанҳо ва мавзӯъҳо',
+    l10n_toggle:'матни гуногун барои ҳар забон', l10n_placeholder:'Матн (дар ҳамаи забонҳо якхела)…',
+    id_placeholder:'масалан: math',
+    tab_subjects:'Фанҳо', tab_editor:'Муҳаррир',
+    rail_load_header:'Боркунии файлҳои мавҷуда',
+    btn_load_subjects:'📄 Боркунии subjects.json', status_subjects_default:'бор карда нашуд — метавон аз нав сар кард',
+    btn_load_topics:'📄 Боркунии topics.json', status_topics_default:'бор карда нашуд — метавон аз нав сар кард',
+    rail_subjects_header:'Фанҳо', btn_add_subject_title:'Илова кардани фан',
+    empty_title:'Фанро аз чап интихоб кунед ё нав илова кунед',
+    empty_body:'Пас аз он дар ин ҷо шакли фан ва рӯйхати мавзӯъҳояш пайдо мешавад.',
+    validation_header:'Санҷиш', btn_copy:'Нусха бардоштан', btn_download:'Боргирии файл',
+    footer_note_html:'Абзор ҳеҷ куҷо маълумот намефиристад, ба ҷуз файле, ки шумо худатон боргирӣ мекунед. Файлҳои тайёрро дар <b>content/subjects.json</b> ва <b>content/topics.json</b> гузоред ва мӯҳтаворо чун маъмул аз нав ҷамъ кунед.',
+    footer_copy:'© 2026 Шпаргалкаҳо', footer_dev:'Таҳиягар:',
+    stats_tag:(ns,nt)=>`${ns} фан · ${nt} мавзӯъ`,
+    confirm_delete_subject:(name)=>`Фани «${name}» ва ҳамаи мавзӯъҳояшро нест кунам?`,
+    confirm_delete_topic:(name)=>`Мавзӯи «${name}»-ро нест кунам?`,
+    btn_up:'Боло', btn_down:'Поён', btn_delete_subject:'Нест кардани фан', btn_delete_topic:'Нест кардани мавзӯъ',
+    field_id_label:'ID-и фан', field_name_label:'Номи фан',
+    field_icon_label:'Нишона', field_preview_label:'Пешнамоиш', field_color_label:'Ранг (#RRGGBB)',
+    topics_header:'Мавзӯъҳои фан', btn_add_topic:'+ Илова кардани мавзӯъ',
+    no_topics_msg:'Ҳанӯз мавзӯъ нест — аввалинашро илова кунед.',
+    field_topic_id_label:'ID-и мавзӯъ', field_topic_title_label:'Номи мавзӯъ',
+    field_grade_label:'Синф', opt_grade_none:'— гузошта нашудааст —', grade_option:(n)=>`синфи ${n}`,
+    field_difficulty_label:'Мураккабӣ', opt_difficulty_none:'— гузошта нашудааст —',
+    diff_easy:'Осон', diff_medium:'Миёна', diff_hard:'Мушкил',
+    grade_badge:(n)=>`синфи ${n}`,
+    topic_count:(n)=>`${n} мавзӯъ`,
+    no_subject_fallback:'(беном)', no_topic_fallback:'(беном)',
+    validation_ok:'✓ Хато ва ҳушдор ёфт нашуд', validation_hint_empty:'Барои сар кардан фан илова кунед.',
+    v_typo:(p)=>`Мисли хатогист (лотинӣ бо кириллӣ часпидааст): ${p}`,
+    v_missing_l10n:(langs,p)=>`Тарҷума намерасад (${langs}): ${p}`,
+    v_no_id:(p)=>`id гузошта нашудааст: ${p}`, v_bad_id:(p,id)=>`id ба формати kebab-case мувофиқ нест: ${p} (${id})`,
+    v_dup_subject_id:(id)=>`id-и такрории фан: ${id}`,
+    v_no_name:(p)=>`Ном гузошта нашудааст: ${p}`,
+    v_bad_color:(p,c)=>`Ранги нодуруст (бояд #RRGGBB бошад): ${p} (${c})`,
+    v_subject_no_topics:(name)=>`Фани «${name}» ягон мавзӯъ надорад`,
+    v_topic_no_id:(p)=>`id гузошта нашудааст: ${p}`, v_topic_bad_id:(p,id)=>`id ба формати kebab-case.namespace мувофиқ нест: ${p} (${id})`,
+    v_dup_topic_id:(id)=>`id-и такрории мавзӯъ: ${id}`,
+    v_no_subject_id:(p)=>`subjectId гузошта нашудааст: ${p}`, v_subject_not_found:(id,p)=>`subjectId «${id}» дар байни фанҳо ёфт нашуд: ${p}`,
+    v_id_prefix_hint:(subjectId,p,id)=>`id одатан бо «${subjectId}.» сар мешавад: ${p} (${id})`,
+    v_no_topic_title:(p)=>`Номи мавзӯъ гузошта нашудааст: ${p}`,
+    v_grade_range:(p)=>`Синф аз доираи 1–12 берун аст: ${p}`,
+    v_bad_difficulty:(p)=>`Мураккабии нодуруст: ${p}`,
+    toast_subjects_loaded:'subjects.json бор карда шуд', toast_topics_loaded:'topics.json бор карда шуд',
+    toast_bad_subjects_file:'subjects.json хонда нашуд', toast_bad_topics_file:'topics.json хонда нашуд',
+    toast_json_copied:'JSON ба буфери мубодила нусха бардошта шуд', toast_copy_failed:'Нусха бардошта нашуд — аз панел дастӣ нусха баред',
+    toast_file_downloaded:(name)=>`Файли «${name}.json» боргирӣ шуд`,
+    toast_draft_restored:'Пешнависи ҷаласаи гузашта барқарор шуд',
+    status_autoloaded:(n)=>`худкор бор карда шуд: ${n} сабт`,
+    icon_functions:'Функсияҳо', icon_calculate:'Ҳисобкунак', icon_ruler:'Хаткаш (геометрия)', icon_bolt:'Барқ (физика)',
+    icon_flask:'Колба (химия/илм)', icon_biotech:'Биотехнология', icon_computer:'Компютер', icon_globe:'Глобус (ҷуғрофия)',
+    icon_book:'Китоб', icon_open_book:'Китоби кушода', icon_history:'Таърих', icon_groups:'Гурӯҳҳо (ҷомеашиносӣ)',
+    icon_leaf:'Барг (биология/экология)', icon_language:'Забон', icon_translate:'Тарҷума', icon_institute:'Донишкада',
+    icon_gavel:'Болғаи қозӣ (ҳуқуқ)', icon_document:'Ҳуҷҷат', icon_tools:'Асбобҳо (технология)',
+    icon_drawing:'Расмкашӣ', icon_palette:'Палитра (санъат)', icon_music:'Мусиқӣ', icon_night:'Шаб (астрономия)',
+    icon_school:'Мактаб (пешфарз)',
+  },
 };
 
 /* ------------------------------- Состояние ------------------------------ */
@@ -408,13 +609,13 @@ function createL10nEditor(container, {label, get, set, multiline=false, placehol
           }
           build(); scheduleSideEffects();
         }}),
-        document.createTextNode('разный текст по языкам')
+        document.createTextNode(t('l10n_toggle'))
       )
     );
     box.appendChild(top);
     if (!isDict){
       const inputEl = el(multiline?'textarea':'input', {
-        placeholder: placeholder || 'Текст (одинаковый на всех языках)…',
+        placeholder: placeholder || t('l10n_placeholder'),
         oninput: (e)=>{ set(e.target.value); scheduleSideEffects(); }
       });
       inputEl.value = value || '';
@@ -463,22 +664,22 @@ function renderSubjectList(){
       S.activeSubjectIndex = idx; renderSubjectList(); renderEditor(); scheduleSideEffects(); showMobilePane('editor');
     }});
     row.appendChild(subjectSwatch(subj, 28));
-    row.appendChild(el('div', {class:'name', text: l10nGet(subj.name,'ru') || '(без названия)'}));
-    row.appendChild(el('div', {class:'count', text: topicCount+' тем'}));
+    row.appendChild(el('div', {class:'name', text: l10nGet(subj.name,UI_LANG) || t('no_subject_fallback')}));
+    row.appendChild(el('div', {class:'count', text: t('topic_count', topicCount)}));
     const rb = el('div', {class:'reorder-btns'});
-    rb.appendChild(el('button', {class:'icon-btn', title:'Вверх', onclick:(e)=>{ e.stopPropagation();
+    rb.appendChild(el('button', {class:'icon-btn', title:t('btn_up'), onclick:(e)=>{ e.stopPropagation();
       if (idx>0){ [S.subjects[idx-1],S.subjects[idx]]=[S.subjects[idx],S.subjects[idx-1]];
         if (S.activeSubjectIndex===idx) S.activeSubjectIndex=idx-1; else if (S.activeSubjectIndex===idx-1) S.activeSubjectIndex=idx;
         renderSubjectList(); scheduleSideEffects(); }
     }}, el('span', {class:'material-symbols-outlined', style:'font-size:14px;', text:'keyboard_arrow_up'})));
-    rb.appendChild(el('button', {class:'icon-btn', title:'Вниз', onclick:(e)=>{ e.stopPropagation();
+    rb.appendChild(el('button', {class:'icon-btn', title:t('btn_down'), onclick:(e)=>{ e.stopPropagation();
       if (idx<S.subjects.length-1){ [S.subjects[idx+1],S.subjects[idx]]=[S.subjects[idx],S.subjects[idx+1]];
         if (S.activeSubjectIndex===idx) S.activeSubjectIndex=idx+1; else if (S.activeSubjectIndex===idx+1) S.activeSubjectIndex=idx;
         renderSubjectList(); scheduleSideEffects(); }
     }}, el('span', {class:'material-symbols-outlined', style:'font-size:14px;', text:'keyboard_arrow_down'})));
     row.appendChild(rb);
-    row.appendChild(el('button', {class:'icon-btn', title:'Удалить предмет', onclick:(e)=>{ e.stopPropagation();
-      if (!confirm('Удалить предмет «'+(l10nGet(subj.name,'ru')||subj.id)+'» и все его темы из списка?')) return;
+    row.appendChild(el('button', {class:'icon-btn', title:t('btn_delete_subject'), onclick:(e)=>{ e.stopPropagation();
+      if (!confirm(t('confirm_delete_subject', l10nGet(subj.name,UI_LANG)||subj.id))) return;
       S.topics = S.topics.filter(t => t.subjectId !== subj.id);
       S.subjects.splice(idx,1);
       if (S.activeSubjectIndex === idx) S.activeSubjectIndex = -1;
@@ -487,7 +688,7 @@ function renderSubjectList(){
     }}, el('span', {class:'material-symbols-outlined', style:'font-size:16px;', text:'delete'})));
     host.appendChild(row);
   });
-  document.getElementById('statsTag').textContent = `${S.subjects.length} предметов · ${S.topics.length} тем`;
+  document.getElementById('statsTag').textContent = t('stats_tag', S.subjects.length, S.topics.length);
 }
 
 document.getElementById('btnAddSubject').addEventListener('click', () => {
@@ -506,29 +707,29 @@ function renderEditor(){
   content.innerHTML = '';
 
   const idField = el('div', {class:'field'});
-  idField.appendChild(el('label', {class:'field-label', text:'ID предмета'}));
-  const idInput = el('input', {class:'mono', placeholder:'например: math', oninput:(e)=>{ subj.id = e.target.value; scheduleSideEffects(); }});
+  idField.appendChild(el('label', {class:'field-label', text:t('field_id_label')}));
+  const idInput = el('input', {class:'mono', placeholder:t('id_placeholder'), oninput:(e)=>{ subj.id = e.target.value; scheduleSideEffects(); }});
   idInput.value = subj.id||'';
   idField.appendChild(idInput);
   content.appendChild(idField);
 
   const nameField = el('div', {class:'field'});
-  createL10nEditor(nameField, {label:'Название предмета', get:()=>subj.name, set:(v)=>{subj.name=v;}});
+  createL10nEditor(nameField, {label:t('field_name_label'), get:()=>subj.name, set:(v)=>{subj.name=v;}});
   content.appendChild(nameField);
 
   const row = el('div', {class:'field icon-color-row'});
   const iconBox = el('div');
-  iconBox.appendChild(el('label', {class:'field-label', text:'Иконка'}));
+  iconBox.appendChild(el('label', {class:'field-label', text:t('field_icon_label')}));
   const iconSel = el('select', {onchange:(e)=>{ subj.icon = e.target.value; refreshPreview(); scheduleSideEffects(); }});
-  ICON_OPTIONS.forEach(([val,,label]) => {
-    const opt = el('option', {value:val, text:label+'  ('+val+')'});
+  ICON_OPTIONS.forEach(([val,,labelKey]) => {
+    const opt = el('option', {value:val, text:t(labelKey)+'  ('+val+')'});
     if (subj.icon === val) opt.setAttribute('selected','selected');
     iconSel.appendChild(opt);
   });
   iconBox.appendChild(iconSel);
   row.appendChild(iconBox);
   const previewWrap = el('div');
-  previewWrap.appendChild(el('label', {class:'field-label', text:'Превью'}));
+  previewWrap.appendChild(el('label', {class:'field-label', text:t('field_preview_label')}));
   row.appendChild(previewWrap);
   function refreshPreview(){
     previewWrap.querySelectorAll('.subject-swatch').forEach(n=>n.remove());
@@ -538,7 +739,7 @@ function renderEditor(){
   refreshPreview();
 
   const colorField = el('div', {class:'field'});
-  colorField.appendChild(el('label', {class:'field-label', text:'Цвет (#RRGGBB)'}));
+  colorField.appendChild(el('label', {class:'field-label', text:t('field_color_label')}));
   const colorRow = el('div', {class:'two-col'});
   const colorPicker = el('input', {type:'color', oninput:(e)=>{ subj.color=e.target.value; colorHex.value=e.target.value; refreshPreview(); scheduleSideEffects(); }});
   colorPicker.value = HEX_RE.test(subj.color) ? subj.color : '#5b6685';
@@ -555,22 +756,22 @@ function renderEditor(){
 
   // ---- Темы этого предмета ----
   const header = el('div', {class:'topics-header'});
-  header.appendChild(el('h3', {text:'Темы предмета'}));
+  header.appendChild(el('h3', {text:t('topics_header')}));
   header.appendChild(el('span', {class:'spacer'}));
   header.appendChild(el('button', {class:'btn small primary', onclick:()=>{
-    const t = {id:'', subjectId:subj.id, title:'', order: S.topics.filter(x=>x.subjectId===subj.id).length, grade:null, difficulty:null};
-    S.topics.push(t);
+    const newTopic = {id:'', subjectId:subj.id, title:'', order: S.topics.filter(x=>x.subjectId===subj.id).length, grade:null, difficulty:null};
+    S.topics.push(newTopic);
     S.expandedTopicId = '__new__'+ (S.topics.length-1);
     renderEditor(); scheduleSideEffects();
-  }}, '+ Добавить тему'));
+  }}, t('btn_add_topic')));
   content.appendChild(header);
 
-  const topicsOfSubject = S.topics.map((t,i)=>({t,i})).filter(x => x.t.subjectId === subj.id);
+  const topicsOfSubject = S.topics.map((tp,i)=>({tp,i})).filter(x => x.tp.subjectId === subj.id);
   if (!topicsOfSubject.length){
-    content.appendChild(el('div', {style:'color:var(--muted);font-size:13px;padding:8px 2px;'}, 'Пока нет тем — добавьте первую.'));
+    content.appendChild(el('div', {style:'color:var(--muted);font-size:13px;padding:8px 2px;'}, t('no_topics_msg')));
   }
-  topicsOfSubject.forEach(({t,i}, pos) => {
-    content.appendChild(renderTopicRow(t, i, pos, topicsOfSubject.length));
+  topicsOfSubject.forEach(({tp,i}, pos) => {
+    content.appendChild(renderTopicRow(tp, i, pos, topicsOfSubject.length));
   });
 }
 
@@ -583,14 +784,14 @@ function renderTopicRow(topic, globalIndex, posInSubject, countInSubject){
     rerenderEditor();
   }});
   head.appendChild(el('span', {class:'chevron material-symbols-outlined', text:'chevron_right'}));
-  head.appendChild(el('span', {class:'title', text: l10nGet(topic.title,'ru') || '(без названия)'}));
-  if (topic.grade) head.appendChild(el('span', {class:'badge grade', text: topic.grade+' кл.'}));
-  if (topic.difficulty) head.appendChild(el('span', {class:'badge '+topic.difficulty, text: DIFFICULTY_LABELS[topic.difficulty]}));
+  head.appendChild(el('span', {class:'title', text: l10nGet(topic.title,UI_LANG) || t('no_topic_fallback')}));
+  if (topic.grade) head.appendChild(el('span', {class:'badge grade', text: t('grade_badge', topic.grade)}));
+  if (topic.difficulty) head.appendChild(el('span', {class:'badge '+topic.difficulty, text: difficultyLabel(topic.difficulty)}));
   head.appendChild(el('span', {class:'idtag', text: topic.id || '(id?)'}));
-  head.appendChild(el('button', {class:'icon-btn', title:'Вверх', onclick:(e)=>{ e.stopPropagation(); moveTopicWithinSubject(globalIndex, -1); }}, el('span',{class:'material-symbols-outlined', style:'font-size:16px;', text:'keyboard_arrow_up'})));
-  head.appendChild(el('button', {class:'icon-btn', title:'Вниз', onclick:(e)=>{ e.stopPropagation(); moveTopicWithinSubject(globalIndex, 1); }}, el('span',{class:'material-symbols-outlined', style:'font-size:16px;', text:'keyboard_arrow_down'})));
-  head.appendChild(el('button', {class:'icon-btn', title:'Удалить тему', onclick:(e)=>{ e.stopPropagation();
-    if (!confirm('Удалить тему «'+(l10nGet(topic.title,'ru')||topic.id)+'»?')) return;
+  head.appendChild(el('button', {class:'icon-btn', title:t('btn_up'), onclick:(e)=>{ e.stopPropagation(); moveTopicWithinSubject(globalIndex, -1); }}, el('span',{class:'material-symbols-outlined', style:'font-size:16px;', text:'keyboard_arrow_up'})));
+  head.appendChild(el('button', {class:'icon-btn', title:t('btn_down'), onclick:(e)=>{ e.stopPropagation(); moveTopicWithinSubject(globalIndex, 1); }}, el('span',{class:'material-symbols-outlined', style:'font-size:16px;', text:'keyboard_arrow_down'})));
+  head.appendChild(el('button', {class:'icon-btn', title:t('btn_delete_topic'), onclick:(e)=>{ e.stopPropagation();
+    if (!confirm(t('confirm_delete_topic', l10nGet(topic.title,UI_LANG)||topic.id))) return;
     S.topics.splice(globalIndex,1);
     rerenderEditor(); scheduleSideEffects();
   }}, el('span',{class:'material-symbols-outlined', style:'font-size:16px;', text:'delete'})));
@@ -599,23 +800,23 @@ function renderTopicRow(topic, globalIndex, posInSubject, countInSubject){
   const body = el('div', {class:'topic-row-body'});
   if (expanded){
     const idField = el('div', {class:'field'});
-    idField.appendChild(el('label', {class:'field-label', text:'ID темы'}));
+    idField.appendChild(el('label', {class:'field-label', text:t('field_topic_id_label')}));
     const idInput = el('input', {class:'mono', placeholder: topic.subjectId+'.new-topic', oninput:(e)=>{ topic.id=e.target.value; scheduleSideEffects(); }});
     idInput.value = topic.id||'';
     idField.appendChild(idInput);
     body.appendChild(idField);
 
     const titleField = el('div', {class:'field'});
-    createL10nEditor(titleField, {label:'Название темы', get:()=>topic.title, set:(v)=>{topic.title=v;}});
+    createL10nEditor(titleField, {label:t('field_topic_title_label'), get:()=>topic.title, set:(v)=>{topic.title=v;}});
     body.appendChild(titleField);
 
     const gradeRow = el('div', {class:'field two-col'});
     const gradeBox = el('div');
-    gradeBox.appendChild(el('label', {class:'field-label', text:'Класс'}));
+    gradeBox.appendChild(el('label', {class:'field-label', text:t('field_grade_label')}));
     const gradeSel = el('select', {onchange:(e)=>{ topic.grade = e.target.value ? parseInt(e.target.value,10) : null; scheduleSideEffects(); }});
-    gradeSel.appendChild(el('option', {value:'', text:'— не указан —'}));
+    gradeSel.appendChild(el('option', {value:'', text:t('opt_grade_none')}));
     for (let g=1; g<=12; g++){
-      const opt = el('option', {value:String(g), text:g+' класс'});
+      const opt = el('option', {value:String(g), text:t('grade_option', g)});
       if (topic.grade === g) opt.setAttribute('selected','selected');
       gradeSel.appendChild(opt);
     }
@@ -623,11 +824,11 @@ function renderTopicRow(topic, globalIndex, posInSubject, countInSubject){
     gradeRow.appendChild(gradeBox);
 
     const diffBox = el('div');
-    diffBox.appendChild(el('label', {class:'field-label', text:'Сложность'}));
+    diffBox.appendChild(el('label', {class:'field-label', text:t('field_difficulty_label')}));
     const diffSel = el('select', {onchange:(e)=>{ topic.difficulty = e.target.value || null; scheduleSideEffects(); }});
-    diffSel.appendChild(el('option', {value:'', text:'— не указана —'}));
+    diffSel.appendChild(el('option', {value:'', text:t('opt_difficulty_none')}));
     DIFFICULTIES.forEach(d => {
-      const opt = el('option', {value:d, text:DIFFICULTY_LABELS[d]});
+      const opt = el('option', {value:d, text:difficultyLabel(d)});
       if (topic.difficulty === d) opt.setAttribute('selected','selected');
       diffSel.appendChild(opt);
     });
@@ -655,7 +856,7 @@ function rerenderEditor(){ renderEditor(); }
 function collectTypoIssues(value, path, out){
   if (value === undefined || value === null) return;
   if (typeof value === 'string'){
-    if (TYPO_RE.test(stripDollarMath(value))) out.push({level:'warning', msg:`Похоже на опечатку (латиница слиплась с кириллицей): ${path}`});
+    if (TYPO_RE.test(stripDollarMath(value))) out.push({level:'warning', msg:t('v_typo', path)});
     return;
   }
   if (typeof value === 'object'){ for (const [k,v] of Object.entries(value)) collectTypoIssues(v, path+'.'+k, out); }
@@ -663,7 +864,7 @@ function collectTypoIssues(value, path, out){
 function collectL10nCompleteness(value, path, out){
   if (value && typeof value === 'object' && !Array.isArray(value)){
     const missing = LOCALES.filter(l => !(l in value) || !value[l]);
-    if (missing.length && missing.length < LOCALES.length) out.push({level:'warning', msg:`Не хватает перевода (${missing.join(', ')}): ${path}`});
+    if (missing.length && missing.length < LOCALES.length) out.push({level:'warning', msg:t('v_missing_l10n', missing.join(', '), path)});
   }
 }
 function validateAll(){
@@ -671,32 +872,32 @@ function validateAll(){
   const seenSubjectIds = new Set();
   S.subjects.forEach((s, i) => {
     const p = `subjects[${i}]`;
-    if (!s.id) out.push({level:'error', msg:`Не указан id: ${p}`});
-    else if (!ID_RE.test(s.id)) out.push({level:'error', msg:`id не в формате kebab-case: ${p} (${s.id})`});
-    else if (seenSubjectIds.has(s.id)) out.push({level:'error', msg:`Повторяющийся id предмета: ${s.id}`});
+    if (!s.id) out.push({level:'error', msg:t('v_no_id', p)});
+    else if (!ID_RE.test(s.id)) out.push({level:'error', msg:t('v_bad_id', p, s.id)});
+    else if (seenSubjectIds.has(s.id)) out.push({level:'error', msg:t('v_dup_subject_id', s.id)});
     seenSubjectIds.add(s.id);
-    if (!l10nGet(s.name,'ru') && !l10nGet(s.name,'en')) out.push({level:'error', msg:`Не указано название: ${p}`});
+    if (!l10nGet(s.name,'ru') && !l10nGet(s.name,'en')) out.push({level:'error', msg:t('v_no_name', p)});
     collectL10nCompleteness(s.name, p+'.name', out);
     collectTypoIssues(s.name, p+'.name', out);
-    if (s.color && !HEX_RE.test(s.color)) out.push({level:'error', msg:`Некорректный цвет (нужен #RRGGBB): ${p} (${s.color})`});
-    if (!S.topics.some(t => t.subjectId === s.id)) out.push({level:'warning', msg:`У предмета «${l10nGet(s.name,'ru')||s.id}» нет ни одной темы`});
+    if (s.color && !HEX_RE.test(s.color)) out.push({level:'error', msg:t('v_bad_color', p, s.color)});
+    if (!S.topics.some(tp => tp.subjectId === s.id)) out.push({level:'warning', msg:t('v_subject_no_topics', l10nGet(s.name,UI_LANG)||s.id)});
   });
 
   const seenTopicIds = new Set();
-  S.topics.forEach((t, i) => {
+  S.topics.forEach((tp, i) => {
     const p = `topics[${i}]`;
-    if (!t.id) out.push({level:'error', msg:`Не указан id: ${p}`});
-    else if (!ID_RE.test(t.id)) out.push({level:'error', msg:`id не в формате kebab-case.namespace: ${p} (${t.id})`});
-    else if (seenTopicIds.has(t.id)) out.push({level:'error', msg:`Повторяющийся id темы: ${t.id}`});
-    seenTopicIds.add(t.id);
-    if (!t.subjectId) out.push({level:'error', msg:`Не указан subjectId: ${p}`});
-    else if (!seenSubjectIds.has(t.subjectId)) out.push({level:'error', msg:`subjectId «${t.subjectId}» не найден среди предметов: ${p}`});
-    if (t.id && t.subjectId && !t.id.startsWith(t.subjectId+'.')) out.push({level:'warning', msg:`id обычно начинается с «${t.subjectId}.»: ${p} (${t.id})`});
-    if (!l10nGet(t.title,'ru') && !l10nGet(t.title,'en')) out.push({level:'error', msg:`Не указано название темы: ${p}`});
-    collectL10nCompleteness(t.title, p+'.title', out);
-    collectTypoIssues(t.title, p+'.title', out);
-    if (t.grade !== null && t.grade !== undefined && (t.grade < 1 || t.grade > 12)) out.push({level:'error', msg:`Класс вне диапазона 1–12: ${p}`});
-    if (t.difficulty && !DIFFICULTIES.includes(t.difficulty)) out.push({level:'error', msg:`Некорректная сложность: ${p}`});
+    if (!tp.id) out.push({level:'error', msg:t('v_topic_no_id', p)});
+    else if (!ID_RE.test(tp.id)) out.push({level:'error', msg:t('v_topic_bad_id', p, tp.id)});
+    else if (seenTopicIds.has(tp.id)) out.push({level:'error', msg:t('v_dup_topic_id', tp.id)});
+    seenTopicIds.add(tp.id);
+    if (!tp.subjectId) out.push({level:'error', msg:t('v_no_subject_id', p)});
+    else if (!seenSubjectIds.has(tp.subjectId)) out.push({level:'error', msg:t('v_subject_not_found', tp.subjectId, p)});
+    if (tp.id && tp.subjectId && !tp.id.startsWith(tp.subjectId+'.')) out.push({level:'warning', msg:t('v_id_prefix_hint', tp.subjectId, p, tp.id)});
+    if (!l10nGet(tp.title,'ru') && !l10nGet(tp.title,'en')) out.push({level:'error', msg:t('v_no_topic_title', p)});
+    collectL10nCompleteness(tp.title, p+'.title', out);
+    collectTypoIssues(tp.title, p+'.title', out);
+    if (tp.grade !== null && tp.grade !== undefined && (tp.grade < 1 || tp.grade > 12)) out.push({level:'error', msg:t('v_grade_range', p)});
+    if (tp.difficulty && !DIFFICULTIES.includes(tp.difficulty)) out.push({level:'error', msg:t('v_bad_difficulty', p)});
   });
   return out;
 }
@@ -736,9 +937,9 @@ function renderValidationAndJson(){
   vhost.innerHTML = '';
   const issues = validateAll();
   if (!S.subjects.length && !S.topics.length){
-    vhost.appendChild(el('div', {style:'color:var(--muted);font-size:12.5px;'}, 'Добавьте предмет, чтобы начать.'));
+    vhost.appendChild(el('div', {style:'color:var(--muted);font-size:12.5px;'}, t('validation_hint_empty')));
   } else if (!issues.length){
-    vhost.appendChild(el('div', {class:'validation-ok'}, '✓ Ошибок и предупреждений не найдено'));
+    vhost.appendChild(el('div', {class:'validation-ok'}, t('validation_ok')));
   } else {
     const errors = issues.filter(i=>i.level==='error');
     const warnings = issues.filter(i=>i.level==='warning');
@@ -772,11 +973,11 @@ function saveDraft(){
 }
 function loadDraft(){
   try {
-    const s = localStorage.getItem('de:subjects:draft');
-    const t = localStorage.getItem('de:topics:draft');
-    if (s) S.subjects = JSON.parse(s);
-    if (t) S.topics = JSON.parse(t);
-    return !!(s || t);
+    const sRaw = localStorage.getItem('de:subjects:draft');
+    const tRaw = localStorage.getItem('de:topics:draft');
+    if (sRaw) S.subjects = JSON.parse(sRaw);
+    if (tRaw) S.topics = JSON.parse(tRaw);
+    return !!(sRaw || tRaw);
   } catch(e){ return false; }
 }
 
@@ -794,34 +995,34 @@ document.getElementById('fileSubjects').addEventListener('change', async (e) => 
   try {
     S.subjects = await readJsonFile(f);
     S.activeSubjectIndex = -1;
-    document.getElementById('statusSubjects').textContent = `загружено: ${S.subjects.length} предметов`;
+    document.getElementById('statusSubjects').textContent = t('status_autoloaded', S.subjects.length);
     document.getElementById('statusSubjects').classList.add('ok');
     renderSubjectList(); renderEditor(); scheduleSideEffects();
-    showToast('subjects.json загружен');
-  } catch(err){ showToast('Не удалось прочитать subjects.json'); }
+    showToast(t('toast_subjects_loaded'));
+  } catch(err){ showToast(t('toast_bad_subjects_file')); }
 });
 document.getElementById('fileTopics').addEventListener('change', async (e) => {
   const f = e.target.files[0]; if (!f) return;
   try {
     S.topics = await readJsonFile(f);
-    document.getElementById('statusTopics').textContent = `загружено: ${S.topics.length} тем`;
+    document.getElementById('statusTopics').textContent = t('status_autoloaded', S.topics.length);
     document.getElementById('statusTopics').classList.add('ok');
     renderSubjectList(); renderEditor(); scheduleSideEffects();
-    showToast('topics.json загружен');
-  } catch(err){ showToast('Не удалось прочитать topics.json'); }
+    showToast(t('toast_topics_loaded'));
+  } catch(err){ showToast(t('toast_bad_topics_file')); }
 });
 
 /* ================================ Обвязка UI ================================ */
 document.getElementById('fileTabs').addEventListener('click', (e) => {
-  const t = e.target.closest('.file-tab'); if (!t) return;
-  S.activeFileTab = t.dataset.file;
-  document.querySelectorAll('#fileTabs .file-tab').forEach(x=>x.classList.toggle('active', x===t));
+  const ft = e.target.closest('.file-tab'); if (!ft) return;
+  S.activeFileTab = ft.dataset.file;
+  document.querySelectorAll('#fileTabs .file-tab').forEach(x=>x.classList.toggle('active', x===ft));
   renderValidationAndJson();
 });
 document.getElementById('btnCopyJson').addEventListener('click', async () => {
   const text = renderValidationAndJson._lastJson || '[]';
-  try { await navigator.clipboard.writeText(text); showToast('JSON скопирован в буфер обмена'); }
-  catch(e){ showToast('Не удалось скопировать — скопируйте вручную из панели'); }
+  try { await navigator.clipboard.writeText(text); showToast(t('toast_json_copied')); }
+  catch(e){ showToast(t('toast_copy_failed')); }
 });
 document.getElementById('btnDownloadJson').addEventListener('click', () => {
   const file = S.activeFileTab;
@@ -833,7 +1034,7 @@ document.getElementById('btnDownloadJson').addEventListener('click', () => {
   a.href = url; a.download = file + '.json';
   document.body.appendChild(a); a.click(); a.remove();
   URL.revokeObjectURL(url);
-  showToast('Файл «'+file+'.json» скачан');
+  showToast(t('toast_file_downloaded', file));
 });
 
 /* ------------------------------- Мобильные вкладки ------------------------------- */
@@ -843,6 +1044,42 @@ function showMobilePane(name){
 }
 document.querySelectorAll('[data-mobile-tab]').forEach(btn => btn.addEventListener('click', () => showMobilePane(btn.dataset.mobileTab)));
 document.getElementById('btnHamburger').addEventListener('click', () => showMobilePane('rail'));
+
+/* ================================ Локализация интерфейса ================================ */
+function applyStaticI18n(){
+  document.documentElement.lang = UI_LANG;
+  document.querySelectorAll('[data-i18n]').forEach(node => {
+    node.textContent = t(node.getAttribute('data-i18n'));
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(node => {
+    node.innerHTML = t(node.getAttribute('data-i18n-html'));
+  });
+  document.querySelectorAll('.switch button[data-set]').forEach(btn => {
+    btn.setAttribute('aria-pressed', String(btn.dataset.set === UI_LANG));
+  });
+}
+function setUILang(lang){
+  if (!T[lang]) lang = 'ru';
+  UI_LANG = lang;
+  try { localStorage.setItem(UI_LANG_KEY, lang); } catch(e){}
+  applyStaticI18n();
+  renderSubjectList();
+  renderEditor();
+  renderValidationAndJson();
+}
+document.querySelectorAll('.switch button[data-set]').forEach(btn => {
+  btn.addEventListener('click', () => setUILang(btn.dataset.set));
+});
+function detectInitialUILang(){
+  try {
+    const saved = localStorage.getItem(UI_LANG_KEY);
+    if (saved && T[saved]) return saved;
+  } catch(e){}
+  const nav = (navigator.language || 'ru').toLowerCase();
+  if (nav.startsWith('en')) return 'en';
+  if (nav.startsWith('tg') || nav.startsWith('tj')) return 'tj';
+  return 'ru';
+}
 
 /* ------------------------------- Автозагрузка (если по http/https) ------------------------------- */
 (async function tryAutoload(){
@@ -857,7 +1094,7 @@ document.getElementById('btnHamburger').addEventListener('click', () => showMobi
       const data = await res.json();
       S[key] = data;
       const st = document.getElementById(statusId);
-      st.textContent = `автозагружено: ${data.length} записей`;
+      st.textContent = t('status_autoloaded', data.length);
       st.classList.add('ok');
     } catch(e){}
   }
@@ -866,8 +1103,10 @@ document.getElementById('btnHamburger').addEventListener('click', () => showMobi
 
 /* ------------------------------- Восстановление черновика ------------------------------- */
 (function init(){
+  UI_LANG = detectInitialUILang();
+  applyStaticI18n();
   const hadDraft = loadDraft();
-  if (hadDraft) showToast('Восстановлен черновик из прошлой сессии');
+  if (hadDraft) showToast(t('toast_draft_restored'));
   renderSubjectList();
   renderEditor();
   renderValidationAndJson();

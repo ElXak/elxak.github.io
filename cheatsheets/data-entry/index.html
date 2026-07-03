@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Кабинет автора · Шпаргалкаҳо</title>
+<title>Кабинет автора · Шпаргалки</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -130,8 +130,15 @@ header.topbar{
 .topbar nav a{color:var(--muted);text-decoration:none;font-size:12.5px;font-weight:700;padding:6px 11px;border-radius:99px;transition:background .15s ease,color .15s ease;}
 .topbar nav a:hover{background:var(--paper);color:var(--ink);}
 .topbar nav a.current{background:var(--brand);color:#fff;}
+.switch{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--paper);margin-left:auto;}
+.switch button{
+  appearance:none;border:0;background:transparent;cursor:pointer;font:inherit;font-size:12px;font-weight:700;
+  color:var(--muted);padding:5px 11px;border-radius:999px;transition:background .15s,color .15s;
+}
+.switch button:hover{color:var(--ink);}
+.switch button[aria-pressed="true"]{background:var(--brand);color:#fff;}
 .topbar .tag{
-  margin-left:auto;font-family:var(--font-mono);font-size:11px;color:var(--muted);
+  font-family:var(--font-mono);font-size:11px;color:var(--muted);
   border:1px solid var(--line);padding:3px 8px;border-radius:99px;background:var(--paper);
 }
 .hamburger{display:none;}
@@ -326,9 +333,8 @@ footer.foot{
 }
 footer.foot b{color:var(--ink);}
 footer.foot .copyright{margin-top:3px;}
-footer.foot .credit{margin-top:2px;}
-footer.foot .credit a{color:var(--brand);font-weight:700;text-decoration:none;transition:color .15s ease;}
-footer.foot .credit a:hover{color:var(--brand-700);}
+footer.foot .copyright a{color:var(--brand);font-weight:700;text-decoration:none;transition:color .15s ease;}
+footer.foot .copyright a:hover{color:var(--brand-700);}
 
 @media (max-width:1000px){
   .tabbar{display:flex;gap:6px;padding:8px 12px;background:var(--surface);border-bottom:1px solid var(--border);}
@@ -350,20 +356,25 @@ footer.foot .credit a:hover{color:var(--brand-700);}
         <rect x="8" y="8" width="20" height="15" rx="3.5" fill="#0D4CCF"/>
         <path d="M12.5 13.5h11M12.5 17.5h7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
       </svg>
-      Кабинет автора · Шпаргалкаҳо
+      <span data-i18n="brand">Кабинет автора · Шпаргалки</span>
     </div>
     <nav>
-      <a href="index.html" class="current">Карточки</a>
-      <a href="subjects-topics.html">Предметы и темы</a>
+      <a href="index.html" class="current" data-i18n="nav_cards">Карточки</a>
+      <a href="subjects-topics.html" data-i18n="nav_subjects_topics">Предметы и темы</a>
     </nav>
-    <div class="subtitle">Локальный редактор карточек — офлайн, без сервера</div>
+    <div class="subtitle" data-i18n="subtitle">Локальный редактор карточек — офлайн, без сервера</div>
+    <div class="switch" role="group" aria-label="Language / Забон / Язык">
+      <button type="button" data-set="ru" aria-pressed="true">RU</button>
+      <button type="button" data-set="en" aria-pressed="false">EN</button>
+      <button type="button" data-set="tj" aria-pressed="false">TJ</button>
+    </div>
     <div class="tag" id="topicIdTag" title="Текущая тема">тема не выбрана</div>
   </header>
 
   <div class="tabbar">
-    <button class="btn small" data-mobile-tab="rail">Тема</button>
-    <button class="btn small" data-mobile-tab="editor">Редактор</button>
-    <button class="btn small" data-mobile-tab="side">Просмотр/JSON</button>
+    <button class="btn small" data-mobile-tab="rail" data-i18n="tab_theme">Тема</button>
+    <button class="btn small" data-mobile-tab="editor" data-i18n="tab_editor">Редактор</button>
+    <button class="btn small" data-mobile-tab="side" data-i18n="tab_side">Просмотр/JSON</button>
   </div>
 
   <div class="workbench">
@@ -373,53 +384,53 @@ footer.foot .credit a:hover{color:var(--brand-700);}
       <div class="pane-scroll">
 
         <div class="rail-section">
-          <h3>Справочники (необязательно)</h3>
+          <h3 data-i18n="rail_refs_header">Справочники (необязательно)</h3>
           <div class="rail-upload">
-            <label class="btn small" for="fileSubjects">📄 Загрузить subjects.json</label>
+            <label class="btn small" for="fileSubjects" data-i18n="btn_load_subjects">📄 Загрузить subjects.json</label>
             <input type="file" id="fileSubjects" accept="application/json" style="display:none">
-            <div class="file-status" id="statusSubjects">не загружено — предметы вводятся вручную</div>
-            <label class="btn small" for="fileTopics">📄 Загрузить topics.json</label>
+            <div class="file-status" id="statusSubjects" data-i18n="status_subjects_default">не загружено — предметы вводятся вручную</div>
+            <label class="btn small" for="fileTopics" data-i18n="btn_load_topics">📄 Загрузить topics.json</label>
             <input type="file" id="fileTopics" accept="application/json" style="display:none">
-            <div class="file-status" id="statusTopics">не загружено — темы вводятся вручную</div>
+            <div class="file-status" id="statusTopics" data-i18n="status_topics_default">не загружено — темы вводятся вручную</div>
           </div>
         </div>
 
         <div class="rail-section">
-          <h3>Предмет и тема</h3>
+          <h3 data-i18n="rail_subject_topic_header">Предмет и тема</h3>
           <div class="field">
-            <label class="field-label" for="selSubject">Предмет</label>
-            <select id="selSubject"><option value="">— ввести вручную —</option></select>
+            <label class="field-label" for="selSubject" data-i18n="label_subject">Предмет</label>
+            <select id="selSubject"><option value="" data-i18n="opt_manual">— ввести вручную —</option></select>
           </div>
           <div class="field" style="margin-top:8px;">
-            <label class="field-label" for="selTopic">Тема (topicId)</label>
+            <label class="field-label" for="selTopic" data-i18n="label_topic">Тема (topicId)</label>
             <select id="selTopic" style="display:none"></select>
             <input type="text" id="inputTopicManual" placeholder="например: algebra.new-topic">
           </div>
-          <button class="btn primary small" id="btnOpenTopic" style="margin-top:10px;width:100%;justify-content:center;">Открыть / создать карточки темы</button>
+          <button class="btn primary small" id="btnOpenTopic" style="margin-top:10px;width:100%;justify-content:center;" data-i18n="btn_open_topic">Открыть / создать карточки темы</button>
         </div>
 
         <div class="rail-section" id="cardsSection" style="display:none;">
-          <h3>Карточки этой темы</h3>
+          <h3 data-i18n="rail_cards_header">Карточки этой темы</h3>
           <div class="card-chip-list" id="cardChipList"></div>
         </div>
 
         <div class="rail-section">
-          <h3>Импорт существующего файла</h3>
+          <h3 data-i18n="rail_import_header">Импорт существующего файла</h3>
           <div class="rail-upload">
-            <label class="btn small" for="fileCardImport">📥 Загрузить &lt;topicId&gt;.json</label>
+            <label class="btn small" for="fileCardImport" data-i18n="btn_import_card">📥 Загрузить &lt;topicId&gt;.json</label>
             <input type="file" id="fileCardImport" accept="application/json" style="display:none">
-            <div class="file-status" id="statusCardImport">откроет карточки на редактирование</div>
+            <div class="file-status" id="statusCardImport" data-i18n="status_import_default">откроет карточки на редактирование</div>
           </div>
         </div>
 
         <details class="sticky-note">
-          <summary>Памятка автору</summary>
+          <summary data-i18n="sticky_title">Памятка автору</summary>
           <ul>
-            <li><b>id</b> = «topicId.суффикс», например <span class="mono">math.basics.recap</span> — строчные буквы, цифры, дефисы, точки-разделители.</li>
-            <li>Для текстов XX века (не фольклор, не классика до 1500 г.) — только <b>описание</b> фактов/тем, не цитируйте текст произведения.</li>
-            <li>Таджикский текст — под ревью носителя языка (особенно формы глагола, изафет, фразеология).</li>
-            <li><b>fixedByUser</b> ставьте вручную, только когда правите карточку по сообщению из кнопки «Сообщить об ошибке» в приложении.</li>
-            <li>Формулы — LaTeX без <span class="mono">$…$</span> в самом поле latex; символ доллара нужен только внутри markdown-текста для inline-формул.</li>
+            <li data-i18n-html="sticky_1"><b>id</b> = «topicId.суффикс», например <span class="mono">math.basics.recap</span> — строчные буквы, цифры, дефисы, точки-разделители.</li>
+            <li data-i18n-html="sticky_2">Для текстов XX века (не фольклор, не классика до 1500 г.) — только <b>описание</b> фактов/тем, не цитируйте текст произведения.</li>
+            <li data-i18n-html="sticky_3">Таджикский текст — под ревью носителя языка (особенно формы глагола, изафет, фразеология).</li>
+            <li data-i18n-html="sticky_4"><b>fixedByUser</b> ставьте вручную, только когда правите карточку по сообщению из кнопки «Сообщить об ошибке» в приложении.</li>
+            <li data-i18n-html="sticky_5">Формулы — LaTeX без <span class="mono">$…$</span> в самом поле latex; символ доллара нужен только внутри markdown-текста для inline-формул.</li>
           </ul>
         </details>
 
@@ -430,8 +441,8 @@ footer.foot .credit a:hover{color:var(--brand-700);}
     <div class="pane editor" data-pane="editor">
       <div class="pane-scroll" id="editorScroll">
         <div class="empty-state" id="emptyState">
-          <div class="big">Выберите или создайте тему слева</div>
-          <div>После этого здесь появится форма для заполнения карточки.</div>
+          <div class="big" data-i18n="empty_title">Выберите или создайте тему слева</div>
+          <div data-i18n="empty_body">После этого здесь появится форма для заполнения карточки.</div>
         </div>
         <div id="editorContent" style="display:none;"></div>
       </div>
@@ -442,7 +453,7 @@ footer.foot .credit a:hover{color:var(--brand-700);}
       <div class="side-split">
         <div class="side-half">
           <div class="side-half-head">
-            Предпросмотр
+            <span data-i18n="preview_header">Предпросмотр</span>
             <div class="locale-tabs" id="previewLocaleTabs">
               <span class="locale-tab active" data-locale="ru">RU</span>
               <span class="locale-tab" data-locale="en">EN</span>
@@ -453,10 +464,10 @@ footer.foot .credit a:hover{color:var(--brand-700);}
         </div>
         <div class="side-half">
           <div class="side-half-head">
-            Проверка и JSON
+            <span data-i18n="validation_header">Проверка и JSON</span>
             <div class="json-toolbar">
-              <button class="btn small ghost" id="btnCopyJson">Копировать</button>
-              <button class="btn small primary" id="btnDownloadJson">Скачать файл темы</button>
+              <button class="btn small ghost" id="btnCopyJson" data-i18n="btn_copy">Копировать</button>
+              <button class="btn small primary" id="btnDownloadJson" data-i18n="btn_download">Скачать файл темы</button>
             </div>
           </div>
           <div class="side-half-body" id="validationJsonBody"></div>
@@ -467,10 +478,9 @@ footer.foot .credit a:hover{color:var(--brand-700);}
   </div>
 
   <footer class="foot">
-    Инструмент не отправляет данные никуда, кроме файла, который вы скачиваете сами. Готовый JSON кладите в
-    <b>content/cards/&lt;topicId&gt;.json</b> и пересобирайте контент как обычно.
-    <div class="copyright">© Шпаргалкаҳо</div>
-    <div class="credit">Разработан <a href="../../index.html">~/elxak.dev</a></div>
+    <span data-i18n-html="footer_note_html">Инструмент не отправляет данные никуда, кроме файла, который вы скачиваете сами. Готовый JSON кладите в
+    <b>content/cards/&lt;topicId&gt;.json</b> и пересобирайте контент как обычно.</span>
+    <div class="copyright"><span data-i18n="footer_copy">© 2026 Шпаргалки</span> · <span data-i18n="footer_dev">Разработан</span> <a href="../../index.html">~/elxak.dev</a></div>
   </footer>
 </div>
 
@@ -479,7 +489,7 @@ footer.foot .credit a:hover{color:var(--brand-700);}
 <script>
 'use strict';
 /* =========================================================================
-   Кабинет автора «Шпаргалкаҳо» — офлайн-инструмент наполнения контента.
+   Кабинет автора «Шпаргалки» — офлайн-инструмент наполнения контента.
    Один файл, без сборки, без сервера, без секретов. Экспортирует JSON,
    строго соответствующий schema/content-schema.json проекта.
    ========================================================================= */
@@ -490,6 +500,237 @@ const ID_RE = /^[a-z0-9]+(-[a-z0-9]+)*(\.[a-z0-9]+(-[a-z0-9]+)*)*$/;
 // та же эвристика, что и в python-валидаторе проекта: латиница, слипшаяся
 // с кириллицей/таджикскими буквами без пробела — почти всегда опечатка.
 const TYPO_RE = /[А-Яа-яёЁҲҳҶҷҒғӢӣҚқӮӯ][A-Za-z]|[A-Za-z][А-Яа-яёЁҲҳҶҷҒғӢӣҚқӮӯ]/;
+
+/* ============================================================================
+   Локализация ИНТЕРФЕЙСА инструмента (кнопки, подписи, тосты) — не путать с
+   [S.previewLocale] (на каком языке показывать содержимое карточки в
+   предпросмотре) и переключателем «разный текст по языкам» внутри полей
+   (на каком языке автор сейчас пишет содержимое). Три разных понятия
+   «язык» в этом инструменте, каждое со своим состоянием.
+============================================================================ */
+let UI_LANG = 'ru';
+const UI_LANG_KEY = 'de:uiLang';
+function t(key, ...args){
+  const dict = T[UI_LANG] || T.ru;
+  const v = (key in dict) ? dict[key] : T.ru[key];
+  if (v === undefined) return key;
+  return typeof v === 'function' ? v(...args) : v;
+}
+const T = {
+  ru: {
+    brand:'Кабинет автора · Шпаргалки', nav_cards:'Карточки', nav_subjects_topics:'Предметы и темы',
+    subtitle:'Локальный редактор карточек — офлайн, без сервера',
+    tab_theme:'Тема', tab_editor:'Редактор', tab_side:'Просмотр/JSON',
+    rail_refs_header:'Справочники (необязательно)',
+    btn_load_subjects:'📄 Загрузить subjects.json', status_subjects_default:'не загружено — предметы вводятся вручную',
+    btn_load_topics:'📄 Загрузить topics.json', status_topics_default:'не загружено — темы вводятся вручную',
+    rail_subject_topic_header:'Предмет и тема', label_subject:'Предмет', opt_manual:'— ввести вручную —',
+    label_topic:'Тема (topicId)', btn_open_topic:'Открыть / создать карточки темы',
+    rail_cards_header:'Карточки этой темы', rail_import_header:'Импорт существующего файла',
+    btn_import_card:'📥 Загрузить <topicId>.json', status_import_default:'откроет карточки на редактирование',
+    sticky_title:'Памятка автору',
+    sticky_1:'<b>id</b> = «topicId.суффикс», например <span class="mono">math.basics.recap</span> — строчные буквы, цифры, дефисы, точки-разделители.',
+    sticky_2:'Для текстов XX века (не фольклор, не классика до 1500 г.) — только <b>описание</b> фактов/тем, не цитируйте текст произведения.',
+    sticky_3:'Таджикский текст — под ревью носителя языка (особенно формы глагола, изафет, фразеология).',
+    sticky_4:'<b>fixedByUser</b> ставьте вручную, только когда правите карточку по сообщению из кнопки «Сообщить об ошибке» в приложении.',
+    sticky_5:'Формулы — LaTeX без <span class="mono">$…$</span> в самом поле latex; символ доллара нужен только внутри markdown-текста для inline-формул.',
+    empty_title:'Выберите или создайте тему слева', empty_body:'После этого здесь появится форма для заполнения карточки.',
+    preview_header:'Предпросмотр', validation_header:'Проверка и JSON',
+    btn_copy:'Копировать', btn_download:'Скачать файл темы',
+    footer_note_html:'Инструмент не отправляет данные никуда, кроме файла, который вы скачиваете сами. Готовый JSON кладите в <b>content/cards/&lt;topicId&gt;.json</b> и пересобирайте контент как обычно.',
+    footer_copy:'© 2026 Шпаргалки', footer_dev:'Разработан',
+    tag_no_topic:'тема не выбрана',
+    block_text:'Текст', block_formula:'Формула', block_table:'Таблица', block_list:'Список', block_image:'Изображение', block_example:'Пример',
+    btn_up:'Вверх', btn_down:'Вниз', btn_dup:'Дублировать', btn_del:'Удалить',
+    toast_block_deleted:'Блок удалён · Ctrl+Z для отмены',
+    l10n_toggle:'разный текст по языкам', l10n_placeholder:'Текст (одинаковый на всех языках)…',
+    field_text_label:'Текст (markdown: **жирный**, $формула$)',
+    field_latex_label:'LaTeX (без символов $ снаружи)', field_caption_label:'Подпись (опционально)',
+    field_table_caption_label:'Подпись таблицы (опционально)', field_table_grid_label:'Столбцы и строки',
+    col_header:(n)=>'Заголовок '+n, btn_del_col:'Удалить столбец', btn_add_col:'+ столбец',
+    btn_del_row:'Удалить строку', btn_add_row:'+ строка',
+    field_ordered_label:'нумерованный список', item_label:(n)=>'Пункт '+n, btn_del_item:'Удалить пункт', btn_add_item:'+ пункт',
+    field_src_label:'Путь к файлу (src)', field_alt_label:'Alt-текст (описание изображения)', field_credit_label:'Источник/автор (опционально)',
+    field_problem_label:'Условие / вопрос', field_solution_label:'Разбор (решение) — без вложенных «примеров»',
+    field_id_label:'ID карточки', btn_auto_id:'Авто', btn_auto_id_title:'Подставить topicId + basics',
+    field_title_label:'Заголовок карточки', field_tags_label:'Теги (через запятую, необязательно)',
+    field_fixed_label:'исправлено по сообщению пользователя (fixedByUser)', field_blocks_label:'Блоки карточки',
+    topic_id_prefix:'topicId: ',
+    card_chip_fallback:(n)=>'Карточка '+n, btn_add_card:'+ Добавить карточку',
+    grade_prefix:(n)=>'['+n+' кл.] ',
+    toast_bad_topic_id:'Некорректный id темы (см. подсказку под полем)',
+    status_loaded_subjects:(n)=>`загружено: ${n} предметов`, status_loaded_topics:(n)=>`загружено: ${n} тем`,
+    status_loaded_cards:(n,id)=>`загружено: ${n} карточек темы «${id}»`,
+    status_autoloaded:(n)=>`автозагружено: ${n} записей`,
+    toast_bad_subjects_file:'Не удалось прочитать subjects.json', toast_bad_topics_file:'Не удалось прочитать topics.json',
+    toast_bad_card_file:'Не удалось прочитать файл — ожидался массив карточек',
+    toast_cards_loaded:'Карточки загружены для редактирования',
+    toast_json_copied:'JSON скопирован в буфер обмена', toast_copy_failed:'Не удалось скопировать — скопируйте вручную из панели ниже',
+    toast_open_topic_first:'Сначала откройте тему', toast_file_downloaded:(name)=>`Файл «${name}.json» скачан`,
+    toast_undo:'Отменено',
+    preview_no_card:'Нет открытой карточки', preview_no_title:'(без заголовка)', preview_no_id:'(id не задан)',
+    preview_fixed_badge:'✓ исправлено по сообщению пользователя', preview_empty_text:'(пусто)', preview_no_src:'(нет src)',
+    validation_ok:'✓ Ошибок и предупреждений не найдено',
+    v_typo:(p)=>`Похоже на опечатку (латиница слиплась с кириллицей): ${p}`,
+    v_unclosed_dollar:(p)=>`Нечётное число «$» — формула не закрыта: ${p}`,
+    v_missing_l10n:(langs,p)=>`Не хватает перевода (${langs}): ${p}`,
+    v_empty_text_block:(p)=>`Пустой текстовый блок: ${p}`,
+    v_empty_formula:(p)=>`Пустая формула (latex): ${p}`,
+    v_table_no_cols:(p)=>`Таблица без столбцов: ${p}`, v_table_no_rows:(p)=>`Таблица без строк: ${p}`,
+    v_row_mismatch:(n,p)=>`Строка ${n} не совпадает по числу столбцов: ${p}`,
+    v_empty_list:(p)=>`Пустой список: ${p}`,
+    v_no_src:(p)=>`Не указан src изображения: ${p}`, v_no_alt:(p)=>`Не указан alt изображения: ${p}`,
+    v_empty_example:(p)=>`Пустое условие примера: ${p}`, v_example_no_solution:(p)=>`Пример без разбора решения: ${p}`,
+    v_bad_topic_id:(id)=>`Некорректный topicId: «${id}»`,
+    v_no_id:(p)=>`Не указан id: ${p}`, v_bad_id_format:(p,id)=>`id не соответствует формату kebab-case.namespace: ${p} (${id})`,
+    v_id_prefix_hint:(topicId,p,id)=>`id обычно начинается с «${topicId}.»: ${p} (${id})`,
+    v_dup_id:(id)=>`Повторяющийся id в этой теме: ${id}`,
+    v_topic_mismatch:(cardTopic,topicId)=>`topicId карточки (${cardTopic}) не совпадает с открытой темой (${topicId})`,
+    v_no_title:(p)=>`Не указан заголовок: ${p}`, v_no_blocks:(p)=>`Нет ни одного блока: ${p}`,
+  },
+  en: {
+    brand:'Author Cabinet · Cheat Sheets', nav_cards:'Cards', nav_subjects_topics:'Subjects & topics',
+    subtitle:'Local card editor — offline, no server',
+    tab_theme:'Topic', tab_editor:'Editor', tab_side:'Preview/JSON',
+    rail_refs_header:'Reference data (optional)',
+    btn_load_subjects:'📄 Load subjects.json', status_subjects_default:'not loaded — subjects entered manually',
+    btn_load_topics:'📄 Load topics.json', status_topics_default:'not loaded — topics entered manually',
+    rail_subject_topic_header:'Subject and topic', label_subject:'Subject', opt_manual:'— enter manually —',
+    label_topic:'Topic (topicId)', btn_open_topic:'Open / create topic cards',
+    rail_cards_header:'Cards in this topic', rail_import_header:'Import an existing file',
+    btn_import_card:'📥 Load <topicId>.json', status_import_default:'will open the cards for editing',
+    sticky_title:"Author's cheat sheet",
+    sticky_1:'<b>id</b> = "topicId.suffix", e.g. <span class="mono">math.basics.recap</span> — lowercase letters, digits, hyphens, dot separators.',
+    sticky_2:'For 20th-century texts (not folklore, not pre-1500 classics) — <b>describe</b> facts/topics only, never quote the work itself.',
+    sticky_3:'Tajik text needs a native-speaker review (especially verb forms, izafet, phraseology).',
+    sticky_4:'<b>fixedByUser</b> is set manually, only when you fix a card in response to the "Report a mistake" button in the app.',
+    sticky_5:'Formulas are LaTeX without <span class="mono">$…$</span> inside the latex field itself; the dollar sign is only needed inside markdown text for inline formulas.',
+    empty_title:'Select or create a topic on the left', empty_body:'The card form will appear here.',
+    preview_header:'Preview', validation_header:'Validation & JSON',
+    btn_copy:'Copy', btn_download:'Download topic file',
+    footer_note_html:"This tool never sends data anywhere except the file you download yourself. Put the finished JSON in <b>content/cards/&lt;topicId&gt;.json</b> and rebuild content as usual.",
+    footer_copy:'© 2026 Cheat Sheets', footer_dev:'Developed by',
+    tag_no_topic:'no topic selected',
+    block_text:'Text', block_formula:'Formula', block_table:'Table', block_list:'List', block_image:'Image', block_example:'Example',
+    btn_up:'Up', btn_down:'Down', btn_dup:'Duplicate', btn_del:'Delete',
+    toast_block_deleted:'Block deleted · Ctrl+Z to undo',
+    l10n_toggle:'different text per language', l10n_placeholder:'Text (same in every language)…',
+    field_text_label:'Text (markdown: **bold**, $formula$)',
+    field_latex_label:'LaTeX (without surrounding $ signs)', field_caption_label:'Caption (optional)',
+    field_table_caption_label:'Table caption (optional)', field_table_grid_label:'Columns and rows',
+    col_header:(n)=>'Header '+n, btn_del_col:'Delete column', btn_add_col:'+ column',
+    btn_del_row:'Delete row', btn_add_row:'+ row',
+    field_ordered_label:'numbered list', item_label:(n)=>'Item '+n, btn_del_item:'Delete item', btn_add_item:'+ item',
+    field_src_label:'File path (src)', field_alt_label:'Alt text (image description)', field_credit_label:'Source/credit (optional)',
+    field_problem_label:'Problem / question', field_solution_label:'Solution — no nested "examples"',
+    field_id_label:'Card ID', btn_auto_id:'Auto', btn_auto_id_title:'Fill in topicId + basics',
+    field_title_label:'Card title', field_tags_label:'Tags (comma-separated, optional)',
+    field_fixed_label:'fixed based on a user report (fixedByUser)', field_blocks_label:'Card blocks',
+    topic_id_prefix:'topicId: ',
+    card_chip_fallback:(n)=>'Card '+n, btn_add_card:'+ Add card',
+    grade_prefix:(n)=>'[Grade '+n+'] ',
+    toast_bad_topic_id:'Invalid topic id (see the hint under the field)',
+    status_loaded_subjects:(n)=>`loaded: ${n} subjects`, status_loaded_topics:(n)=>`loaded: ${n} topics`,
+    status_loaded_cards:(n,id)=>`loaded: ${n} cards for topic "${id}"`,
+    status_autoloaded:(n)=>`auto-loaded: ${n} entries`,
+    toast_bad_subjects_file:'Could not read subjects.json', toast_bad_topics_file:'Could not read topics.json',
+    toast_bad_card_file:'Could not read the file — expected an array of cards',
+    toast_cards_loaded:'Cards loaded for editing',
+    toast_json_copied:'JSON copied to clipboard', toast_copy_failed:'Could not copy — copy manually from the panel below',
+    toast_open_topic_first:'Open a topic first', toast_file_downloaded:(name)=>`File "${name}.json" downloaded`,
+    toast_undo:'Undone',
+    preview_no_card:'No card open', preview_no_title:'(untitled)', preview_no_id:'(no id set)',
+    preview_fixed_badge:'✓ fixed based on a user report', preview_empty_text:'(empty)', preview_no_src:'(no src)',
+    validation_ok:'✓ No errors or warnings found',
+    v_typo:(p)=>`Looks like a typo (Latin letters glued to Cyrillic): ${p}`,
+    v_unclosed_dollar:(p)=>`Odd number of "$" — an unclosed formula: ${p}`,
+    v_missing_l10n:(langs,p)=>`Missing translation (${langs}): ${p}`,
+    v_empty_text_block:(p)=>`Empty text block: ${p}`,
+    v_empty_formula:(p)=>`Empty formula (latex): ${p}`,
+    v_table_no_cols:(p)=>`Table has no columns: ${p}`, v_table_no_rows:(p)=>`Table has no rows: ${p}`,
+    v_row_mismatch:(n,p)=>`Row ${n} doesn't match the column count: ${p}`,
+    v_empty_list:(p)=>`Empty list: ${p}`,
+    v_no_src:(p)=>`Image src not set: ${p}`, v_no_alt:(p)=>`Image alt not set: ${p}`,
+    v_empty_example:(p)=>`Empty example problem: ${p}`, v_example_no_solution:(p)=>`Example has no solution: ${p}`,
+    v_bad_topic_id:(id)=>`Invalid topicId: "${id}"`,
+    v_no_id:(p)=>`Id not set: ${p}`, v_bad_id_format:(p,id)=>`id doesn't match kebab-case.namespace format: ${p} (${id})`,
+    v_id_prefix_hint:(topicId,p,id)=>`id usually starts with "${topicId}.": ${p} (${id})`,
+    v_dup_id:(id)=>`Duplicate id in this topic: ${id}`,
+    v_topic_mismatch:(cardTopic,topicId)=>`Card's topicId (${cardTopic}) doesn't match the open topic (${topicId})`,
+    v_no_title:(p)=>`Title not set: ${p}`, v_no_blocks:(p)=>`No blocks at all: ${p}`,
+  },
+  tj: {
+    brand:'Кабинети муаллиф · Шпаргалкаҳо', nav_cards:'Кортҳо', nav_subjects_topics:'Фанҳо ва мавзӯъҳо',
+    subtitle:'Муҳаррири маҳаллии кортҳо — офлайн, бе сервер',
+    tab_theme:'Мавзӯъ', tab_editor:'Муҳаррир', tab_side:'Пешнамоиш/JSON',
+    rail_refs_header:'Маълумоти истинодӣ (ихтиёрӣ)',
+    btn_load_subjects:'📄 Боркунии subjects.json', status_subjects_default:'бор карда нашуд — фанҳо дастӣ ворид карда мешаванд',
+    btn_load_topics:'📄 Боркунии topics.json', status_topics_default:'бор карда нашуд — мавзӯъҳо дастӣ ворид карда мешаванд',
+    rail_subject_topic_header:'Фан ва мавзӯъ', label_subject:'Фан', opt_manual:'— дастӣ ворид кардан —',
+    label_topic:'Мавзӯъ (topicId)', btn_open_topic:'Кушодан / сохтани кортҳои мавзӯъ',
+    rail_cards_header:'Кортҳои ин мавзӯъ', rail_import_header:'Воридоти файли мавҷуда',
+    btn_import_card:'📥 Боркунии <topicId>.json', status_import_default:'кортҳоро барои таҳрир мекушояд',
+    sticky_title:'Дастури муаллиф',
+    sticky_1:'<b>id</b> = «topicId.суффикс», масалан <span class="mono">math.basics.recap</span> — ҳарфҳои хурд, рақамҳо, дефисҳо, нуқтаҳои ҷудокунанда.',
+    sticky_2:'Барои матнҳои асри XX (на фолклор, на классикаи то соли 1500) — танҳо <b>тавсиф</b>-и далелҳо/мавзӯъҳо, матни асарро иқтибос накунед.',
+    sticky_3:'Матни тоҷикӣ — зери назорати соҳиби забон (алалхусус шаклҳои феъл, изофат, фразеология).',
+    sticky_4:'<b>fixedByUser</b>-ро дастӣ гузоред, танҳо вақте ки кортро аз рӯи паёми тугмаи «Дар бораи хато хабар диҳед» дар барнома ислоҳ мекунед.',
+    sticky_5:'Формулаҳо — LaTeX бе <span class="mono">$…$</span> дар худи майдони latex; аломати доллар танҳо дар дохили матни markdown барои формулаҳои дарунсатрӣ лозим аст.',
+    empty_title:'Мавзӯъро аз чап интихоб ё созед', empty_body:'Пас аз он дар ин ҷо шакли пуркунии корт пайдо мешавад.',
+    preview_header:'Пешнамоиш', validation_header:'Санҷиш ва JSON',
+    btn_copy:'Нусха бардоштан', btn_download:'Боргирии файли мавзӯъ',
+    footer_note_html:'Абзор ҳеҷ куҷо маълумот намефиристад, ба ҷуз файле, ки шумо худатон боргирӣ мекунед. JSON-и тайёрро дар <b>content/cards/&lt;topicId&gt;.json</b> гузоред ва мӯҳтаворо чун маъмул аз нав ҷамъ кунед.',
+    footer_copy:'© 2026 Шпаргалкаҳо', footer_dev:'Таҳиягар:',
+    tag_no_topic:'мавзӯъ интихоб нашудааст',
+    block_text:'Матн', block_formula:'Формула', block_table:'Ҷадвал', block_list:'Рӯйхат', block_image:'Тасвир', block_example:'Мисол',
+    btn_up:'Боло', btn_down:'Поён', btn_dup:'Такрор кардан', btn_del:'Нест кардан',
+    toast_block_deleted:'Блок нест карда шуд · Ctrl+Z барои бекор кардан',
+    l10n_toggle:'матни гуногун барои ҳар забон', l10n_placeholder:'Матн (дар ҳамаи забонҳо якхела)…',
+    field_text_label:'Матн (markdown: **ғафс**, $формула$)',
+    field_latex_label:'LaTeX (бе аломатҳои $ дар атроф)', field_caption_label:'Тавзеҳ (ихтиёрӣ)',
+    field_table_caption_label:'Тавзеҳи ҷадвал (ихтиёрӣ)', field_table_grid_label:'Сутунҳо ва рӯйҳо',
+    col_header:(n)=>'Сарлавҳаи '+n, btn_del_col:'Нест кардани сутун', btn_add_col:'+ сутун',
+    btn_del_row:'Нест кардани рӯй', btn_add_row:'+ рӯй',
+    field_ordered_label:'рӯйхати рақамдор', item_label:(n)=>'Банди '+n, btn_del_item:'Нест кардани банд', btn_add_item:'+ банд',
+    field_src_label:'Роҳи файл (src)', field_alt_label:'Матни alt (тавсифи тасвир)', field_credit_label:'Манбаъ/муаллиф (ихтиёрӣ)',
+    field_problem_label:'Шарт / савол', field_solution_label:'Ҳал — бе «мисол»-ҳои дарунӣ',
+    field_id_label:'ID-и корт', btn_auto_id:'Худкор', btn_auto_id_title:'Гузоштани topicId + basics',
+    field_title_label:'Сарлавҳаи корт', field_tags_label:'Тегҳо (бо вергул, ихтиёрӣ)',
+    field_fixed_label:'аз рӯи гузориши корбар ислоҳ шуд (fixedByUser)', field_blocks_label:'Блокҳои корт',
+    topic_id_prefix:'topicId: ',
+    card_chip_fallback:(n)=>'Корти '+n, btn_add_card:'+ Илова кардани корт',
+    grade_prefix:(n)=>'[синфи '+n+'] ',
+    toast_bad_topic_id:'ID-и мавзӯъ нодуруст (нишондодро дар зери майдон бинед)',
+    status_loaded_subjects:(n)=>`бор карда шуд: ${n} фан`, status_loaded_topics:(n)=>`бор карда шуд: ${n} мавзӯъ`,
+    status_loaded_cards:(n,id)=>`бор карда шуд: ${n} корти мавзӯи «${id}»`,
+    status_autoloaded:(n)=>`худкор бор карда шуд: ${n} сабт`,
+    toast_bad_subjects_file:'subjects.json хонда нашуд', toast_bad_topics_file:'topics.json хонда нашуд',
+    toast_bad_card_file:'Файл хонда нашуд — массиви кортҳо интизор буд',
+    toast_cards_loaded:'Кортҳо барои таҳрир бор карда шуданд',
+    toast_json_copied:'JSON ба буфери мубодила нусха бардошта шуд', toast_copy_failed:'Нусха бардошта нашуд — аз панели поён дастӣ нусха баред',
+    toast_open_topic_first:'Аввал мавзӯъро кушоед', toast_file_downloaded:(name)=>`Файли «${name}.json» боргирӣ шуд`,
+    toast_undo:'Бекор карда шуд',
+    preview_no_card:'Корти кушода нест', preview_no_title:'(беном)', preview_no_id:'(id гузошта нашудааст)',
+    preview_fixed_badge:'✓ аз рӯи гузориши корбар ислоҳ шуд', preview_empty_text:'(холӣ)', preview_no_src:'(src нест)',
+    validation_ok:'✓ Хато ва ҳушдор ёфт нашуд',
+    v_typo:(p)=>`Мисли хатогист (лотинӣ бо кириллӣ часпидааст): ${p}`,
+    v_unclosed_dollar:(p)=>`Шумораи тоқи «$» — формула пӯшида нашудааст: ${p}`,
+    v_missing_l10n:(langs,p)=>`Тарҷума намерасад (${langs}): ${p}`,
+    v_empty_text_block:(p)=>`Блоки матнии холӣ: ${p}`,
+    v_empty_formula:(p)=>`Формулаи холӣ (latex): ${p}`,
+    v_table_no_cols:(p)=>`Ҷадвал бе сутун: ${p}`, v_table_no_rows:(p)=>`Ҷадвал бе рӯй: ${p}`,
+    v_row_mismatch:(n,p)=>`Рӯйи ${n} бо шумораи сутунҳо мувофиқ нест: ${p}`,
+    v_empty_list:(p)=>`Рӯйхати холӣ: ${p}`,
+    v_no_src:(p)=>`src-и тасвир гузошта нашудааст: ${p}`, v_no_alt:(p)=>`alt-и тасвир гузошта нашудааст: ${p}`,
+    v_empty_example:(p)=>`Шарти мисол холӣ аст: ${p}`, v_example_no_solution:(p)=>`Мисол ҳал надорад: ${p}`,
+    v_bad_topic_id:(id)=>`topicId нодуруст: «${id}»`,
+    v_no_id:(p)=>`id гузошта нашудааст: ${p}`, v_bad_id_format:(p,id)=>`id ба формати kebab-case.namespace мувофиқ нест: ${p} (${id})`,
+    v_id_prefix_hint:(topicId,p,id)=>`id одатан бо «${topicId}.» сар мешавад: ${p} (${id})`,
+    v_dup_id:(id)=>`id такрорӣ дар ин мавзӯъ: ${id}`,
+    v_topic_mismatch:(cardTopic,topicId)=>`topicId-и корт (${cardTopic}) бо мавзӯи кушодашуда (${topicId}) мувофиқ нест`,
+    v_no_title:(p)=>`Сарлавҳа гузошта нашудааст: ${p}`, v_no_blocks:(p)=>`Ягон блок нест: ${p}`,
+  },
+};
 
 /* ------------------------------- Состояние ------------------------------ */
 const S = {
@@ -631,7 +872,10 @@ function newBlock(type){
     default: throw new Error('unknown block type '+type);
   }
 }
-const BLOCK_LABELS = {text:'Текст', formula:'Формула', table:'Таблица', list:'Список', image:'Изображение', example:'Пример'};
+function blockLabel(type){
+  return {text:t('block_text'), formula:t('block_formula'), table:t('block_table'),
+    list:t('block_list'), image:t('block_image'), example:t('block_example')}[type] || type;
+}
 
 function renderBlocksList(blocksArr, listContainer, opts){
   opts = opts || {};
@@ -645,12 +889,12 @@ function renderBlocksList(blocksArr, listContainer, opts){
 
   const addRow = el('div', {class:'add-block-row'});
   const types = allowExample ? ['text','formula','table','list','image','example'] : ['text','formula','table','list','image'];
-  for (const t of types){
+  for (const bt of types){
     addRow.appendChild(el('button', {class:'btn small', type:'button', onclick:()=>{
-      blocksArr.push(newBlock(t));
+      blocksArr.push(newBlock(bt));
       renderBlocksList(blocksArr, listContainer, opts);
       scheduleSideEffects();
-    }}, '+ '+BLOCK_LABELS[t]));
+    }}, '+ '+blockLabel(bt)));
   }
   listContainer.appendChild(addRow);
 }
@@ -658,21 +902,21 @@ function renderBlocksList(blocksArr, listContainer, opts){
 function renderBlockCard(block, arr, idx, opts){
   const card = el('div', {class:'block-card'});
   const head = el('div', {class:'block-card-head'});
-  head.appendChild(el('span', {class:'block-type-badge', text: BLOCK_LABELS[block.type] || block.type}));
+  head.appendChild(el('span', {class:'block-type-badge', text: blockLabel(block.type)}));
   head.appendChild(el('span', {class:'spacer'}));
-  head.appendChild(el('button', {class:'icon-btn', title:'Вверх', onclick:()=>{
+  head.appendChild(el('button', {class:'icon-btn', title:t('btn_up'), onclick:()=>{
     if (idx>0){ [arr[idx-1],arr[idx]]=[arr[idx],arr[idx-1]]; rerenderParent(); }
   }}, '↑'));
-  head.appendChild(el('button', {class:'icon-btn', title:'Вниз', onclick:()=>{
+  head.appendChild(el('button', {class:'icon-btn', title:t('btn_down'), onclick:()=>{
     if (idx<arr.length-1){ [arr[idx+1],arr[idx]]=[arr[idx],arr[idx+1]]; rerenderParent(); }
   }}, '↓'));
-  head.appendChild(el('button', {class:'icon-btn', title:'Дублировать', onclick:()=>{
+  head.appendChild(el('button', {class:'icon-btn', title:t('btn_dup'), onclick:()=>{
     arr.splice(idx+1, 0, deepClone(block)); rerenderParent();
   }}, '⧉'));
-  head.appendChild(el('button', {class:'icon-btn', title:'Удалить', onclick:()=>{
+  head.appendChild(el('button', {class:'icon-btn', title:t('btn_del'), onclick:()=>{
     S.lastDeleted = {arr, index:idx, block:deepClone(block)};
     arr.splice(idx,1); rerenderParent();
-    showToast('Блок удалён · Ctrl+Z для отмены');
+    showToast(t('toast_block_deleted'));
   }}, '✕'));
   card.appendChild(head);
 
@@ -697,14 +941,14 @@ function renderBlockCard(block, arr, idx, opts){
 
 function renderTextBlockBody(block, body){
   const f1 = el('div', {class:'field'});
-  createL10nEditor(f1, {label:'Текст (markdown: **жирный**, $формула$)', multiline:true,
+  createL10nEditor(f1, {label:t('field_text_label'), multiline:true,
     get:()=>block.markdown, set:(v)=>{ block.markdown = v; }});
   body.appendChild(f1);
 }
 
 function renderFormulaBlockBody(block, body){
   const f1 = el('div', {class:'field'});
-  f1.appendChild(el('label', {class:'field-label', text:'LaTeX (без символов $ снаружи)'}));
+  f1.appendChild(el('label', {class:'field-label', text:t('field_latex_label')}));
   const inp = el('input', {class:'mono', placeholder:'x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}',
     oninput:(e)=>{ block.latex = e.target.value; scheduleSideEffects(); }});
   inp.value = block.latex || '';
@@ -712,7 +956,7 @@ function renderFormulaBlockBody(block, body){
   body.appendChild(f1);
 
   const f2 = el('div', {class:'field'});
-  createL10nEditor(f2, {label:'Подпись (опционально)', get:()=>block.caption ?? '',
+  createL10nEditor(f2, {label:t('field_caption_label'), get:()=>block.caption ?? '',
     set:(v)=>{ if (v==='' && typeof v==='string') delete block.caption; else block.caption = v; }});
   body.appendChild(f2);
 }
@@ -721,23 +965,23 @@ function renderTableBlockBody(block, body){
   function rebuild(){
     body.innerHTML = '';
     const capField = el('div', {class:'field'});
-    createL10nEditor(capField, {label:'Подпись таблицы (опционально)', get:()=>block.caption ?? '',
+    createL10nEditor(capField, {label:t('field_table_caption_label'), get:()=>block.caption ?? '',
       set:(v)=>{ if (v==='') delete block.caption; else block.caption = v; }});
     body.appendChild(capField);
 
     const wrap = el('div', {class:'field'});
-    wrap.appendChild(el('label', {class:'field-label', text:'Столбцы и строки'}));
+    wrap.appendChild(el('label', {class:'field-label', text:t('field_table_grid_label')}));
     const table = el('table', {class:'table-grid'});
     const thead = el('tr');
     block.headers.forEach((h, ci) => {
       const th = el('th');
-      createL10nEditor(th, {label:'Заголовок '+(ci+1), get:()=>block.headers[ci], set:(v)=>{block.headers[ci]=v;}});
+      createL10nEditor(th, {label:t('col_header', ci+1), get:()=>block.headers[ci], set:(v)=>{block.headers[ci]=v;}});
       th.appendChild(el('div', {class:'col-actions'},
         el('button', {class:'btn small ghost', type:'button', onclick:()=>{
           block.headers.splice(ci,1);
           block.rows.forEach(r=>r.splice(ci,1));
           rebuild(); scheduleSideEffects();
-        }}, 'Удалить столбец')
+        }}, t('btn_del_col'))
       ));
       thead.appendChild(th);
     });
@@ -745,7 +989,7 @@ function renderTableBlockBody(block, body){
       block.headers.push('');
       block.rows.forEach(r=>r.push(''));
       rebuild(); scheduleSideEffects();
-    }}, '+ столбец')));
+    }}, t('btn_add_col'))));
     table.appendChild(thead);
 
     block.rows.forEach((row, ri) => {
@@ -755,7 +999,7 @@ function renderTableBlockBody(block, body){
         createL10nEditor(td, {label:'', get:()=>block.rows[ri][ci], set:(v)=>{block.rows[ri][ci]=v;}});
         tr.appendChild(td);
       });
-      tr.appendChild(el('td', {class:'row-actions'}, el('button', {class:'icon-btn', title:'Удалить строку', onclick:()=>{
+      tr.appendChild(el('td', {class:'row-actions'}, el('button', {class:'icon-btn', title:t('btn_del_row'), onclick:()=>{
         block.rows.splice(ri,1); rebuild(); scheduleSideEffects();
       }}, '✕')));
       table.appendChild(tr);
@@ -764,7 +1008,7 @@ function renderTableBlockBody(block, body){
     wrap.appendChild(el('button', {class:'btn small', type:'button', style:'margin-top:8px;', onclick:()=>{
       block.rows.push(block.headers.map(()=>''));
       rebuild(); scheduleSideEffects();
-    }}, '+ строка'));
+    }}, t('btn_add_row')));
     body.appendChild(wrap);
   }
   rebuild();
@@ -776,7 +1020,7 @@ function renderListBlockBody(block, body){
     el('input', {type:'checkbox', ...(block.ordered?{checked:'checked'}:{}), onchange:(e)=>{
       block.ordered = e.target.checked; scheduleSideEffects();
     }}),
-    document.createTextNode('нумерованный список')
+    document.createTextNode(t('field_ordered_label'))
   );
   orderedField.appendChild(cb);
   body.appendChild(orderedField);
@@ -786,9 +1030,9 @@ function renderListBlockBody(block, body){
     block.items.forEach((item, ii) => {
       const row = el('div', {class:'list-item-row'});
       const editorHost = el('div', {style:'flex:1'});
-      createL10nEditor(editorHost, {label:'Пункт '+(ii+1), get:()=>block.items[ii], set:(v)=>{block.items[ii]=v;}});
+      createL10nEditor(editorHost, {label:t('item_label', ii+1), get:()=>block.items[ii], set:(v)=>{block.items[ii]=v;}});
       row.appendChild(editorHost);
-      row.appendChild(el('button', {class:'icon-btn', title:'Удалить пункт', onclick:()=>{
+      row.appendChild(el('button', {class:'icon-btn', title:t('btn_del_item'), onclick:()=>{
         block.items.splice(ii,1); rebuildItems(); scheduleSideEffects();
       }}, '✕'));
       itemsWrap.appendChild(row);
@@ -799,27 +1043,27 @@ function renderListBlockBody(block, body){
   rebuildItems();
   body.appendChild(el('button', {class:'btn small', type:'button', onclick:()=>{
     block.items.push(''); rebuildItems(); scheduleSideEffects();
-  }}, '+ пункт'));
+  }}, t('btn_add_item')));
 }
 
 function renderImageBlockBody(block, body){
   const f1 = el('div', {class:'field'});
-  f1.appendChild(el('label', {class:'field-label', text:'Путь к файлу (src)'}));
+  f1.appendChild(el('label', {class:'field-label', text:t('field_src_label')}));
   const inp = el('input', {placeholder:'assets/images/topic/pic.png', oninput:(e)=>{block.src=e.target.value; scheduleSideEffects();}});
   inp.value = block.src||'';
   f1.appendChild(inp);
   body.appendChild(f1);
 
   const f2 = el('div', {class:'field'});
-  createL10nEditor(f2, {label:'Alt-текст (описание изображения)', get:()=>block.alt, set:(v)=>{block.alt=v;}});
+  createL10nEditor(f2, {label:t('field_alt_label'), get:()=>block.alt, set:(v)=>{block.alt=v;}});
   body.appendChild(f2);
 
   const f3 = el('div', {class:'field'});
-  createL10nEditor(f3, {label:'Подпись (опционально)', get:()=>block.caption ?? '', set:(v)=>{ if(v==='') delete block.caption; else block.caption=v; }});
+  createL10nEditor(f3, {label:t('field_caption_label'), get:()=>block.caption ?? '', set:(v)=>{ if(v==='') delete block.caption; else block.caption=v; }});
   body.appendChild(f3);
 
   const f4 = el('div', {class:'field'});
-  f4.appendChild(el('label', {class:'field-label', text:'Источник/автор (опционально)'}));
+  f4.appendChild(el('label', {class:'field-label', text:t('field_credit_label')}));
   const inp2 = el('input', {oninput:(e)=>{block.credit=e.target.value||undefined; scheduleSideEffects();}});
   inp2.value = block.credit||'';
   f4.appendChild(inp2);
@@ -828,11 +1072,11 @@ function renderImageBlockBody(block, body){
 
 function renderExampleBlockBody(block, body){
   const f1 = el('div', {class:'field'});
-  createL10nEditor(f1, {label:'Условие / вопрос', multiline:true, get:()=>block.problem, set:(v)=>{block.problem=v;}});
+  createL10nEditor(f1, {label:t('field_problem_label'), multiline:true, get:()=>block.problem, set:(v)=>{block.problem=v;}});
   body.appendChild(f1);
 
   const solWrap = el('div', {class:'field'});
-  solWrap.appendChild(el('label', {class:'field-label', text:'Разбор (решение) — без вложенных «примеров»'}));
+  solWrap.appendChild(el('label', {class:'field-label', text:t('field_solution_label')}));
   const solList = el('div');
   solWrap.appendChild(solList);
   body.appendChild(solWrap);
@@ -856,27 +1100,27 @@ function renderEditor(){
 
   const headRow = el('div', {class:'editor-header-row'});
   const idField = el('div', {class:'grow'});
-  idField.appendChild(el('label', {class:'field-label', text:'ID карточки'}));
+  idField.appendChild(el('label', {class:'field-label', text:t('field_id_label')}));
   const idInput = el('input', {class:'mono', oninput:(e)=>{ card.id = e.target.value; scheduleSideEffects(); }});
   idInput.value = card.id || '';
   idField.appendChild(idInput);
   headRow.appendChild(idField);
-  headRow.appendChild(el('button', {class:'btn small', type:'button', title:'Подставить topicId + basics', onclick:()=>{
+  headRow.appendChild(el('button', {class:'btn small', type:'button', title:t('btn_auto_id_title'), onclick:()=>{
     card.id = S.topicId + '.' + (S.cards.length>1 ? 'card'+(S.cardIndex+1) : 'basics');
     idInput.value = card.id;
     scheduleSideEffects();
-  }}, 'Авто'));
+  }}, t('btn_auto_id')));
   content.appendChild(headRow);
-  content.appendChild(el('div', {class:'id-preview'}, 'topicId: ', el('b', {text:S.topicId})));
+  content.appendChild(el('div', {class:'id-preview'}, t('topic_id_prefix'), el('b', {text:S.topicId})));
 
   content.appendChild(el('hr', {class:'sep'}));
 
   const titleField = el('div', {class:'field'});
-  createL10nEditor(titleField, {label:'Заголовок карточки', get:()=>card.title, set:(v)=>{card.title=v;}});
+  createL10nEditor(titleField, {label:t('field_title_label'), get:()=>card.title, set:(v)=>{card.title=v;}});
   content.appendChild(titleField);
 
   const tagsField = el('div', {class:'field', style:'margin-top:12px;'});
-  tagsField.appendChild(el('label', {class:'field-label', text:'Теги (через запятую, необязательно)'}));
+  tagsField.appendChild(el('label', {class:'field-label', text:t('field_tags_label')}));
   const tagsInput = el('input', {oninput:(e)=>{
     const v = e.target.value.split(',').map(s=>s.trim()).filter(Boolean);
     card.tags = v.length ? v : undefined;
@@ -891,19 +1135,19 @@ function renderEditor(){
     el('input', {type:'checkbox', ...(card.fixedByUser?{checked:'checked'}:{}), onchange:(e)=>{
       card.fixedByUser = e.target.checked || undefined; scheduleSideEffects();
     }}),
-    document.createTextNode('исправлено по сообщению пользователя (fixedByUser)')
+    document.createTextNode(t('field_fixed_label'))
   );
   fixedField.appendChild(fixedLabel);
   content.appendChild(fixedField);
 
   content.appendChild(el('hr', {class:'sep'}));
-  content.appendChild(el('label', {class:'field-label', text:'Блоки карточки'}));
+  content.appendChild(el('label', {class:'field-label', text:t('field_blocks_label')}));
   const blocksHost = el('div');
   content.appendChild(blocksHost);
   if (!card.blocks) card.blocks = [];
   renderBlocksList(card.blocks, blocksHost, {allowExample:true});
 
-  document.getElementById('topicIdTag').textContent = S.topicId || 'тема не выбрана';
+  document.getElementById('topicIdTag').textContent = S.topicId || t('tag_no_topic');
 }
 
 /* ================================ Рельса ================================ */
@@ -916,14 +1160,14 @@ function renderCardChips(){
   S.cards.forEach((c, i) => {
     const chip = el('div', {class:'card-chip'+(i===S.cardIndex?' active':''), onclick:()=>{
       S.cardIndex = i; renderCardChips(); renderEditor(); scheduleSideEffects();
-    }}, c.title ? (l10nGet(c.title,'ru')||'Карточка '+(i+1)) : 'Карточка '+(i+1));
+    }}, c.title ? (l10nGet(c.title,'ru')||t('card_chip_fallback', i+1)) : t('card_chip_fallback', i+1));
     list.appendChild(chip);
   });
   list.appendChild(el('div', {class:'card-chip add', onclick:()=>{
     S.cards.push(makeBlankCard());
     S.cardIndex = S.cards.length-1;
     renderCardChips(); renderEditor(); scheduleSideEffects();
-  }}, '+ Добавить карточку'));
+  }}, t('btn_add_card')));
 }
 
 function makeBlankCard(){
@@ -937,9 +1181,10 @@ function makeBlankCard(){
 
 function populateSubjectSelect(){
   const sel = document.getElementById('selSubject');
-  sel.innerHTML = '<option value="">— ввести вручную —</option>';
+  sel.innerHTML = '';
+  sel.appendChild(el('option', {value:'', text:t('opt_manual')}));
   S.subjects.sort((a,b)=>(a.order??0)-(b.order??0)).forEach(s=>{
-    sel.appendChild(el('option', {value:s.id, text: l10nGet(s.name,'ru') + '  ('+s.id+')'}));
+    sel.appendChild(el('option', {value:s.id, text: l10nGet(s.name,UI_LANG) + '  ('+s.id+')'}));
   });
 }
 function populateTopicSelectFor(subjectId){
@@ -950,10 +1195,10 @@ function populateTopicSelectFor(subjectId){
     return;
   }
   sel.innerHTML = '';
-  const filtered = S.topicsAll.filter(t=>t.subjectId===subjectId).sort((a,b)=>(a.order??0)-(b.order??0));
+  const filtered = S.topicsAll.filter(tp=>tp.subjectId===subjectId).sort((a,b)=>(a.order??0)-(b.order??0));
   if (!filtered.length){ sel.style.display='none'; manual.style.display='block'; return; }
-  filtered.forEach(t=>{
-    sel.appendChild(el('option', {value:t.id, text: (t.grade?('['+t.grade+' кл.] '):'') + l10nGet(t.title,'ru') + '  ('+t.id+')'}));
+  filtered.forEach(tp=>{
+    sel.appendChild(el('option', {value:tp.id, text: (tp.grade?t('grade_prefix', tp.grade):'') + l10nGet(tp.title,UI_LANG) + '  ('+tp.id+')'}));
   });
   sel.style.display = 'block'; manual.style.display='none';
 }
@@ -961,7 +1206,7 @@ function populateTopicSelectFor(subjectId){
 /* ============================== Открытие темы ============================== */
 function openTopic(topicId){
   if (!topicId || !ID_RE.test(topicId)){
-    showToast('Некорректный id темы (см. подсказку под полем)');
+    showToast(t('toast_bad_topic_id'));
     return;
   }
   // автосохранение текущего черновика перед переключением
@@ -994,9 +1239,9 @@ function stripDollarMath(s){ return (s||'').replace(/\$[^$]*\$/g, ' '); }
 function collectTypoIssues(value, path, out){
   if (value === undefined || value === null) return;
   if (typeof value === 'string'){
-    if (TYPO_RE.test(stripDollarMath(value))) out.push({level:'warning', msg:`Похоже на опечатку (латиница слиплась с кириллицей): ${path}`});
+    if (TYPO_RE.test(stripDollarMath(value))) out.push({level:'warning', msg:t('v_typo', path)});
     const dollarCount = (value.match(/\$/g)||[]).length;
-    if (dollarCount % 2 !== 0) out.push({level:'warning', msg:`Нечётное число «$» — формула не закрыта: ${path}`});
+    if (dollarCount % 2 !== 0) out.push({level:'warning', msg:t('v_unclosed_dollar', path)});
     return;
   }
   if (typeof value === 'object'){
@@ -1007,7 +1252,7 @@ function collectL10nCompleteness(value, path, out){
   if (value && typeof value === 'object' && !Array.isArray(value)){
     const missing = LOCALES.filter(l => !(l in value) || !value[l]);
     if (missing.length && missing.length < LOCALES.length){
-      out.push({level:'warning', msg:`Не хватает перевода (${missing.join(', ')}): ${path}`});
+      out.push({level:'warning', msg:t('v_missing_l10n', missing.join(', '), path)});
     }
   }
 }
@@ -1017,27 +1262,27 @@ function walkBlocksForValidation(blocks, path, out){
     collectTypoIssues(b, p, out);
     switch(b.type){
       case 'text':
-        if (!l10nGet(b.markdown,'ru') && !l10nGet(b.markdown,'en')) out.push({level:'error', msg:`Пустой текстовый блок: ${p}`});
+        if (!l10nGet(b.markdown,'ru') && !l10nGet(b.markdown,'en')) out.push({level:'error', msg:t('v_empty_text_block', p)});
         collectL10nCompleteness(b.markdown, p+'.markdown', out);
         break;
       case 'formula':
-        if (!b.latex) out.push({level:'error', msg:`Пустая формула (latex): ${p}`});
+        if (!b.latex) out.push({level:'error', msg:t('v_empty_formula', p)});
         break;
       case 'table':
-        if (!b.headers || !b.headers.length) out.push({level:'error', msg:`Таблица без столбцов: ${p}`});
-        if (!b.rows || !b.rows.length) out.push({level:'error', msg:`Таблица без строк: ${p}`});
-        (b.rows||[]).forEach((r,ri)=>{ if (r.length !== (b.headers||[]).length) out.push({level:'error', msg:`Строка ${ri+1} не совпадает по числу столбцов: ${p}`}); });
+        if (!b.headers || !b.headers.length) out.push({level:'error', msg:t('v_table_no_cols', p)});
+        if (!b.rows || !b.rows.length) out.push({level:'error', msg:t('v_table_no_rows', p)});
+        (b.rows||[]).forEach((r,ri)=>{ if (r.length !== (b.headers||[]).length) out.push({level:'error', msg:t('v_row_mismatch', ri+1, p)}); });
         break;
       case 'list':
-        if (!b.items || !b.items.length) out.push({level:'error', msg:`Пустой список: ${p}`});
+        if (!b.items || !b.items.length) out.push({level:'error', msg:t('v_empty_list', p)});
         break;
       case 'image':
-        if (!b.src) out.push({level:'error', msg:`Не указан src изображения: ${p}`});
-        if (!b.alt) out.push({level:'error', msg:`Не указан alt изображения: ${p}`});
+        if (!b.src) out.push({level:'error', msg:t('v_no_src', p)});
+        if (!b.alt) out.push({level:'error', msg:t('v_no_alt', p)});
         break;
       case 'example':
-        if (!l10nGet(b.problem,'ru') && !l10nGet(b.problem,'en')) out.push({level:'error', msg:`Пустое условие примера: ${p}`});
-        if (!b.solution || !b.solution.length) out.push({level:'error', msg:`Пример без разбора решения: ${p}`});
+        if (!l10nGet(b.problem,'ru') && !l10nGet(b.problem,'en')) out.push({level:'error', msg:t('v_empty_example', p)});
+        if (!b.solution || !b.solution.length) out.push({level:'error', msg:t('v_example_no_solution', p)});
         else walkBlocksForValidation(b.solution, p+'.solution', out);
         break;
     }
@@ -1046,19 +1291,19 @@ function walkBlocksForValidation(blocks, path, out){
 function validateCurrentTopic(){
   const out = [];
   if (!S.topicId){ return out; }
-  if (!ID_RE.test(S.topicId)) out.push({level:'error', msg:`Некорректный topicId: «${S.topicId}»`});
+  if (!ID_RE.test(S.topicId)) out.push({level:'error', msg:t('v_bad_topic_id', S.topicId)});
   const seenIds = new Set();
   S.cards.forEach((card, ci) => {
     const p = `cards[${ci}]`;
-    if (!card.id) out.push({level:'error', msg:`Не указан id: ${p}`});
-    else if (!ID_RE.test(card.id)) out.push({level:'error', msg:`id не соответствует формату kebab-case.namespace: ${p} (${card.id})`});
-    else if (!card.id.startsWith(S.topicId+'.')) out.push({level:'warning', msg:`id обычно начинается с «${S.topicId}.»: ${p} (${card.id})`});
-    if (card.id){ if (seenIds.has(card.id)) out.push({level:'error', msg:`Повторяющийся id в этой теме: ${card.id}`}); seenIds.add(card.id); }
-    if (card.topicId !== S.topicId) out.push({level:'warning', msg:`topicId карточки (${card.topicId}) не совпадает с открытой темой (${S.topicId})`});
-    if (!l10nGet(card.title,'ru') && !l10nGet(card.title,'en')) out.push({level:'error', msg:`Не указан заголовок: ${p}`});
+    if (!card.id) out.push({level:'error', msg:t('v_no_id', p)});
+    else if (!ID_RE.test(card.id)) out.push({level:'error', msg:t('v_bad_id_format', p, card.id)});
+    else if (!card.id.startsWith(S.topicId+'.')) out.push({level:'warning', msg:t('v_id_prefix_hint', S.topicId, p, card.id)});
+    if (card.id){ if (seenIds.has(card.id)) out.push({level:'error', msg:t('v_dup_id', card.id)}); seenIds.add(card.id); }
+    if (card.topicId !== S.topicId) out.push({level:'warning', msg:t('v_topic_mismatch', card.topicId, S.topicId)});
+    if (!l10nGet(card.title,'ru') && !l10nGet(card.title,'en')) out.push({level:'error', msg:t('v_no_title', p)});
     collectL10nCompleteness(card.title, p+'.title', out);
     collectTypoIssues(card.title, p+'.title', out);
-    if (!card.blocks || !card.blocks.length) out.push({level:'error', msg:`Нет ни одного блока: ${p}`});
+    if (!card.blocks || !card.blocks.length) out.push({level:'error', msg:t('v_no_blocks', p)});
     else walkBlocksForValidation(card.blocks, p+'.blocks', out);
   });
   return out;
@@ -1107,7 +1352,7 @@ function renderBlockPreview(block, locale){
     case 'text': {
       const raw = l10nGet(block.markdown, locale);
       const paras = raw.split(/\n{2,}/).map(p=>`<p>${renderInline(p)}</p>`).join('');
-      return el2(`<div class="ic-block ic-text">${paras||'<p style="color:var(--muted)">(пусто)</p>'}</div>`);
+      return el2(`<div class="ic-block ic-text">${paras||'<p style="color:var(--muted)">'+t('preview_empty_text')+'</p>'}</div>`);
     }
     case 'formula': {
       const wrap = document.createElement('div'); wrap.className='ic-block ic-formula';
@@ -1132,7 +1377,7 @@ function renderBlockPreview(block, locale){
       return el2(`<div class="ic-block"><${tag} class="ic-list">${items}</${tag}></div>`);
     }
     case 'image': {
-      return el2(`<div class="ic-block ic-image">🖼 ${escapeHtml(block.src||'(нет src)')}<br><small>${renderInline(l10nGet(block.alt,locale))}</small></div>`);
+      return el2(`<div class="ic-block ic-image">🖼 ${escapeHtml(block.src||t('preview_no_src'))}<br><small>${renderInline(l10nGet(block.alt,locale))}</small></div>`);
     }
     case 'example': {
       const wrap = document.createElement('div'); wrap.className='ic-block ic-example';
@@ -1143,24 +1388,24 @@ function renderBlockPreview(block, locale){
     default: return el2('<div></div>');
   }
 }
-function el2(html){ const t=document.createElement('template'); t.innerHTML=html.trim(); return t.content.firstChild; }
+function el2(html){ const tpl=document.createElement('template'); tpl.innerHTML=html.trim(); return tpl.content.firstChild; }
 
 function renderPreview(){
   const host = document.getElementById('previewBody');
   host.innerHTML = '';
   const card = currentCard();
-  if (!card){ host.appendChild(el('div',{style:'color:var(--muted);padding:20px;text-align:center;'}, 'Нет открытой карточки')); return; }
+  if (!card){ host.appendChild(el('div',{style:'color:var(--muted);padding:20px;text-align:center;'}, t('preview_no_card'))); return; }
   const loc = S.previewLocale;
   const wrap = el('div', {class:'index-card-wrap'});
   if (S.cards.length>1) wrap.appendChild(el('div', {class:'index-card-stack s2'}));
   if (S.cards.length>1) wrap.appendChild(el('div', {class:'index-card-stack'}));
   const ic = el('div', {class:'index-card'});
   ic.appendChild(el('div', {class:'punch'}));
-  ic.appendChild(el('div', {class:'ic-title', text: l10nGet(card.title, loc) || '(без заголовка)'}));
+  ic.appendChild(el('div', {class:'ic-title', text: l10nGet(card.title, loc) || t('preview_no_title')}));
   ic.appendChild(el('div', {class:'ic-rule'}));
-  ic.appendChild(el('div', {class:'ic-badge', text: card.id || '(id не задан)'}));
+  ic.appendChild(el('div', {class:'ic-badge', text: card.id || t('preview_no_id')}));
   if (card.fixedByUser){
-    ic.appendChild(el('div', {class:'ic-fixed-badge'}, '✓ исправлено по сообщению пользователя'));
+    ic.appendChild(el('div', {class:'ic-fixed-badge'}, t('preview_fixed_badge')));
   }
   (card.blocks||[]).forEach(b => ic.appendChild(renderBlockPreview(b, loc)));
   wrap.appendChild(ic);
@@ -1176,7 +1421,7 @@ function renderValidationJson(){
   const warnings = issues.filter(i=>i.level==='warning');
   if (S.topicId){
     if (!issues.length){
-      host.appendChild(el('div', {class:'validation-ok'}, '✓ Ошибок и предупреждений не найдено'));
+      host.appendChild(el('div', {class:'validation-ok'}, t('validation_ok')));
     } else {
       const ul = el('ul', {class:'validation-list'});
       for (const i of [...errors, ...warnings]){
@@ -1218,37 +1463,37 @@ document.getElementById('fileSubjects').addEventListener('change', async (e) => 
   try {
     S.subjects = await readJsonFile(f);
     populateSubjectSelect();
-    document.getElementById('statusSubjects').textContent = `загружено: ${S.subjects.length} предметов`;
+    document.getElementById('statusSubjects').textContent = t('status_loaded_subjects', S.subjects.length);
     document.getElementById('statusSubjects').classList.add('ok');
-  } catch(err){ showToast('Не удалось прочитать subjects.json'); }
+  } catch(err){ showToast(t('toast_bad_subjects_file')); }
 });
 document.getElementById('fileTopics').addEventListener('change', async (e) => {
   const f = e.target.files[0]; if (!f) return;
   try {
     S.topicsAll = await readJsonFile(f);
-    document.getElementById('statusTopics').textContent = `загружено: ${S.topicsAll.length} тем`;
+    document.getElementById('statusTopics').textContent = t('status_loaded_topics', S.topicsAll.length);
     document.getElementById('statusTopics').classList.add('ok');
     const sel = document.getElementById('selSubject');
     populateTopicSelectFor(sel.value);
-  } catch(err){ showToast('Не удалось прочитать topics.json'); }
+  } catch(err){ showToast(t('toast_bad_topics_file')); }
 });
 document.getElementById('fileCardImport').addEventListener('change', async (e) => {
   const f = e.target.files[0]; if (!f) return;
   try {
     const data = await readJsonFile(f);
-    if (!Array.isArray(data) || !data.length) throw new Error('пустой массив');
+    if (!Array.isArray(data) || !data.length) throw new Error('empty array');
     const topicId = data[0].topicId;
     saveDraftForCurrentTopic();
     S.topicId = topicId;
     S.cards = data;
     S.cardIndex = 0;
-    document.getElementById('statusCardImport').textContent = `загружено: ${data.length} карточек темы «${topicId}»`;
+    document.getElementById('statusCardImport').textContent = t('status_loaded_cards', data.length, topicId);
     document.getElementById('statusCardImport').classList.add('ok');
     document.getElementById('inputTopicManual').value = topicId;
     renderCardChips(); renderEditor(); scheduleSideEffects();
     showMobilePane('editor');
-    showToast('Карточки загружены для редактирования');
-  } catch(err){ showToast('Не удалось прочитать файл — ожидался массив карточек'); }
+    showToast(t('toast_cards_loaded'));
+  } catch(err){ showToast(t('toast_bad_card_file')); }
 });
 
 /* ================================ Обвязка UI ================================ */
@@ -1263,11 +1508,11 @@ document.getElementById('btnOpenTopic').addEventListener('click', () => {
 });
 document.getElementById('btnCopyJson').addEventListener('click', async () => {
   const text = renderValidationJson._lastJson || '[]';
-  try { await navigator.clipboard.writeText(text); showToast('JSON скопирован в буфер обмена'); }
-  catch(e){ showToast('Не удалось скопировать — скопируйте вручную из панели ниже'); }
+  try { await navigator.clipboard.writeText(text); showToast(t('toast_json_copied')); }
+  catch(e){ showToast(t('toast_copy_failed')); }
 });
 document.getElementById('btnDownloadJson').addEventListener('click', () => {
-  if (!S.topicId){ showToast('Сначала откройте тему'); return; }
+  if (!S.topicId){ showToast(t('toast_open_topic_first')); return; }
   const text = JSON.stringify(exportArray(), null, 2) + '\n';
   const blob = new Blob([text], {type:'application/json'});
   const url = URL.createObjectURL(blob);
@@ -1275,13 +1520,13 @@ document.getElementById('btnDownloadJson').addEventListener('click', () => {
   a.href = url; a.download = S.topicId + '.json';
   document.body.appendChild(a); a.click(); a.remove();
   URL.revokeObjectURL(url);
-  showToast('Файл «'+S.topicId+'.json» скачан');
+  showToast(t('toast_file_downloaded', S.topicId));
 });
 
 document.getElementById('previewLocaleTabs').addEventListener('click', (e) => {
-  const t = e.target.closest('.locale-tab'); if (!t) return;
-  S.previewLocale = t.dataset.locale;
-  document.querySelectorAll('#previewLocaleTabs .locale-tab').forEach(x=>x.classList.toggle('active', x===t));
+  const lt = e.target.closest('.locale-tab'); if (!lt) return;
+  S.previewLocale = lt.dataset.locale;
+  document.querySelectorAll('#previewLocaleTabs .locale-tab').forEach(x=>x.classList.toggle('active', x===lt));
   renderPreview();
 });
 
@@ -1292,7 +1537,7 @@ document.addEventListener('keydown', (e) => {
     arr.splice(Math.min(index, arr.length), 0, block);
     S.lastDeleted = null;
     renderEditor(); scheduleSideEffects();
-    showToast('Отменено');
+    showToast(t('toast_undo'));
     e.preventDefault();
   }
 });
@@ -1306,6 +1551,49 @@ document.querySelectorAll('[data-mobile-tab]').forEach(btn => {
   btn.addEventListener('click', () => showMobilePane(btn.dataset.mobileTab));
 });
 document.getElementById('btnHamburger').addEventListener('click', () => showMobilePane('rail'));
+
+/* ================================ Локализация интерфейса ================================ */
+// Применяет текущий UI_LANG ко всей статичной разметке (data-i18n / data-i18n-html)
+// и перерисовывает динамически построенные панели, где есть переводимый текст.
+function applyStaticI18n(){
+  document.documentElement.lang = UI_LANG;
+  document.querySelectorAll('[data-i18n]').forEach(node => {
+    node.textContent = t(node.getAttribute('data-i18n'));
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(node => {
+    node.innerHTML = t(node.getAttribute('data-i18n-html'));
+  });
+  document.querySelectorAll('.switch button[data-set]').forEach(btn => {
+    btn.setAttribute('aria-pressed', String(btn.dataset.set === UI_LANG));
+  });
+}
+function setUILang(lang){
+  if (!T[lang]) lang = 'ru';
+  UI_LANG = lang;
+  try { localStorage.setItem(UI_LANG_KEY, lang); } catch(e){}
+  applyStaticI18n();
+  // перестроить всё, что уже нарисовано динамически на старом языке
+  populateSubjectSelect();
+  const sel = document.getElementById('selSubject');
+  if (sel.value) populateTopicSelectFor(sel.value);
+  renderCardChips();
+  renderEditor();
+  renderPreview();
+  renderValidationJson();
+}
+document.querySelectorAll('.switch button[data-set]').forEach(btn => {
+  btn.addEventListener('click', () => setUILang(btn.dataset.set));
+});
+function detectInitialUILang(){
+  try {
+    const saved = localStorage.getItem(UI_LANG_KEY);
+    if (saved && T[saved]) return saved;
+  } catch(e){}
+  const nav = (navigator.language || 'ru').toLowerCase();
+  if (nav.startsWith('en')) return 'en';
+  if (nav.startsWith('tg') || nav.startsWith('tj')) return 'tj';
+  return 'ru';
+}
 
 /* ------------------------------- Попытка авто-загрузки ------------------------------- */
 // Если страница открыта через http(s) (не file://) и рядом лежит content/,
@@ -1322,7 +1610,7 @@ document.getElementById('btnHamburger').addEventListener('click', () => showMobi
       const data = await res.json();
       S[key] = data;
       const st = document.getElementById(statusId);
-      st.textContent = `автозагружено: ${data.length} записей`;
+      st.textContent = t('status_autoloaded', data.length);
       st.classList.add('ok');
     } catch(e){ /* тихо игнорируем — используем ручную загрузку */ }
   }
@@ -1343,6 +1631,8 @@ window.addEventListener('beforeunload', () => {
   if (S.topicId) try { localStorage.setItem('de:lastTopic', S.topicId); } catch(e){}
 });
 
+UI_LANG = detectInitialUILang();
+applyStaticI18n();
 renderValidationJson();
 </script>
 </body>
