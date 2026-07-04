@@ -294,7 +294,7 @@ footer.foot .copyright a:hover{color:var(--brand-700);}
   <footer class="foot">
     <span data-i18n-html="footer_note_html">Инструмент не отправляет данные никуда, кроме файла, который вы скачиваете сами. Готовые файлы кладите в
     <b>content/subjects.json</b> и <b>content/topics.json</b>, затем пересоберите контент как обычно.</span>
-    <div class="copyright"><span data-i18n="footer_copy">© 2026 Шпаргалки</span> · <span data-i18n="footer_dev">Разработан</span> <a href="../../index.html">~/elxak.dev</a></div>
+    <div class="copyright"><span data-i18n="footer_copy">© 2026 Шпаргалки</span> · <span data-i18n="footer_dev">Разработан</span> <a href="../../index.html">~/elxak.dev</a><span id="contentVersionTag"></span></div>
   </footer>
 </div>
 
@@ -384,6 +384,7 @@ const T = {
     validation_header:'Проверка', btn_copy:'Копировать', btn_download:'Скачать файл',
     footer_note_html:'Инструмент не отправляет данные никуда, кроме файла, который вы скачиваете сами. Готовые файлы кладите в <b>content/subjects.json</b> и <b>content/topics.json</b>, затем пересоберите контент как обычно.',
     footer_copy:'© 2026 Шпаргалки', footer_dev:'Разработан',
+    content_version_label:(v)=>` · контент v${v}`,
     stats_tag:(ns,nt)=>`${ns} предметов · ${nt} тем`,
     confirm_delete_subject:(name)=>`Удалить предмет «${name}» и все его темы из списка?`,
     confirm_delete_topic:(name)=>`Удалить тему «${name}»?`,
@@ -442,6 +443,7 @@ const T = {
     validation_header:'Validation', btn_copy:'Copy', btn_download:'Download file',
     footer_note_html:'This tool never sends data anywhere except the file you download yourself. Put the finished files in <b>content/subjects.json</b> and <b>content/topics.json</b>, then rebuild content as usual.',
     footer_copy:'© 2026 Cheat Sheets', footer_dev:'Developed by',
+    content_version_label:(v)=>` · content v${v}`,
     stats_tag:(ns,nt)=>`${ns} subjects · ${nt} topics`,
     confirm_delete_subject:(name)=>`Delete subject "${name}" and all of its topics?`,
     confirm_delete_topic:(name)=>`Delete topic "${name}"?`,
@@ -500,6 +502,7 @@ const T = {
     validation_header:'Санҷиш', btn_copy:'Нусха бардоштан', btn_download:'Боргирии файл',
     footer_note_html:'Абзор ҳеҷ куҷо маълумот намефиристад, ба ҷуз файле, ки шумо худатон боргирӣ мекунед. Файлҳои тайёрро дар <b>content/subjects.json</b> ва <b>content/topics.json</b> гузоред ва мӯҳтаворо чун маъмул аз нав ҷамъ кунед.',
     footer_copy:'© 2026 Шпаргалкаҳо', footer_dev:'Таҳиягар:',
+    content_version_label:(v)=>` · мӯҳтаво v${v}`,
     stats_tag:(ns,nt)=>`${ns} фан · ${nt} мавзӯъ`,
     confirm_delete_subject:(name)=>`Фани «${name}» ва ҳамаи мавзӯъҳояшро нест кунам?`,
     confirm_delete_topic:(name)=>`Мавзӯи «${name}»-ро нест кунам?`,
@@ -1066,6 +1069,7 @@ function setUILang(lang){
   renderSubjectList();
   renderEditor();
   renderValidationAndJson();
+  updateContentVersionTag();
 }
 document.querySelectorAll('.switch button[data-set]').forEach(btn => {
   btn.addEventListener('click', () => setUILang(btn.dataset.set));
@@ -1079,6 +1083,17 @@ function detectInitialUILang(){
   if (nav.startsWith('en')) return 'en';
   if (nav.startsWith('tg') || nav.startsWith('tj')) return 'tj';
   return 'ru';
+}
+
+/* ------------------------------- Версия контента в футере ------------------------------- */
+// Заполняется только если content/meta.json реально удалось загрузить (см.
+// tryAutoload ниже) — при недоступности (file:// или нет сети) остаётся
+// пустым, чтобы никогда не показать выдуманный или устаревший номер версии.
+let CONTENT_VERSION = null;
+function updateContentVersionTag(){
+  const el = document.getElementById('contentVersionTag');
+  if (!el) return;
+  el.textContent = CONTENT_VERSION !== null ? t('content_version_label', CONTENT_VERSION) : '';
 }
 
 /* ------------------------------- Автозагрузка (если по http/https) ------------------------------- */
@@ -1098,6 +1113,16 @@ function detectInitialUILang(){
       st.classList.add('ok');
     } catch(e){}
   }
+  try {
+    const res = await fetch('../content/meta.json');
+    if (res.ok){
+      const meta = await res.json();
+      if (meta && typeof meta.version !== 'undefined'){
+        CONTENT_VERSION = meta.version;
+        updateContentVersionTag();
+      }
+    }
+  } catch(e){ /* тихо игнорируем — версия просто не покажется */ }
   renderSubjectList(); renderEditor(); scheduleSideEffects();
 })();
 

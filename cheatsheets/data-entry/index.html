@@ -480,7 +480,7 @@ footer.foot .copyright a:hover{color:var(--brand-700);}
   <footer class="foot">
     <span data-i18n-html="footer_note_html">Инструмент не отправляет данные никуда, кроме файла, который вы скачиваете сами. Готовый JSON кладите в
     <b>content/cards/&lt;topicId&gt;.json</b> и пересобирайте контент как обычно.</span>
-    <div class="copyright"><span data-i18n="footer_copy">© 2026 Шпаргалки</span> · <span data-i18n="footer_dev">Разработан</span> <a href="../../index.html">~/elxak.dev</a></div>
+    <div class="copyright"><span data-i18n="footer_copy">© 2026 Шпаргалки</span> · <span data-i18n="footer_dev">Разработан</span> <a href="../../index.html">~/elxak.dev</a><span id="contentVersionTag"></span></div>
   </footer>
 </div>
 
@@ -539,6 +539,7 @@ const T = {
     btn_copy:'Копировать', btn_download:'Скачать файл темы',
     footer_note_html:'Инструмент не отправляет данные никуда, кроме файла, который вы скачиваете сами. Готовый JSON кладите в <b>content/cards/&lt;topicId&gt;.json</b> и пересобирайте контент как обычно.',
     footer_copy:'© 2026 Шпаргалки', footer_dev:'Разработан',
+    content_version_label:(v)=>` · контент v${v}`,
     tag_no_topic:'тема не выбрана',
     block_text:'Текст', block_formula:'Формула', block_table:'Таблица', block_list:'Список', block_image:'Изображение', block_example:'Пример',
     btn_up:'Вверх', btn_down:'Вниз', btn_dup:'Дублировать', btn_del:'Удалить',
@@ -610,6 +611,7 @@ const T = {
     btn_copy:'Copy', btn_download:'Download topic file',
     footer_note_html:"This tool never sends data anywhere except the file you download yourself. Put the finished JSON in <b>content/cards/&lt;topicId&gt;.json</b> and rebuild content as usual.",
     footer_copy:'© 2026 Cheat Sheets', footer_dev:'Developed by',
+    content_version_label:(v)=>` · content v${v}`,
     tag_no_topic:'no topic selected',
     block_text:'Text', block_formula:'Formula', block_table:'Table', block_list:'List', block_image:'Image', block_example:'Example',
     btn_up:'Up', btn_down:'Down', btn_dup:'Duplicate', btn_del:'Delete',
@@ -681,6 +683,7 @@ const T = {
     btn_copy:'Нусха бардоштан', btn_download:'Боргирии файли мавзӯъ',
     footer_note_html:'Абзор ҳеҷ куҷо маълумот намефиристад, ба ҷуз файле, ки шумо худатон боргирӣ мекунед. JSON-и тайёрро дар <b>content/cards/&lt;topicId&gt;.json</b> гузоред ва мӯҳтаворо чун маъмул аз нав ҷамъ кунед.',
     footer_copy:'© 2026 Шпаргалкаҳо', footer_dev:'Таҳиягар:',
+    content_version_label:(v)=>` · мӯҳтаво v${v}`,
     tag_no_topic:'мавзӯъ интихоб нашудааст',
     block_text:'Матн', block_formula:'Формула', block_table:'Ҷадвал', block_list:'Рӯйхат', block_image:'Тасвир', block_example:'Мисол',
     btn_up:'Боло', btn_down:'Поён', btn_dup:'Такрор кардан', btn_del:'Нест кардан',
@@ -1580,6 +1583,7 @@ function setUILang(lang){
   renderEditor();
   renderPreview();
   renderValidationJson();
+  updateContentVersionTag();
 }
 document.querySelectorAll('.switch button[data-set]').forEach(btn => {
   btn.addEventListener('click', () => setUILang(btn.dataset.set));
@@ -1595,9 +1599,21 @@ function detectInitialUILang(){
   return 'ru';
 }
 
+/* ------------------------------- Версия контента в футере ------------------------------- */
+// Заполняется только если content/meta.json реально удалось загрузить (см.
+// tryAutoload ниже) — при недоступности (file:// или нет сети) остаётся
+// пустым, чтобы никогда не показать выдуманный или устаревший номер версии.
+let CONTENT_VERSION = null;
+function updateContentVersionTag(){
+  const el = document.getElementById('contentVersionTag');
+  if (!el) return;
+  el.textContent = CONTENT_VERSION !== null ? t('content_version_label', CONTENT_VERSION) : '';
+}
+
 /* ------------------------------- Попытка авто-загрузки ------------------------------- */
 // Если страница открыта через http(s) (не file://) и рядом лежит content/,
-// подхватим subjects.json/topics.json сами — тихо, без ошибки, если недоступно.
+// подхватим subjects.json/topics.json/meta.json сами — тихо, без ошибки,
+// если недоступно.
 (async function tryAutoload(){
   if (location.protocol === 'file:') return;
   for (const [path, key, statusId] of [
@@ -1614,6 +1630,16 @@ function detectInitialUILang(){
       st.classList.add('ok');
     } catch(e){ /* тихо игнорируем — используем ручную загрузку */ }
   }
+  try {
+    const res = await fetch('../content/meta.json');
+    if (res.ok){
+      const meta = await res.json();
+      if (meta && typeof meta.version !== 'undefined'){
+        CONTENT_VERSION = meta.version;
+        updateContentVersionTag();
+      }
+    }
+  } catch(e){ /* тихо игнорируем — версия просто не покажется */ }
   populateSubjectSelect();
 })();
 
