@@ -1,0 +1,39 @@
+[
+  {
+    "id": "chemistry.nitrogen-compounds.basics",
+    "topicId": "chemistry.nitrogen-compounds",
+    "title": {
+      "ru": "Азотсодержащие соединения",
+      "en": "Nitrogen-containing compounds",
+      "tj": "Пайвастагиҳои нитрогендор"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "К ним относятся **амины**, **аминокислоты** и **белки**. Аминокислоты — «кирпичики», из которых построены белки живых организмов.",
+          "en": "These include **amines**, **amino acids** and **proteins**. Amino acids are the building blocks of the proteins in living organisms.",
+          "tj": "Ба онҳо **аминҳо**, **аминокислотаҳо** ва **сафедаҳо** дохиланд. Аминокислотаҳо «хиштҳое»-анд, ки сафедаҳои организмҳои зинда аз онҳо сохта шудаанд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Из чего состоят белки?",
+          "en": "What are proteins made of?",
+          "tj": "Сафедаҳо аз чӣ иборатанд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Из аминокислот.",
+              "en": "Of amino acids.",
+              "tj": "Аз аминокислотаҳо."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

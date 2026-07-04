@@ -1,0 +1,39 @@
+[
+  {
+    "id": "constitution.local-government.basics",
+    "topicId": "constitution.local-government",
+    "title": {
+      "ru": "Местное самоуправление",
+      "en": "Local government",
+      "tj": "Худидоракунии маҳаллӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Местное самоуправление** осуществляется в городах и районах через **Маджлисы народных депутатов** (местные советы) и органы исполнительной власти — **хукуматы**.",
+          "en": "**Local government** is exercised in cities and districts through **Majlises of People's Deputies** (local councils) and executive bodies — **hukumats**.",
+          "tj": "**Худидоракунии маҳаллӣ** дар шаҳрҳо ва ноҳияҳо тавассути **Маҷлисҳои вакилони халқ** (шӯроҳои маҳаллӣ) ва мақомоти иҷроияи **ҳукуматҳо** амалӣ мегардад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как называется местный исполнительный орган в Таджикистане?",
+          "en": "What is the local executive body in Tajikistan called?",
+          "tj": "Мақоми иҷроияи маҳаллӣ дар Тоҷикистон чӣ ном дорад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Хукумат.",
+              "en": "A hukumat.",
+              "tj": "Ҳукумат."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

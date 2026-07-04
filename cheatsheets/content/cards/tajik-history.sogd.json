@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-history.sogd.basics",
+    "topicId": "tajik-history.sogd",
+    "title": {
+      "ru": "Согдиана",
+      "en": "Sogdiana",
+      "tj": "Суғд"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Согдиана** — историческая область в долинах рек Зарафшан и Кашкадарья. Согдийцы были великими **торговцами** на Великом шёлковом пути и создали собственную письменность.",
+          "en": "**Sogdiana** was a historical region in the valleys of the Zarafshan and Kashkadarya rivers. The Sogdians were great **traders** on the Silk Road and created their own script.",
+          "tj": "**Суғд** — минтақаи таърихӣ дар водиҳои дарёҳои Зарафшон ва Қашқадарё. Суғдиён тоҷирони бузурги Роҳи Абрешим буданд ва хатти хоси худро офариданд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Чем прославились согдийцы?",
+          "en": "What were the Sogdians famous for?",
+          "tj": "Суғдиён бо чӣ машҳур буданд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Торговлей на Великом шёлковом пути.",
+              "en": "Trade along the Great Silk Road.",
+              "tj": "Тиҷорат дар Роҳи Абрешим."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

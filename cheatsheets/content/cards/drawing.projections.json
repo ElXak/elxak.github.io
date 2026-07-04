@@ -1,0 +1,27 @@
+[
+  {
+    "id": "drawing.projections.views",
+    "topicId": "drawing.projections",
+    "title": {
+      "ru": "Три вида",
+      "en": "Three views",
+      "tj": "Се намуд"
+    },
+    "tags": [
+      "чертёж",
+      "проекция",
+      "drawing",
+      "views"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Чертёж детали обычно строят в **трёх видах**: спереди (главный), сверху и слева.",
+          "en": "A part drawing usually uses **three views**: front (main), top, and left.",
+          "tj": "Расми (нақшаи) деталро одатан дар **се намуд** месозанд: аз пеш (асосӣ), аз боло ва аз чап."
+        }
+      }
+    ]
+  }
+]

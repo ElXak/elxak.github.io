@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tajik-language.sounds-letters.basics",
+    "topicId": "tajik-language.sounds-letters",
+    "title": {
+      "ru": "Звуки и буквы",
+      "en": "Sounds and letters",
+      "tj": "Овозҳо ва ҳарфҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Мы слышим и произносим **звуки**, а пишем и читаем **буквы**. В таджикском алфавите 35 букв.",
+          "en": "We hear and pronounce **sounds**, and we write and read **letters**. The Tajik alphabet has 35 letters.",
+          "tj": "Мо **овозҳо**-ро мешунавем ва талаффуз мекунем, **ҳарфҳо**-ро менависем ва мехонем. Дар алифбои тоҷикӣ 35 ҳарф ҳаст."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Шесть букв — особые таджикские: **ғ, ӣ, қ, ӯ, ҳ, ҷ**.",
+          "en": "Six letters are special Tajik ones: **ғ, ӣ, қ, ӯ, ҳ, ҷ**.",
+          "tj": "Шаш ҳарф хоси тоҷикӣ мебошанд: **ғ, ӣ, қ, ӯ, ҳ, ҷ**."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Назовите одну особую букву таджикского алфавита.",
+          "en": "Name one special letter of the Tajik alphabet.",
+          "tj": "Як ҳарфи хоси алифбои тоҷикиро номбар кунед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Например, **ҷ** (как в слове «ҷуроб»).",
+              "en": "For example, **ҷ** (as in «ҷуроб»).",
+              "tj": "Масалан, **ҷ** (мисли калимаи «ҷуроб»)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

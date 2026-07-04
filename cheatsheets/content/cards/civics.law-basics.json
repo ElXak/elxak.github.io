@@ -1,0 +1,27 @@
+[
+  {
+    "id": "civics.law-basics.what",
+    "topicId": "civics.law-basics",
+    "title": {
+      "ru": "Что такое право",
+      "en": "What is law",
+      "tj": "Ҳуқуқ чист"
+    },
+    "tags": [
+      "право",
+      "закон",
+      "law",
+      "norms"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Право** — это система обязательных правил (норм), которые устанавливает и охраняет государство.",
+          "en": "**Law** is a system of binding rules (norms) established and protected by the state.",
+          "tj": "**Ҳуқуқ** — ин системаи қоидаҳои (меъёрҳои) ҳатмист, ки давлат муқаррар ва ҳифз мекунад."
+        }
+      }
+    ]
+  }
+]

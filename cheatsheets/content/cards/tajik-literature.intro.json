@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-literature.intro.basics",
+    "topicId": "tajik-literature.intro",
+    "title": {
+      "ru": "Что такое литература",
+      "en": "What is literature",
+      "tj": "Адабиёт чист"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Литература** — это искусство слова. Она отражает жизнь, учит и доставляет красоту. Различают две основные формы: **поэзию (назм)** и **прозу (наср)**.",
+          "en": "**Literature** is the art of the word. It reflects life, teaches and gives beauty. There are two main forms: **poetry (назм)** and **prose (наср)**.",
+          "tj": "**Адабиёт** санъати сухан аст. Он ҳаётро инъикос мекунад, таълим медиҳад ва зебоӣ мебахшад. Ду шакли асосӣ дорад: **назм** ва **наср**."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Назовите две основные формы литературы.",
+          "en": "Name the two main forms of literature.",
+          "tj": "Ду шакли асосии адабиётро номбар кунед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Поэзия (назм) и проза (наср).",
+              "en": "Poetry (назм) and prose (наср).",
+              "tj": "Назм ва наср."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

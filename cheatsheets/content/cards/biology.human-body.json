@@ -1,0 +1,64 @@
+[
+  {
+    "id": "biology.human-body.basics",
+    "topicId": "biology.human-body",
+    "title": {
+      "ru": "Организм человека. Ткани",
+      "en": "The human body. Tissues",
+      "tj": "Организми инсон. Бофтаҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Организм построен по уровням: **клетки → ткани → органы → системы органов**. **Ткань** — группа сходных клеток с общей функцией.",
+          "en": "The body is organised in levels: **cells → tissues → organs → organ systems**. A **tissue** is a group of similar cells with a shared function.",
+          "tj": "Организм аз сатҳҳо иборат аст: **ҳуҷайраҳо → бофтаҳо → узвҳо → системаҳои узвҳо**. **Бофта** — гурӯҳи ҳуҷайраҳои монанд бо вазифаи умумӣ."
+        }
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "ru": "Эпителиальная — покрывает поверхности.",
+            "en": "Epithelial — covers surfaces.",
+            "tj": "Эпителиалӣ — рӯякҳоро мепӯшонад."
+          },
+          {
+            "ru": "Соединительная — связывает и поддерживает.",
+            "en": "Connective — binds and supports.",
+            "tj": "Пайвасткунанда — мепайвандад ва дастгирӣ мекунад."
+          },
+          {
+            "ru": "Мышечная — обеспечивает движение.",
+            "en": "Muscle — produces movement.",
+            "tj": "Мушакӣ — ҳаракатро таъмин мекунад."
+          },
+          {
+            "ru": "Нервная — проводит сигналы.",
+            "en": "Nervous — carries signals.",
+            "tj": "Асаб — сигналҳоро мегузаронад."
+          }
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какая ткань покрывает поверхность тела?",
+          "en": "Which tissue covers the body's surface?",
+          "tj": "Кадом бофта рӯи баданро мепӯшонад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Эпителиальная.",
+              "en": "Epithelial.",
+              "tj": "Эпителиалӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

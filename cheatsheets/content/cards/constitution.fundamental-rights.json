@@ -1,0 +1,39 @@
+[
+  {
+    "id": "constitution.fundamental-rights.basics",
+    "topicId": "constitution.fundamental-rights",
+    "title": {
+      "ru": "Основные права",
+      "en": "Fundamental rights",
+      "tj": "Ҳуқуқҳои асосӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Конституция Таджикистана гарантирует **основные права и свободы** граждан: право на жизнь, образование, труд, медицинскую помощь, свободу слова и вероисповедания.",
+          "en": "The Constitution of Tajikistan guarantees citizens' **fundamental rights and freedoms**: the right to life, education, labour, healthcare, freedom of speech and religion.",
+          "tj": "Конститутсияи Тоҷикистон **ҳуқуқу озодиҳои асосии** шаҳрвандонро кафолат медиҳад: ҳуқуқ ба ҳаёт, таҳсил, меҳнат, тандурустӣ, озодии сухан ва эътиқод."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какой документ гарантирует основные права граждан Таджикистана?",
+          "en": "Which document guarantees the fundamental rights of Tajikistan's citizens?",
+          "tj": "Кадом ҳуҷҷат ҳуқуқҳои асосии шаҳрвандони Тоҷикистонро кафолат медиҳад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Конституция Таджикистана.",
+              "en": "The Constitution of Tajikistan.",
+              "tj": "Конститутсияи Тоҷикистон."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

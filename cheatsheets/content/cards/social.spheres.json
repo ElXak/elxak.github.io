@@ -1,0 +1,45 @@
+[
+  {
+    "id": "social.spheres.four",
+    "topicId": "social.spheres",
+    "title": {
+      "ru": "Четыре сферы",
+      "en": "The four spheres",
+      "tj": "Чор соҳа"
+    },
+    "tags": [
+      "общество",
+      "сферы",
+      "society",
+      "spheres"
+    ],
+    "blocks": [
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "ru": "**Экономическая** — производство и обмен",
+            "en": "**Economic** — production and exchange",
+            "tj": "**Иқтисодӣ** — истеҳсол ва мубодила"
+          },
+          {
+            "ru": "**Политическая** — власть и управление",
+            "en": "**Political** — power and governance",
+            "tj": "**Сиёсӣ** — ҳокимият ва идоракунӣ"
+          },
+          {
+            "ru": "**Социальная** — группы и отношения",
+            "en": "**Social** — groups and relations",
+            "tj": "**Иҷтимоӣ** — гурӯҳҳо ва муносибатҳо"
+          },
+          {
+            "ru": "**Духовная** — наука, искусство, религия",
+            "en": "**Spiritual** — science, art, religion",
+            "tj": "**Маънавӣ** — илм, санъат, дин"
+          }
+        ]
+      }
+    ]
+  }
+]

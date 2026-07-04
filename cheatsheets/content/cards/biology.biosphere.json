@@ -1,0 +1,39 @@
+[
+  {
+    "id": "biology.biosphere.basics",
+    "topicId": "biology.biosphere",
+    "title": {
+      "ru": "Биосфера и экосистемы",
+      "en": "Biosphere and ecosystems",
+      "tj": "Биосфера ва экосистемаҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Биосфера** — оболочка Земли, населённая живыми организмами. В ней энергия течёт от Солнца через цепи питания, а вещества **круговоротят**. Человек должен беречь природу.",
+          "en": "The **biosphere** is the Earth's living shell. Energy flows through it from the Sun along food chains, and matter **cycles**. People must protect nature.",
+          "tj": "**Биосфера** — қабати Замин, ки бо организмҳои зинда маскун аст. Дар он энергия аз Офтоб тавассути занҷирҳои ғизоӣ ҷорӣ мешавад ва моддаҳо **гардиш** мекунанд. Инсон бояд табиатро ҳифз кунад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какой главный источник энергии для биосферы?",
+          "en": "What is the main source of energy for the biosphere?",
+          "tj": "Манбаи асосии энергия барои биосфера чист?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Солнце.",
+              "en": "The Sun.",
+              "tj": "Офтоб."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

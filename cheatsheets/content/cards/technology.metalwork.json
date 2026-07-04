@@ -1,0 +1,39 @@
+[
+  {
+    "id": "technology.metalwork.basics",
+    "topicId": "technology.metalwork",
+    "title": {
+      "ru": "Обработка металла",
+      "en": "Metalworking",
+      "tj": "Коркарди металл"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Обработка металла** включает разметку, пиление, опиловку, сверление и гибку. Металлы бывают **чёрные** (сталь, чугун) и **цветные** (алюминий, медь).",
+          "en": "**Metalworking** includes marking, sawing, filing, drilling and bending. Metals are **ferrous** (steel, cast iron) and **non-ferrous** (aluminium, copper).",
+          "tj": "**Коркарди металл** аз нишонгузорӣ, арракашӣ, сайқалкорӣ, буркарӣ ва хамкарӣ иборат аст. Металлҳо **оҳанӣ** (пӯлод, оҳани чӯян) ва **ғайриоҳанӣ** (алюминий, мис) мешаванд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Чем отличаются чёрные металлы от цветных?",
+          "en": "How do ferrous metals differ from non-ferrous?",
+          "tj": "Металлҳои оҳанӣ аз ғайриоҳанӣ бо чӣ фарқ мекунанд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Чёрные содержат железо (сталь, чугун); цветные — нет (алюминий, медь).",
+              "en": "Ferrous metals contain iron (steel, cast iron); non-ferrous do not (aluminium, copper).",
+              "tj": "Оҳанӣ оҳан дорад (пӯлод, чӯян); ғайриоҳанӣ надорад (алюминий, мис)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

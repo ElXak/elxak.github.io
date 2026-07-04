@@ -1,0 +1,57 @@
+[
+  {
+    "id": "math.add-sub-100.basics",
+    "topicId": "math.add-sub-100",
+    "title": {
+      "ru": "Сложение и вычитание в пределах 100",
+      "en": "Addition and subtraction within 100",
+      "tj": "Ҷамъ ва тарҳ дар доираи 100"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Складываем десятки с десятками, а единицы с единицами.",
+          "en": "We add tens to tens and units to units.",
+          "tj": "Даҳҳоро бо даҳҳо ва якҳоро бо якҳо ҷамъ мекунем."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько будет $34 + 25$?",
+          "en": "What is $34 + 25$?",
+          "tj": "$34 + 25$ чанд мешавад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "$30+20=50$, $4+5=9$.",
+              "en": "$30+20=50$, $4+5=9$.",
+              "tj": "$30+20=50$, $4+5=9$."
+            }
+          },
+          {
+            "type": "formula",
+            "latex": "34 + 25 = 59"
+          }
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько будет $58 - 13$?",
+          "en": "What is $58 - 13$?",
+          "tj": "$58 - 13$ чанд мешавад?"
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "58 - 13 = 45"
+          }
+        ]
+      }
+    ]
+  }
+]

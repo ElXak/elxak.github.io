@@ -1,0 +1,100 @@
+[
+  {
+    "id": "geometry.area.basics",
+    "topicId": "geometry.area",
+    "title": {
+      "ru": "Площади фигур",
+      "en": "Areas of figures",
+      "tj": "Масоҳати фигураҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Площадь измеряется в квадратных единицах. Здесь $a, b$ — стороны, $h$ — высота, $d_1, d_2$ — диагонали.",
+          "en": "Area is measured in square units. Here $a, b$ are sides, $h$ the height, $d_1, d_2$ the diagonals.",
+          "tj": "Масоҳат бо воҳидҳои квадратӣ чен карда мешавад. Дар ин ҷо $a, b$ — тарафҳо, $h$ — баландӣ, $d_1, d_2$ — диагоналҳо."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Фигура",
+            "en": "Figure",
+            "tj": "Фигура"
+          },
+          {
+            "ru": "Площадь",
+            "en": "Area",
+            "tj": "Масоҳат"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Прямоугольник",
+              "en": "Rectangle",
+              "tj": "Росткунҷа"
+            },
+            "$S = ab$"
+          ],
+          [
+            {
+              "ru": "Квадрат",
+              "en": "Square",
+              "tj": "Квадрат"
+            },
+            "$S = a^2$"
+          ],
+          [
+            {
+              "ru": "Параллелограмм",
+              "en": "Parallelogram",
+              "tj": "Параллелограмм"
+            },
+            "$S = a\\,h$"
+          ],
+          [
+            {
+              "ru": "Треугольник",
+              "en": "Triangle",
+              "tj": "Секунҷа"
+            },
+            "$S = \\dfrac{1}{2}a\\,h$"
+          ],
+          [
+            {
+              "ru": "Трапеция",
+              "en": "Trapezoid",
+              "tj": "Трапетсия"
+            },
+            "$S = \\dfrac{a+b}{2}\\,h$"
+          ],
+          [
+            {
+              "ru": "Ромб",
+              "en": "Rhombus",
+              "tj": "Ромб"
+            },
+            "$S = \\dfrac{1}{2}d_1 d_2$"
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Основание треугольника 6, высота 4. Найдите площадь.",
+          "en": "A triangle has base 6 and height 4. Find the area.",
+          "tj": "Асоси секунҷа 6, баландӣ 4. Масоҳатро ёбед."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "S = \\dfrac{1}{2}\\cdot 6 \\cdot 4 = 12"
+          }
+        ]
+      }
+    ]
+  }
+]

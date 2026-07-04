@@ -1,0 +1,47 @@
+[
+  {
+    "id": "physics.thermal.basics",
+    "topicId": "physics.thermal",
+    "title": {
+      "ru": "Тепловые явления. Температура",
+      "en": "Thermal phenomena. Temperature",
+      "tj": "Ҳодисаҳои гармӣ. Ҳарорат"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Температура** показывает, насколько тело нагрето, и связана со скоростью движения частиц. Измеряется термометром в градусах Цельсия (°C).",
+          "en": "**Temperature** shows how hot a body is and relates to the speed of its particles. It is measured with a thermometer in degrees Celsius (°C).",
+          "tj": "**Ҳарорат** нишон медиҳад, ки ҷисм то чӣ андоза гарм аст ва бо суръати ҳаракати зарраҳо алоқаманд аст. Бо ҳароратсанҷ дар дараҷаи Селсий (°C) чен мешавад."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Теплота передаётся тремя способами: **теплопроводность, конвекция и излучение**.",
+          "en": "Heat is transferred in three ways: **conduction, convection and radiation**.",
+          "tj": "Гармӣ бо се роҳ интиқол меёбад: **гармигузаронӣ, конвексия ва шуоъфишонӣ**."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Каким способом передаётся тепло от Солнца к Земле?",
+          "en": "How does heat travel from the Sun to the Earth?",
+          "tj": "Гармӣ аз Офтоб ба Замин бо кадом роҳ интиқол меёбад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Излучением — через пустоту.",
+              "en": "By radiation — through empty space.",
+              "tj": "Бо шуоъфишонӣ — аз холигӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

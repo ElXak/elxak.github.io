@@ -1,0 +1,92 @@
+[
+  {
+    "id": "tajik-literature.literary-devices.basics",
+    "topicId": "tajik-literature.literary-devices",
+    "title": {
+      "ru": "Художественные средства",
+      "en": "Literary devices",
+      "tj": "Санъатҳои бадеӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Художественные средства (санъатҳои бадеӣ)** делают речь яркой и выразительной.",
+          "en": "**Literary devices (санъатҳои бадеӣ)** make speech vivid and expressive.",
+          "tj": "**Санъатҳои бадеӣ** нутқро рангин ва таъсирбахш мегардонанд."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Средство",
+            "en": "Device",
+            "tj": "Санъат"
+          },
+          {
+            "ru": "Значение",
+            "en": "Meaning",
+            "tj": "Маъно"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Ташбеҳ",
+              "en": "Simile",
+              "tj": "Ташбеҳ"
+            },
+            {
+              "ru": "сравнение («храбрый, как лев»)",
+              "en": "comparison ('brave as a lion')",
+              "tj": "муқоиса («далер мисли шер»)"
+            }
+          ],
+          [
+            {
+              "ru": "Истиора",
+              "en": "Metaphor",
+              "tj": "Истиора"
+            },
+            {
+              "ru": "скрытое сравнение",
+              "en": "hidden comparison",
+              "tj": "муқоисаи пинҳон"
+            }
+          ],
+          [
+            {
+              "ru": "Муболиға",
+              "en": "Hyperbole",
+              "tj": "Муболиға"
+            },
+            {
+              "ru": "преувеличение",
+              "en": "exaggeration",
+              "tj": "аз ҳад зиёд нишон додан"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какой приём в выражении «храбрый, как лев»?",
+          "en": "Which device is in 'brave as a lion'?",
+          "tj": "Дар ибораи «далер мисли шер» кадом санъат аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Сравнение (ташбеҳ).",
+              "en": "A simile (ташбеҳ).",
+              "tj": "Ташбеҳ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "english-language.essay-writing.basics",
+    "topicId": "english-language.essay-writing",
+    "title": {
+      "ru": "Написание эссе",
+      "en": "Essay writing",
+      "tj": "Навиштани иншо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Эссе** имеет чёткую структуру: **введение → основная часть → заключение**.",
+          "en": "An **essay** has a clear structure: **introduction → body → conclusion**.",
+          "tj": "**Иншо** сохти равшан дорад: **муқаддима → қисми асосӣ → хулоса**."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Часть",
+            "en": "Part",
+            "tj": "Қисм"
+          },
+          {
+            "ru": "Содержание",
+            "en": "Content",
+            "tj": "Мӯҳтаво"
+          },
+          {
+            "ru": "Полезные фразы",
+            "en": "Useful phrases",
+            "tj": "Ибораҳои муфид"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Введение",
+              "en": "Introduction",
+              "tj": "Муқаддима"
+            },
+            {
+              "ru": "тема + позиция",
+              "en": "topic + position",
+              "tj": "мавзӯъ + мавқеъ"
+            },
+            "In my opinion… / This essay will…"
+          ],
+          [
+            {
+              "ru": "Осн. часть",
+              "en": "Body",
+              "tj": "Асосӣ"
+            },
+            {
+              "ru": "аргументы + примеры",
+              "en": "arguments + examples",
+              "tj": "далелу мисолҳо"
+            },
+            "Firstly… Furthermore… For example…"
+          ],
+          [
+            {
+              "ru": "Заключение",
+              "en": "Conclusion",
+              "tj": "Хулоса"
+            },
+            {
+              "ru": "вывод + итог",
+              "en": "summary + final view",
+              "tj": "хулосабандӣ"
+            },
+            "In conclusion… To sum up…"
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какой фразой начинают заключение эссе?",
+          "en": "Which phrase starts an essay conclusion?",
+          "tj": "Хулосаи иншо бо кадом ибора оғоз мешавад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "In conclusion… / To sum up…",
+              "en": "In conclusion… / To sum up…",
+              "tj": "In conclusion… / To sum up…"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

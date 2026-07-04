@@ -1,0 +1,39 @@
+[
+  {
+    "id": "biology.digestion.basics",
+    "topicId": "biology.digestion",
+    "title": {
+      "ru": "Пищеварение",
+      "en": "Digestion",
+      "tj": "Ҳозима"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Пищеварение** расщепляет пищу до питательных веществ, которые всасываются в кровь. Путь пищи: **рот → пищевод → желудок → кишечник**. Помогают **ферменты**.",
+          "en": "**Digestion** breaks food into nutrients that are absorbed into the blood. Food's path: **mouth → esophagus → stomach → intestine**. **Enzymes** help.",
+          "tj": "**Ҳозима** хӯрокро то моддаҳои ғизоӣ таҷзия мекунад, ки ба хун ҷаббида мешаванд. Роҳи хӯрок: **даҳон → сурхрӯда → меъда → рӯда**. **Ферментҳо** кӯмак мекунанд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Где начинается пищеварение?",
+          "en": "Where does digestion begin?",
+          "tj": "Ҳозима аз куҷо оғоз меёбад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Во рту.",
+              "en": "In the mouth.",
+              "tj": "Дар даҳон."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

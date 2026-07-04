@@ -1,0 +1,39 @@
+[
+  {
+    "id": "russian-language.adjective-categories.basics",
+    "topicId": "russian-language.adjective-categories",
+    "title": {
+      "ru": "Разряды прилагательных",
+      "en": "Adjective categories",
+      "tj": "Навъҳои сифат"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Прилагательные делятся на три разряда: **качественные** (красный, добрый — имеют степени сравнения), **относительные** (деревянный, городской — материал или отношение) и **притяжательные** (мамин, лисий — отвечают на вопрос «чей?»).",
+          "en": "Adjectives fall into three categories: **qualitative** (красный, добрый — have degrees of comparison), **relative** (деревянный, городской — material or relation), and **possessive** (мамин, лисий — answer «чей?» whose?).",
+          "tj": "Сифатҳо ба се навъ ҷудо мешаванд: **сифатӣ** (красный, добрый — дараҷаи қиёс доранд), **нисбӣ** (деревянный, городской — мавод ё муносибат) ва **соҳибӣ** (мамин, лисий — ба саволи «чей?» ҷавоб медиҳанд)."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "К какому разряду относится прилагательное «деревянный»?",
+          "en": "Which category is the adjective «деревянный» (wooden)?",
+          "tj": "Сифати «деревянный» (чӯбин) ба кадом навъ мансуб аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Относительное.",
+              "en": "Relative.",
+              "tj": "Нисбӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

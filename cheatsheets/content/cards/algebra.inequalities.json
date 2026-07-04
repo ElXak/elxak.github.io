@@ -1,0 +1,59 @@
+[
+  {
+    "id": "algebra.inequalities.basics",
+    "topicId": "algebra.inequalities",
+    "title": {
+      "ru": "Неравенства",
+      "en": "Inequalities",
+      "tj": "Нобаробариҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Линейное неравенство** решают как уравнение, но при умножении или делении на **отрицательное** число знак неравенства **меняют** на противоположный.",
+          "en": "Solve a **linear inequality** like an equation, but when multiplying or dividing by a **negative** number, **reverse** the inequality sign.",
+          "tj": "**Нобаробарии хаттӣ**-ро мисли муодила ҳал мекунанд, аммо ҳангоми зарб ё тақсим ба адади **манфӣ** аломати нобаробариро **баръакс** мекунанд."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Ответ записывают промежутком, например $x > -3$.",
+          "en": "Write the answer as an interval, e.g. $x > -3$.",
+          "tj": "Ҷавобро ҳамчун фосила менависанд, масалан $x > -3$."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Решите: $-2x + 1 < 7$.",
+          "en": "Solve: $-2x + 1 < 7$.",
+          "tj": "Ҳал кунед: $-2x + 1 < 7$."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Перенесём $1$ вправо: $-2x < 6$.",
+              "en": "Move $1$ to the right: $-2x < 6$.",
+              "tj": "$1$-ро ба рост мегузаронем: $-2x < 6$."
+            }
+          },
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Разделим на $-2$ и **поменяем знак**: $x > -3$.",
+              "en": "Divide by $-2$ and **flip the sign**: $x > -3$.",
+              "tj": "Ба $-2$ тақсим карда, **аломатро баръакс мекунем**: $x > -3$."
+            }
+          },
+          {
+            "type": "formula",
+            "latex": "-2x + 1 < 7 \\;\\Rightarrow\\; x > -3"
+          }
+        ]
+      }
+    ]
+  }
+]

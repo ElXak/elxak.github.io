@@ -1,0 +1,47 @@
+[
+  {
+    "id": "russian-literature.pushkin.basics",
+    "topicId": "russian-literature.pushkin",
+    "title": {
+      "ru": "А. С. Пушкин",
+      "en": "Alexander Pushkin",
+      "tj": "А. С. Пушкин"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Александр Сергеевич Пушкин** (1799–1837) — величайший русский поэт, основоположник современного русского литературного языка.",
+          "en": "**Alexander Pushkin** (1799–1837) was the greatest Russian poet and the founder of the modern Russian literary language.",
+          "tj": "**Александр Пушкин** (1799–1837) — бузургтарин шоири рус, асосгузори забони адабии муосири русӣ."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Среди его произведений — роман в стихах «Евгений Онегин», повесть «Капитанская дочка», поэма «Руслан и Людмила» и сказки.",
+          "en": "His works include the novel in verse 'Eugene Onegin', the novella 'The Captain's Daughter', the poem 'Ruslan and Lyudmila' and fairy tales.",
+          "tj": "Аз асарҳояш — романи манзуми «Евгений Онегин», қиссаи «Духтари капитан», достони «Руслан ва Людмила» ва афсонаҳо."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Основоположником чего считают Пушкина?",
+          "en": "What is Pushkin considered the founder of?",
+          "tj": "Пушкинро асосгузори чӣ меҳисобанд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Современного русского литературного языка.",
+              "en": "The modern Russian literary language.",
+              "tj": "Забони адабии муосири русӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

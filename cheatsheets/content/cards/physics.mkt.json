@@ -1,0 +1,48 @@
+[
+  {
+    "id": "physics.mkt.basics",
+    "topicId": "physics.mkt",
+    "title": {
+      "ru": "Молекулярно-кинетическая теория",
+      "en": "Molecular-kinetic theory",
+      "tj": "Назарияи молекулавӣ-кинетикӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**МКТ** объясняет свойства вещества движением молекул. Давление газа создаётся ударами молекул о стенки.",
+          "en": "The **molecular-kinetic theory** explains matter through the motion of molecules. Gas pressure comes from molecules hitting the walls.",
+          "tj": "**Назарияи молекулавӣ-кинетикӣ** хосиятҳои моддаро бо ҳаракати молекулаҳо шарҳ медиҳад. Фишори газ аз бархӯрди молекулаҳо ба деворҳо ба вуҷуд меояд."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "pV = \\dfrac{m}{M} R T",
+        "caption": {
+          "ru": "уравнение состояния идеального газа",
+          "en": "ideal gas equation of state",
+          "tj": "муодилаи ҳолати гази идеалӣ"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Что определяет температуру газа на уровне молекул?",
+          "en": "What determines a gas's temperature at the molecular level?",
+          "tj": "Дар сатҳи молекулаҳо ҳарорати газро чӣ муайян мекунад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Средняя кинетическая энергия движения молекул.",
+              "en": "The average kinetic energy of the molecules.",
+              "tj": "Энергияи миёнаи кинетикии ҳаракати молекулаҳо."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

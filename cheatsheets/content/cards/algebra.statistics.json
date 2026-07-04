@@ -1,0 +1,59 @@
+[
+  {
+    "id": "algebra.statistics.basics",
+    "topicId": "algebra.statistics",
+    "title": {
+      "ru": "Элементы статистики",
+      "en": "Elements of statistics",
+      "tj": "Унсурҳои омор"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Среднее арифметическое** — сумма значений, делённая на их количество. **Мода** — самое частое значение. **Медиана** — серединное значение упорядоченного ряда.",
+          "en": "The **mean** is the sum of values divided by their count. The **mode** is the most frequent value. The **median** is the middle value of the ordered list.",
+          "tj": "**Миёнаи арифметикӣ** — ҷамъи қиматҳо тақсим ба шумораи онҳо. **Мода** — қимати бештар вохӯранда. **Медиана** — қимати миёнаи қатори тартибшуда."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Размах** — разность наибольшего и наименьшего значений.",
+          "en": "The **range** is the difference between the largest and smallest values.",
+          "tj": "**Доман** — фарқи қимати бузургтарин ва хурдтарин."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Ряд: $3, 5, 5, 8, 9$. Найдите среднее, моду и медиану.",
+          "en": "Data: $3, 5, 5, 8, 9$. Find the mean, mode and median.",
+          "tj": "Қатор: $3, 5, 5, 8, 9$. Миёна, мода ва медианаро ёбед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Среднее: $(3+5+5+8+9):5 = 6$.",
+              "en": "Mean: $(3+5+5+8+9):5 = 6$.",
+              "tj": "Миёна: $(3+5+5+8+9):5 = 6$."
+            }
+          },
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Мода $= 5$ (чаще всего). Медиана $= 5$ (среднее число ряда).",
+              "en": "Mode $= 5$ (most frequent). Median $= 5$ (middle number).",
+              "tj": "Мода $= 5$ (бештар). Медиана $= 5$ (адади миёна)."
+            }
+          },
+          {
+            "type": "formula",
+            "latex": "\\bar{x} = 6,\\quad \\text{Mo} = 5,\\quad \\text{Me} = 5"
+          }
+        ]
+      }
+    ]
+  }
+]

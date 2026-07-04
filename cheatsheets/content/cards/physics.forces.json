@@ -1,0 +1,48 @@
+[
+  {
+    "id": "physics.forces.basics",
+    "topicId": "physics.forces",
+    "title": {
+      "ru": "Сила. Виды сил",
+      "en": "Force. Types of forces",
+      "tj": "Қувва. Намудҳои қувва"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Сила** меняет скорость или форму тела; измеряется в **ньютонах (Н)**. Виды: тяжести, трения, упругости.",
+          "en": "A **force** changes a body's speed or shape; measured in **newtons (N)**. Types: gravity, friction, elasticity.",
+          "tj": "**Қувва** суръат ё шакли ҷисмро тағйир медиҳад; бо **нютон (Н)** чен мешавад. Намудҳо: вазнинӣ, соиш, чандирӣ."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "F = mg",
+        "caption": {
+          "ru": "сила тяжести; g ≈ 10 Н/кг",
+          "en": "weight; g ≈ 10 N/kg",
+          "tj": "қувваи вазнинӣ; g ≈ 10 Н/кг"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Найдите вес тела массой 5 кг ($g = 10$).",
+          "en": "Find the weight of a 5 kg body ($g = 10$).",
+          "tj": "Вазни ҷисми массааш 5 кг-ро ёбед ($g = 10$)."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "$F = 5 \\times 10 = 50$ Н.",
+              "en": "$F = 5 \\times 10 = 50$ N.",
+              "tj": "$F = 5 \\times 10 = 50$ Н."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

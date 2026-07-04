@@ -1,0 +1,47 @@
+[
+  {
+    "id": "geography.tajikistan-geography.basics",
+    "topicId": "geography.tajikistan-geography",
+    "title": {
+      "ru": "География Таджикистана",
+      "en": "Geography of Tajikistan",
+      "tj": "Ҷуғрофияи Тоҷикистон"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Таджикистан — горная страна в **Центральной Азии**. Около **93%** территории занимают горы (Памир, Тянь-Шань, Гиссарский хребет). Высочайшая точка — **пик Исмоила Сомони (7495 м)**.",
+          "en": "Tajikistan is a mountainous country in **Central Asia**. About **93%** of its territory is covered by mountains (Pamir, Tian Shan, Hissar Range). The highest point is **Ismoil Somoni Peak (7,495 m)**.",
+          "tj": "Тоҷикистон кишвари кӯҳистони **Осиёи Марказӣ** аст. Тақрибан **93%** қаламрав кӯҳҳо (Помир, Тянь-Шан, Қӯҳҳои Ҳисор)-ро ташкил медиҳад. Баландтарин нуқта — **қуллаи Исмоили Сомонӣ (7495 м)**."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Главные города: **Душанбе** (столица), Худжанд, Куляб, Курган-Тюбе.",
+          "en": "Main cities: **Dushanbe** (capital), Khujand, Kulob, Qurghonteppa.",
+          "tj": "Шаҳрҳои асосӣ: **Душанбе** (пойтахт), Хуҷанд, Кӯлоб, Қӯрғонтеппа."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какой процент территории Таджикистана занимают горы?",
+          "en": "What percentage of Tajikistan is covered by mountains?",
+          "tj": "Кӯҳҳо чанд фоизи қаламрави Тоҷикистонро ташкил медиҳанд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Около 93%.",
+              "en": "About 93%.",
+              "tj": "Тақрибан 93%."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

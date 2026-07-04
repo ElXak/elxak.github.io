@@ -1,0 +1,104 @@
+[
+  {
+    "id": "tajik-language.speech-styles.basics",
+    "topicId": "tajik-language.speech-styles",
+    "title": {
+      "ru": "Стили речи",
+      "en": "Styles of speech",
+      "tj": "Услубҳои нутқ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "В зависимости от цели и обстановки используют разные **стили речи**.",
+          "en": "Depending on the purpose and setting, different **styles of speech** are used.",
+          "tj": "Вобаста ба мақсад ва вазъият **услубҳои гуногуни нутқ** истифода мешаванд."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Стиль",
+            "en": "Style",
+            "tj": "Услуб"
+          },
+          {
+            "ru": "Где используется",
+            "en": "Where used",
+            "tj": "Дар куҷо"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Разговорный",
+              "en": "Conversational",
+              "tj": "Гуфтугӯӣ"
+            },
+            {
+              "ru": "в быту",
+              "en": "everyday talk",
+              "tj": "дар муошират"
+            }
+          ],
+          [
+            {
+              "ru": "Научный",
+              "en": "Scientific",
+              "tj": "Илмӣ"
+            },
+            {
+              "ru": "учебники, статьи",
+              "en": "textbooks, articles",
+              "tj": "китобу мақола"
+            }
+          ],
+          [
+            {
+              "ru": "Официально-деловой",
+              "en": "Official",
+              "tj": "Расмӣ"
+            },
+            {
+              "ru": "документы",
+              "en": "documents",
+              "tj": "ҳуҷҷатҳо"
+            }
+          ],
+          [
+            {
+              "ru": "Художественный",
+              "en": "Literary",
+              "tj": "Бадеӣ"
+            },
+            {
+              "ru": "литература",
+              "en": "literature",
+              "tj": "адабиёт"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Каким стилем написан учебник?",
+          "en": "Which style is a textbook written in?",
+          "tj": "Китоби дарсӣ бо кадом услуб навишта шудааст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Научным стилем.",
+              "en": "The scientific style.",
+              "tj": "Бо услуби илмӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

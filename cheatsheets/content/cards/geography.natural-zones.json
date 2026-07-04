@@ -1,0 +1,116 @@
+[
+  {
+    "id": "geography.natural-zones.basics",
+    "topicId": "geography.natural-zones",
+    "title": {
+      "ru": "Природные зоны",
+      "en": "Natural zones",
+      "tj": "Минтақаҳои табиӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Природные зоны** — пояса, сменяющие друг друга от полюсов к экватору в зависимости от климата.",
+          "en": "**Natural zones** are belts that replace one another from the poles to the equator, depending on climate.",
+          "tj": "**Минтақаҳои табиӣ** — камарбандҳое, ки аз қутбҳо ба экватор вобаста аз иқлим якдигарро иваз мекунанд."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Зона",
+            "en": "Zone",
+            "tj": "Минтақа"
+          },
+          {
+            "ru": "Характеристика",
+            "en": "Features",
+            "tj": "Хусусиятҳо"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Арктическая пустыня",
+              "en": "Arctic desert",
+              "tj": "Биёбони арктикӣ"
+            },
+            {
+              "ru": "льды, мерзлота",
+              "en": "ice, permafrost",
+              "tj": "ях, замини яхбаста"
+            }
+          ],
+          [
+            {
+              "ru": "Тундра",
+              "en": "Tundra",
+              "tj": "Тундра"
+            },
+            {
+              "ru": "мхи, лишайники",
+              "en": "mosses, lichens",
+              "tj": "хазамосу дерахтакҳо"
+            }
+          ],
+          [
+            {
+              "ru": "Тайга",
+              "en": "Taiga",
+              "tj": "Тайга"
+            },
+            {
+              "ru": "хвойные леса",
+              "en": "coniferous forests",
+              "tj": "ҷангалҳои сӯзанбарг"
+            }
+          ],
+          [
+            {
+              "ru": "Степь",
+              "en": "Steppe",
+              "tj": "Даштзор"
+            },
+            {
+              "ru": "травы, засуха",
+              "en": "grasses, drought",
+              "tj": "алафзор, хушкӣ"
+            }
+          ],
+          [
+            {
+              "ru": "Тропический лес",
+              "en": "Tropical forest",
+              "tj": "Ҷангали тропикӣ"
+            },
+            {
+              "ru": "влажно, богатый мир",
+              "en": "humid, rich life",
+              "tj": "намнок, олами бой"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какая природная зона характеризуется хвойными лесами?",
+          "en": "Which natural zone is characterised by coniferous forests?",
+          "tj": "Кадом минтақаи табиӣ бо ҷангалҳои сӯзанбарг хос аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Тайга.",
+              "en": "The taiga.",
+              "tj": "Тайга."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

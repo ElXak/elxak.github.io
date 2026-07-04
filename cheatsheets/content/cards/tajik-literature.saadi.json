@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tajik-literature.saadi.basics",
+    "topicId": "tajik-literature.saadi",
+    "title": {
+      "ru": "Саади и «Гулистан»",
+      "en": "Saadi and the Gulistan",
+      "tj": "Саъдӣ ва «Гулистон»"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Саади Ширази** (около 1210–1292) — великий поэт и наставник-моралист. Знаменитые произведения: **«Гулистан» («Розовый сад»)** — нравственные рассказы в прозе со стихами — и **«Бустан» («Плодовый сад»)** — поучительная поэма.",
+          "en": "**Saadi of Shiraz** (c. 1210–1292) was a great poet and moralist. His famous works are **Gulistan ('Rose Garden')** — moral stories in prose with verse — and **Bustan ('Orchard')** — a didactic poem.",
+          "tj": "**Саъдии Шерозӣ** (тахминан 1210–1292) — шоир ва ахлоқшиноси бузург. Асарҳои машҳур: **«Гулистон»** — ҳикояҳои ахлоқӣ дар наср бо шеър — ва **«Бӯстон»** — достони таълимӣ."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Главные темы Саади — мудрость, справедливость и человечность.",
+          "en": "Saadi's main themes are wisdom, justice and humanity.",
+          "tj": "Мавзӯъҳои асосии Саъдӣ — ҳикмат, адолат ва инсондӯстӣ."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какое прозаическое произведение Саади содержит нравственные рассказы?",
+          "en": "Which prose work of Saadi contains moral stories?",
+          "tj": "Кадом асари насрии Саъдӣ ҳикояҳои ахлоқӣ дорад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "«Гулистан».",
+              "en": "The Gulistan.",
+              "tj": "«Гулистон»."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

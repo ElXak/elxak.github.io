@@ -1,0 +1,47 @@
+[
+  {
+    "id": "russian-language.noun-intro.basics",
+    "topicId": "russian-language.noun-intro",
+    "title": {
+      "ru": "Имя существительное",
+      "en": "The noun",
+      "tj": "Исм"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Имя существительное** называет предметы, людей и явления. Отвечает на вопросы **кто?** (одушевлённые) и **что?** (неодушевлённые).",
+          "en": "A **noun** names objects, people and phenomena. It answers **кто?** (who? — animate) and **что?** (what? — inanimate).",
+          "tj": "**Исм** ашё, одамон ва ҳодисаҳоро ном мебарад. Ба саволҳои **кто?** (ҷондорон) ва **что?** (беҷонҳо) ҷавоб медиҳад."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Существительное имеет **род** (мужской, женский, средний) и изменяется по числам и падежам.",
+          "en": "A noun has **gender** (masculine, feminine, neuter) and changes by number and case.",
+          "tj": "Исм **ҷинс** дорад (мардона, занона, миёна) ва аз рӯи шумора ва падеж тағйир меёбад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "На какой вопрос отвечает слово «учитель»?",
+          "en": "Which question does «учитель» (teacher) answer?",
+          "tj": "«Учитель» (муаллим) ба кадом савол ҷавоб медиҳад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "На вопрос «кто?».",
+              "en": "The question «кто?» (who?).",
+              "tj": "Ба саволи «кто?»."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

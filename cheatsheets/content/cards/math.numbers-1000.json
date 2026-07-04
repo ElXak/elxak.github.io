@@ -1,0 +1,35 @@
+[
+  {
+    "id": "math.numbers-1000.basics",
+    "topicId": "math.numbers-1000",
+    "title": {
+      "ru": "Числа до 1000",
+      "en": "Numbers up to 1000",
+      "tj": "Ададҳо то 1000"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Трёхзначное число** состоит из сотен, десятков и единиц. Например, $345 = 300 + 40 + 5$.",
+          "en": "A **three-digit number** is made of hundreds, tens and units. For example, $345 = 300 + 40 + 5$.",
+          "tj": "**Адади серақама** аз садҳо, даҳҳо ва якҳо иборат аст. Масалан, $345 = 300 + 40 + 5$."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какое число — это 4 сотни, 0 десятков и 7 единиц?",
+          "en": "What number is 4 hundreds, 0 tens and 7 units?",
+          "tj": "4 сад, 0 даҳӣ ва 7 якӣ кадом адад аст?"
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "400 + 0 + 7 = 407"
+          }
+        ]
+      }
+    ]
+  }
+]

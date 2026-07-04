@@ -1,0 +1,116 @@
+[
+  {
+    "id": "biology.biomolecules.basics",
+    "topicId": "biology.biomolecules",
+    "title": {
+      "ru": "Химический состав клетки",
+      "en": "Chemical composition of the cell",
+      "tj": "Таркиби химиявии ҳуҷайра"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Клетка состоит из воды и органических веществ: белков, жиров, углеводов и нуклеиновых кислот, а также минеральных солей.",
+          "en": "A cell is made of water and organic substances — proteins, lipids, carbohydrates and nucleic acids — plus mineral salts.",
+          "tj": "Ҳуҷайра аз об ва моддаҳои органикӣ — сафедаҳо, липидҳо, карбогидратҳо ва кислотаҳои нуклеинӣ, инчунин намакҳои минералӣ иборат аст."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Вещество",
+            "en": "Substance",
+            "tj": "Модда"
+          },
+          {
+            "ru": "Роль",
+            "en": "Role",
+            "tj": "Нақш"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Вода",
+              "en": "Water",
+              "tj": "Об"
+            },
+            {
+              "ru": "среда и растворитель",
+              "en": "medium and solvent",
+              "tj": "муҳит ва ҳалкунанда"
+            }
+          ],
+          [
+            {
+              "ru": "Белки",
+              "en": "Proteins",
+              "tj": "Сафедаҳо"
+            },
+            {
+              "ru": "строительство, ферменты",
+              "en": "building, enzymes",
+              "tj": "бино, ферментҳо"
+            }
+          ],
+          [
+            {
+              "ru": "Жиры",
+              "en": "Lipids",
+              "tj": "Липидҳо"
+            },
+            {
+              "ru": "запас энергии",
+              "en": "energy store",
+              "tj": "захираи энергия"
+            }
+          ],
+          [
+            {
+              "ru": "Углеводы",
+              "en": "Carbohydrates",
+              "tj": "Карбогидратҳо"
+            },
+            {
+              "ru": "источник энергии",
+              "en": "energy source",
+              "tj": "манбаи энергия"
+            }
+          ],
+          [
+            {
+              "ru": "Нуклеиновые кислоты",
+              "en": "Nucleic acids",
+              "tj": "Кислотаҳои нуклеинӣ"
+            },
+            {
+              "ru": "хранят информацию",
+              "en": "store information",
+              "tj": "маълумотро нигоҳ медоранд"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какие вещества хранят наследственную информацию?",
+          "en": "Which substances store hereditary information?",
+          "tj": "Кадом моддаҳо маълумоти ирсиро нигоҳ медоранд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Нуклеиновые кислоты (ДНК).",
+              "en": "Nucleic acids (DNA).",
+              "tj": "Кислотаҳои нуклеинӣ (ДНК)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

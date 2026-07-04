@@ -1,0 +1,47 @@
+[
+  {
+    "id": "biology.reproduction-development.basics",
+    "topicId": "biology.reproduction-development",
+    "title": {
+      "ru": "Размножение и развитие",
+      "en": "Reproduction and development",
+      "tj": "Афзоиш ва инкишоф"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Бесполое** размножение даёт точные копии от одного родителя. **Половое** — от двух родителей через слияние половых клеток (**гамет**), что даёт разнообразие.",
+          "en": "**Asexual** reproduction makes exact copies from one parent. **Sexual** reproduction involves two parents and the fusion of sex cells (**gametes**), giving variety.",
+          "tj": "Афзоиши **ғайриҷинсӣ** аз як волид нусхаҳои аниқ медиҳад. **Ҷинсӣ** — аз ду волид тавассути омезиши ҳуҷайраҳои ҷинсӣ (**гаметаҳо**), ки гуногуниро медиҳад."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "При оплодотворении гаметы сливаются в **зиготу**, из которой развивается зародыш.",
+          "en": "At fertilisation the gametes fuse into a **zygote**, from which the embryo develops.",
+          "tj": "Ҳангоми бордоршавӣ гаметаҳо ба **зигота** меоманд, ки аз он ҷанин инкишоф меёбад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Что образуется при слиянии двух половых клеток?",
+          "en": "What forms when two sex cells fuse?",
+          "tj": "Ҳангоми омезиши ду ҳуҷайраи ҷинсӣ чӣ ҳосил мешавад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Зигота.",
+              "en": "A zygote.",
+              "tj": "Зигота."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

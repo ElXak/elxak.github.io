@@ -1,0 +1,5774 @@
+[
+  {
+    "id": "algebra.expressions",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Выражения и их преобразования",
+      "en": "Expressions and transformations",
+      "tj": "Ифодаҳо ва табдили онҳо"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "easy"
+  },
+  {
+    "id": "algebra.linear-equations",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Линейные уравнения",
+      "en": "Linear equations",
+      "tj": "Муодилаҳои хаттӣ"
+    },
+    "order": 1,
+    "grade": 7,
+    "difficulty": "easy"
+  },
+  {
+    "id": "algebra.linear-function",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Линейная функция",
+      "en": "Linear function",
+      "tj": "Функсияи хаттӣ"
+    },
+    "order": 2,
+    "grade": 7,
+    "difficulty": "easy"
+  },
+  {
+    "id": "algebra.monomials",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Одночлены",
+      "en": "Monomials",
+      "tj": "Якузваҳо"
+    },
+    "order": 3,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "algebra.polynomials",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Многочлены",
+      "en": "Polynomials",
+      "tj": "Бисёрузваҳо"
+    },
+    "order": 4,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "algebra.special-products",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Формулы сокращённого умножения",
+      "en": "Special product formulas",
+      "tj": "Формулаҳои зарби мухтасар"
+    },
+    "order": 5,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "algebra.linear-systems",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Системы линейных уравнений",
+      "en": "Systems of linear equations",
+      "tj": "Системаи муодилаҳои хаттӣ"
+    },
+    "order": 6,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "algebra.rational-fractions",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Рациональные дроби",
+      "en": "Rational fractions",
+      "tj": "Касрҳои ратсионалӣ"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "algebra.square-roots",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Квадратные корни",
+      "en": "Square roots",
+      "tj": "Решаҳои квадратӣ"
+    },
+    "order": 1,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "algebra.quadratic-equations",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Квадратные уравнения",
+      "en": "Quadratic equations",
+      "tj": "Муодилаҳои квадратӣ"
+    },
+    "order": 2,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "algebra.inequalities",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Неравенства",
+      "en": "Inequalities",
+      "tj": "Нобаробариҳо"
+    },
+    "order": 3,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "algebra.integer-exponent",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Степень с целым показателем",
+      "en": "Integer exponents",
+      "tj": "Дараҷа бо нишондиҳандаи бутун"
+    },
+    "order": 4,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "algebra.quadratic-function",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Квадратичная функция",
+      "en": "Quadratic function",
+      "tj": "Функсияи квадратӣ"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "algebra.quadratic-inequalities",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Квадратные неравенства",
+      "en": "Quadratic inequalities",
+      "tj": "Нобаробариҳои квадратӣ"
+    },
+    "order": 1,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "algebra.equation-systems",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Системы уравнений",
+      "en": "Systems of equations",
+      "tj": "Системаи муодилаҳо"
+    },
+    "order": 2,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "algebra.progressions",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Прогрессии",
+      "en": "Progressions",
+      "tj": "Прогрессияҳо"
+    },
+    "order": 3,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "algebra.statistics",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Элементы статистики",
+      "en": "Elements of statistics",
+      "tj": "Унсурҳои омор"
+    },
+    "order": 4,
+    "grade": 9,
+    "difficulty": "easy"
+  },
+  {
+    "id": "algebra.nth-root",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Корень n-й степени",
+      "en": "nth root",
+      "tj": "Решаи дараҷаи n"
+    },
+    "order": 0,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "algebra.power-function",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Степенная функция",
+      "en": "Power function",
+      "tj": "Функсияи дараҷагӣ"
+    },
+    "order": 1,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "algebra.exponential-function",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Показательная функция",
+      "en": "Exponential function",
+      "tj": "Функсияи нишондиҳандагӣ"
+    },
+    "order": 2,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "algebra.logarithms",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Логарифмы",
+      "en": "Logarithms",
+      "tj": "Логарифмҳо"
+    },
+    "order": 3,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "algebra.trig-functions",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Тригонометрические функции",
+      "en": "Trigonometric functions",
+      "tj": "Функсияҳои тригонометрӣ"
+    },
+    "order": 4,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "algebra.trig-identities",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Тригонометрические тождества",
+      "en": "Trigonometric identities",
+      "tj": "Айниятҳои тригонометрӣ"
+    },
+    "order": 5,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "algebra.trig-equations",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Тригонометрические уравнения",
+      "en": "Trigonometric equations",
+      "tj": "Муодилаҳои тригонометрӣ"
+    },
+    "order": 0,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "algebra.exp-log-equations",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Показательные и логарифмические уравнения",
+      "en": "Exponential and logarithmic equations",
+      "tj": "Муодилаҳои нишондиҳандагӣ ва логарифмӣ"
+    },
+    "order": 1,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "algebra.derivative",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Производная",
+      "en": "Derivative",
+      "tj": "Ҳосила"
+    },
+    "order": 2,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "algebra.derivative-applications",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Применение производной",
+      "en": "Applications of the derivative",
+      "tj": "Татбиқи ҳосила"
+    },
+    "order": 3,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "algebra.integral",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Первообразная и интеграл",
+      "en": "Antiderivative and integral",
+      "tj": "Функсияи ибтидоӣ ва интеграл"
+    },
+    "order": 4,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "algebra.probability",
+    "subjectId": "algebra",
+    "title": {
+      "ru": "Вероятность и статистика",
+      "en": "Probability and statistics",
+      "tj": "Эҳтимолият ва омор"
+    },
+    "order": 5,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.basics",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Начальные геометрические понятия",
+      "en": "Basic geometric concepts",
+      "tj": "Мафҳумҳои ибтидоии геометрӣ"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "easy"
+  },
+  {
+    "id": "geometry.angles",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Углы",
+      "en": "Angles",
+      "tj": "Кунҷҳо"
+    },
+    "order": 1,
+    "grade": 7,
+    "difficulty": "easy"
+  },
+  {
+    "id": "geometry.triangles",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Треугольники",
+      "en": "Triangles",
+      "tj": "Секунҷаҳо"
+    },
+    "order": 2,
+    "grade": 7,
+    "difficulty": "easy"
+  },
+  {
+    "id": "geometry.congruence",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Признаки равенства треугольников",
+      "en": "Triangle congruence",
+      "tj": "Аломатҳои баробарии секунҷаҳо"
+    },
+    "order": 3,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.isosceles",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Равнобедренный треугольник",
+      "en": "Isosceles triangle",
+      "tj": "Секунҷаи баробарпаҳлӯ"
+    },
+    "order": 4,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.parallel-lines",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Параллельные прямые",
+      "en": "Parallel lines",
+      "tj": "Хатҳои параллел"
+    },
+    "order": 5,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.triangle-angles",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Сумма углов треугольника",
+      "en": "Angle sum of a triangle",
+      "tj": "Ҷамъи кунҷҳои секунҷа"
+    },
+    "order": 6,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.quadrilaterals",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Четырёхугольники",
+      "en": "Quadrilaterals",
+      "tj": "Чоркунҷаҳо"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.parallelogram",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Параллелограмм и его виды",
+      "en": "Parallelogram and its types",
+      "tj": "Параллелограмм ва навъҳои он"
+    },
+    "order": 1,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.area",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Площади фигур",
+      "en": "Areas of figures",
+      "tj": "Масоҳати фигураҳо"
+    },
+    "order": 2,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.pythagorean",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Теорема Пифагора",
+      "en": "Pythagorean theorem",
+      "tj": "Теоремаи Пифагор"
+    },
+    "order": 3,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.similarity",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Подобие треугольников",
+      "en": "Similar triangles",
+      "tj": "Монандии секунҷаҳо"
+    },
+    "order": 4,
+    "grade": 8,
+    "difficulty": "hard"
+  },
+  {
+    "id": "geometry.circle",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Окружность и круг",
+      "en": "Circle and disk",
+      "tj": "Давра ва доира"
+    },
+    "order": 5,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.coordinates",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Метод координат",
+      "en": "Coordinate method",
+      "tj": "Усули координатаҳо"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.vectors",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Векторы",
+      "en": "Vectors",
+      "tj": "Векторҳо"
+    },
+    "order": 1,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.triangle-trig",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Теоремы синусов и косинусов",
+      "en": "Sine and cosine rules",
+      "tj": "Теоремаҳои синусҳо ва косинусҳо"
+    },
+    "order": 2,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "geometry.regular-polygons",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Правильные многоугольники",
+      "en": "Regular polygons",
+      "tj": "Бисёркунҷаҳои мунтазам"
+    },
+    "order": 3,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.circle-measure",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Длина окружности и площадь круга",
+      "en": "Circumference and area of a circle",
+      "tj": "Дарозии давра ва масоҳати доира"
+    },
+    "order": 4,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.transformations",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Движения",
+      "en": "Geometric transformations",
+      "tj": "Ҳаракатҳои геометрӣ"
+    },
+    "order": 5,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.solid-basics",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Аксиомы стереометрии",
+      "en": "Axioms of solid geometry",
+      "tj": "Аксиомаҳои стереометрия"
+    },
+    "order": 0,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.lines-planes",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Параллельность прямых и плоскостей",
+      "en": "Parallelism of lines and planes",
+      "tj": "Параллелии хатҳо ва ҳамвориҳо"
+    },
+    "order": 1,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "geometry.perpendicularity",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Перпендикулярность в пространстве",
+      "en": "Perpendicularity in space",
+      "tj": "Перпендикулярӣ дар фазо"
+    },
+    "order": 2,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "geometry.polyhedra",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Многогранники",
+      "en": "Polyhedra",
+      "tj": "Бисёррӯяҳо"
+    },
+    "order": 3,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.prism-pyramid",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Призма и пирамида",
+      "en": "Prism and pyramid",
+      "tj": "Призма ва пирамида"
+    },
+    "order": 4,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "geometry.space-coordinates",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Координаты в пространстве",
+      "en": "Coordinates in space",
+      "tj": "Координатаҳо дар фазо"
+    },
+    "order": 0,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.space-vectors",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Векторы в пространстве",
+      "en": "Vectors in space",
+      "tj": "Векторҳо дар фазо"
+    },
+    "order": 1,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "geometry.round-solids",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Цилиндр, конус, шар",
+      "en": "Cylinder, cone, sphere",
+      "tj": "Силиндр, конус, кура"
+    },
+    "order": 2,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geometry.volumes",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Объёмы тел",
+      "en": "Volumes of solids",
+      "tj": "Ҳаҷми ҷисмҳо"
+    },
+    "order": 3,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "geometry.surface-area",
+    "subjectId": "geometry",
+    "title": {
+      "ru": "Площадь поверхности",
+      "en": "Surface area",
+      "tj": "Масоҳати рӯя"
+    },
+    "order": 4,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "math.numbers-10",
+    "subjectId": "math",
+    "title": {
+      "ru": "Числа от 1 до 10",
+      "en": "Numbers 1 to 10",
+      "tj": "Ададҳо аз 1 то 10"
+    },
+    "order": 0,
+    "grade": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "math.add-sub-10",
+    "subjectId": "math",
+    "title": {
+      "ru": "Сложение и вычитание в пределах 10",
+      "en": "Addition and subtraction within 10",
+      "tj": "Ҷамъ ва тарҳ дар доираи 10"
+    },
+    "order": 1,
+    "grade": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "math.numbers-20",
+    "subjectId": "math",
+    "title": {
+      "ru": "Числа от 11 до 20",
+      "en": "Numbers 11 to 20",
+      "tj": "Ададҳо аз 11 то 20"
+    },
+    "order": 2,
+    "grade": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "math.add-sub-20",
+    "subjectId": "math",
+    "title": {
+      "ru": "Сложение и вычитание в пределах 20",
+      "en": "Addition and subtraction within 20",
+      "tj": "Ҷамъ ва тарҳ дар доираи 20"
+    },
+    "order": 3,
+    "grade": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "math.compare-numbers",
+    "subjectId": "math",
+    "title": {
+      "ru": "Сравнение чисел",
+      "en": "Comparing numbers",
+      "tj": "Муқоисаи ададҳо"
+    },
+    "order": 4,
+    "grade": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "math.shapes",
+    "subjectId": "math",
+    "title": {
+      "ru": "Простые фигуры",
+      "en": "Simple shapes",
+      "tj": "Шаклҳои содда"
+    },
+    "order": 5,
+    "grade": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "math.numbers-100",
+    "subjectId": "math",
+    "title": {
+      "ru": "Числа до 100",
+      "en": "Numbers up to 100",
+      "tj": "Ададҳо то 100"
+    },
+    "order": 0,
+    "grade": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "math.add-sub-100",
+    "subjectId": "math",
+    "title": {
+      "ru": "Сложение и вычитание в пределах 100",
+      "en": "Addition and subtraction within 100",
+      "tj": "Ҷамъ ва тарҳ дар доираи 100"
+    },
+    "order": 1,
+    "grade": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "math.multiplication-intro",
+    "subjectId": "math",
+    "title": {
+      "ru": "Смысл умножения и деления",
+      "en": "Meaning of multiplication and division",
+      "tj": "Маънои зарб ва тақсим"
+    },
+    "order": 2,
+    "grade": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.times-table",
+    "subjectId": "math",
+    "title": {
+      "ru": "Таблица умножения",
+      "en": "Multiplication table",
+      "tj": "Ҷадвали зарб"
+    },
+    "order": 3,
+    "grade": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.measure-units",
+    "subjectId": "math",
+    "title": {
+      "ru": "Единицы измерения",
+      "en": "Units of measurement",
+      "tj": "Воҳидҳои ченак"
+    },
+    "order": 4,
+    "grade": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "math.numbers-1000",
+    "subjectId": "math",
+    "title": {
+      "ru": "Числа до 1000",
+      "en": "Numbers up to 1000",
+      "tj": "Ададҳо то 1000"
+    },
+    "order": 0,
+    "grade": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.mult-div",
+    "subjectId": "math",
+    "title": {
+      "ru": "Умножение и деление",
+      "en": "Multiplication and division",
+      "tj": "Зарб ва тақсим"
+    },
+    "order": 1,
+    "grade": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.written-arithmetic",
+    "subjectId": "math",
+    "title": {
+      "ru": "Письменные вычисления",
+      "en": "Written calculations",
+      "tj": "Ҳисобҳои хаттӣ"
+    },
+    "order": 2,
+    "grade": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.order-operations",
+    "subjectId": "math",
+    "title": {
+      "ru": "Порядок действий",
+      "en": "Order of operations",
+      "tj": "Тартиби амалҳо"
+    },
+    "order": 3,
+    "grade": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.perimeter-area",
+    "subjectId": "math",
+    "title": {
+      "ru": "Периметр и площадь",
+      "en": "Perimeter and area",
+      "tj": "Периметр ва масоҳат"
+    },
+    "order": 4,
+    "grade": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.multi-digit",
+    "subjectId": "math",
+    "title": {
+      "ru": "Многозначные числа",
+      "en": "Multi-digit numbers",
+      "tj": "Ададҳои бисёррақама"
+    },
+    "order": 0,
+    "grade": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.long-mult-div",
+    "subjectId": "math",
+    "title": {
+      "ru": "Умножение и деление столбиком",
+      "en": "Long multiplication and division",
+      "tj": "Зарб ва тақсими хаттӣ"
+    },
+    "order": 1,
+    "grade": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.fractions-intro",
+    "subjectId": "math",
+    "title": {
+      "ru": "Доли и дроби",
+      "en": "Parts and fractions",
+      "tj": "Ҳиссаҳо ва касрҳо"
+    },
+    "order": 2,
+    "grade": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.quantities",
+    "subjectId": "math",
+    "title": {
+      "ru": "Величины и их единицы",
+      "en": "Quantities and units",
+      "tj": "Бузургиҳо ва воҳидҳои онҳо"
+    },
+    "order": 3,
+    "grade": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.word-problems",
+    "subjectId": "math",
+    "title": {
+      "ru": "Текстовые задачи",
+      "en": "Word problems",
+      "tj": "Масъалаҳои матнӣ"
+    },
+    "order": 4,
+    "grade": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.natural-numbers",
+    "subjectId": "math",
+    "title": {
+      "ru": "Натуральные числа",
+      "en": "Natural numbers",
+      "tj": "Ададҳои натуралӣ"
+    },
+    "order": 0,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.divisibility",
+    "subjectId": "math",
+    "title": {
+      "ru": "Делимость чисел",
+      "en": "Divisibility",
+      "tj": "Бахшшавандагии ададҳо"
+    },
+    "order": 1,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.fractions",
+    "subjectId": "math",
+    "title": {
+      "ru": "Обыкновенные дроби",
+      "en": "Common fractions",
+      "tj": "Касрҳои оддӣ"
+    },
+    "order": 2,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.decimals",
+    "subjectId": "math",
+    "title": {
+      "ru": "Десятичные дроби",
+      "en": "Decimal fractions",
+      "tj": "Касрҳои даҳӣ"
+    },
+    "order": 3,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.geometry-basics",
+    "subjectId": "math",
+    "title": {
+      "ru": "Углы и многоугольники",
+      "en": "Angles and polygons",
+      "tj": "Кунҷҳо ва бисёркунҷаҳо"
+    },
+    "order": 4,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "math.fraction-operations",
+    "subjectId": "math",
+    "title": {
+      "ru": "Действия с дробями",
+      "en": "Operations with fractions",
+      "tj": "Амалҳо бо касрҳо"
+    },
+    "order": 0,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.ratios",
+    "subjectId": "math",
+    "title": {
+      "ru": "Отношения и пропорции",
+      "en": "Ratios and proportions",
+      "tj": "Таносуб ва пропорсия"
+    },
+    "order": 1,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.percentages",
+    "subjectId": "math",
+    "title": {
+      "ru": "Проценты",
+      "en": "Percentages",
+      "tj": "Фоизҳо"
+    },
+    "order": 2,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.integers",
+    "subjectId": "math",
+    "title": {
+      "ru": "Положительные и отрицательные числа",
+      "en": "Positive and negative numbers",
+      "tj": "Ададҳои мусбат ва манфӣ"
+    },
+    "order": 3,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.rational-numbers",
+    "subjectId": "math",
+    "title": {
+      "ru": "Рациональные числа",
+      "en": "Rational numbers",
+      "tj": "Ададҳои ратсионалӣ"
+    },
+    "order": 4,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "math.coordinate-plane",
+    "subjectId": "math",
+    "title": {
+      "ru": "Координатная плоскость",
+      "en": "Coordinate plane",
+      "tj": "Ҳамвории координатӣ"
+    },
+    "order": 5,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.intro",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Физические величины и измерения",
+      "en": "Physical quantities and measurement",
+      "tj": "Бузургиҳои физикӣ ва ченкунӣ"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "easy"
+  },
+  {
+    "id": "physics.matter-structure",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Строение вещества",
+      "en": "Structure of matter",
+      "tj": "Сохти модда"
+    },
+    "order": 1,
+    "grade": 7,
+    "difficulty": "easy"
+  },
+  {
+    "id": "physics.mechanical-motion",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Механическое движение. Скорость",
+      "en": "Mechanical motion. Speed",
+      "tj": "Ҳаракати механикӣ. Суръат"
+    },
+    "order": 2,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.mass-density",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Масса и плотность",
+      "en": "Mass and density",
+      "tj": "Масса ва зичӣ"
+    },
+    "order": 3,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.forces",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Сила. Виды сил",
+      "en": "Force. Types of forces",
+      "tj": "Қувва. Намудҳои қувва"
+    },
+    "order": 4,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.pressure",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Давление твёрдых тел, жидкостей и газов",
+      "en": "Pressure of solids, liquids and gases",
+      "tj": "Фишори ҷисмҳои сахт, моеъ ва газ"
+    },
+    "order": 5,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.work-power-energy",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Работа, мощность, энергия",
+      "en": "Work, power, energy",
+      "tj": "Кор, тавоноӣ, энергия"
+    },
+    "order": 6,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.thermal",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Тепловые явления. Температура",
+      "en": "Thermal phenomena. Temperature",
+      "tj": "Ҳодисаҳои гармӣ. Ҳарорат"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.heat-quantity",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Количество теплоты",
+      "en": "Quantity of heat",
+      "tj": "Миқдори гармӣ"
+    },
+    "order": 1,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.states-matter",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Изменение агрегатных состояний",
+      "en": "Changes of state of matter",
+      "tj": "Тағйири ҳолатҳои агрегатӣ"
+    },
+    "order": 2,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.current",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Электрический ток",
+      "en": "Electric current",
+      "tj": "Ҷараёни электр"
+    },
+    "order": 3,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.ohms-law",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Закон Ома. Сопротивление",
+      "en": "Ohm's law. Resistance",
+      "tj": "Қонуни Ом. Муқовимат"
+    },
+    "order": 4,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.magnetism",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Магнитные явления",
+      "en": "Magnetic phenomena",
+      "tj": "Ҳодисаҳои магнитӣ"
+    },
+    "order": 5,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.light",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Световые явления. Линзы",
+      "en": "Light phenomena. Lenses",
+      "tj": "Ҳодисаҳои рӯшноӣ. Линзаҳо"
+    },
+    "order": 6,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.kinematics",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Кинематика. Равноускоренное движение",
+      "en": "Kinematics. Uniformly accelerated motion",
+      "tj": "Кинематика. Ҳаракати яктағйирёбандаи суръатнок"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "physics.newtons-laws",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Законы Ньютона",
+      "en": "Newton's laws",
+      "tj": "Қонунҳои Нютон"
+    },
+    "order": 1,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "physics.gravitation",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Закон всемирного тяготения",
+      "en": "Law of universal gravitation",
+      "tj": "Қонуни ҷозибаи умумиҷаҳонӣ"
+    },
+    "order": 2,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.momentum",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Импульс. Закон сохранения импульса",
+      "en": "Momentum. Conservation of momentum",
+      "tj": "Импулс. Қонуни бақои импулс"
+    },
+    "order": 3,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "physics.mechanical-energy",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Закон сохранения энергии",
+      "en": "Conservation of energy",
+      "tj": "Қонуни бақои энергия"
+    },
+    "order": 4,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.oscillations-waves",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Колебания и волны",
+      "en": "Oscillations and waves",
+      "tj": "Лаппишҳо ва мавҷҳо"
+    },
+    "order": 5,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "physics.kinematics-adv",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Кинематика: векторы и движение по окружности",
+      "en": "Kinematics: vectors and circular motion",
+      "tj": "Кинематика: векторҳо ва ҳаракат бо доира"
+    },
+    "order": 0,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "physics.dynamics",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Динамика. Силы в природе",
+      "en": "Dynamics. Forces in nature",
+      "tj": "Динамика. Қувваҳо дар табиат"
+    },
+    "order": 1,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "physics.statics",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Статика и равновесие",
+      "en": "Statics and equilibrium",
+      "tj": "Статика ва мувозинат"
+    },
+    "order": 2,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.conservation-laws",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Законы сохранения в механике",
+      "en": "Conservation laws in mechanics",
+      "tj": "Қонунҳои бақо дар механика"
+    },
+    "order": 3,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "physics.mkt",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Молекулярно-кинетическая теория",
+      "en": "Molecular-kinetic theory",
+      "tj": "Назарияи молекулавӣ-кинетикӣ"
+    },
+    "order": 4,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "physics.thermodynamics",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Термодинамика",
+      "en": "Thermodynamics",
+      "tj": "Термодинамика"
+    },
+    "order": 5,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "physics.gas-laws",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Газовые законы",
+      "en": "Gas laws",
+      "tj": "Қонунҳои газ"
+    },
+    "order": 6,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.electrostatics",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Электростатика",
+      "en": "Electrostatics",
+      "tj": "Электростатика"
+    },
+    "order": 0,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "physics.dc-circuits",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Постоянный ток. Электрические цепи",
+      "en": "Direct current. Electric circuits",
+      "tj": "Ҷараёни доимӣ. Занҷирҳои электр"
+    },
+    "order": 1,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.magnetic-field",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Магнитное поле. Электромагнитная индукция",
+      "en": "Magnetic field. Electromagnetic induction",
+      "tj": "Майдони магнитӣ. Индуксияи электромагнитӣ"
+    },
+    "order": 2,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "physics.em-waves",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Электромагнитные колебания и волны",
+      "en": "Electromagnetic oscillations and waves",
+      "tj": "Лаппишҳо ва мавҷҳои электромагнитӣ"
+    },
+    "order": 3,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "physics.optics",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Оптика",
+      "en": "Optics",
+      "tj": "Оптика"
+    },
+    "order": 4,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "physics.quantum",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Квантовая физика",
+      "en": "Quantum physics",
+      "tj": "Физикаи квантӣ"
+    },
+    "order": 5,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "physics.atomic-nuclear",
+    "subjectId": "physics",
+    "title": {
+      "ru": "Атом и атомное ядро",
+      "en": "The atom and atomic nucleus",
+      "tj": "Атом ва ядрои атом"
+    },
+    "order": 6,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "chemistry.intro",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Предмет химии. Вещества",
+      "en": "Chemistry. Substances",
+      "tj": "Мавзӯи химия. Моддаҳо"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "easy"
+  },
+  {
+    "id": "chemistry.atom-structure",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Строение атома",
+      "en": "Atomic structure",
+      "tj": "Сохти атом"
+    },
+    "order": 1,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "chemistry.periodic-table",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Периодическая система",
+      "en": "The periodic table",
+      "tj": "Ҷадвали даврӣ"
+    },
+    "order": 2,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "chemistry.valence",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Валентность",
+      "en": "Valence",
+      "tj": "Валентнокӣ"
+    },
+    "order": 3,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "chemistry.chemical-bond",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Химическая связь",
+      "en": "Chemical bonding",
+      "tj": "Банди химиявӣ"
+    },
+    "order": 4,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "chemistry.mole",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Моль. Количество вещества",
+      "en": "The mole. Amount of substance",
+      "tj": "Мол. Миқдори модда"
+    },
+    "order": 5,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "chemistry.reactions",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Химические реакции",
+      "en": "Chemical reactions",
+      "tj": "Реаксияҳои химиявӣ"
+    },
+    "order": 6,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "chemistry.compound-classes",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Основные классы соединений",
+      "en": "Main classes of compounds",
+      "tj": "Синфҳои асосии пайвастагиҳо"
+    },
+    "order": 7,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "chemistry.solutions",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Растворы",
+      "en": "Solutions",
+      "tj": "Маҳлулҳо"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "chemistry.dissociation",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Электролитическая диссоциация",
+      "en": "Electrolytic dissociation",
+      "tj": "Диссосиатсияи электролитӣ"
+    },
+    "order": 1,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "chemistry.ion-reactions",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Реакции ионного обмена",
+      "en": "Ion exchange reactions",
+      "tj": "Реаксияҳои мубодилаи ионӣ"
+    },
+    "order": 2,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "chemistry.nonmetals",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Неметаллы",
+      "en": "Nonmetals",
+      "tj": "Ғайриметаллҳо"
+    },
+    "order": 3,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "chemistry.metals",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Металлы",
+      "en": "Metals",
+      "tj": "Металлҳо"
+    },
+    "order": 4,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "chemistry.reaction-rate",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Скорость химических реакций",
+      "en": "Rate of chemical reactions",
+      "tj": "Суръати реаксияҳои химиявӣ"
+    },
+    "order": 5,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "chemistry.organic-intro",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Введение в органическую химию",
+      "en": "Introduction to organic chemistry",
+      "tj": "Муқаддима ба химияи органикӣ"
+    },
+    "order": 0,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "chemistry.hydrocarbons",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Углеводороды",
+      "en": "Hydrocarbons",
+      "tj": "Карбогидрогенҳо"
+    },
+    "order": 1,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "chemistry.alcohols",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Спирты и фенолы",
+      "en": "Alcohols and phenols",
+      "tj": "Спиртҳо ва фенолҳо"
+    },
+    "order": 2,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "chemistry.carboxylic",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Карбоновые кислоты",
+      "en": "Carboxylic acids",
+      "tj": "Кислотаҳои карбон"
+    },
+    "order": 3,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "chemistry.esters-fats",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Сложные эфиры и жиры",
+      "en": "Esters and fats",
+      "tj": "Эфирҳои мураккаб ва равғанҳо"
+    },
+    "order": 4,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "chemistry.carbohydrates",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Углеводы",
+      "en": "Carbohydrates",
+      "tj": "Карбогидратҳо"
+    },
+    "order": 5,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "chemistry.nitrogen-compounds",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Азотсодержащие соединения",
+      "en": "Nitrogen-containing compounds",
+      "tj": "Пайвастагиҳои нитрогендор"
+    },
+    "order": 6,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "chemistry.atom-structure-adv",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Строение атома и периодический закон",
+      "en": "Atomic structure and the periodic law",
+      "tj": "Сохти атом ва қонуни даврӣ"
+    },
+    "order": 0,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "chemistry.bond-types",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Виды химической связи",
+      "en": "Types of chemical bonding",
+      "tj": "Намудҳои банди химиявӣ"
+    },
+    "order": 1,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "chemistry.reactions-classification",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Классификация химических реакций",
+      "en": "Classification of chemical reactions",
+      "tj": "Таснифи реаксияҳои химиявӣ"
+    },
+    "order": 2,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "chemistry.electrolysis",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Электролиз",
+      "en": "Electrolysis",
+      "tj": "Электролиз"
+    },
+    "order": 3,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "chemistry.metals-nonmetals",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Металлы и неметаллы: обзор",
+      "en": "Metals and nonmetals: overview",
+      "tj": "Металлҳо ва ғайриметаллҳо: шарҳ"
+    },
+    "order": 4,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "chemistry.chemistry-life",
+    "subjectId": "chemistry",
+    "title": {
+      "ru": "Химия и жизнь",
+      "en": "Chemistry and life",
+      "tj": "Химия ва ҳаёт"
+    },
+    "order": 5,
+    "grade": 11,
+    "difficulty": "easy"
+  },
+  {
+    "id": "biology.intro",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Введение в биологию. Признаки жизни",
+      "en": "Introduction to biology. Signs of life",
+      "tj": "Муқаддима ба биология. Аломатҳои ҳаёт"
+    },
+    "order": 0,
+    "grade": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "biology.cell",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Клетка",
+      "en": "The cell",
+      "tj": "Ҳуҷайра"
+    },
+    "order": 1,
+    "grade": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "biology.plant-organs",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Органы растений",
+      "en": "Plant organs",
+      "tj": "Узвҳои растанӣ"
+    },
+    "order": 2,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.photosynthesis",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Фотосинтез",
+      "en": "Photosynthesis",
+      "tj": "Фотосинтез"
+    },
+    "order": 3,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.plant-reproduction",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Размножение растений",
+      "en": "Plant reproduction",
+      "tj": "Афзоиши растаниҳо"
+    },
+    "order": 4,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.plant-diversity",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Многообразие растений",
+      "en": "Diversity of plants",
+      "tj": "Гуногунии растаниҳо"
+    },
+    "order": 5,
+    "grade": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "biology.animal-kingdom",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Царство животных",
+      "en": "The animal kingdom",
+      "tj": "Олами ҳайвонот"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "easy"
+  },
+  {
+    "id": "biology.invertebrates",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Беспозвоночные",
+      "en": "Invertebrates",
+      "tj": "Бесутунмӯҳраҳо"
+    },
+    "order": 1,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.vertebrates",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Позвоночные",
+      "en": "Vertebrates",
+      "tj": "Сутунмӯҳрадорҳо"
+    },
+    "order": 2,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.animal-systems",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Системы органов животных",
+      "en": "Animal organ systems",
+      "tj": "Системаҳои узвҳои ҳайвонот"
+    },
+    "order": 3,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.animal-behavior",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Поведение животных",
+      "en": "Animal behaviour",
+      "tj": "Рафтори ҳайвонот"
+    },
+    "order": 4,
+    "grade": 7,
+    "difficulty": "easy"
+  },
+  {
+    "id": "biology.animal-habitat",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Животные и среда обитания",
+      "en": "Animals and their habitat",
+      "tj": "Ҳайвонот ва муҳити зист"
+    },
+    "order": 5,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.human-body",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Организм человека. Ткани",
+      "en": "The human body. Tissues",
+      "tj": "Организми инсон. Бофтаҳо"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.skeleton-muscles",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Опорно-двигательная система",
+      "en": "Skeleton and muscles",
+      "tj": "Системаи такягоҳӣ-ҳаракатӣ"
+    },
+    "order": 1,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.blood-circulation",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Кровь и кровообращение",
+      "en": "Blood and circulation",
+      "tj": "Хун ва гардиши хун"
+    },
+    "order": 2,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.respiration",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Дыхание",
+      "en": "Respiration",
+      "tj": "Нафаскашӣ"
+    },
+    "order": 3,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.digestion",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Пищеварение",
+      "en": "Digestion",
+      "tj": "Ҳозима"
+    },
+    "order": 4,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.nervous-system",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Нервная система",
+      "en": "The nervous system",
+      "tj": "Системаи асаб"
+    },
+    "order": 5,
+    "grade": 8,
+    "difficulty": "hard"
+  },
+  {
+    "id": "biology.sense-organs",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Органы чувств",
+      "en": "Sense organs",
+      "tj": "Узвҳои ҳис"
+    },
+    "order": 6,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.cell-biology",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Цитология. Строение клетки",
+      "en": "Cytology. Cell structure",
+      "tj": "Ситология. Сохти ҳуҷайра"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.metabolism",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Обмен веществ",
+      "en": "Metabolism",
+      "tj": "Мубодилаи моддаҳо"
+    },
+    "order": 1,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "biology.cell-division",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Деление клетки",
+      "en": "Cell division",
+      "tj": "Тақсими ҳуҷайра"
+    },
+    "order": 2,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "biology.genetics",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Основы генетики",
+      "en": "Genetics basics",
+      "tj": "Асосҳои генетика"
+    },
+    "order": 3,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "biology.evolution",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Эволюционное учение",
+      "en": "Theory of evolution",
+      "tj": "Таълимоти эволютсионӣ"
+    },
+    "order": 4,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.ecology",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Основы экологии",
+      "en": "Ecology basics",
+      "tj": "Асосҳои экология"
+    },
+    "order": 5,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.biomolecules",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Химический состав клетки",
+      "en": "Chemical composition of the cell",
+      "tj": "Таркиби химиявии ҳуҷайра"
+    },
+    "order": 0,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "biology.cell-structure-adv",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Строение и функции клетки",
+      "en": "Cell structure and functions",
+      "tj": "Сохт ва вазифаҳои ҳуҷайра"
+    },
+    "order": 1,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "biology.energy-metabolism",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Энергетический обмен",
+      "en": "Energy metabolism",
+      "tj": "Мубодилаи энергия"
+    },
+    "order": 2,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "biology.protein-synthesis",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Биосинтез белка",
+      "en": "Protein synthesis",
+      "tj": "Биосинтези сафеда"
+    },
+    "order": 3,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "biology.reproduction-development",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Размножение и развитие",
+      "en": "Reproduction and development",
+      "tj": "Афзоиш ва инкишоф"
+    },
+    "order": 4,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.genetics-laws",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Законы Менделя. Наследственность",
+      "en": "Mendel's laws. Heredity",
+      "tj": "Қонунҳои Мендел. Ирсият"
+    },
+    "order": 0,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "biology.variation",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Изменчивость",
+      "en": "Variation",
+      "tj": "Тағйирпазирӣ"
+    },
+    "order": 1,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.selection-biotech",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Селекция и биотехнология",
+      "en": "Selection and biotechnology",
+      "tj": "Селексия ва биотехнология"
+    },
+    "order": 2,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.evolution-theory",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Эволюция. Происхождение видов",
+      "en": "Evolution. Origin of species",
+      "tj": "Эволютсия. Пайдоиши намудҳо"
+    },
+    "order": 3,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "biology.origin-life",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Происхождение жизни",
+      "en": "The origin of life",
+      "tj": "Пайдоиши ҳаёт"
+    },
+    "order": 4,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "biology.biosphere",
+    "subjectId": "biology",
+    "title": {
+      "ru": "Биосфера и экосистемы",
+      "en": "Biosphere and ecosystems",
+      "tj": "Биосфера ва экосистемаҳо"
+    },
+    "order": 5,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.alphabet",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Алфавит",
+      "en": "Alphabet",
+      "tj": "Алифбо"
+    },
+    "order": 0,
+    "grade": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tajik-language.sounds-letters",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Звуки и буквы",
+      "en": "Sounds and letters",
+      "tj": "Овозҳо ва ҳарфҳо"
+    },
+    "order": 1,
+    "grade": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tajik-language.syllable",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Слог",
+      "en": "Syllable",
+      "tj": "Ҳиҷо"
+    },
+    "order": 2,
+    "grade": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tajik-language.word-sentence",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Слово и предложение",
+      "en": "Word and sentence",
+      "tj": "Калима ва ҷумла"
+    },
+    "order": 3,
+    "grade": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tajik-language.vowels-consonants",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Гласные и согласные",
+      "en": "Vowels and consonants",
+      "tj": "Садонокҳо ва ҳамсадоҳо"
+    },
+    "order": 0,
+    "grade": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tajik-language.capital-letter",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Заглавная буква",
+      "en": "Capital letter",
+      "tj": "Ҳарфи калон"
+    },
+    "order": 1,
+    "grade": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tajik-language.word-meaning",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Значение слова",
+      "en": "Word meaning",
+      "tj": "Маънои калима"
+    },
+    "order": 2,
+    "grade": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tajik-language.sentence-types",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Виды предложений",
+      "en": "Types of sentences",
+      "tj": "Намудҳои ҷумла"
+    },
+    "order": 3,
+    "grade": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.parts-of-speech",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Части речи",
+      "en": "Parts of speech",
+      "tj": "Ҳиссаҳои нутқ"
+    },
+    "order": 0,
+    "grade": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.noun-intro",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Имя существительное",
+      "en": "The noun",
+      "tj": "Исм"
+    },
+    "order": 1,
+    "grade": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.verb-intro",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Глагол",
+      "en": "The verb",
+      "tj": "Феъл"
+    },
+    "order": 2,
+    "grade": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.adjective-intro",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Имя прилагательное",
+      "en": "The adjective",
+      "tj": "Сифат"
+    },
+    "order": 3,
+    "grade": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.word-composition",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Состав слова",
+      "en": "Word composition",
+      "tj": "Таркиби калима"
+    },
+    "order": 0,
+    "grade": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.root-affix",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Корень и аффиксы",
+      "en": "Root and affixes",
+      "tj": "Реша ва аффиксҳо"
+    },
+    "order": 1,
+    "grade": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.pronoun",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Местоимение",
+      "en": "The pronoun",
+      "tj": "Ҷонишин"
+    },
+    "order": 2,
+    "grade": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.numeral",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Имя числительное",
+      "en": "The numeral",
+      "tj": "Шумора"
+    },
+    "order": 3,
+    "grade": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.phonetics",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Фонетика",
+      "en": "Phonetics",
+      "tj": "Фонетика"
+    },
+    "order": 0,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.izofa",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Изафетная связь",
+      "en": "The izafat",
+      "tj": "Бандаки изофӣ"
+    },
+    "order": 1,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.synonyms-antonyms",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Синонимы и антонимы",
+      "en": "Synonyms and antonyms",
+      "tj": "Муродифот ва мутазод"
+    },
+    "order": 2,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.word-formation",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Словообразование",
+      "en": "Word formation",
+      "tj": "Калимасозӣ"
+    },
+    "order": 3,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.noun-categories",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Категории существительного",
+      "en": "Categories of the noun",
+      "tj": "Категорияҳои исм"
+    },
+    "order": 0,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.plural",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Множественное число",
+      "en": "The plural",
+      "tj": "Шумораи ҷамъ"
+    },
+    "order": 1,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.object-marker",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Послелог «-ро»",
+      "en": "The object marker -ро",
+      "tj": "Бандаки -ро"
+    },
+    "order": 2,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.adjective-degrees",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Степени сравнения прилагательных",
+      "en": "Degrees of adjectives",
+      "tj": "Дараҷаҳои сифат"
+    },
+    "order": 3,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.verb-tenses",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Времена глагола",
+      "en": "Verb tenses",
+      "tj": "Замонҳои феъл"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.verb-mood",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Наклонения глагола",
+      "en": "Verb moods",
+      "tj": "Сиғаҳои феъл"
+    },
+    "order": 1,
+    "grade": 7,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tajik-language.adverb",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Наречие",
+      "en": "The adverb",
+      "tj": "Зарф"
+    },
+    "order": 2,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.participle",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Причастие и деепричастие",
+      "en": "Participles",
+      "tj": "Сифати феълӣ ва феъли ҳол"
+    },
+    "order": 3,
+    "grade": 7,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tajik-language.phrase",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Словосочетание",
+      "en": "The phrase",
+      "tj": "Ибора"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.simple-sentence",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Простое предложение",
+      "en": "The simple sentence",
+      "tj": "Ҷумлаи содда"
+    },
+    "order": 1,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.sentence-members",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Члены предложения",
+      "en": "Sentence members",
+      "tj": "Аъзоҳои ҷумла"
+    },
+    "order": 2,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.homogeneous",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Однородные члены",
+      "en": "Homogeneous members",
+      "tj": "Аъзоҳои чидаи ҷумла"
+    },
+    "order": 3,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.complex-sentence",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Сложное предложение",
+      "en": "The complex sentence",
+      "tj": "Ҷумлаи мураккаб"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tajik-language.compound-complex",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Сложносочинённые и сложноподчинённые",
+      "en": "Compound and subordinate clauses",
+      "tj": "Ҷумлаҳои мураккаби пайваст ва тобеъ"
+    },
+    "order": 1,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tajik-language.direct-speech",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Прямая речь",
+      "en": "Direct speech",
+      "tj": "Нутқи айнан"
+    },
+    "order": 2,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.punctuation",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Пунктуация",
+      "en": "Punctuation",
+      "tj": "Аломатҳои китобат"
+    },
+    "order": 3,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.text",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Текст и его признаки",
+      "en": "Text and its features",
+      "tj": "Матн ва аломатҳои он"
+    },
+    "order": 0,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.speech-styles",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Стили речи",
+      "en": "Styles of speech",
+      "tj": "Услубҳои нутқ"
+    },
+    "order": 1,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tajik-language.vocabulary",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Лексика и фразеология",
+      "en": "Vocabulary and phraseology",
+      "tj": "Луғат ва фразеология"
+    },
+    "order": 2,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.language-norms",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Нормы литературного языка",
+      "en": "Literary language norms",
+      "tj": "Меъёрҳои забони адабӣ"
+    },
+    "order": 0,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tajik-language.speech-culture",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Культура речи",
+      "en": "Speech culture",
+      "tj": "Фарҳанги нутқ"
+    },
+    "order": 1,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-language.grammar-review",
+    "subjectId": "tajik-language",
+    "title": {
+      "ru": "Повторение грамматики",
+      "en": "Grammar review",
+      "tj": "Такрори грамматика"
+    },
+    "order": 2,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.rudaki",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Рудаки",
+      "en": "Rudaki",
+      "tj": "Рӯдакӣ"
+    },
+    "order": 0,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tajik-literature.intro",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Что такое литература",
+      "en": "What is literature",
+      "tj": "Адабиёт чист"
+    },
+    "order": 1,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tajik-literature.folklore",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Устное народное творчество",
+      "en": "Folklore",
+      "tj": "Эҷодиёти даҳанакии халқ"
+    },
+    "order": 2,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tajik-literature.fairy-tales",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Сказки",
+      "en": "Fairy tales",
+      "tj": "Афсонаҳо"
+    },
+    "order": 3,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tajik-literature.proverbs",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Пословицы и поговорки",
+      "en": "Proverbs and sayings",
+      "tj": "Зарбулмасалу мақолҳо"
+    },
+    "order": 4,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tajik-literature.poetic-forms",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Формы таджикской поэзии",
+      "en": "Forms of Tajik poetry",
+      "tj": "Шаклҳои назми тоҷикӣ"
+    },
+    "order": 0,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.literary-genres",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Литературные жанры",
+      "en": "Literary genres",
+      "tj": "Жанрҳои адабӣ"
+    },
+    "order": 1,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.fables",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Басни",
+      "en": "Fables",
+      "tj": "Масалҳо"
+    },
+    "order": 2,
+    "grade": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tajik-literature.kamoli-khujandi",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Камол Худжанди",
+      "en": "Kamol Khujandi",
+      "tj": "Камоли Хуҷандӣ"
+    },
+    "order": 3,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.ferdowsi",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Фирдоуси и «Шахнаме»",
+      "en": "Ferdowsi and the Shahnameh",
+      "tj": "Фирдавсӣ ва «Шоҳнома»"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.khayyam",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Омар Хайям",
+      "en": "Omar Khayyam",
+      "tj": "Умари Хайём"
+    },
+    "order": 1,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.nosir-khusrav",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Носир Хусрав",
+      "en": "Nosir Khusrav",
+      "tj": "Носири Хусрав"
+    },
+    "order": 2,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.literary-devices",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Художественные средства",
+      "en": "Literary devices",
+      "tj": "Санъатҳои бадеӣ"
+    },
+    "order": 3,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.saadi",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Саади и «Гулистан»",
+      "en": "Saadi and the Gulistan",
+      "tj": "Саъдӣ ва «Гулистон»"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.hafiz",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Хафиз",
+      "en": "Hafiz",
+      "tj": "Ҳофиз"
+    },
+    "order": 1,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.jami",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Джами",
+      "en": "Jami",
+      "tj": "Ҷомӣ"
+    },
+    "order": 2,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.classical-prose",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Классическая проза",
+      "en": "Classical prose",
+      "tj": "Насри классикӣ"
+    },
+    "order": 3,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.rumi",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Джалолиддин Балхи (Руми)",
+      "en": "Jaloliddin Balkhi (Rumi)",
+      "tj": "Ҷалолуддини Балхӣ (Румӣ)"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tajik-literature.bedil",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Мирзо Бедил",
+      "en": "Mirzo Bedil",
+      "tj": "Мирзо Бедил"
+    },
+    "order": 1,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tajik-literature.ahmad-donish",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Ахмад Дониш",
+      "en": "Ahmad Donish",
+      "tj": "Аҳмади Дониш"
+    },
+    "order": 2,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.epic-doston",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Эпос и дастан",
+      "en": "Epic and dostan",
+      "tj": "Ҳамоса ва достон"
+    },
+    "order": 3,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.ayni",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Садриддин Айни",
+      "en": "Sadriddin Ayni",
+      "tj": "Садриддин Айнӣ"
+    },
+    "order": 0,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.lohuti",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Абулькасим Лахути",
+      "en": "Abulqosim Lohuti",
+      "tj": "Абулқосим Лоҳутӣ"
+    },
+    "order": 1,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.modern-prose",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Современная проза",
+      "en": "Modern prose",
+      "tj": "Насри муосир"
+    },
+    "order": 2,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.drama",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Драматургия",
+      "en": "Drama",
+      "tj": "Драматургия"
+    },
+    "order": 3,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.tursunzoda",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Мирзо Турсунзаде",
+      "en": "Mirzo Tursunzoda",
+      "tj": "Мирзо Турсунзода"
+    },
+    "order": 0,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.loiq-sherali",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Лоик Шерали",
+      "en": "Loiq Sherali",
+      "tj": "Лоиқ Шералӣ"
+    },
+    "order": 1,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.qanoat",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Мумин Каноат",
+      "en": "Mu'min Qanoat",
+      "tj": "Мӯъмин Қаноат"
+    },
+    "order": 2,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-literature.contemporary",
+    "subjectId": "tajik-literature",
+    "title": {
+      "ru": "Современная литература",
+      "en": "Contemporary literature",
+      "tj": "Адабиёти муосир"
+    },
+    "order": 3,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.alphabet-sounds",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Алфавит и звуки",
+      "en": "Alphabet and sounds",
+      "tj": "Алифбо ва овозҳо"
+    },
+    "order": 0,
+    "grade": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "russian-language.vowels-consonants",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Гласные и согласные",
+      "en": "Vowels and consonants",
+      "tj": "Садонокҳо ва ҳамсадоҳо"
+    },
+    "order": 1,
+    "grade": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "russian-language.syllable-stress",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Слог и ударение",
+      "en": "Syllable and stress",
+      "tj": "Ҳиҷо ва зада"
+    },
+    "order": 2,
+    "grade": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "russian-language.word-sentence",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Слово и предложение",
+      "en": "Word and sentence",
+      "tj": "Калима ва ҷумла"
+    },
+    "order": 3,
+    "grade": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "russian-language.parts-of-speech",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Части речи",
+      "en": "Parts of speech",
+      "tj": "Ҳиссаҳои нутқ"
+    },
+    "order": 0,
+    "grade": 3,
+    "difficulty": "easy"
+  },
+  {
+    "id": "russian-language.noun-intro",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Имя существительное",
+      "en": "The noun",
+      "tj": "Исм"
+    },
+    "order": 1,
+    "grade": 3,
+    "difficulty": "easy"
+  },
+  {
+    "id": "russian-language.adjective-intro",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Имя прилагательное",
+      "en": "The adjective",
+      "tj": "Сифат"
+    },
+    "order": 2,
+    "grade": 3,
+    "difficulty": "easy"
+  },
+  {
+    "id": "russian-language.sentence-basics",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Предложение",
+      "en": "The sentence",
+      "tj": "Ҷумла"
+    },
+    "order": 3,
+    "grade": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.word-composition",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Состав слова",
+      "en": "Word composition",
+      "tj": "Таркиби калима"
+    },
+    "order": 0,
+    "grade": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.spelling-rules",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Орфограммы",
+      "en": "Spelling patterns",
+      "tj": "Имло"
+    },
+    "order": 1,
+    "grade": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.pronoun-intro",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Местоимение",
+      "en": "The pronoun",
+      "tj": "Ҷонишин"
+    },
+    "order": 2,
+    "grade": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.sentence-members",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Члены предложения",
+      "en": "Sentence members",
+      "tj": "Аъзоҳои ҷумла"
+    },
+    "order": 3,
+    "grade": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.noun-cases",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Падежи и склонение",
+      "en": "Cases and declension",
+      "tj": "Падежҳо ва тасриф"
+    },
+    "order": 0,
+    "grade": 5,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-language.phonetics",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Фонетика",
+      "en": "Phonetics",
+      "tj": "Фонетика"
+    },
+    "order": 1,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.vocabulary",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Лексика",
+      "en": "Vocabulary",
+      "tj": "Луғат"
+    },
+    "order": 2,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.word-formation",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Словообразование",
+      "en": "Word formation",
+      "tj": "Калимасозӣ"
+    },
+    "order": 3,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.verb",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Глагол",
+      "en": "The verb",
+      "tj": "Феъл"
+    },
+    "order": 4,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.noun-categories",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Категории существительного",
+      "en": "Noun categories",
+      "tj": "Категорияҳои исм"
+    },
+    "order": 0,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.adjective-categories",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Разряды прилагательных",
+      "en": "Adjective categories",
+      "tj": "Навъҳои сифат"
+    },
+    "order": 1,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.numeral",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Имя числительное",
+      "en": "The numeral",
+      "tj": "Шумора"
+    },
+    "order": 2,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.verb-aspect",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Вид глагола",
+      "en": "Verb aspect",
+      "tj": "Намуди феъл"
+    },
+    "order": 3,
+    "grade": 6,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-language.participle",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Причастие",
+      "en": "The participle",
+      "tj": "Сифати феълӣ"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-language.gerund",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Деепричастие",
+      "en": "The gerund",
+      "tj": "Феъли ҳол"
+    },
+    "order": 1,
+    "grade": 7,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-language.adverb",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Наречие",
+      "en": "The adverb",
+      "tj": "Зарф"
+    },
+    "order": 2,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.prepositions-conjunctions",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Предлоги и союзы",
+      "en": "Prepositions and conjunctions",
+      "tj": "Пешояндҳо ва пайвандакҳо"
+    },
+    "order": 3,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.phrase",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Словосочетание",
+      "en": "The phrase",
+      "tj": "Ибора"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.simple-sentence",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Простое предложение",
+      "en": "The simple sentence",
+      "tj": "Ҷумлаи содда"
+    },
+    "order": 1,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.main-secondary-members",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Главные и второстепенные члены",
+      "en": "Main and secondary members",
+      "tj": "Аъзоҳои асосӣ ва пайрав"
+    },
+    "order": 2,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.one-part-sentences",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Односоставные предложения",
+      "en": "One-part sentences",
+      "tj": "Ҷумлаҳои яктаркиба"
+    },
+    "order": 3,
+    "grade": 8,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-language.complex-sentence",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Сложное предложение",
+      "en": "The complex sentence",
+      "tj": "Ҷумлаи мураккаб"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-language.compound-complex",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Сложносочинённые и сложноподчинённые",
+      "en": "Compound and complex sentences",
+      "tj": "Ҷумлаҳои пайваст ва тобеъ"
+    },
+    "order": 1,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-language.direct-speech",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Прямая речь",
+      "en": "Direct speech",
+      "tj": "Нутқи айнан"
+    },
+    "order": 2,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.punctuation",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Пунктуация",
+      "en": "Punctuation",
+      "tj": "Аломатҳои китобат"
+    },
+    "order": 3,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.text",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Текст и его признаки",
+      "en": "Text and its features",
+      "tj": "Матн ва аломатҳои он"
+    },
+    "order": 0,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.speech-styles",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Стили речи",
+      "en": "Styles of speech",
+      "tj": "Услубҳои нутқ"
+    },
+    "order": 1,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-language.vocabulary-phraseology",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Лексика и фразеология",
+      "en": "Vocabulary and phraseology",
+      "tj": "Луғат ва фразеология"
+    },
+    "order": 2,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.language-norms",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Нормы языка",
+      "en": "Language norms",
+      "tj": "Меъёрҳои забон"
+    },
+    "order": 0,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-language.orthography",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Орфография и пунктуация",
+      "en": "Spelling and punctuation",
+      "tj": "Имло ва аломатҳои китобат"
+    },
+    "order": 1,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-language.speech-culture",
+    "subjectId": "russian-language",
+    "title": {
+      "ru": "Культура речи",
+      "en": "Speech culture",
+      "tj": "Фарҳанги нутқ"
+    },
+    "order": 2,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-literature.genres",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Роды литературы",
+      "en": "Kinds of literature",
+      "tj": "Ҷинсҳои адабиёт"
+    },
+    "order": 0,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "russian-literature.folklore",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Фольклор",
+      "en": "Folklore",
+      "tj": "Фолклор"
+    },
+    "order": 1,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "russian-literature.krylov",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Крылов и басни",
+      "en": "Krylov and the fable",
+      "tj": "Крилов ва масал"
+    },
+    "order": 2,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "russian-literature.fairy-tales",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Литературная сказка",
+      "en": "The literary fairy tale",
+      "tj": "Афсонаи адабӣ"
+    },
+    "order": 3,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "russian-literature.pushkin",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "А. С. Пушкин",
+      "en": "Alexander Pushkin",
+      "tj": "А. С. Пушкин"
+    },
+    "order": 0,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-literature.lermontov",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "М. Ю. Лермонтов",
+      "en": "Mikhail Lermontov",
+      "tj": "М. Ю. Лермонтов"
+    },
+    "order": 1,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-literature.poetry-basics",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Основы стихосложения",
+      "en": "Basics of versification",
+      "tj": "Асосҳои шеърсозӣ"
+    },
+    "order": 2,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-literature.literary-devices",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Изобразительные средства",
+      "en": "Literary devices",
+      "tj": "Воситаҳои тасвир"
+    },
+    "order": 3,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-literature.gogol",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Н. В. Гоголь",
+      "en": "Nikolai Gogol",
+      "tj": "Н. В. Гогол"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-literature.turgenev",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "И. С. Тургенев",
+      "en": "Ivan Turgenev",
+      "tj": "И. С. Тургенев"
+    },
+    "order": 1,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-literature.nekrasov",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Н. А. Некрасов",
+      "en": "Nikolai Nekrasov",
+      "tj": "Н. А. Некрасов"
+    },
+    "order": 2,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-literature.epic-genres",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Эпические жанры",
+      "en": "Epic genres",
+      "tj": "Жанрҳои эпикӣ"
+    },
+    "order": 3,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-literature.griboedov",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "А. С. Грибоедов «Горе от ума»",
+      "en": "Griboedov, 'Woe from Wit'",
+      "tj": "Грибоедов «Ғам аз ақл»"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-literature.pushkin-prose",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Проза Пушкина",
+      "en": "Pushkin's prose",
+      "tj": "Насри Пушкин"
+    },
+    "order": 1,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-literature.drama-genres",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Драматические жанры",
+      "en": "Dramatic genres",
+      "tj": "Жанрҳои драмавӣ"
+    },
+    "order": 2,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-literature.satire",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Сатира в литературе",
+      "en": "Satire in literature",
+      "tj": "Ҳаҷв дар адабиёт"
+    },
+    "order": 3,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-literature.slovo",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "«Слово о полку Игореве»",
+      "en": "'The Tale of Igor's Campaign'",
+      "tj": "«Достони лашкаркашии Игор»"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-literature.onegin",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Пушкин «Евгений Онегин»",
+      "en": "Pushkin, 'Eugene Onegin'",
+      "tj": "Пушкин «Евгений Онегин»"
+    },
+    "order": 1,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-literature.lermontov-novel",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Лермонтов «Герой нашего времени»",
+      "en": "Lermontov, 'A Hero of Our Time'",
+      "tj": "Лермонтов «Қаҳрамони замони мо»"
+    },
+    "order": 2,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-literature.dead-souls",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Гоголь «Мёртвые души»",
+      "en": "Gogol, 'Dead Souls'",
+      "tj": "Гогол «Ҷонҳои мурда»"
+    },
+    "order": 3,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-literature.tolstoy",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Л. Н. Толстой",
+      "en": "Leo Tolstoy",
+      "tj": "Л. Н. Толстой"
+    },
+    "order": 0,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-literature.dostoevsky",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Ф. М. Достоевский",
+      "en": "Fyodor Dostoevsky",
+      "tj": "Ф. М. Достоевский"
+    },
+    "order": 1,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-literature.chekhov",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "А. П. Чехов",
+      "en": "Anton Chekhov",
+      "tj": "А. П. Чехов"
+    },
+    "order": 2,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-literature.realism",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Реализм XIX века",
+      "en": "19th-century realism",
+      "tj": "Реализми асри XIX"
+    },
+    "order": 3,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-literature.silver-age",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Серебряный век",
+      "en": "The Silver Age",
+      "tj": "Асри нуқра"
+    },
+    "order": 0,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-literature.bunin",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "И. А. Бунин",
+      "en": "Ivan Bunin",
+      "tj": "И. А. Бунин"
+    },
+    "order": 1,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "russian-literature.prose-20century",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Проза XX века",
+      "en": "20th-century prose",
+      "tj": "Насри асри XX"
+    },
+    "order": 2,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "russian-literature.contemporary",
+    "subjectId": "russian-literature",
+    "title": {
+      "ru": "Современная литература",
+      "en": "Contemporary literature",
+      "tj": "Адабиёти муосир"
+    },
+    "order": 3,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "english-language.alphabet",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Алфавит",
+      "en": "The alphabet",
+      "tj": "Алифбо"
+    },
+    "order": 0,
+    "grade": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "english-language.greetings",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Приветствия и знакомство",
+      "en": "Greetings and introductions",
+      "tj": "Салом ва шиносоӣ"
+    },
+    "order": 1,
+    "grade": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "english-language.numbers-colours",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Цифры и цвета",
+      "en": "Numbers and colours",
+      "tj": "Рақамҳо ва рангҳо"
+    },
+    "order": 2,
+    "grade": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "english-language.my-family",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Моя семья",
+      "en": "My family",
+      "tj": "Оилаи ман"
+    },
+    "order": 3,
+    "grade": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "english-language.nouns-articles",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Существительные и артикли",
+      "en": "Nouns and articles",
+      "tj": "Исмҳо ва артиклҳо"
+    },
+    "order": 0,
+    "grade": 3,
+    "difficulty": "easy"
+  },
+  {
+    "id": "english-language.verb-to-be",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Глагол to be",
+      "en": "The verb to be",
+      "tj": "Феъли to be"
+    },
+    "order": 1,
+    "grade": 3,
+    "difficulty": "easy"
+  },
+  {
+    "id": "english-language.there-is",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "There is / There are",
+      "en": "There is / There are",
+      "tj": "There is / There are"
+    },
+    "order": 2,
+    "grade": 3,
+    "difficulty": "easy"
+  },
+  {
+    "id": "english-language.imperatives",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Повелительное наклонение",
+      "en": "Imperatives",
+      "tj": "Феъли амрӣ"
+    },
+    "order": 3,
+    "grade": 3,
+    "difficulty": "easy"
+  },
+  {
+    "id": "english-language.adjectives",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Прилагательные",
+      "en": "Adjectives",
+      "tj": "Сифатҳо"
+    },
+    "order": 0,
+    "grade": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "english-language.possessives",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Притяжательные местоимения",
+      "en": "Possessive pronouns",
+      "tj": "Ҷонишинҳои соҳибӣ"
+    },
+    "order": 1,
+    "grade": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "english-language.present-simple",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Present Simple",
+      "en": "Present Simple",
+      "tj": "Present Simple"
+    },
+    "order": 2,
+    "grade": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "english-language.prepositions",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Предлоги места и времени",
+      "en": "Prepositions of place and time",
+      "tj": "Пешояндҳои ҷой ва замон"
+    },
+    "order": 3,
+    "grade": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "english-language.past-simple",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Past Simple",
+      "en": "Past Simple",
+      "tj": "Past Simple"
+    },
+    "order": 0,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "english-language.future-simple",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Future Simple",
+      "en": "Future Simple",
+      "tj": "Future Simple"
+    },
+    "order": 1,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "english-language.can-must",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Модальные глаголы",
+      "en": "Modal verbs",
+      "tj": "Феълҳои модалӣ"
+    },
+    "order": 2,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "english-language.questions",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Типы вопросов",
+      "en": "Question types",
+      "tj": "Намудҳои савол"
+    },
+    "order": 3,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "english-language.comparatives",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Степени сравнения",
+      "en": "Degrees of comparison",
+      "tj": "Дараҷаҳои қиёс"
+    },
+    "order": 0,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "english-language.countable",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Исчисляемые и неисчисляемые",
+      "en": "Countable and uncountable",
+      "tj": "Ҳисобшаванда ва ҳисобнашаванда"
+    },
+    "order": 1,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "english-language.much-many",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Much / Many / A lot of",
+      "en": "Much / Many / A lot of",
+      "tj": "Much / Many / A lot of"
+    },
+    "order": 2,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "english-language.present-continuous",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Present Continuous",
+      "en": "Present Continuous",
+      "tj": "Present Continuous"
+    },
+    "order": 3,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "english-language.present",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Времена группы Present",
+      "en": "Present tenses",
+      "tj": "Замонҳои Present"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "english-language.past-continuous",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Past Continuous",
+      "en": "Past Continuous",
+      "tj": "Past Continuous"
+    },
+    "order": 1,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "english-language.present-perfect",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Present Perfect",
+      "en": "Present Perfect",
+      "tj": "Present Perfect"
+    },
+    "order": 2,
+    "grade": 7,
+    "difficulty": "hard"
+  },
+  {
+    "id": "english-language.conditionals-1",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Условные предложения I типа",
+      "en": "First conditional",
+      "tj": "Ҷумлаи шартии навъи I"
+    },
+    "order": 3,
+    "grade": 7,
+    "difficulty": "hard"
+  },
+  {
+    "id": "english-language.passive-voice",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Страдательный залог",
+      "en": "The passive voice",
+      "tj": "Феъли маҷҳул"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "hard"
+  },
+  {
+    "id": "english-language.reported-speech",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Косвенная речь",
+      "en": "Reported speech",
+      "tj": "Нутқи ғайримустақим"
+    },
+    "order": 1,
+    "grade": 8,
+    "difficulty": "hard"
+  },
+  {
+    "id": "english-language.conditionals-2",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Условные предложения II типа",
+      "en": "Second conditional",
+      "tj": "Ҷумлаи шартии навъи II"
+    },
+    "order": 2,
+    "grade": 8,
+    "difficulty": "hard"
+  },
+  {
+    "id": "english-language.gerund-infinitive",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Герундий и инфинитив",
+      "en": "Gerund and infinitive",
+      "tj": "Герундий ва инфинитив"
+    },
+    "order": 3,
+    "grade": 8,
+    "difficulty": "hard"
+  },
+  {
+    "id": "english-language.past-perfect",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Past Perfect",
+      "en": "Past Perfect",
+      "tj": "Past Perfect"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "english-language.conditionals-3",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Условные предложения III типа",
+      "en": "Third conditional",
+      "tj": "Ҷумлаи шартии навъи III"
+    },
+    "order": 1,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "english-language.word-formation",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Словообразование",
+      "en": "Word formation",
+      "tj": "Калимасозӣ"
+    },
+    "order": 2,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "english-language.text-types",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Типы текстов",
+      "en": "Text types",
+      "tj": "Намудҳои матн"
+    },
+    "order": 3,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "english-language.advanced-tenses",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Сложные времена",
+      "en": "Advanced tenses",
+      "tj": "Замонҳои мураккаб"
+    },
+    "order": 0,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "english-language.discourse",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Связность текста",
+      "en": "Discourse and cohesion",
+      "tj": "Алоқамандии матн"
+    },
+    "order": 1,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "english-language.idioms",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Идиомы и фразовые глаголы",
+      "en": "Idioms and phrasal verbs",
+      "tj": "Идиомаҳо ва феълҳои ибораӣ"
+    },
+    "order": 2,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "english-language.essay-writing",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Написание эссе",
+      "en": "Essay writing",
+      "tj": "Навиштани иншо"
+    },
+    "order": 0,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "english-language.register",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Стили и регистры",
+      "en": "Register and style",
+      "tj": "Услуб ва регистр"
+    },
+    "order": 1,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "english-language.exam-skills",
+    "subjectId": "english-language",
+    "title": {
+      "ru": "Навыки для экзамена",
+      "en": "Exam skills",
+      "tj": "Малакаҳои имтиҳонӣ"
+    },
+    "order": 2,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "history.chronology",
+    "subjectId": "history",
+    "title": {
+      "ru": "Хронология",
+      "en": "Chronology",
+      "tj": "Хронология"
+    },
+    "order": 0,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "history.ancient-world",
+    "subjectId": "history",
+    "title": {
+      "ru": "Древний мир",
+      "en": "The Ancient World",
+      "tj": "Ҷаҳони қадим"
+    },
+    "order": 1,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "history.ancient-greece",
+    "subjectId": "history",
+    "title": {
+      "ru": "Древняя Греция",
+      "en": "Ancient Greece",
+      "tj": "Юнони қадим"
+    },
+    "order": 2,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "history.ancient-rome",
+    "subjectId": "history",
+    "title": {
+      "ru": "Древний Рим",
+      "en": "Ancient Rome",
+      "tj": "Рими қадим"
+    },
+    "order": 3,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "history.middle-ages",
+    "subjectId": "history",
+    "title": {
+      "ru": "Средние века",
+      "en": "The Middle Ages",
+      "tj": "Асрҳои миёна"
+    },
+    "order": 0,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "history.feudalism",
+    "subjectId": "history",
+    "title": {
+      "ru": "Феодализм",
+      "en": "Feudalism",
+      "tj": "Феодализм"
+    },
+    "order": 1,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "history.crusades",
+    "subjectId": "history",
+    "title": {
+      "ru": "Крестовые походы",
+      "en": "The Crusades",
+      "tj": "Ҷангҳои салибӣ"
+    },
+    "order": 2,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "history.renaissance",
+    "subjectId": "history",
+    "title": {
+      "ru": "Возрождение",
+      "en": "The Renaissance",
+      "tj": "Ренессанс"
+    },
+    "order": 3,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "history.great-discoveries",
+    "subjectId": "history",
+    "title": {
+      "ru": "Великие открытия",
+      "en": "The Age of Discovery",
+      "tj": "Кашфиётҳои бузург"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "history.reformation",
+    "subjectId": "history",
+    "title": {
+      "ru": "Реформация",
+      "en": "The Reformation",
+      "tj": "Реформатсия"
+    },
+    "order": 1,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "history.enlightenment",
+    "subjectId": "history",
+    "title": {
+      "ru": "Просвещение",
+      "en": "The Enlightenment",
+      "tj": "Маорифпарварӣ"
+    },
+    "order": 2,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "history.french-revolution",
+    "subjectId": "history",
+    "title": {
+      "ru": "Французская революция",
+      "en": "The French Revolution",
+      "tj": "Инқилоби Франсия"
+    },
+    "order": 3,
+    "grade": 7,
+    "difficulty": "hard"
+  },
+  {
+    "id": "history.industrial-revolution",
+    "subjectId": "history",
+    "title": {
+      "ru": "Промышленная революция",
+      "en": "The Industrial Revolution",
+      "tj": "Инқилоби саноатӣ"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "history.ww1",
+    "subjectId": "history",
+    "title": {
+      "ru": "Первая мировая война",
+      "en": "World War I",
+      "tj": "Ҷанги Якуми Ҷаҳонӣ"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "history.ww2",
+    "subjectId": "history",
+    "title": {
+      "ru": "Вторая мировая война",
+      "en": "World War II",
+      "tj": "Ҷанги Дуюми Ҷаҳонӣ"
+    },
+    "order": 0,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "history.cold-war",
+    "subjectId": "history",
+    "title": {
+      "ru": "Холодная война",
+      "en": "The Cold War",
+      "tj": "Ҷанги Сард"
+    },
+    "order": 0,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tajik-history.samanids",
+    "subjectId": "tajik-history",
+    "title": {
+      "ru": "Государство Саманидов",
+      "en": "The Samanid State",
+      "tj": "Давлати Сомониён"
+    },
+    "order": 0,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-history.ancient-tajiks",
+    "subjectId": "tajik-history",
+    "title": {
+      "ru": "Древние таджики",
+      "en": "Ancient Tajiks",
+      "tj": "Тоҷикони қадим"
+    },
+    "order": 1,
+    "grade": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tajik-history.achaemenids",
+    "subjectId": "tajik-history",
+    "title": {
+      "ru": "Государство Ахеменидов",
+      "en": "The Achaemenid Empire",
+      "tj": "Давлати Ҳахоманишиён"
+    },
+    "order": 2,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-history.sogd",
+    "subjectId": "tajik-history",
+    "title": {
+      "ru": "Согдиана",
+      "en": "Sogdiana",
+      "tj": "Суғд"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-history.arab-conquest",
+    "subjectId": "tajik-history",
+    "title": {
+      "ru": "Арабское завоевание",
+      "en": "The Arab Conquest",
+      "tj": "Фатҳи арабӣ"
+    },
+    "order": 1,
+    "grade": 7,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tajik-history.samanids-culture",
+    "subjectId": "tajik-history",
+    "title": {
+      "ru": "Культура Саманидов",
+      "en": "Samanid Culture",
+      "tj": "Фарҳанги Сомониён"
+    },
+    "order": 2,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-history.mongol-invasion",
+    "subjectId": "tajik-history",
+    "title": {
+      "ru": "Монгольское нашествие",
+      "en": "The Mongol Invasion",
+      "tj": "Истилои муғул"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tajik-history.timurids",
+    "subjectId": "tajik-history",
+    "title": {
+      "ru": "Тимуриды",
+      "en": "The Timurids",
+      "tj": "Темуриён"
+    },
+    "order": 1,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-history.bukhara-emirate",
+    "subjectId": "tajik-history",
+    "title": {
+      "ru": "Бухарский эмират",
+      "en": "The Bukhara Emirate",
+      "tj": "Аморати Бухоро"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tajik-history.russian-rule",
+    "subjectId": "tajik-history",
+    "title": {
+      "ru": "Присоединение к России",
+      "en": "Incorporation into Russia",
+      "tj": "Ҳамроҳшавӣ ба Россия"
+    },
+    "order": 1,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tajik-history.soviet-period",
+    "subjectId": "tajik-history",
+    "title": {
+      "ru": "Советский период",
+      "en": "The Soviet Period",
+      "tj": "Давраи Шӯравӣ"
+    },
+    "order": 0,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tajik-history.independence",
+    "subjectId": "tajik-history",
+    "title": {
+      "ru": "Независимость Таджикистана",
+      "en": "Tajikistan's Independence",
+      "tj": "Истиқлолияти Тоҷикистон"
+    },
+    "order": 0,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "civics.law-basics",
+    "subjectId": "civics",
+    "title": {
+      "ru": "Основы права",
+      "en": "Basics of law",
+      "tj": "Асосҳои ҳуқуқ"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "easy"
+  },
+  {
+    "id": "civics.human-rights",
+    "subjectId": "civics",
+    "title": {
+      "ru": "Права человека",
+      "en": "Human rights",
+      "tj": "Ҳуқуқи инсон"
+    },
+    "order": 1,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "civics.state-structure",
+    "subjectId": "civics",
+    "title": {
+      "ru": "Устройство государства",
+      "en": "Structure of the state",
+      "tj": "Сохтори давлат"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "civics.branches-of-power",
+    "subjectId": "civics",
+    "title": {
+      "ru": "Ветви власти",
+      "en": "Branches of power",
+      "tj": "Шохаҳои ҳокимият"
+    },
+    "order": 1,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "civics.citizen-rights",
+    "subjectId": "civics",
+    "title": {
+      "ru": "Права и обязанности граждан",
+      "en": "Rights and duties of citizens",
+      "tj": "Ҳуқуқу ӯҳдадориҳои шаҳрвандон"
+    },
+    "order": 2,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "civics.legal-responsibility",
+    "subjectId": "civics",
+    "title": {
+      "ru": "Юридическая ответственность",
+      "en": "Legal responsibility",
+      "tj": "Масъулияти ҳуқуқӣ"
+    },
+    "order": 0,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "civics.democracy",
+    "subjectId": "civics",
+    "title": {
+      "ru": "Демократия",
+      "en": "Democracy",
+      "tj": "Демократия"
+    },
+    "order": 1,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "civics.civil-society",
+    "subjectId": "civics",
+    "title": {
+      "ru": "Гражданское общество",
+      "en": "Civil society",
+      "tj": "Ҷомеаи шаҳрвандӣ"
+    },
+    "order": 0,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "constitution.basics",
+    "subjectId": "constitution",
+    "title": {
+      "ru": "Основы конституции",
+      "en": "Basics of the constitution",
+      "tj": "Асосҳои конститутсия"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "easy"
+  },
+  {
+    "id": "constitution.tajik-constitution",
+    "subjectId": "constitution",
+    "title": {
+      "ru": "Конституция Таджикистана",
+      "en": "Constitution of Tajikistan",
+      "tj": "Конститутсияи Тоҷикистон"
+    },
+    "order": 1,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "constitution.fundamental-rights",
+    "subjectId": "constitution",
+    "title": {
+      "ru": "Основные права",
+      "en": "Fundamental rights",
+      "tj": "Ҳуқуқҳои асосӣ"
+    },
+    "order": 2,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "constitution.state-symbols",
+    "subjectId": "constitution",
+    "title": {
+      "ru": "Символы государства",
+      "en": "State symbols",
+      "tj": "Рамзҳои давлат"
+    },
+    "order": 3,
+    "grade": 9,
+    "difficulty": "easy"
+  },
+  {
+    "id": "constitution.president",
+    "subjectId": "constitution",
+    "title": {
+      "ru": "Президент",
+      "en": "The President",
+      "tj": "Президент"
+    },
+    "order": 0,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "constitution.parliament",
+    "subjectId": "constitution",
+    "title": {
+      "ru": "Парламент (Маджлиси Оли)",
+      "en": "Parliament (Majlisi Oli)",
+      "tj": "Маҷлиси Олӣ"
+    },
+    "order": 1,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "constitution.judiciary",
+    "subjectId": "constitution",
+    "title": {
+      "ru": "Судебная власть",
+      "en": "The judiciary",
+      "tj": "Ҳокимияти судӣ"
+    },
+    "order": 2,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "constitution.local-government",
+    "subjectId": "constitution",
+    "title": {
+      "ru": "Местное самоуправление",
+      "en": "Local government",
+      "tj": "Худидоракунии маҳаллӣ"
+    },
+    "order": 0,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geography.maps",
+    "subjectId": "geography",
+    "title": {
+      "ru": "Карта и масштаб",
+      "en": "Maps and scale",
+      "tj": "Харита ва миқёс"
+    },
+    "order": 0,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "geography.earth-structure",
+    "subjectId": "geography",
+    "title": {
+      "ru": "Строение Земли",
+      "en": "Structure of the Earth",
+      "tj": "Сохтори Замин"
+    },
+    "order": 1,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geography.continents",
+    "subjectId": "geography",
+    "title": {
+      "ru": "Материки и океаны",
+      "en": "Continents and oceans",
+      "tj": "Қитъаҳо ва уқёнусҳо"
+    },
+    "order": 2,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "geography.atmosphere",
+    "subjectId": "geography",
+    "title": {
+      "ru": "Атмосфера",
+      "en": "The atmosphere",
+      "tj": "Атмосфера"
+    },
+    "order": 0,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geography.climate",
+    "subjectId": "geography",
+    "title": {
+      "ru": "Климат",
+      "en": "Climate",
+      "tj": "Иқлим"
+    },
+    "order": 1,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geography.rivers-lakes",
+    "subjectId": "geography",
+    "title": {
+      "ru": "Реки и озёра",
+      "en": "Rivers and lakes",
+      "tj": "Дарёҳо ва кӯлҳо"
+    },
+    "order": 2,
+    "grade": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "geography.population",
+    "subjectId": "geography",
+    "title": {
+      "ru": "Население",
+      "en": "Population",
+      "tj": "Аҳолӣ"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geography.tajikistan-geography",
+    "subjectId": "geography",
+    "title": {
+      "ru": "География Таджикистана",
+      "en": "Geography of Tajikistan",
+      "tj": "Ҷуғрофияи Тоҷикистон"
+    },
+    "order": 1,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geography.asia",
+    "subjectId": "geography",
+    "title": {
+      "ru": "Азия",
+      "en": "Asia",
+      "tj": "Осиё"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geography.natural-zones",
+    "subjectId": "geography",
+    "title": {
+      "ru": "Природные зоны",
+      "en": "Natural zones",
+      "tj": "Минтақаҳои табиӣ"
+    },
+    "order": 1,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geography.world-economy",
+    "subjectId": "geography",
+    "title": {
+      "ru": "Мировая экономика",
+      "en": "The world economy",
+      "tj": "Иқтисоди ҷаҳонӣ"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "geography.globalisation",
+    "subjectId": "geography",
+    "title": {
+      "ru": "Глобализация",
+      "en": "Globalisation",
+      "tj": "Ҷаҳонишавӣ"
+    },
+    "order": 0,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "informatics.number-systems",
+    "subjectId": "informatics",
+    "title": {
+      "ru": "Системы счисления",
+      "en": "Number systems",
+      "tj": "Системаҳои ҳисоб"
+    },
+    "order": 0,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "informatics.computer-basics",
+    "subjectId": "informatics",
+    "title": {
+      "ru": "Основы компьютера",
+      "en": "Computer basics",
+      "tj": "Асосҳои компютер"
+    },
+    "order": 1,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "informatics.algorithms",
+    "subjectId": "informatics",
+    "title": {
+      "ru": "Алгоритмы",
+      "en": "Algorithms",
+      "tj": "Алгоритмҳо"
+    },
+    "order": 0,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "informatics.data-types",
+    "subjectId": "informatics",
+    "title": {
+      "ru": "Типы данных",
+      "en": "Data types",
+      "tj": "Намудҳои маълумот"
+    },
+    "order": 1,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "informatics.spreadsheets",
+    "subjectId": "informatics",
+    "title": {
+      "ru": "Электронные таблицы",
+      "en": "Spreadsheets",
+      "tj": "Ҷадвалҳои электронӣ"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "informatics.databases",
+    "subjectId": "informatics",
+    "title": {
+      "ru": "Базы данных",
+      "en": "Databases",
+      "tj": "Базаҳои маълумот"
+    },
+    "order": 1,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "informatics.programming",
+    "subjectId": "informatics",
+    "title": {
+      "ru": "Основы программирования",
+      "en": "Programming basics",
+      "tj": "Асосҳои барномасозӣ"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "hard"
+  },
+  {
+    "id": "informatics.internet",
+    "subjectId": "informatics",
+    "title": {
+      "ru": "Интернет и сети",
+      "en": "Internet and networks",
+      "tj": "Интернет ва шабакаҳо"
+    },
+    "order": 1,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "informatics.cybersecurity",
+    "subjectId": "informatics",
+    "title": {
+      "ru": "Кибербезопасность",
+      "en": "Cybersecurity",
+      "tj": "Амнияти киберӣ"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "informatics.ai-basics",
+    "subjectId": "informatics",
+    "title": {
+      "ru": "Основы ИИ",
+      "en": "AI basics",
+      "tj": "Асосҳои ЗМ"
+    },
+    "order": 0,
+    "grade": 10,
+    "difficulty": "medium"
+  },
+  {
+    "id": "informatics.office-apps",
+    "subjectId": "informatics",
+    "title": {
+      "ru": "Офисные приложения",
+      "en": "Office applications",
+      "tj": "Барномаҳои офисӣ"
+    },
+    "order": 0,
+    "grade": 11,
+    "difficulty": "easy"
+  },
+  {
+    "id": "social.spheres",
+    "subjectId": "social",
+    "title": {
+      "ru": "Сферы общества",
+      "en": "Spheres of society",
+      "tj": "Соҳаҳои ҷомеа"
+    },
+    "order": 0,
+    "grade": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "social.society-state",
+    "subjectId": "social",
+    "title": {
+      "ru": "Общество и государство",
+      "en": "Society and the state",
+      "tj": "Ҷомеа ва давлат"
+    },
+    "order": 1,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "social.social-norms",
+    "subjectId": "social",
+    "title": {
+      "ru": "Социальные нормы",
+      "en": "Social norms",
+      "tj": "Меъёрҳои иҷтимоӣ"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "social.family",
+    "subjectId": "social",
+    "title": {
+      "ru": "Семья",
+      "en": "The family",
+      "tj": "Оила"
+    },
+    "order": 1,
+    "grade": 7,
+    "difficulty": "easy"
+  },
+  {
+    "id": "social.economy-basics",
+    "subjectId": "social",
+    "title": {
+      "ru": "Основы экономики",
+      "en": "Basics of economics",
+      "tj": "Асосҳои иқтисод"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "social.market",
+    "subjectId": "social",
+    "title": {
+      "ru": "Рынок и конкуренция",
+      "en": "Market and competition",
+      "tj": "Бозор ва рақобат"
+    },
+    "order": 1,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "social.culture",
+    "subjectId": "social",
+    "title": {
+      "ru": "Культура и духовность",
+      "en": "Culture and spirituality",
+      "tj": "Фарҳанг ва маънавиёт"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "social.globalisation",
+    "subjectId": "social",
+    "title": {
+      "ru": "Глобализация и общество",
+      "en": "Globalisation and society",
+      "tj": "Ҷаҳонишавӣ ва ҷомеа"
+    },
+    "order": 1,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "technology.safety",
+    "subjectId": "technology",
+    "title": {
+      "ru": "Техника безопасности",
+      "en": "Safety rules",
+      "tj": "Қоидаҳои техникии бехатарӣ"
+    },
+    "order": 0,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "technology.materials",
+    "subjectId": "technology",
+    "title": {
+      "ru": "Материалы",
+      "en": "Materials",
+      "tj": "Маводҳо"
+    },
+    "order": 1,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "technology.tools",
+    "subjectId": "technology",
+    "title": {
+      "ru": "Инструменты",
+      "en": "Tools",
+      "tj": "Асбобҳо"
+    },
+    "order": 2,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "technology.woodwork",
+    "subjectId": "technology",
+    "title": {
+      "ru": "Обработка древесины",
+      "en": "Woodworking",
+      "tj": "Коркарди чӯб"
+    },
+    "order": 0,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "technology.metalwork",
+    "subjectId": "technology",
+    "title": {
+      "ru": "Обработка металла",
+      "en": "Metalworking",
+      "tj": "Коркарди металл"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "technology.sewing",
+    "subjectId": "technology",
+    "title": {
+      "ru": "Шитьё",
+      "en": "Sewing",
+      "tj": "Дӯзандагӣ"
+    },
+    "order": 1,
+    "grade": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "technology.cooking",
+    "subjectId": "technology",
+    "title": {
+      "ru": "Кулинария",
+      "en": "Cooking basics",
+      "tj": "Асосҳои пазандагӣ"
+    },
+    "order": 2,
+    "grade": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "technology.design",
+    "subjectId": "technology",
+    "title": {
+      "ru": "Техническое черчение",
+      "en": "Technical drawing",
+      "tj": "Расмкашии техникӣ"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "technology.electronics",
+    "subjectId": "technology",
+    "title": {
+      "ru": "Основы электроники",
+      "en": "Electronics basics",
+      "tj": "Асосҳои электроника"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "drawing.projections",
+    "subjectId": "drawing",
+    "title": {
+      "ru": "Проекции",
+      "en": "Projections",
+      "tj": "Проексияҳо"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "drawing.geometric-drawing",
+    "subjectId": "drawing",
+    "title": {
+      "ru": "Геометрическое черчение",
+      "en": "Geometric drawing",
+      "tj": "Расмкашии геометрӣ"
+    },
+    "order": 1,
+    "grade": 8,
+    "difficulty": "easy"
+  },
+  {
+    "id": "drawing.views",
+    "subjectId": "drawing",
+    "title": {
+      "ru": "Виды чертежа",
+      "en": "Drawing views",
+      "tj": "Намудҳои расм"
+    },
+    "order": 2,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "drawing.sections",
+    "subjectId": "drawing",
+    "title": {
+      "ru": "Разрезы и сечения",
+      "en": "Sections and cuts",
+      "tj": "Буришҳо ва кесишҳо"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "hard"
+  },
+  {
+    "id": "drawing.dimensions",
+    "subjectId": "drawing",
+    "title": {
+      "ru": "Размеры на чертеже",
+      "en": "Dimensioning",
+      "tj": "Андозаҳо дар расм"
+    },
+    "order": 1,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "drawing.assembly",
+    "subjectId": "drawing",
+    "title": {
+      "ru": "Сборочный чертёж",
+      "en": "Assembly drawing",
+      "tj": "Расми монтажӣ"
+    },
+    "order": 0,
+    "grade": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "fine-arts.color",
+    "subjectId": "fine-arts",
+    "title": {
+      "ru": "Цвет",
+      "en": "Colour",
+      "tj": "Ранг"
+    },
+    "order": 0,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "fine-arts.composition",
+    "subjectId": "fine-arts",
+    "title": {
+      "ru": "Композиция",
+      "en": "Composition",
+      "tj": "Композитсия"
+    },
+    "order": 1,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "fine-arts.drawing-basics",
+    "subjectId": "fine-arts",
+    "title": {
+      "ru": "Основы рисунка",
+      "en": "Drawing basics",
+      "tj": "Асосҳои тасвир"
+    },
+    "order": 0,
+    "grade": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "fine-arts.perspective",
+    "subjectId": "fine-arts",
+    "title": {
+      "ru": "Перспектива",
+      "en": "Perspective",
+      "tj": "Перспектива"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "fine-arts.art-genres",
+    "subjectId": "fine-arts",
+    "title": {
+      "ru": "Жанры искусства",
+      "en": "Art genres",
+      "tj": "Жанрҳои санъат"
+    },
+    "order": 1,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "fine-arts.tajik-art",
+    "subjectId": "fine-arts",
+    "title": {
+      "ru": "Таджикское прикладное искусство",
+      "en": "Tajik applied arts",
+      "tj": "Санъати амалии тоҷик"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "fine-arts.world-art",
+    "subjectId": "fine-arts",
+    "title": {
+      "ru": "Шедевры мирового искусства",
+      "en": "Masterpieces of world art",
+      "tj": "Шоҳкориҳои санъати ҷаҳонӣ"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "music.notation",
+    "subjectId": "music",
+    "title": {
+      "ru": "Нотная грамота",
+      "en": "Music notation",
+      "tj": "Нотаноӣ"
+    },
+    "order": 0,
+    "grade": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "music.rhythm",
+    "subjectId": "music",
+    "title": {
+      "ru": "Ритм и такт",
+      "en": "Rhythm and beat",
+      "tj": "Ритм ва такт"
+    },
+    "order": 1,
+    "grade": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "music.scales",
+    "subjectId": "music",
+    "title": {
+      "ru": "Гаммы и тональность",
+      "en": "Scales and keys",
+      "tj": "Гаммаҳо ва тоналлик"
+    },
+    "order": 0,
+    "grade": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "music.instruments",
+    "subjectId": "music",
+    "title": {
+      "ru": "Музыкальные инструменты",
+      "en": "Musical instruments",
+      "tj": "Асбобҳои мусиқӣ"
+    },
+    "order": 1,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "music.tajik-music",
+    "subjectId": "music",
+    "title": {
+      "ru": "Таджикская музыка",
+      "en": "Tajik music",
+      "tj": "Мусиқии тоҷикӣ"
+    },
+    "order": 0,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "music.vocal",
+    "subjectId": "music",
+    "title": {
+      "ru": "Вокал",
+      "en": "Vocal",
+      "tj": "Вокал"
+    },
+    "order": 1,
+    "grade": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "music.music-forms",
+    "subjectId": "music",
+    "title": {
+      "ru": "Музыкальные формы",
+      "en": "Musical forms",
+      "tj": "Шаклҳои мусиқӣ"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "music.world-music",
+    "subjectId": "music",
+    "title": {
+      "ru": "Музыка народов мира",
+      "en": "Music of the world",
+      "tj": "Мусиқии халқҳои ҷаҳон"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "ethics.etiquette",
+    "subjectId": "ethics",
+    "title": {
+      "ru": "Этикет",
+      "en": "Etiquette",
+      "tj": "Одоб"
+    },
+    "order": 0,
+    "grade": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ethics.moral-values",
+    "subjectId": "ethics",
+    "title": {
+      "ru": "Нравственные ценности",
+      "en": "Moral values",
+      "tj": "Арзишҳои ахлоқӣ"
+    },
+    "order": 1,
+    "grade": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ethics.friendship",
+    "subjectId": "ethics",
+    "title": {
+      "ru": "Дружба",
+      "en": "Friendship",
+      "tj": "Дӯстӣ"
+    },
+    "order": 0,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ethics.honesty",
+    "subjectId": "ethics",
+    "title": {
+      "ru": "Честность и правдивость",
+      "en": "Honesty",
+      "tj": "Ростӣ ва ростгӯӣ"
+    },
+    "order": 1,
+    "grade": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ethics.responsibility",
+    "subjectId": "ethics",
+    "title": {
+      "ru": "Ответственность",
+      "en": "Responsibility",
+      "tj": "Масъулият"
+    },
+    "order": 0,
+    "grade": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "ethics.tolerance",
+    "subjectId": "ethics",
+    "title": {
+      "ru": "Толерантность",
+      "en": "Tolerance",
+      "tj": "Таҳаммулпазирӣ"
+    },
+    "order": 0,
+    "grade": 7,
+    "difficulty": "medium"
+  },
+  {
+    "id": "ethics.citizenship-ethics",
+    "subjectId": "ethics",
+    "title": {
+      "ru": "Гражданская этика",
+      "en": "Civic ethics",
+      "tj": "Ахлоқи шаҳрвандӣ"
+    },
+    "order": 0,
+    "grade": 8,
+    "difficulty": "medium"
+  },
+  {
+    "id": "ethics.environmental-ethics",
+    "subjectId": "ethics",
+    "title": {
+      "ru": "Экологическая этика",
+      "en": "Environmental ethics",
+      "tj": "Ахлоқи экологӣ"
+    },
+    "order": 0,
+    "grade": 9,
+    "difficulty": "medium"
+  },
+  {
+    "id": "astronomy.solar-system",
+    "subjectId": "astronomy",
+    "title": {
+      "ru": "Солнечная система",
+      "en": "The Solar System",
+      "tj": "Системаи Офтоб"
+    },
+    "order": 0,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "astronomy.stars",
+    "subjectId": "astronomy",
+    "title": {
+      "ru": "Звёзды",
+      "en": "Stars",
+      "tj": "Ситорагон"
+    },
+    "order": 1,
+    "grade": 11,
+    "difficulty": "medium"
+  },
+  {
+    "id": "astronomy.galaxies",
+    "subjectId": "astronomy",
+    "title": {
+      "ru": "Галактики",
+      "en": "Galaxies",
+      "tj": "Галактикаҳо"
+    },
+    "order": 2,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "astronomy.universe",
+    "subjectId": "astronomy",
+    "title": {
+      "ru": "Вселенная",
+      "en": "The Universe",
+      "tj": "Коинот"
+    },
+    "order": 3,
+    "grade": 11,
+    "difficulty": "hard"
+  },
+  {
+    "id": "astronomy.space-exploration",
+    "subjectId": "astronomy",
+    "title": {
+      "ru": "Освоение космоса",
+      "en": "Space exploration",
+      "tj": "Омӯзиши кайҳон"
+    },
+    "order": 4,
+    "grade": 11,
+    "difficulty": "medium"
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "id": "english-language.advanced-tenses.basics",
+    "topicId": "english-language.advanced-tenses",
+    "title": {
+      "ru": "Сложные времена",
+      "en": "Advanced tenses",
+      "tj": "Замонҳои мураккаб"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "На продвинутом уровне используют **Perfect Continuous** времена для выражения длительности действий.",
+          "en": "At an advanced level **Perfect Continuous** tenses express the duration of actions.",
+          "tj": "Дар сатҳи баланд замонҳои **Perfect Continuous** барои ифодаи идомаи амал истифода мешаванд."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Время",
+            "en": "Tense",
+            "tj": "Замон"
+          },
+          {
+            "ru": "Структура",
+            "en": "Structure",
+            "tj": "Сохт"
+          },
+          {
+            "ru": "Пример",
+            "en": "Example",
+            "tj": "Мисол"
+          }
+        ],
+        "rows": [
+          [
+            "Present Perfect Continuous",
+            "have/has been + V-ing",
+            "I have been studying for 2 hours."
+          ],
+          [
+            "Past Perfect Continuous",
+            "had been + V-ing",
+            "She had been waiting when he arrived."
+          ],
+          [
+            "Future Perfect",
+            "will have + V3",
+            "By June I will have finished the book."
+          ],
+          [
+            "Future Continuous",
+            "will be + V-ing",
+            "This time tomorrow I will be flying."
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как сказать «Я учусь уже 2 часа»?",
+          "en": "How do you say «Я учусь уже 2 часа»?",
+          "tj": "«Ман 2 соат аст дарс мехонам»-ро ба англисӣ чӣ гуна мегӯянд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "I have been studying for 2 hours.",
+              "en": "I have been studying for 2 hours.",
+              "tj": "I have been studying for 2 hours."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

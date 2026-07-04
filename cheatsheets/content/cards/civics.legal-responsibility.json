@@ -1,0 +1,39 @@
+[
+  {
+    "id": "civics.legal-responsibility.basics",
+    "topicId": "civics.legal-responsibility",
+    "title": {
+      "ru": "Юридическая ответственность",
+      "en": "Legal responsibility",
+      "tj": "Масъулияти ҳуқуқӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Юридическая ответственность** — обязанность нести наказание за нарушение закона. Виды: **уголовная, административная, гражданская и дисциплинарная**.",
+          "en": "**Legal responsibility** is the obligation to bear punishment for breaking the law. Types: **criminal, administrative, civil and disciplinary**.",
+          "tj": "**Масъулияти ҳуқуқӣ** — ӯҳдадории қабул кардани ҷазо барои вайрон кардани қонун. Намудҳо: **ҷиноятӣ, маъмурӣ, гражданӣ ва интизомӣ**."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какой вид ответственности наступает за совершение преступления?",
+          "en": "Which type of responsibility applies to a crime?",
+          "tj": "Барои содир кардани ҷиноят кадом намуди масъулият пайдо мешавад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Уголовная ответственность.",
+              "en": "Criminal responsibility.",
+              "tj": "Масъулияти ҷиноятӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

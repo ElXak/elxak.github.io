@@ -1,0 +1,43 @@
+[
+  {
+    "id": "math.written-arithmetic.basics",
+    "topicId": "math.written-arithmetic",
+    "title": {
+      "ru": "Письменные вычисления",
+      "en": "Written calculations",
+      "tj": "Ҳисобҳои хаттӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Числа складывают и вычитают **столбиком**: единицы под единицами, десятки под десятками. При переполнении разряда единицу переносят дальше.",
+          "en": "Numbers are added and subtracted **in columns**: units under units, tens under tens. When a place overflows, carry one to the next.",
+          "tj": "Ададҳоро **сутунӣ** ҷамъ ва тарҳ мекунанд: якҳо зери якҳо, даҳҳо зери даҳҳо. Ҳангоми пуршавии разряд як воҳидро ба разряди дигар мегузаронанд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сложите столбиком $256 + 137$.",
+          "en": "Add in columns: $256 + 137$.",
+          "tj": "Сутунӣ ҷамъ кунед: $256 + 137$."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Единицы: $6+7=13$ — пишем 3, переносим 1. Десятки: $5+3+1=9$. Сотни: $2+1=3$.",
+              "en": "Units: $6+7=13$ — write 3, carry 1. Tens: $5+3+1=9$. Hundreds: $2+1=3$.",
+              "tj": "Якҳо: $6+7=13$ — 3-ро менависем, 1-ро мегузаронем. Даҳҳо: $5+3+1=9$. Садҳо: $2+1=3$."
+            }
+          },
+          {
+            "type": "formula",
+            "latex": "256 + 137 = 393"
+          }
+        ]
+      }
+    ]
+  }
+]

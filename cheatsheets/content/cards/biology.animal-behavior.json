@@ -1,0 +1,39 @@
+[
+  {
+    "id": "biology.animal-behavior.basics",
+    "topicId": "biology.animal-behavior",
+    "title": {
+      "ru": "Поведение животных",
+      "en": "Animal behaviour",
+      "tj": "Рафтори ҳайвонот"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Поведение бывает **врождённое** (инстинкты и рефлексы) и **приобретённое** (выученное на опыте).",
+          "en": "Behaviour can be **innate** (instincts and reflexes) or **acquired** (learned from experience).",
+          "tj": "Рафтор **модарзодӣ** (ғаризаҳо ва рефлексҳо) ва **омӯхташуда** (аз таҷриба) мешавад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Паук плетёт паутину без обучения. Это какое поведение?",
+          "en": "A spider weaves a web without being taught. What kind of behaviour is this?",
+          "tj": "Тортанак бе таълим тор мебофад. Ин кадом рафтор аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Врождённое (инстинкт).",
+              "en": "Innate (instinct).",
+              "tj": "Модарзодӣ (ғариза)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

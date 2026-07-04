@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ethics.environmental-ethics.basics",
+    "topicId": "ethics.environmental-ethics",
+    "title": {
+      "ru": "Экологическая этика",
+      "en": "Environmental ethics",
+      "tj": "Ахлоқи экологӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Экологическая этика** — нравственные принципы, определяющие ответственное отношение человека к природе: бережное использование ресурсов, защита животных и сохранение чистоты окружающей среды.",
+          "en": "**Environmental ethics** are moral principles defining a person's responsible attitude towards nature: careful use of resources, protection of animals and keeping the environment clean.",
+          "tj": "**Ахлоқи экологӣ** — принсипҳои ахлоқие, ки муносибати масъулиятноки инсонро ба табиат муайян мекунанд: истифодаи дурусти захираҳо, ҳифзи ҳайвонот ва нигоҳ доштани тозагии муҳити зист."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Назовите один принцип экологической этики.",
+          "en": "Name one principle of environmental ethics.",
+          "tj": "Як принсипи ахлоқи экологиро номбар кунед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Бережное использование природных ресурсов.",
+              "en": "Careful use of natural resources.",
+              "tj": "Истифодаи дурусти захираҳои табиӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

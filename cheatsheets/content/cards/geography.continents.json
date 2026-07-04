@@ -1,0 +1,92 @@
+[
+  {
+    "id": "geography.continents.basics",
+    "topicId": "geography.continents",
+    "title": {
+      "ru": "Материки и океаны",
+      "en": "Continents and oceans",
+      "tj": "Қитъаҳо ва уқёнусҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "На Земле **6 материков** и **4 океана**.",
+          "en": "The Earth has **6 continents** and **4 oceans**.",
+          "tj": "Дар Замин **6 қитъа** ва **4 уқёнус** ҳаст."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Материки",
+            "en": "Continents",
+            "tj": "Қитъаҳо"
+          },
+          {
+            "ru": "Океаны",
+            "en": "Oceans",
+            "tj": "Уқёнусҳо"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Евразия, Африка",
+              "en": "Eurasia, Africa",
+              "tj": "Аврупою Осиё, Африқо"
+            },
+            {
+              "ru": "Тихий",
+              "en": "Pacific",
+              "tj": "Уқёнуси Ором"
+            }
+          ],
+          [
+            {
+              "ru": "Северная и Южная Америка",
+              "en": "North and South America",
+              "tj": "Амрикои Шимолӣ ва Ҷанубӣ"
+            },
+            {
+              "ru": "Атлантический",
+              "en": "Atlantic",
+              "tj": "Атлантик"
+            }
+          ],
+          [
+            {
+              "ru": "Австралия, Антарктида",
+              "en": "Australia, Antarctica",
+              "tj": "Австралия, Антарктида"
+            },
+            {
+              "ru": "Индийский, Северный Ледовитый",
+              "en": "Indian, Arctic",
+              "tj": "Ҳинд, Яхбастаи Шимолӣ"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько материков на Земле?",
+          "en": "How many continents are there on Earth?",
+          "tj": "Дар Замин чанд қитъа ҳаст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Шесть.",
+              "en": "Six.",
+              "tj": "Шаш."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

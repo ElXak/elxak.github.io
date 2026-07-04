@@ -1,0 +1,43 @@
+[
+  {
+    "id": "geometry.similarity.basics",
+    "topicId": "geometry.similarity",
+    "title": {
+      "ru": "Подобие треугольников",
+      "en": "Similar triangles",
+      "tj": "Монандии секунҷаҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Подобные треугольники** имеют равные углы и пропорциональные стороны. Достаточно равенства двух углов.",
+          "en": "**Similar triangles** have equal angles and proportional sides. Two equal angles are enough.",
+          "tj": "**Секунҷаҳои монанд** кунҷҳои баробар ва тарафҳои мутаносиб доранд. Баробарии ду кунҷ кифоя аст."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Отношение сторон — **коэффициент подобия** $k$. Площади относятся как $k^2$.",
+          "en": "The ratio of sides is the **similarity coefficient** $k$. Areas are in the ratio $k^2$.",
+          "tj": "Таносуби тарафҳо — **коэффитсиенти монандӣ** $k$. Масоҳатҳо ҳамчун $k^2$ таносуб доранд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Треугольники подобны, $k = 2$. Стороне 5 соответствует сторона?",
+          "en": "Triangles are similar with $k = 2$. What side corresponds to the side 5?",
+          "tj": "Секунҷаҳо монанданд, $k = 2$. Ба тарафи 5 кадом тараф мувофиқ аст?"
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "5 \\cdot 2 = 10"
+          }
+        ]
+      }
+    ]
+  }
+]

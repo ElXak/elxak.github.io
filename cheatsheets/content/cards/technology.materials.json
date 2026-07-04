@@ -1,0 +1,92 @@
+[
+  {
+    "id": "technology.materials.basics",
+    "topicId": "technology.materials",
+    "title": {
+      "ru": "Материалы",
+      "en": "Materials",
+      "tj": "Маводҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "В технологии используют разные **материалы**. Основные виды: **древесина** (дерево, фанера), **металлы** (железо, алюминий), **ткани** (хлопок, шерсть) и **пластик**.",
+          "en": "Technology uses different **materials**. Main types: **wood** (timber, plywood), **metals** (iron, aluminium), **textiles** (cotton, wool) and **plastic**.",
+          "tj": "Дар технология **маводҳои** гуногун истифода мешаванд. Намудҳои асосӣ: **чӯб** (тахта, фанер), **металлҳо** (оҳан, алюминий), **матоъҳо** (пахта, пашм) ва **пластик**."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Материал",
+            "en": "Material",
+            "tj": "Мавод"
+          },
+          {
+            "ru": "Свойства",
+            "en": "Properties",
+            "tj": "Хосиятҳо"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Древесина",
+              "en": "Wood",
+              "tj": "Чӯб"
+            },
+            {
+              "ru": "лёгкая, режется, горит",
+              "en": "light, cuttable, flammable",
+              "tj": "сабук, бурида мешавад, месӯзад"
+            }
+          ],
+          [
+            {
+              "ru": "Металл",
+              "en": "Metal",
+              "tj": "Металл"
+            },
+            {
+              "ru": "прочный, проводит ток",
+              "en": "strong, conducts electricity",
+              "tj": "мустаҳкам, ҷараёнро мегузаронад"
+            }
+          ],
+          [
+            {
+              "ru": "Ткань",
+              "en": "Textile",
+              "tj": "Матоъ"
+            },
+            {
+              "ru": "гибкая, шьётся",
+              "en": "flexible, sewable",
+              "tj": "чандир, дӯхта мешавад"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какой материал проводит электричество?",
+          "en": "Which material conducts electricity?",
+          "tj": "Кадом мавод электрро мегузаронад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Металл.",
+              "en": "Metal.",
+              "tj": "Металл."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

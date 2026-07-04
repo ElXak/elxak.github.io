@@ -1,0 +1,70 @@
+[
+  {
+    "id": "algebra.integer-exponent.basics",
+    "topicId": "algebra.integer-exponent",
+    "title": {
+      "ru": "Степень с целым показателем",
+      "en": "Integer exponents",
+      "tj": "Дараҷа бо нишондиҳандаи бутун"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Степень с **целым показателем** расширяет понятие степени: $a^0 = 1$ и $a^{-n} = \\dfrac{1}{a^n}$ (при $a \\neq 0$).",
+          "en": "Integer exponents extend powers: $a^0 = 1$ and $a^{-n} = \\dfrac{1}{a^n}$ (for $a \\neq 0$).",
+          "tj": "Дараҷа бо **нишондиҳандаи бутун** мафҳуми дараҷаро васеъ мекунад: $a^0 = 1$ ва $a^{-n} = \\dfrac{1}{a^n}$ (ҳангоми $a \\neq 0$)."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "a^m \\cdot a^n = a^{m+n}",
+        "caption": {
+          "ru": "Умножение",
+          "en": "Multiplication",
+          "tj": "Зарб"
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "\\dfrac{a^m}{a^n} = a^{m-n}",
+        "caption": {
+          "ru": "Деление",
+          "en": "Division",
+          "tj": "Тақсим"
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "(a^m)^n = a^{mn}",
+        "caption": {
+          "ru": "Степень степени",
+          "en": "Power of a power",
+          "tj": "Дараҷаи дараҷа"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Упростите $\\dfrac{x^5}{x^8}$.",
+          "en": "Simplify $\\dfrac{x^5}{x^8}$.",
+          "tj": "Содда кунед $\\dfrac{x^5}{x^8}$."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Вычитаем показатели: $5 - 8 = -3$.",
+              "en": "Subtract the exponents: $5 - 8 = -3$.",
+              "tj": "Нишондиҳандаҳоро тарҳ мекунем: $5 - 8 = -3$."
+            }
+          },
+          {
+            "type": "formula",
+            "latex": "\\dfrac{x^5}{x^8} = x^{-3} = \\dfrac{1}{x^3}"
+          }
+        ]
+      }
+    ]
+  }
+]

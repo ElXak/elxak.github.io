@@ -1,0 +1,48 @@
+[
+  {
+    "id": "physics.momentum.basics",
+    "topicId": "physics.momentum",
+    "title": {
+      "ru": "Импульс. Закон сохранения импульса",
+      "en": "Momentum. Conservation of momentum",
+      "tj": "Импулс. Қонуни бақои импулс"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Импульс** тела — произведение массы на скорость. В замкнутой системе суммарный импульс сохраняется.",
+          "en": "The **momentum** of a body is mass times velocity. In a closed system the total momentum is conserved.",
+          "tj": "**Импулси** ҷисм — ҳосили зарби масса ба суръат. Дар системаи пӯшида импулси умумӣ нигоҳ дошта мешавад."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "p = mv",
+        "caption": {
+          "ru": "импульс, кг·м/с",
+          "en": "momentum, kg·m/s",
+          "tj": "импулс, кг·м/с"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "$m = 2$ кг, $v = 3$ м/с. Найдите импульс.",
+          "en": "$m = 2$ kg, $v = 3$ m/s. Find the momentum.",
+          "tj": "$m = 2$ кг, $v = 3$ м/с. Импулсро ёбед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "$p = 2 \\times 3 = 6$ кг·м/с.",
+              "en": "$p = 2 \\times 3 = 6$ kg·m/s.",
+              "tj": "$p = 2 \\times 3 = 6$ кг·м/с."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

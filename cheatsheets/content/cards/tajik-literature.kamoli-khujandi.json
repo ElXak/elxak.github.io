@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tajik-literature.kamoli-khujandi.basics",
+    "topicId": "tajik-literature.kamoli-khujandi",
+    "title": {
+      "ru": "Камол Худжанди",
+      "en": "Kamol Khujandi",
+      "tj": "Камоли Хуҷандӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Камол Худжанди** (XIV век) — великий поэт-лирик из города **Худжанд** (ныне Таджикистан). Прославился мастерскими **газелями** о любви и красоте.",
+          "en": "**Kamol Khujandi** (14th century) was a great lyric poet from the city of **Khujand** (now in Tajikistan). He became famous for masterful **ghazals** about love and beauty.",
+          "tj": "**Камоли Хуҷандӣ** (асри XIV) — шоири бузурги лирик аз шаҳри **Хуҷанд** (ҳозира Тоҷикистон). Бо **ғазал**-ҳои устодонаи худ дар бораи ишқ ва зебоӣ машҳур шуд."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Он был современником великого Хафиза.",
+          "en": "He was a contemporary of the great Hafiz.",
+          "tj": "Ӯ ҳамзамони Ҳофизи бузург буд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "В каком жанре прославился Камол Худжанди?",
+          "en": "Which form was Kamol Khujandi famous for?",
+          "tj": "Камоли Хуҷандӣ дар кадом жанр машҳур шуд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "В газели (ғазал).",
+              "en": "The ghazal (ғазал).",
+              "tj": "Дар ғазал."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

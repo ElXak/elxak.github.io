@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-language.sentence-members.basics",
+    "topicId": "tajik-language.sentence-members",
+    "title": {
+      "ru": "Члены предложения",
+      "en": "Sentence members",
+      "tj": "Аъзоҳои ҷумла"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Главные члены**: подлежащее (мубтадо) и сказуемое (хабар). **Второстепенные**: дополнение (пуркунанда), определение (муайянкунанда) и обстоятельство (ҳол).",
+          "en": "**Main members**: the subject (мубтадо) and the predicate (хабар). **Secondary members**: object (пуркунанда), attribute (муайянкунанда) and adverbial (ҳол).",
+          "tj": "**Аъзоҳои асосӣ**: мубтадо ва хабар. **Аъзоҳои пайрав**: пуркунанда, муайянкунанда ва ҳол."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Найдите подлежащее и сказуемое в «Талаба китоб мехонад» (Ученик читает книгу).",
+          "en": "Find the subject and predicate in «Талаба китоб мехонад» (The student reads a book).",
+          "tj": "Дар «Талаба китоб мехонад» мубтадо ва хабарро ёбед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Подлежащее — «талаба», сказуемое — «мехонад».",
+              "en": "Subject — «талаба», predicate — «мехонад».",
+              "tj": "Мубтадо — «талаба», хабар — «мехонад»."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

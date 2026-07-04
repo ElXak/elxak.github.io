@@ -1,0 +1,43 @@
+[
+  {
+    "id": "math.numbers-10.basics",
+    "topicId": "math.numbers-10",
+    "title": {
+      "ru": "Числа от 1 до 10",
+      "en": "Numbers 1 to 10",
+      "tj": "Ададҳо аз 1 то 10"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Числами **1, 2, 3, …, 10** мы считаем предметы. Каждое число записывают цифрой.",
+          "en": "We count objects with the numbers **1, 2, 3, …, 10**. Each number is written with a digit.",
+          "tj": "Бо ададҳои **1, 2, 3, …, 10** мо ашёро мешуморем. Ҳар адад бо рақам навишта мешавад."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**0 (ноль)** означает, что предметов нет. У каждого числа есть следующее и предыдущее.",
+          "en": "**0 (zero)** means there are no objects. Every number has a next and a previous one.",
+          "tj": "**0 (сифр)** маънои онро дорад, ки ашё нест. Ҳар адад адади баъдина ва пешина дорад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какое число идёт после 6?",
+          "en": "Which number comes after 6?",
+          "tj": "Пас аз 6 кадом адад меояд?"
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "6,\\ 7 \\;\\rightarrow\\; 7"
+          }
+        ]
+      }
+    ]
+  }
+]

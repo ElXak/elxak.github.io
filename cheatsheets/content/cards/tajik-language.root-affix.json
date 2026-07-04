@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-language.root-affix.basics",
+    "topicId": "tajik-language.root-affix",
+    "title": {
+      "ru": "Корень и аффиксы",
+      "en": "Root and affixes",
+      "tj": "Реша ва аффиксҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Корень** — главная часть слова. **Аффиксы** (приставки и суффиксы) присоединяются к корню и образуют новые слова.",
+          "en": "The **root** is the main part of a word. **Affixes** (prefixes and suffixes) attach to the root and form new words.",
+          "tj": "**Реша** қисми асосии калима аст. **Аффиксҳо** (пешвандҳо ва пасвандҳо) ба реша ҳамроҳ шуда, калимаҳои нав месозанд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какое слово образуется: «кор» (работа) + суффикс «-гар»?",
+          "en": "What word forms from «кор» (work) + the suffix «-гар»?",
+          "tj": "Аз «кор» + пасванди «-гар» кадом калима ҳосил мешавад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "**коргар** (рабочий).",
+              "en": "**коргар** (worker).",
+              "tj": "**коргар**."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "english-language.countable.basics",
+    "topicId": "english-language.countable",
+    "title": {
+      "ru": "Исчисляемые и неисчисляемые",
+      "en": "Countable and uncountable",
+      "tj": "Ҳисобшаванда ва ҳисобнашаванда"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Исчисляемые (countable)** существительные можно считать: a book → two books. **Неисчисляемые (uncountable)** нельзя считать напрямую: water, milk, bread, information.",
+          "en": "**Countable** nouns can be counted: a book → two books. **Uncountable** nouns cannot be counted directly: water, milk, bread, information.",
+          "tj": "**Ҳисобшаванда (countable)** исмҳоро ҳисоб кардан мумкин аст: a book → two books. **Ҳисобнашаванда (uncountable)** бевосита ҳисоб карда намешаванд: water, milk, bread."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Тип",
+            "en": "Type",
+            "tj": "Навъ"
+          },
+          {
+            "ru": "Примеры",
+            "en": "Examples",
+            "tj": "Мисолҳо"
+          },
+          {
+            "ru": "С артиклем",
+            "en": "Article",
+            "tj": "Бо артикл"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Исчисляемые",
+              "en": "Countable",
+              "tj": "Ҳисобшаванда"
+            },
+            "apple, car, idea",
+            "a car / the cars"
+          ],
+          [
+            {
+              "ru": "Неисчисляемые",
+              "en": "Uncountable",
+              "tj": "Ҳисобнашаванда"
+            },
+            "water, rice, money",
+            "— / the water"
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "«Вода» — исчисляемое или неисчисляемое?",
+          "en": "Is 'water' countable or uncountable?",
+          "tj": "«Water» ҳисобшаванда аст ё ҳисобнашаванда?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Неисчисляемое (uncountable).",
+              "en": "Uncountable.",
+              "tj": "Ҳисобнашаванда (uncountable)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

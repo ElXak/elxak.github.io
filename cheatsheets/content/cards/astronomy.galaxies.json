@@ -1,0 +1,39 @@
+[
+  {
+    "id": "astronomy.galaxies.basics",
+    "topicId": "astronomy.galaxies",
+    "title": {
+      "ru": "Галактики",
+      "en": "Galaxies",
+      "tj": "Галактикаҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Галактика** — огромная система из миллиардов звёзд, газа и пыли, удерживаемых гравитацией. Наша галактика — **Млечный Путь**, содержит около 100–400 миллиардов звёзд.",
+          "en": "A **galaxy** is a huge system of billions of stars, gas and dust held together by gravity. Our galaxy is the **Milky Way**, containing about 100–400 billion stars.",
+          "tj": "**Галактика** системаи бузурги миллиардҳо ситора, газ ва чанг мебошад, ки бо ҷозиба нигоҳ дошта мешавад. Галактикаи мо **Роҳи Каҷовак** аст, ки тақрибан 100–400 миллиард ситора дорад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как называется наша галактика?",
+          "en": "What is our galaxy called?",
+          "tj": "Галактикаи мо чӣ ном дорад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Млечный Путь.",
+              "en": "The Milky Way.",
+              "tj": "Роҳи Каҷовак."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

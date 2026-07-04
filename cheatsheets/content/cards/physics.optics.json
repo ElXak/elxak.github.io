@@ -1,0 +1,48 @@
+[
+  {
+    "id": "physics.optics.basics",
+    "topicId": "physics.optics",
+    "title": {
+      "ru": "Оптика",
+      "en": "Optics",
+      "tj": "Оптика"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Свет преломляется на границе сред. **Показатель преломления** $n = \\dfrac{\\sin\\alpha}{\\sin\\beta}$. Линза даёт изображение по формуле линзы.",
+          "en": "Light refracts at a boundary. The **refractive index** is $n = \\dfrac{\\sin\\alpha}{\\sin\\beta}$. A lens forms an image by the lens formula.",
+          "tj": "Рӯшноӣ дар сарҳади муҳитҳо мешиканад. **Нишондиҳандаи шикаст** $n = \\dfrac{\\sin\\alpha}{\\sin\\beta}$. Линза аз рӯи формулаи линза тасвир медиҳад."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "\\dfrac{1}{F} = \\dfrac{1}{d} + \\dfrac{1}{f}",
+        "caption": {
+          "ru": "формула тонкой линзы",
+          "en": "thin lens formula",
+          "tj": "формулаи линзаи тунук"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Почему ложка в стакане воды кажется «сломанной»?",
+          "en": "Why does a spoon in a glass of water look 'broken'?",
+          "tj": "Чаро қошуқ дар стакани об «шикаста» менамояд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Из-за преломления света на границе воды и воздуха.",
+              "en": "Because of light refraction at the water–air boundary.",
+              "tj": "Аз сабаби шикасти рӯшноӣ дар сарҳади об ва ҳаво."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

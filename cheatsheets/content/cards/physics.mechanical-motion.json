@@ -1,0 +1,48 @@
+[
+  {
+    "id": "physics.mechanical-motion.basics",
+    "topicId": "physics.mechanical-motion",
+    "title": {
+      "ru": "Механическое движение. Скорость",
+      "en": "Mechanical motion. Speed",
+      "tj": "Ҳаракати механикӣ. Суръат"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Механическое движение** — изменение положения тела со временем. При равномерном движении скорость постоянна.",
+          "en": "**Mechanical motion** is a change of a body's position over time. In uniform motion the speed is constant.",
+          "tj": "**Ҳаракати механикӣ** — тағйири мавқеи ҷисм бо мурури вақт. Дар ҳаракати мунтазам суръат доимӣ аст."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "v = \\dfrac{s}{t}",
+        "caption": {
+          "ru": "скорость, м/с",
+          "en": "speed, m/s",
+          "tj": "суръат, м/с"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Тело прошло 100 м за 20 с. Найдите скорость.",
+          "en": "A body travels 100 m in 20 s. Find its speed.",
+          "tj": "Ҷисм 100 м-ро дар 20 с тай кард. Суръатро ёбед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "$v = \\dfrac{100}{20} = 5$ м/с.",
+              "en": "$v = \\dfrac{100}{20} = 5$ m/s.",
+              "tj": "$v = \\dfrac{100}{20} = 5$ м/с."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

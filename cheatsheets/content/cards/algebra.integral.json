@@ -1,0 +1,80 @@
+[
+  {
+    "id": "algebra.integral.basics",
+    "topicId": "algebra.integral",
+    "title": {
+      "ru": "Первообразная и интеграл",
+      "en": "Antiderivative and integral",
+      "tj": "Функсияи ибтидоӣ ва интеграл"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Первообразная** $F(x)$ для $f(x)$ удовлетворяет $F'(x)=f(x)$. Определённый интеграл — по формуле Ньютона–Лейбница.",
+          "en": "An **antiderivative** $F(x)$ of $f(x)$ satisfies $F'(x)=f(x)$. The definite integral uses the Newton–Leibniz formula.",
+          "tj": "**Функсияи ибтидоӣ** $F(x)$ барои $f(x)$ шарти $F'(x)=f(x)$-ро қонеъ мекунад. Интеграли муайян — бо формулаи Нютон–Лейбнитс."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "\\int_a^b f(x)\\,dx = F(b) - F(a)"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "$f(x)$",
+          {
+            "ru": "Первообразная $F(x)$",
+            "en": "Antiderivative $F(x)$",
+            "tj": "Ибтидоӣ $F(x)$"
+          }
+        ],
+        "rows": [
+          [
+            "$x^n$",
+            "$\\dfrac{x^{n+1}}{n+1} + C$"
+          ],
+          [
+            "$\\dfrac{1}{x}$",
+            "$\\ln|x| + C$"
+          ],
+          [
+            "$\\sin x$",
+            "$-\\cos x + C$"
+          ],
+          [
+            "$\\cos x$",
+            "$\\sin x + C$"
+          ],
+          [
+            "$e^x$",
+            "$e^x + C$"
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Вычислите $\\int_0^1 x^2\\,dx$.",
+          "en": "Compute $\\int_0^1 x^2\\,dx$.",
+          "tj": "Ҳисоб кунед $\\int_0^1 x^2\\,dx$."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Первообразная $\\dfrac{x^3}{3}$, берём $F(1)-F(0)$.",
+              "en": "Antiderivative $\\dfrac{x^3}{3}$, take $F(1)-F(0)$.",
+              "tj": "Ибтидоӣ $\\dfrac{x^3}{3}$, $F(1)-F(0)$-ро мегирем."
+            }
+          },
+          {
+            "type": "formula",
+            "latex": "\\int_0^1 x^2\\,dx = \\dfrac{1}{3}"
+          }
+        ]
+      }
+    ]
+  }
+]

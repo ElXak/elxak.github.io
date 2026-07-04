@@ -1,0 +1,35 @@
+[
+  {
+    "id": "math.fractions.add",
+    "topicId": "math.fractions",
+    "title": {
+      "ru": "Сложение дробей",
+      "en": "Adding fractions",
+      "tj": "Ҷамъи касрҳо"
+    },
+    "tags": [
+      "дробь",
+      "знаменатель",
+      "fraction"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Чтобы сложить дроби, приведи их к **общему знаменателю**, затем сложи числители.",
+          "en": "To add fractions, bring them to a **common denominator**, then add the numerators.",
+          "tj": "Барои ҷамъ кардани касрҳо, онҳоро ба **махраҷи умумӣ** оваред, сонӣ суратҳоро ҷамъ кунед."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "\\dfrac{a}{b} + \\dfrac{c}{d} = \\dfrac{ad + bc}{bd}",
+        "caption": {
+          "ru": "Сложение дробей",
+          "en": "Adding fractions",
+          "tj": "Ҷамъи касрҳо"
+        }
+      }
+    ]
+  }
+]

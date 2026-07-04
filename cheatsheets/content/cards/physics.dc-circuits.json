@@ -1,0 +1,72 @@
+[
+  {
+    "id": "physics.dc-circuits.basics",
+    "topicId": "physics.dc-circuits",
+    "title": {
+      "ru": "Постоянный ток. Электрические цепи",
+      "en": "Direct current. Electric circuits",
+      "tj": "Ҷараёни доимӣ. Занҷирҳои электр"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "В цепи резисторы соединяют **последовательно** или **параллельно**. Мощность тока $P = UI$.",
+          "en": "In a circuit resistors are connected **in series** or **in parallel**. Electric power is $P = UI$.",
+          "tj": "Дар занҷир резисторҳо **пайдарпай** ё **параллел** пайваст мешаванд. Тавоноии ҷараён $P = UI$."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Соединение",
+            "en": "Connection",
+            "tj": "Пайваст"
+          },
+          {
+            "ru": "Сопротивление",
+            "en": "Resistance",
+            "tj": "Муқовимат"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Последовательное",
+              "en": "Series",
+              "tj": "Пайдарпай"
+            },
+            "$R = R_1 + R_2$"
+          ],
+          [
+            {
+              "ru": "Параллельное",
+              "en": "Parallel",
+              "tj": "Параллел"
+            },
+            "$\\dfrac{1}{R} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2}$"
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Два резистора по 3 Ом соединены последовательно. Найдите общее сопротивление.",
+          "en": "Two 3 Ω resistors are connected in series. Find the total resistance.",
+          "tj": "Ду резистори 3 Ом пайдарпай пайваст шудаанд. Муқовимати умумиро ёбед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "$R = 3 + 3 = 6$ Ом.",
+              "en": "$R = 3 + 3 = 6$ Ω.",
+              "tj": "$R = 3 + 3 = 6$ Ом."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

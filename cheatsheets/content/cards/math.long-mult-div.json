@@ -1,0 +1,49 @@
+[
+  {
+    "id": "math.long-mult-div.basics",
+    "topicId": "math.long-mult-div",
+    "title": {
+      "ru": "Умножение и деление столбиком",
+      "en": "Long multiplication and division",
+      "tj": "Зарб ва тақсими хаттӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Многозначные числа умножают и делят **столбиком**, разряд за разрядом. При делении может остаться **остаток**.",
+          "en": "Multi-digit numbers are multiplied and divided **in columns**, place by place. Division may leave a **remainder**.",
+          "tj": "Ададҳои бисёррақамаро **сутунӣ**, разряд ба разряд зарб ва тақсим мекунанд. Ҳангоми тақсим **бақия** монда метавонад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько будет $124 \\times 3$?",
+          "en": "What is $124 \\times 3$?",
+          "tj": "$124 \\times 3$ чанд мешавад?"
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "124 \\times 3 = 372"
+          }
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько будет $96 \\div 4$?",
+          "en": "What is $96 \\div 4$?",
+          "tj": "$96 \\div 4$ чанд мешавад?"
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "96 \\div 4 = 24"
+          }
+        ]
+      }
+    ]
+  }
+]

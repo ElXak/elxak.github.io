@@ -1,0 +1,47 @@
+[
+  {
+    "id": "russian-literature.drama-genres.basics",
+    "topicId": "russian-literature.drama-genres",
+    "title": {
+      "ru": "Драматические жанры",
+      "en": "Dramatic genres",
+      "tj": "Жанрҳои драмавӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Драма** — род литературы для постановки на сцене. Её жанры: **трагедия** (конфликт часто кончается гибелью героя), **комедия** (высмеивает пороки) и собственно **драма**.",
+          "en": "**Drama** is the kind of literature meant for the stage. Its genres: **tragedy** (the conflict often ends in the hero's death), **comedy** (mocks vices) and **drama** proper.",
+          "tj": "**Драма** ҷинси адабиёт барои саҳна аст. Жанрҳои он: **фоҷиа** (низоъ аксар бо марги қаҳрамон анҷом меёбад), **комедия** (камбудиҳоро ҳаҷв мекунад) ва **драма**."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Текст пьесы делится на действия и явления и строится на диалоге.",
+          "en": "A play's text is divided into acts and scenes and is built on dialogue.",
+          "tj": "Матни асар ба пардаҳо ва саҳнаҳо тақсим шуда, бар асоси муколама сохта мешавад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как называется пьеса, где конфликт кончается гибелью героя?",
+          "en": "What is a play whose conflict ends in the hero's death called?",
+          "tj": "Асаре, ки низоъ дар он бо марги қаҳрамон анҷом меёбад, чӣ ном дорад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Трагедия.",
+              "en": "A tragedy.",
+              "tj": "Фоҷиа."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

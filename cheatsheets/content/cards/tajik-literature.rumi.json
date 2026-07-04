@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tajik-literature.rumi.basics",
+    "topicId": "tajik-literature.rumi",
+    "title": {
+      "ru": "Джалолиддин Балхи (Руми)",
+      "en": "Jaloliddin Balkhi (Rumi)",
+      "tj": "Ҷалолуддини Балхӣ (Румӣ)"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Джалолиддин Балхи (Руми)** (1207–1273) — великий поэт-суфий, родившийся в Балхе. Его главный труд — **«Маснавии маънави»** («Поэма о скрытом смысле»), обширная духовная поэма.",
+          "en": "**Jaloliddin Balkhi (Rumi)** (1207–1273) was a great Sufi poet, born in Balkh. His main work is the **Masnavi** ('Spiritual Couplets'), a vast spiritual poem.",
+          "tj": "**Ҷалолуддини Балхӣ (Румӣ)** (1207–1273) — шоири бузурги сӯфӣ, ки дар Балх таваллуд шудааст. Асари асосиаш **«Маснавии маънавӣ»** — достони бузурги маънавӣ аст."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Главные темы — божественная любовь, мистика и единство всего сущего.",
+          "en": "His main themes are divine love, mysticism and the unity of all being.",
+          "tj": "Мавзӯъҳои асосӣ — ишқи илоҳӣ, ирфон ва ваҳдати ҳастӣ."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как называется главная духовная поэма Руми?",
+          "en": "What is Rumi's main spiritual poem called?",
+          "tj": "Достони асосии маънавии Румӣ чӣ ном дорад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "«Маснавии маънави».",
+              "en": "The Masnavi.",
+              "tj": "«Маснавии маънавӣ»."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

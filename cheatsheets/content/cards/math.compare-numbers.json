@@ -1,0 +1,43 @@
+[
+  {
+    "id": "math.compare-numbers.basics",
+    "topicId": "math.compare-numbers",
+    "title": {
+      "ru": "Сравнение чисел",
+      "en": "Comparing numbers",
+      "tj": "Муқоисаи ададҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Числа сравнивают знаками **$>$ (больше)**, **$<$ (меньше)** и **$=$ (равно)**.",
+          "en": "We compare numbers with **$>$ (greater)**, **$<$ (less)** and **$=$ (equal)**.",
+          "tj": "Ададҳоро бо аломатҳои **$>$ (калон)**, **$<$ (хурд)** ва **$=$ (баробар)** муқоиса мекунанд."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Чем дальше число при счёте, тем оно больше.",
+          "en": "The further a number is in counting, the greater it is.",
+          "tj": "Адад дар ҳисоб ҳар қадар дуртар бошад, ҳамон қадар калонтар аст."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сравните числа 7 и 4.",
+          "en": "Compare 7 and 4.",
+          "tj": "Ададҳои 7 ва 4-ро муқоиса кунед."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "7 > 4"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "constitution.basics.state",
+    "topicId": "constitution.basics",
+    "title": {
+      "ru": "Государство и Основной закон",
+      "en": "The state and the basic law",
+      "tj": "Давлат ва Қонуни асосӣ"
+    },
+    "tags": [
+      "конституция",
+      "таджикистан",
+      "constitution",
+      "state"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Конституция Республики Таджикистан** принята **6 ноября 1994 года** на всенародном референдуме. Таджикистан — суверенное, демократическое, правовое, светское и унитарное государство. Столица — **Душанбе**.",
+          "en": "The **Constitution of the Republic of Tajikistan** was adopted on **6 November 1994** by national referendum. Tajikistan is a sovereign, democratic, law-based, secular and unitary state. The capital is **Dushanbe**.",
+          "tj": "**Конститутсияи Ҷумҳурии Тоҷикистон** **6 ноябри соли 1994** дар раъйпурсии умумихалқӣ қабул шудааст. Тоҷикистон — давлати соҳибихтиёр, демократӣ, ҳуқуқбунёд, дунявӣ ва ягона аст. Пойтахт — **Душанбе**."
+        }
+      }
+    ]
+  }
+]

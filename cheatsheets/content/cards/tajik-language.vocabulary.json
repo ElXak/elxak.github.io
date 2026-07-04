@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-language.vocabulary.basics",
+    "topicId": "tajik-language.vocabulary",
+    "title": {
+      "ru": "Лексика и фразеология",
+      "en": "Vocabulary and phraseology",
+      "tj": "Луғат ва фразеология"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Лексика** — все слова языка. **Фразеология** изучает **устойчивые выражения (ибораҳои рехта)**, значение которых не складывается из отдельных слов: «гул-гул шукуфтан» (расцвести от радости).",
+          "en": "**Vocabulary** is all the words of a language. **Phraseology** studies **set expressions (ибораҳои рехта)** whose meaning is not the sum of the separate words: «гул-гул шукуфтан» (to blossom with joy).",
+          "tj": "**Луғат** ҳамаи калимаҳои забон аст. **Фразеология** **ибораҳои рехта**-ро меомӯзад, ки маънояшон аз калимаҳои ҷудогона барнамеояд: «гул-гул шукуфтан»."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "«Гул-гул шукуфтан» — свободное словосочетание или фразеологизм?",
+          "en": "Is «гул-гул шукуфтан» a free phrase or a phraseological unit?",
+          "tj": "«Гул-гул шукуфтан» ибораи озод аст ё рехта?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Фразеологизм (ибораи рехта).",
+              "en": "A phraseological unit (ибораи рехта).",
+              "tj": "Ибораи рехта."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

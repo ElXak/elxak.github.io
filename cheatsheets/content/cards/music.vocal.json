@@ -1,0 +1,47 @@
+[
+  {
+    "id": "music.vocal.basics",
+    "topicId": "music.vocal",
+    "title": {
+      "ru": "Вокал",
+      "en": "Vocal",
+      "tj": "Вокал"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Вокал** — пение. Голоса делятся по диапазону: **женские** (сопрано, меццо-сопрано, альт) и **мужские** (тенор, баритон, бас).",
+          "en": "**Vocal** is singing. Voices are classified by range: **women's** (soprano, mezzo-soprano, alto) and **men's** (tenor, baritone, bass).",
+          "tj": "**Вокал** — суруд хондан. Овозҳо аз рӯи диапазон тақсим мешаванд: **занона** (сопрано, меццо-сопрано, алт) ва **мардона** (тенор, баритон, бас)."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "При пении важны **дыхание, дикция** и **интонация**.",
+          "en": "When singing, **breathing, diction** and **intonation** are important.",
+          "tj": "Ҳангоми суруд хондан **нафаскашӣ, дикция** ва **интонатсия** муҳиманд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как называется высокий женский голос?",
+          "en": "What is the high female voice called?",
+          "tj": "Овози баланди занона чӣ ном дорад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Сопрано.",
+              "en": "Soprano.",
+              "tj": "Сопрано."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "civics.civil-society.basics",
+    "topicId": "civics.civil-society",
+    "title": {
+      "ru": "Гражданское общество",
+      "en": "Civil society",
+      "tj": "Ҷомеаи шаҳрвандӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Гражданское общество** — совокупность организаций и объединений граждан, действующих независимо от государства: НКО, профсоюзы, СМИ, партии и общественные движения.",
+          "en": "**Civil society** is the collection of organisations and associations of citizens acting independently of the state: NGOs, trade unions, media, parties and social movements.",
+          "tj": "**Ҷомеаи шаҳрвандӣ** — маҷмӯи ташкилотҳо ва иттиҳодияҳои шаҳрвандон, ки мустақилона аз давлат фаъолият мекунанд: СҒТ, иттифоқҳои касабаи, ВАО, партияҳо ва ҷунбишҳои иҷтимоӣ."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Что такое гражданское общество?",
+          "en": "What is civil society?",
+          "tj": "Ҷомеаи шаҳрвандӣ чист?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Организации и объединения граждан, независимые от государства.",
+              "en": "Citizens' organisations and associations independent of the state.",
+              "tj": "Ташкилотҳо ва иттиҳодияҳои шаҳрвандони мустақил аз давлат."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

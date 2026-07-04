@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-literature.tursunzoda.basics",
+    "topicId": "tajik-literature.tursunzoda",
+    "title": {
+      "ru": "Мирзо Турсунзаде",
+      "en": "Mirzo Tursunzoda",
+      "tj": "Мирзо Турсунзода"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Мирзо Турсунзаде** (1911–1977) — выдающийся таджикский поэт и общественный деятель. Прославился стихами о мире, дружбе народов и Востоке (цикл «Индийская баллада»).",
+          "en": "**Mirzo Tursunzoda** (1911–1977) was an outstanding Tajik poet and public figure. He became famous for poems about peace, the friendship of peoples and the East (the cycle 'Indian Ballad').",
+          "tj": "**Мирзо Турсунзода** (1911–1977) — шоири барҷаста ва ходими ҷамъиятии тоҷик. Бо шеърҳояш дар бораи сулҳ, дӯстии халқҳо ва Шарқ (силсилаи «Қиссаи Ҳиндустон») машҳур шуд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Что воспевал в своих стихах Турсунзаде?",
+          "en": "What did Tursunzoda celebrate in his poetry?",
+          "tj": "Турсунзода дар шеърҳояш чиро васф мекард?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Мир и дружбу народов.",
+              "en": "Peace and the friendship of peoples.",
+              "tj": "Сулҳ ва дӯстии халқҳо."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

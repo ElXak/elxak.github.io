@@ -1,0 +1,59 @@
+[
+  {
+    "id": "biology.intro.basics",
+    "topicId": "biology.intro",
+    "title": {
+      "ru": "Введение в биологию. Признаки жизни",
+      "en": "Introduction to biology. Signs of life",
+      "tj": "Муқаддима ба биология. Аломатҳои ҳаёт"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Биология** — наука о живой природе. Живые организмы отличаются от неживых рядом признаков.",
+          "en": "**Biology** is the science of living nature. Living organisms differ from non-living things by several signs.",
+          "tj": "**Биология** — илм дар бораи табиати зинда. Организмҳои зинда аз ҷисмҳои беҷон бо як қатор аломатҳо фарқ мекунанд."
+        }
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "ru": "Питание, дыхание и обмен веществ.",
+            "en": "Nutrition, respiration and metabolism.",
+            "tj": "Ғизогирӣ, нафаскашӣ ва мубодилаи моддаҳо."
+          },
+          {
+            "ru": "Рост и развитие.",
+            "en": "Growth and development.",
+            "tj": "Нашъунамо ва инкишоф."
+          },
+          {
+            "ru": "Размножение и раздражимость.",
+            "en": "Reproduction and response to stimuli.",
+            "tj": "Афзоиш ва ҳассосият."
+          }
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Назовите один признак живого организма.",
+          "en": "Name one sign of a living organism.",
+          "tj": "Як аломати организми зиндаро номбар кунед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Например, размножение.",
+              "en": "For example, reproduction.",
+              "tj": "Масалан, афзоиш."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

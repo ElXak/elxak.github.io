@@ -1,0 +1,61 @@
+[
+  {
+    "id": "geometry.coordinates.basics",
+    "topicId": "geometry.coordinates",
+    "title": {
+      "ru": "Метод координат",
+      "en": "Coordinate method",
+      "tj": "Усули координатаҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Метод координат** позволяет вычислять расстояния и середины через координаты точек.",
+          "en": "The **coordinate method** computes distances and midpoints from point coordinates.",
+          "tj": "**Усули координатаҳо** имкон медиҳад масофа ва нуқтаҳои миёнаро аз рӯи координатаҳо ҳисоб кунем."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}",
+        "caption": {
+          "ru": "Расстояние между точками",
+          "en": "Distance between points",
+          "tj": "Масофаи байни нуқтаҳо"
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "\\left(\\dfrac{x_1+x_2}{2};\\ \\dfrac{y_1+y_2}{2}\\right)",
+        "caption": {
+          "ru": "Середина отрезка",
+          "en": "Midpoint of a segment",
+          "tj": "Нуқтаи миёнаи порча"
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Уравнение окружности** с центром $(a; b)$ и радиусом $R$: $(x-a)^2 + (y-b)^2 = R^2$.",
+          "en": "**Equation of a circle** with centre $(a; b)$ and radius $R$: $(x-a)^2 + (y-b)^2 = R^2$.",
+          "tj": "**Муодилаи давра** бо маркази $(a; b)$ ва радиуси $R$: $(x-a)^2 + (y-b)^2 = R^2$."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Найдите расстояние между $A(1; 2)$ и $B(4; 6)$.",
+          "en": "Find the distance between $A(1; 2)$ and $B(4; 6)$.",
+          "tj": "Масофаи байни $A(1; 2)$ ва $B(4; 6)$-ро ёбед."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "d = \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5"
+          }
+        ]
+      }
+    ]
+  }
+]

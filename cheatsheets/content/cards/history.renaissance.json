@@ -1,0 +1,47 @@
+[
+  {
+    "id": "history.renaissance.basics",
+    "topicId": "history.renaissance",
+    "title": {
+      "ru": "Возрождение",
+      "en": "The Renaissance",
+      "tj": "Ренессанс"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Возрождение (Ренессанс)** (XIV–XVI вв.) — эпоха расцвета искусства, науки и культуры в Европе, вдохновлённая античностью. Центр — Италия.",
+          "en": "The **Renaissance** (14th–16th centuries) was a flowering of art, science and culture in Europe inspired by antiquity. Its centre was Italy.",
+          "tj": "**Ренессанс** (асрҳои XIV–XVI) — давраи шукуфоии санъат, илм ва фарҳанг дар Аврупо, ки аз антиқа илҳом гирифт. Маркази он Италия буд."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Главные деятели: Леонардо да Винчи (художник и учёный), Микеланджело (скульптор), Рафаэль (живописец).",
+          "en": "Key figures: Leonardo da Vinci (artist and scientist), Michelangelo (sculptor), Raphael (painter).",
+          "tj": "Чеҳраҳои барҷаста: Леонардо да Винчи (рассом ва олим), Микеланджело (ҳайкалтарош), Рафаэль (наққош)."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Где зародилось Возрождение?",
+          "en": "Where did the Renaissance begin?",
+          "tj": "Ренессанс дар куҷо оғоз ёфт?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "В Италии.",
+              "en": "In Italy.",
+              "tj": "Дар Италия."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

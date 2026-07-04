@@ -1,0 +1,39 @@
+[
+  {
+    "id": "informatics.computer-basics.basics",
+    "topicId": "informatics.computer-basics",
+    "title": {
+      "ru": "Основы компьютера",
+      "en": "Computer basics",
+      "tj": "Асосҳои компютер"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Компьютер** — электронное устройство для обработки информации. Основные части: **процессор (CPU)**, **оперативная память (RAM)**, **постоянная память (HDD/SSD)**, **устройства ввода** (клавиатура, мышь) и **вывода** (монитор).",
+          "en": "A **computer** is an electronic device for processing information. Main parts: **processor (CPU)**, **RAM**, **storage (HDD/SSD)**, **input devices** (keyboard, mouse) and **output devices** (monitor).",
+          "tj": "**Компютер** — дастгоҳи электронӣ барои коркарди иттилоот. Қисмҳои асосӣ: **протсессор (CPU)**, **хотираи оперативӣ (RAM)**, **хотираи доимӣ (HDD/SSD)**, **дастгоҳҳои вуруд** (клавиатура, муш) ва **баромад** (монитор)."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как называется главный вычислительный компонент компьютера?",
+          "en": "What is the main computing component of a computer called?",
+          "tj": "Қисми асосии ҳисоббарори компютер чӣ ном дорад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Процессор (CPU).",
+              "en": "The processor (CPU).",
+              "tj": "Протсессор (CPU)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

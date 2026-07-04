@@ -1,0 +1,66 @@
+[
+  {
+    "id": "algebra.linear-systems.basics",
+    "topicId": "algebra.linear-systems",
+    "title": {
+      "ru": "Системы линейных уравнений",
+      "en": "Systems of linear equations",
+      "tj": "Системаи муодилаҳои хаттӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Система** из двух линейных уравнений с двумя неизвестными. Её **решение** — пара $(x; y)$, подходящая обоим уравнениям.",
+          "en": "A **system** of two linear equations in two unknowns. Its **solution** is a pair $(x; y)$ that satisfies both equations.",
+          "tj": "**Система** аз ду муодилаи хаттӣ бо ду номаълум. **Ҳалли** он — ҷуфти $(x; y)$, ки ба ҳар ду муодила мувофиқ аст."
+        }
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "ru": "**Способ подстановки**: выразить одну переменную и подставить в другое уравнение.",
+            "en": "**Substitution**: express one variable and substitute it into the other equation.",
+            "tj": "**Усули ҷойгузорӣ**: як тағйирёбандаро ифода карда, ба муодилаи дигар ҷойгузин кунед."
+          },
+          {
+            "ru": "**Способ сложения**: сложить уравнения так, чтобы одна переменная исчезла.",
+            "en": "**Elimination**: add the equations so that one variable cancels.",
+            "tj": "**Усули ҷамъ**: муодилаҳоро тавре ҷамъ кунед, ки як тағйирёбанда нест шавад."
+          }
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Решите систему: $x + y = 5$ и $x - y = 1$.",
+          "en": "Solve the system: $x + y = 5$ and $x - y = 1$.",
+          "tj": "Системаро ҳал кунед: $x + y = 5$ ва $x - y = 1$."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Сложим уравнения: $2x = 6$, значит $x = 3$.",
+              "en": "Add the equations: $2x = 6$, so $x = 3$.",
+              "tj": "Муодилаҳоро ҷамъ мекунем: $2x = 6$, пас $x = 3$."
+            }
+          },
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Подставим в первое: $3 + y = 5$, отсюда $y = 2$.",
+              "en": "Substitute into the first: $3 + y = 5$, hence $y = 2$.",
+              "tj": "Ба якум ҷойгузин мекунем: $3 + y = 5$, аз ин ҷо $y = 2$."
+            }
+          },
+          {
+            "type": "formula",
+            "latex": "x = 3, \\quad y = 2"
+          }
+        ]
+      }
+    ]
+  }
+]

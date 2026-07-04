@@ -1,0 +1,44 @@
+[
+  {
+    "id": "geometry.regular-polygons.basics",
+    "topicId": "geometry.regular-polygons",
+    "title": {
+      "ru": "Правильные многоугольники",
+      "en": "Regular polygons",
+      "tj": "Бисёркунҷаҳои мунтазам"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Правильный многоугольник** имеет равные стороны и равные углы. В него можно вписать и около него описать окружность.",
+          "en": "A **regular polygon** has equal sides and equal angles. It has both an inscribed and a circumscribed circle.",
+          "tj": "**Бисёркунҷаи мунтазам** тарафҳо ва кунҷҳои баробар дорад. Ба он давра дохил ва гирди он давра тавсиф кардан мумкин аст."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "\\alpha = \\dfrac{(n-2)\\cdot 180^\\circ}{n}",
+        "caption": {
+          "ru": "Внутренний угол",
+          "en": "Interior angle",
+          "tj": "Кунҷи дарунӣ"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Найдите угол правильного шестиугольника ($n = 6$).",
+          "en": "Find an angle of a regular hexagon ($n = 6$).",
+          "tj": "Кунҷи шашкунҷаи мунтазамро ёбед ($n = 6$)."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "\\alpha = \\dfrac{4\\cdot 180^\\circ}{6} = 120^\\circ"
+          }
+        ]
+      }
+    ]
+  }
+]

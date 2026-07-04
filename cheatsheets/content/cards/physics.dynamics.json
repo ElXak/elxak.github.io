@@ -1,0 +1,48 @@
+[
+  {
+    "id": "physics.dynamics.basics",
+    "topicId": "physics.dynamics",
+    "title": {
+      "ru": "Динамика. Силы в природе",
+      "en": "Dynamics. Forces in nature",
+      "tj": "Динамика. Қувваҳо дар табиат"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Движение тел объясняют силы. **Сила трения** $F = \\mu N$, **сила упругости** (закон Гука) $F = kx$.",
+          "en": "Forces explain how bodies move. **Friction** $F = \\mu N$, **elastic force** (Hooke's law) $F = kx$.",
+          "tj": "Ҳаракати ҷисмҳоро қувваҳо шарҳ медиҳанд. **Қувваи соиш** $F = \\mu N$, **қувваи чандирӣ** (қонуни Гук) $F = kx$."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "F_{\\text{тр}} = \\mu N",
+        "caption": {
+          "ru": "сила трения",
+          "en": "friction force",
+          "tj": "қувваи соиш"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "$\\mu = 0{,}2$, $N = 50$ Н. Найдите силу трения.",
+          "en": "$\\mu = 0.2$, $N = 50$ N. Find the friction force.",
+          "tj": "$\\mu = 0{,}2$, $N = 50$ Н. Қувваи соишро ёбед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "$F = 0{,}2 \\times 50 = 10$ Н.",
+              "en": "$F = 0.2 \\times 50 = 10$ N.",
+              "tj": "$F = 0{,}2 \\times 50 = 10$ Н."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "geometry.space-vectors.basics",
+    "topicId": "geometry.space-vectors",
+    "title": {
+      "ru": "Векторы в пространстве",
+      "en": "Vectors in space",
+      "tj": "Векторҳо дар фазо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Вектор** в пространстве — тройка $(x; y; z)$. Его длина — $\\sqrt{x^2+y^2+z^2}$.",
+          "en": "A **vector** in space is a triple $(x; y; z)$. Its length is $\\sqrt{x^2+y^2+z^2}$.",
+          "tj": "**Вектор** дар фазо — сегонаи $(x; y; z)$. Дарозии он — $\\sqrt{x^2+y^2+z^2}$."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "\\vec{a}\\cdot\\vec{b} = x_1 x_2 + y_1 y_2 + z_1 z_2",
+        "caption": {
+          "ru": "Скалярное произведение",
+          "en": "Dot product",
+          "tj": "Ҳосили зарби скалярӣ"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Найдите длину вектора $\\vec{a}(2; 3; 6)$.",
+          "en": "Find the length of the vector $\\vec{a}(2; 3; 6)$.",
+          "tj": "Дарозии вектори $\\vec{a}(2; 3; 6)$-ро ёбед."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "|\\vec{a}| = \\sqrt{4 + 9 + 36} = 7"
+          }
+        ]
+      }
+    ]
+  }
+]

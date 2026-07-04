@@ -1,0 +1,56 @@
+[
+  {
+    "id": "physics.em-waves.basics",
+    "topicId": "physics.em-waves",
+    "title": {
+      "ru": "Электромагнитные колебания и волны",
+      "en": "Electromagnetic oscillations and waves",
+      "tj": "Лаппишҳо ва мавҷҳои электромагнитӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "В **колебательном контуре** (катушка $L$ и конденсатор $C$) возникают электромагнитные колебания с периодом по формуле Томсона.",
+          "en": "In an **oscillatory circuit** (coil $L$ and capacitor $C$) electromagnetic oscillations arise with a period given by Thomson's formula.",
+          "tj": "Дар **контури лаппишӣ** (ғалтаки $L$ ва конденсатори $C$) лаппишҳои электромагнитӣ бо давраи формулаи Томсон ба вуҷуд меоянд."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "T = 2\\pi\\sqrt{LC}",
+        "caption": {
+          "ru": "формула Томсона",
+          "en": "Thomson's formula",
+          "tj": "формулаи Томсон"
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Электромагнитные волны распространяются со скоростью света $c \\approx 3 \\cdot 10^8$ м/с.",
+          "en": "Electromagnetic waves travel at the speed of light $c \\approx 3 \\cdot 10^8$ m/s.",
+          "tj": "Мавҷҳои электромагнитӣ бо суръати рӯшноӣ $c \\approx 3 \\cdot 10^8$ м/с паҳн мешаванд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "С какой скоростью распространяется радиоволна в вакууме?",
+          "en": "At what speed does a radio wave travel in vacuum?",
+          "tj": "Мавҷи радио дар вакуум бо кадом суръат паҳн мешавад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Со скоростью света, $3 \\cdot 10^8$ м/с.",
+              "en": "At the speed of light, $3 \\cdot 10^8$ m/s.",
+              "tj": "Бо суръати рӯшноӣ, $3 \\cdot 10^8$ м/с."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

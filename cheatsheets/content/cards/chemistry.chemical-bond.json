@@ -1,0 +1,69 @@
+[
+  {
+    "id": "chemistry.chemical-bond.basics",
+    "topicId": "chemistry.chemical-bond",
+    "title": {
+      "ru": "Химическая связь",
+      "en": "Chemical bonding",
+      "tj": "Банди химиявӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Атомы соединяются **химической связью**. **Ионная** связь — между металлом и неметаллом (передача электронов). **Ковалентная** — между неметаллами (общие электронные пары).",
+          "en": "Atoms join by a **chemical bond**. An **ionic** bond forms between a metal and a nonmetal (electron transfer). A **covalent** bond forms between nonmetals (shared electron pairs).",
+          "tj": "Атомҳо бо **банди химиявӣ** пайваст мешаванд. Банди **ионӣ** — байни металл ва ғайриметалл (интиқоли электрон). **Ковалентӣ** — байни ғайриметаллҳо (ҷуфтҳои электронии муштарак)."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Тип",
+            "en": "Type",
+            "tj": "Намуд"
+          },
+          {
+            "ru": "Между",
+            "en": "Between",
+            "tj": "Байни"
+          },
+          {
+            "ru": "Пример",
+            "en": "Example",
+            "tj": "Мисол"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Ионная",
+              "en": "Ionic",
+              "tj": "Ионӣ"
+            },
+            {
+              "ru": "металл + неметалл",
+              "en": "metal + nonmetal",
+              "tj": "металл + ғайриметалл"
+            },
+            "$NaCl$"
+          ],
+          [
+            {
+              "ru": "Ковалентная",
+              "en": "Covalent",
+              "tj": "Ковалентӣ"
+            },
+            {
+              "ru": "неметаллы",
+              "en": "nonmetals",
+              "tj": "ғайриметаллҳо"
+            },
+            "$H_2,\\ H_2O$"
+          ]
+        ]
+      }
+    ]
+  }
+]

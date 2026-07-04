@@ -1,0 +1,47 @@
+[
+  {
+    "id": "drawing.dimensions.basics",
+    "topicId": "drawing.dimensions",
+    "title": {
+      "ru": "Размеры на чертеже",
+      "en": "Dimensioning",
+      "tj": "Андозаҳо дар расм"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Размеры** — числовые значения длины, ширины и высоты детали, проставляемые на чертеже. Единица измерения — **миллиметры (мм)**, знак не пишется.",
+          "en": "**Dimensions** are the numerical values of a part's length, width and height, placed on a drawing. The unit is **millimetres (mm)**, but the symbol is not written.",
+          "tj": "**Андозаҳо** — арзишҳои рақамии дарозӣ, паҳнӣ ва баландии детал, ки дар расм гузошта мешаванд. Воҳиди андоза — **миллиметр (мм)**, аломати он навишта намешавад."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Размерная линия оканчивается **стрелками** и располагается вне контура детали.",
+          "en": "A dimension line ends in **arrows** and is placed outside the part's outline.",
+          "tj": "Хати андоза бо **тирҳо** анҷом ёфта, берун аз контури детал ҷойгир мешавад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "В каких единицах указывают размеры на чертеже?",
+          "en": "In which units are dimensions shown on a drawing?",
+          "tj": "Андозаҳо дар расм дар кадом воҳид нишон дода мешаванд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "В миллиметрах (мм).",
+              "en": "In millimetres (mm).",
+              "tj": "Дар миллиметр (мм)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

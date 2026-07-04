@@ -1,0 +1,39 @@
+[
+  {
+    "id": "russian-literature.gogol.basics",
+    "topicId": "russian-literature.gogol",
+    "title": {
+      "ru": "Н. В. Гоголь",
+      "en": "Nikolai Gogol",
+      "tj": "Н. В. Гогол"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Николай Васильевич Гоголь** (1809–1852) — писатель, мастер сатиры и юмора. Известные произведения: сборник «Вечера на хуторе близ Диканьки», повесть «Тарас Бульба», комедия «Ревизор» и поэма «Мёртвые души».",
+          "en": "**Nikolai Gogol** (1809–1852) was a writer and a master of satire and humour. His well-known works: the collection 'Evenings on a Farm near Dikanka', the novella 'Taras Bulba', the comedy 'The Government Inspector' and the poem 'Dead Souls'.",
+          "tj": "**Николай Гогол** (1809–1852) — нависанда, устоди ҳаҷв ва ҳазл. Асарҳои машҳур: маҷмӯаи «Шабҳо дар хутори назди Диканка», қиссаи «Тарас Булба», комедияи «Ревизор» ва достони «Ҷонҳои мурда»."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как называется знаменитая комедия Гоголя?",
+          "en": "What is Gogol's famous comedy called?",
+          "tj": "Комедияи машҳури Гогол чӣ ном дорад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "«Ревизор».",
+              "en": "'The Government Inspector'.",
+              "tj": "«Ревизор»."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

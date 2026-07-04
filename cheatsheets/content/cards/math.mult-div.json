@@ -1,0 +1,43 @@
+[
+  {
+    "id": "math.mult-div.basics",
+    "topicId": "math.mult-div",
+    "title": {
+      "ru": "Умножение и деление",
+      "en": "Multiplication and division",
+      "tj": "Зарб ва тақсим"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Умножение и деление связаны: если $7 \\times 8 = 56$, то $56 \\div 8 = 7$.",
+          "en": "Multiplication and division are linked: if $7 \\times 8 = 56$, then $56 \\div 8 = 7$.",
+          "tj": "Зарб ва тақсим бо ҳам алоқаманданд: агар $7 \\times 8 = 56$ бошад, он гоҳ $56 \\div 8 = 7$."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Чтобы умножить на 10, приписывают ноль: $24 \\times 10 = 240$.",
+          "en": "To multiply by 10, add a zero: $24 \\times 10 = 240$.",
+          "tj": "Барои ба 10 зарб кардан, сифр илова мекунанд: $24 \\times 10 = 240$."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько будет $56 \\div 7$?",
+          "en": "What is $56 \\div 7$?",
+          "tj": "$56 \\div 7$ чанд мешавад?"
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "56 \\div 7 = 8"
+          }
+        ]
+      }
+    ]
+  }
+]

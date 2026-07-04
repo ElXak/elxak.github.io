@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-language.phrase.basics",
+    "topicId": "tajik-language.phrase",
+    "title": {
+      "ru": "Словосочетание",
+      "en": "The phrase",
+      "tj": "Ибора"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Словосочетание (ибора)** — два или несколько слов, связанных по смыслу. Оно меньше предложения и часто строится с изафетом: «китоби нав», «хонаи калон».",
+          "en": "A **phrase (ибора)** is two or more words linked by meaning. It is smaller than a sentence and is often built with the izafat: «китоби нав», «хонаи калон».",
+          "tj": "**Ибора** ду ё якчанд калимаи аз рӯи маъно алоқаманд аст. Он аз ҷумла хурдтар буда, аксар вақт бо бандаки изофӣ сохта мешавад: «китоби нав», «хонаи калон»."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "«Гули сурх» (красный цветок) — это словосочетание или предложение?",
+          "en": "Is «гули сурх» (red flower) a phrase or a sentence?",
+          "tj": "«Гули сурх» ибора аст ё ҷумла?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Словосочетание (ибора).",
+              "en": "A phrase (ибора).",
+              "tj": "Ибора."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

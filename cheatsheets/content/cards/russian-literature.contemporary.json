@@ -1,0 +1,47 @@
+[
+  {
+    "id": "russian-literature.contemporary.basics",
+    "topicId": "russian-literature.contemporary",
+    "title": {
+      "ru": "Современная литература",
+      "en": "Contemporary literature",
+      "tj": "Адабиёти муосир"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Современная русская литература** (после 1991 года) развивается в условиях свободы слова. Она исследует историческую память, личную судьбу, постсоветскую реальность.",
+          "en": "**Contemporary Russian literature** (after 1991) develops under conditions of free expression. It explores historical memory, personal fate and post-Soviet reality.",
+          "tj": "**Адабиёти муосири рус** (пас аз 1991) дар шароити озодии сухан рушд мекунад. Он хотираи таърихӣ, тақдири шахсӣ ва воқеияти баъд аз Шӯравиро меомӯзад."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Жанры разнообразны — роман, рассказ, поэзия, документальная проза.",
+          "en": "Genres are varied — the novel, short story, poetry and documentary prose.",
+          "tj": "Жанрҳо гуногунанд — роман, ҳикоя, назм, насри ҳуҷҷатӣ."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какие темы исследует современная литература?",
+          "en": "What themes does contemporary literature explore?",
+          "tj": "Адабиёти муосир кадом мавзӯъҳоро меомӯзад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Историческую память и личную судьбу.",
+              "en": "Historical memory and personal fate.",
+              "tj": "Хотираи таърихӣ ва тақдири шахсӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

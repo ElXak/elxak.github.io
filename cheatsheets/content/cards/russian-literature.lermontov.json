@@ -1,0 +1,47 @@
+[
+  {
+    "id": "russian-literature.lermontov.basics",
+    "topicId": "russian-literature.lermontov",
+    "title": {
+      "ru": "М. Ю. Лермонтов",
+      "en": "Mikhail Lermontov",
+      "tj": "М. Ю. Лермонтов"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Михаил Юрьевич Лермонтов** (1814–1841) — великий русский поэт и писатель, преемник Пушкина. Известные произведения: стихотворение «Бородино», поэма «Мцыри» и роман «Герой нашего времени».",
+          "en": "**Mikhail Lermontov** (1814–1841) was a great Russian poet and writer, the successor to Pushkin. His well-known works: the poem 'Borodino', the narrative poem 'Mtsyri' and the novel 'A Hero of Our Time'.",
+          "tj": "**Михаил Лермонтов** (1814–1841) — шоир ва нависандаи бузурги рус, вориси Пушкин. Асарҳои машҳур: шеъри «Бородино», достони «Мтсири» ва романи «Қаҳрамони замони мо»."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Главные темы его творчества — одиночество, свобода и природа Кавказа.",
+          "en": "The main themes of his work are loneliness, freedom and the nature of the Caucasus.",
+          "tj": "Мавзӯъҳои асосии эҷодиёташ — танҳоӣ, озодӣ ва табиати Кавказ."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какой роман написал Лермонтов?",
+          "en": "Which novel did Lermontov write?",
+          "tj": "Лермонтов кадом романро навиштааст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "«Герой нашего времени».",
+              "en": "'A Hero of Our Time'.",
+              "tj": "«Қаҳрамони замони мо»."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

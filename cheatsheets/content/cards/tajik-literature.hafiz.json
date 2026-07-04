@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tajik-literature.hafiz.basics",
+    "topicId": "tajik-literature.hafiz",
+    "title": {
+      "ru": "Хафиз",
+      "en": "Hafiz",
+      "tj": "Ҳофиз"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Хафиз Ширази** (около 1315–1390) — величайший мастер **газели**. Его стихи воспевают любовь, красоту и духовность и осуждают лицемерие.",
+          "en": "**Hafiz of Shiraz** (c. 1315–1390) was the greatest master of the **ghazal**. His poems celebrate love, beauty and the spiritual, and criticise hypocrisy.",
+          "tj": "**Ҳофизи Шерозӣ** (тахминан 1315–1390) — устоди бузургтарини **ғазал**. Шеърҳои ӯ ишқ, зебоӣ ва маънавиятро васф мекунанд ва риёкориро маҳкум менамоянд."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Его сборник стихов называется **«Девон»** и широко читается до сих пор.",
+          "en": "His collection of poems is called the **Divan** and is still widely read.",
+          "tj": "Маҷмӯаи шеърҳояш **«Девон»** ном дорад ва то ҳол васеъ хонда мешавад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "В каком жанре достиг совершенства Хафиз?",
+          "en": "Which poetic form did Hafiz perfect?",
+          "tj": "Ҳофиз дар кадом жанр ба камол расид?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "В газели (ғазал).",
+              "en": "The ghazal (ғазал).",
+              "tj": "Дар ғазал."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "informatics.number-systems.binary",
+    "topicId": "informatics.number-systems",
+    "title": {
+      "ru": "Двоичная система",
+      "en": "Binary system",
+      "tj": "Системаи дуӣ"
+    },
+    "tags": [
+      "бит",
+      "байт",
+      "двоичная",
+      "binary"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Компьютер хранит данные в **двоичной** системе — из двух цифр: 0 и 1.",
+          "en": "A computer stores data in **binary** — using two digits: 0 and 1.",
+          "tj": "Компютер маълумотро дар системаи **дуӣ** нигоҳ медорад — аз ду рақам: 0 ва 1."
+        }
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "ru": "1 разряд — это **бит**",
+            "en": "1 digit is a **bit**",
+            "tj": "1 рақам — ин **бит** аст"
+          },
+          {
+            "ru": "8 бит — это **байт**",
+            "en": "8 bits make a **byte**",
+            "tj": "8 бит — ин **байт** аст"
+          }
+        ]
+      }
+    ]
+  }
+]

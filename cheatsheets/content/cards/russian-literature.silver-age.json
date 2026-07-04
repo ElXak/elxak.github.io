@@ -1,0 +1,47 @@
+[
+  {
+    "id": "russian-literature.silver-age.basics",
+    "topicId": "russian-literature.silver-age",
+    "title": {
+      "ru": "Серебряный век",
+      "en": "The Silver Age",
+      "tj": "Асри нуқра"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Серебряный век** (конец XIX — начало XX века) — период расцвета русской поэзии. Главные направления: **символизм** (Блок, Бальмонт), **акмеизм** (Ахматова, Гумилёв) и **футуризм** (Маяковский).",
+          "en": "The **Silver Age** (late 19th – early 20th century) was a period of flourishing in Russian poetry. Its main movements: **Symbolism** (Blok, Balmont), **Acmeism** (Akhmatova, Gumilyov) and **Futurism** (Mayakovsky).",
+          "tj": "**Асри нуқра** (охири асри XIX — ибтидои асри XX) — давраи шукуфоии назми рус. Самтҳои асосӣ: **символизм** (Блок, Балмонт), **акмеизм** (Ахматова, Гумилёв) ва **футуризм** (Маяковский)."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Поэзия Серебряного века отличается музыкальностью, поиском новых форм и острым ощущением перемен.",
+          "en": "Silver Age poetry is notable for its musicality, search for new forms and a sharp sense of change.",
+          "tj": "Назми Асри нуқра бо мусиқиятнокӣ, ҷустуҷӯи шаклҳои нав ва ҳисси тезии тағйирот фарқ мекунад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Назовите три главных направления Серебряного века.",
+          "en": "Name the three main movements of the Silver Age.",
+          "tj": "Се самти асосии Асри нуқраро номбар кунед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Символизм, акмеизм, футуризм.",
+              "en": "Symbolism, Acmeism and Futurism.",
+              "tj": "Символизм, акмеизм, футуризм."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

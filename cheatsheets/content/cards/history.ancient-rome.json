@@ -1,0 +1,100 @@
+[
+  {
+    "id": "history.ancient-rome.basics",
+    "topicId": "history.ancient-rome",
+    "title": {
+      "ru": "Древний Рим",
+      "en": "Ancient Rome",
+      "tj": "Рими қадим"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Древний Рим** — великая империя, объединившая большую часть Европы, Северной Африки и Ближнего Востока. Рим дал миру **римское право**, латинский язык и республиканское устройство.",
+          "en": "**Ancient Rome** was a great empire that united much of Europe, North Africa and the Middle East. Rome gave the world **Roman law**, the Latin language and republican government.",
+          "tj": "**Рими қадим** — империяи бузурге, ки қисми зиёди Аврупо, Африкаи Шимолӣ ва Ховари Миёнаро муттаҳид кард. Рим ба ҷаҳон **ҳуқуқи Рим**, забони лотинӣ ва сохти ҷумҳуриявӣ бахшид."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Период",
+            "en": "Period",
+            "tj": "Давра"
+          },
+          {
+            "ru": "Форма правления",
+            "en": "Government",
+            "tj": "Ҳукумат"
+          },
+          {
+            "ru": "Даты",
+            "en": "Dates",
+            "tj": "Санаҳо"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Царский",
+              "en": "Kingdom",
+              "tj": "Шоҳигарӣ"
+            },
+            {
+              "ru": "цари",
+              "en": "kings",
+              "tj": "шоҳон"
+            },
+            "753–509 до н.э."
+          ],
+          [
+            {
+              "ru": "Республика",
+              "en": "Republic",
+              "tj": "Ҷумҳурӣ"
+            },
+            {
+              "ru": "сенат и консулы",
+              "en": "senate & consuls",
+              "tj": "сенат ва консулҳо"
+            },
+            "509–27 до н.э."
+          ],
+          [
+            {
+              "ru": "Империя",
+              "en": "Empire",
+              "tj": "Империя"
+            },
+            {
+              "ru": "императоры",
+              "en": "emperors",
+              "tj": "императорҳо"
+            },
+            "27 до н.э. – 476 н.э."
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Что Рим дал современному праву?",
+          "en": "What did Rome give to modern law?",
+          "tj": "Рим ба ҳуқуқи муосир чӣ бахшид?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Основы римского права.",
+              "en": "The foundations of Roman law.",
+              "tj": "Асосҳои ҳуқуқи Рим."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

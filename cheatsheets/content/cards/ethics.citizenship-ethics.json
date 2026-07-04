@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ethics.citizenship-ethics.basics",
+    "topicId": "ethics.citizenship-ethics",
+    "title": {
+      "ru": "Гражданская этика",
+      "en": "Civic ethics",
+      "tj": "Ахлоқи шаҳрвандӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Гражданская этика** — нравственные нормы, регулирующие поведение человека как члена общества: уважение к закону, забота об общем благе и участие в общественной жизни.",
+          "en": "**Civic ethics** are moral norms regulating a person's behaviour as a member of society: respect for the law, care for the common good and participation in public life.",
+          "tj": "**Ахлоқи шаҳрвандӣ** — меъёрҳои ахлоқие, ки рафтори инсонро ҳамчун аъзои ҷомеа танзим мекунанд: эҳтироми қонун, ғамхорӣ дар бораи манфиати умум ва иштирок дар ҳаёти ҳамагонӣ."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Назовите одну норму гражданской этики.",
+          "en": "Name one norm of civic ethics.",
+          "tj": "Як меъёри ахлоқи шаҳрвандиро номбар кунед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Уважение к закону.",
+              "en": "Respect for the law.",
+              "tj": "Эҳтироми қонун."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

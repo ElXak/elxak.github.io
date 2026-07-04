@@ -1,0 +1,44 @@
+[
+  {
+    "id": "geometry.space-coordinates.basics",
+    "topicId": "geometry.space-coordinates",
+    "title": {
+      "ru": "Координаты в пространстве",
+      "en": "Coordinates in space",
+      "tj": "Координатаҳо дар фазо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Точка в пространстве задаётся тремя координатами $(x; y; z)$.",
+          "en": "A point in space is given by three coordinates $(x; y; z)$.",
+          "tj": "Нуқта дар фазо бо се координата $(x; y; z)$ муайян мешавад."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}",
+        "caption": {
+          "ru": "Расстояние между точками",
+          "en": "Distance between points",
+          "tj": "Масофаи байни нуқтаҳо"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Найдите расстояние от $O(0;0;0)$ до $A(2;3;6)$.",
+          "en": "Find the distance from $O(0;0;0)$ to $A(2;3;6)$.",
+          "tj": "Масофаро аз $O(0;0;0)$ то $A(2;3;6)$ ёбед."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "d = \\sqrt{4 + 9 + 36} = \\sqrt{49} = 7"
+          }
+        ]
+      }
+    ]
+  }
+]

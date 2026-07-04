@@ -1,0 +1,39 @@
+[
+  {
+    "id": "russian-language.alphabet-sounds.basics",
+    "topicId": "russian-language.alphabet-sounds",
+    "title": {
+      "ru": "Алфавит и звуки",
+      "en": "Alphabet and sounds",
+      "tj": "Алифбо ва овозҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "В **русском алфавите 33 буквы**. Буквы мы пишем и читаем, а **звуки** слышим и произносим. Буквы **ъ** и **ь** не обозначают звуков.",
+          "en": "The **Russian alphabet has 33 letters**. We write and read letters, but we hear and pronounce **sounds**. The letters **ъ** and **ь** do not stand for any sound.",
+          "tj": "Дар **алифбои русӣ 33 ҳарф** ҳаст. Ҳарфҳоро менависем ва мехонем, **овозҳо**-ро мешунавем ва талаффуз мекунем. Ҳарфҳои **ъ** ва **ь** овозро ифода намекунанд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько букв в русском алфавите?",
+          "en": "How many letters are in the Russian alphabet?",
+          "tj": "Дар алифбои русӣ чанд ҳарф ҳаст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "33 буквы.",
+              "en": "33 letters.",
+              "tj": "33 ҳарф."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

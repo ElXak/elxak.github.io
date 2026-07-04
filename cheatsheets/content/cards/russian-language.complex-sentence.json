@@ -1,0 +1,39 @@
+[
+  {
+    "id": "russian-language.complex-sentence.basics",
+    "topicId": "russian-language.complex-sentence",
+    "title": {
+      "ru": "Сложное предложение",
+      "en": "The complex sentence",
+      "tj": "Ҷумлаи мураккаб"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Сложное предложение** состоит из **двух или нескольких грамматических основ**. Его части связаны интонацией, союзами или союзными словами.",
+          "en": "A **complex sentence** has **two or more grammatical bases**. Its parts are linked by intonation, conjunctions or relative words.",
+          "tj": "**Ҷумлаи мураккаб** аз **ду ё якчанд асоси грамматикӣ** иборат аст. Қисмҳои он бо оҳанг, пайвандакҳо ё калимаҳои пайвандак алоқаманданд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько грамматических основ в сложном предложении?",
+          "en": "How many grammatical bases does a complex sentence have?",
+          "tj": "Ҷумлаи мураккаб чанд асоси грамматикӣ дорад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Две или более.",
+              "en": "Two or more.",
+              "tj": "Ду ё зиёда."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

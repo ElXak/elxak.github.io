@@ -1,0 +1,47 @@
+[
+  {
+    "id": "russian-language.spelling-rules.basics",
+    "topicId": "russian-language.spelling-rules",
+    "title": {
+      "ru": "Орфограммы",
+      "en": "Spelling patterns",
+      "tj": "Имло"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Орфограмма** — это место в слове, где нужно выбрать верное написание по правилу.",
+          "en": "A **spelling pattern (орфограмма)** is a spot in a word where the correct spelling must be chosen by a rule.",
+          "tj": "**Орфограмма** ҷое дар калима аст, ки бояд имлои дурустро аз рӯи қоида интихоб кунӣ."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Например: **жи–ши пиши с буквой и** (жизнь, машина); **ча–ща с буквой а** (чаща, роща).",
+          "en": "For example: **жи–ши are written with и** (жизнь, машина); **ча–ща with а** (чаща, роща).",
+          "tj": "Масалан: **жи–ши бо ҳарфи и** навишта мешавад (жизнь, машина); **ча–ща бо ҳарфи а** (чаща, роща)."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как правильно: «жизнь» или «жызнь»?",
+          "en": "Which is correct: «жизнь» or «жызнь»?",
+          "tj": "Кадомаш дуруст: «жизнь» ё «жызнь»?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "«Жизнь» — сочетание жи пишется с буквой и.",
+              "en": "«Жизнь» — the combination жи is written with и.",
+              "tj": "«Жизнь» — таркиби жи бо ҳарфи и навишта мешавад."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "id": "english-language.possessives.basics",
+    "topicId": "english-language.possessives",
+    "title": {
+      "ru": "Притяжательные местоимения",
+      "en": "Possessive pronouns",
+      "tj": "Ҷонишинҳои соҳибӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Притяжательные местоимения** показывают принадлежность. Они стоят перед существительным.",
+          "en": "**Possessive pronouns** show ownership. They come before the noun.",
+          "tj": "**Ҷонишинҳои соҳибӣ** соҳибиятро нишон медиҳанд. Пеш аз исм меоянд."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Личное",
+            "en": "Personal",
+            "tj": "Шахсӣ"
+          },
+          {
+            "ru": "Притяжательное",
+            "en": "Possessive",
+            "tj": "Соҳибӣ"
+          },
+          {
+            "ru": "Пример",
+            "en": "Example",
+            "tj": "Мисол"
+          }
+        ],
+        "rows": [
+          [
+            "I",
+            "my",
+            "my book"
+          ],
+          [
+            "you",
+            "your",
+            "your pen"
+          ],
+          [
+            "he",
+            "his",
+            "his bag"
+          ],
+          [
+            "she",
+            "her",
+            "her cat"
+          ],
+          [
+            "we",
+            "our",
+            "our school"
+          ],
+          [
+            "they",
+            "their",
+            "their house"
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как сказать «её книга»?",
+          "en": "How do you say «её книга» in English?",
+          "tj": "«Китоби ӯ (духтар)»-ро ба англисӣ чӣ гуна мегӯянд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Her book.",
+              "en": "Her book.",
+              "tj": "Her book."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

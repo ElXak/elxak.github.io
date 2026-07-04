@@ -1,0 +1,133 @@
+[
+  {
+    "id": "biology.cell.plant",
+    "topicId": "biology.cell",
+    "title": {
+      "ru": "Строение растительной клетки",
+      "en": "Structure of a plant cell",
+      "tj": "Сохти ҳуҷайраи растанӣ"
+    },
+    "locales": [
+      "ru",
+      "en"
+    ],
+    "tags": [
+      "клетка",
+      "органоиды"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Растительная клетка состоит из органоидов, каждый со своей функцией.",
+          "en": "A plant cell consists of organelles, each with its own function.",
+          "tj": "Ҳуҷайраи растанӣ аз органоидҳо иборат аст, ки ҳар яке вазифаи худро дорад."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Органоид",
+            "en": "Organelle",
+            "tj": "Органоид"
+          },
+          {
+            "ru": "Функция",
+            "en": "Function",
+            "tj": "Вазифа"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Клеточная стенка",
+              "en": "Cell wall",
+              "tj": "Девораи ҳуҷайра"
+            },
+            {
+              "ru": "Придаёт форму и защищает",
+              "en": "Gives shape and protects",
+              "tj": "Шакл медиҳад ва муҳофизат мекунад"
+            }
+          ],
+          [
+            {
+              "ru": "Мембрана",
+              "en": "Membrane",
+              "tj": "Мембрана"
+            },
+            {
+              "ru": "Регулирует обмен веществ",
+              "en": "Regulates substance exchange",
+              "tj": "Мубодилаи моддаҳоро танзим мекунад"
+            }
+          ],
+          [
+            {
+              "ru": "Ядро",
+              "en": "Nucleus",
+              "tj": "Ядро"
+            },
+            {
+              "ru": "Хранит наследственную информацию",
+              "en": "Stores hereditary information",
+              "tj": "Маълумоти ирсиро нигоҳ медорад"
+            }
+          ],
+          [
+            {
+              "ru": "Цитоплазма",
+              "en": "Cytoplasm",
+              "tj": "Ситоплазма"
+            },
+            {
+              "ru": "Внутренняя среда клетки",
+              "en": "The cell's internal environment",
+              "tj": "Муҳити дохилии ҳуҷайра"
+            }
+          ],
+          [
+            {
+              "ru": "Хлоропласты",
+              "en": "Chloroplasts",
+              "tj": "Хлоропластҳо"
+            },
+            {
+              "ru": "Фотосинтез",
+              "en": "Photosynthesis",
+              "tj": "Фотосинтез"
+            }
+          ],
+          [
+            {
+              "ru": "Вакуоль",
+              "en": "Vacuole",
+              "tj": "Вакуол"
+            },
+            {
+              "ru": "Запас воды и веществ",
+              "en": "Stores water and nutrients",
+              "tj": "Захираи об ва моддаҳо"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "image",
+        "src": "assets/biology/plant-cell.png",
+        "alt": {
+          "ru": "Схема строения растительной клетки",
+          "en": "Diagram of a plant cell",
+          "tj": "Схемаи сохти ҳуҷайраи растанӣ"
+        },
+        "caption": {
+          "ru": "Основные органоиды",
+          "en": "Main organelles",
+          "tj": "Органоидҳои асосӣ"
+        },
+        "credit": "Placeholder — заменить (CC BY-SA при использовании чужой иллюстрации)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "algebra.probability.basics",
+    "topicId": "algebra.probability",
+    "title": {
+      "ru": "Вероятность и статистика",
+      "en": "Probability and statistics",
+      "tj": "Эҳтимолият ва омор"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Вероятность** события — отношение числа благоприятных исходов к числу всех равновозможных исходов.",
+          "en": "The **probability** of an event is the number of favorable outcomes over the number of all equally likely outcomes.",
+          "tj": "**Эҳтимолияти** ҳодиса — таносуби шумораи ҳолатҳои мусоид ба шумораи ҳамаи ҳолатҳои баробарэҳтимол."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "P(A) = \\dfrac{m}{n}",
+        "caption": {
+          "ru": "m — благоприятные, n — все исходы",
+          "en": "m — favorable, n — all outcomes",
+          "tj": "m — мусоид, n — ҳамаи ҳолатҳо"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Вероятность выпадения чётного числа на кубике?",
+          "en": "Probability of rolling an even number on a die?",
+          "tj": "Эҳтимолияти омадани адади ҷуфт дар мукааб?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Благоприятных $m=3$ (2, 4, 6), всего $n=6$.",
+              "en": "Favorable $m=3$ (2, 4, 6), total $n=6$.",
+              "tj": "Мусоид $m=3$ (2, 4, 6), ҳамагӣ $n=6$."
+            }
+          },
+          {
+            "type": "formula",
+            "latex": "P = \\dfrac{3}{6} = \\dfrac{1}{2}"
+          }
+        ]
+      }
+    ]
+  }
+]

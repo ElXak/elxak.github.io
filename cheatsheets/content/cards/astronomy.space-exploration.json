@@ -1,0 +1,39 @@
+[
+  {
+    "id": "astronomy.space-exploration.basics",
+    "topicId": "astronomy.space-exploration",
+    "title": {
+      "ru": "Освоение космоса",
+      "en": "Space exploration",
+      "tj": "Омӯзиши кайҳон"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Освоение космоса** началось в XX веке. Ключевые события: первый спутник **«Спутник-1»** (1957), первый полёт человека — **Юрий Гагарин** (1961), первая высадка на Луну — экипаж **«Аполлона-11»** (1969).",
+          "en": "**Space exploration** began in the 20th century. Key events: the first satellite **Sputnik-1** (1957), the first human spaceflight by **Yuri Gagarin** (1961), and the first Moon landing by the crew of **Apollo 11** (1969).",
+          "tj": "**Омӯзиши кайҳон** дар асри XX оғоз шуд. Рӯйдодҳои калидӣ: аввалин моҳвораи **«Спутник-1»** (1957), аввалин парвози инсон — **Юрий Гагарин** (1961), аввалин фуруд омадан ба Моҳ — экипаи **«Аполлон-11»** (1969)."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Кто стал первым человеком в космосе?",
+          "en": "Who was the first human in space?",
+          "tj": "Аввалин инсон дар кайҳон кӣ буд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Юрий Гагарин (1961 год).",
+              "en": "Yuri Gagarin (1961).",
+              "tj": "Юрий Гагарин (соли 1961)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

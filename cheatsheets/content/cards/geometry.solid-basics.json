@@ -1,0 +1,59 @@
+[
+  {
+    "id": "geometry.solid-basics.basics",
+    "topicId": "geometry.solid-basics",
+    "title": {
+      "ru": "Аксиомы стереометрии",
+      "en": "Axioms of solid geometry",
+      "tj": "Аксиомаҳои стереометрия"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Стереометрия** изучает фигуры в пространстве. Её основа — несколько аксиом о плоскостях.",
+          "en": "**Solid geometry** studies figures in space. It rests on a few axioms about planes.",
+          "tj": "**Стереометрия** фигураҳоро дар фазо меомӯзад. Асоси он чанд аксиома дар бораи ҳамвориҳост."
+        }
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "ru": "Через три точки, не лежащие на одной прямой, проходит ровно одна плоскость.",
+            "en": "Through three points not on one line passes exactly one plane.",
+            "tj": "Аз се нуқтае, ки дар як хат нестанд, маҳз як ҳамворӣ мегузарад."
+          },
+          {
+            "ru": "Если две точки прямой лежат в плоскости, то вся прямая лежит в этой плоскости.",
+            "en": "If two points of a line lie in a plane, the whole line lies in that plane.",
+            "tj": "Агар ду нуқтаи хат дар ҳамворӣ бошанд, тамоми хат дар он ҳамворӣ ҷойгир аст."
+          },
+          {
+            "ru": "Две плоскости либо не пересекаются, либо пересекаются по прямой.",
+            "en": "Two planes either do not meet or meet along a line.",
+            "tj": "Ду ҳамворӣ ё бо ҳам намебуранд, ё аз рӯи хат мебуранд."
+          }
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько плоскостей проходит через прямую и точку вне её?",
+          "en": "How many planes pass through a line and a point not on it?",
+          "tj": "Аз хат ва нуқтаи берун аз он чанд ҳамворӣ мегузарад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Ровно одна.",
+              "en": "Exactly one.",
+              "tj": "Маҳз як."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

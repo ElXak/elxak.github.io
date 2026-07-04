@@ -1,0 +1,92 @@
+[
+  {
+    "id": "biology.ecology.basics",
+    "topicId": "biology.ecology",
+    "title": {
+      "ru": "Основы экологии",
+      "en": "Ecology basics",
+      "tj": "Асосҳои экология"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Экология** изучает связи организмов между собой и со средой. В **экосистеме** есть три роли.",
+          "en": "**Ecology** studies the links between organisms and their environment. An **ecosystem** has three roles.",
+          "tj": "**Экология** алоқаи организмҳоро бо ҳамдигар ва бо муҳит меомӯзад. Дар **экосистема** се нақш ҳаст."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Роль",
+            "en": "Role",
+            "tj": "Нақш"
+          },
+          {
+            "ru": "Пример",
+            "en": "Example",
+            "tj": "Мисол"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Производители",
+              "en": "Producers",
+              "tj": "Истеҳсолкунандагон"
+            },
+            {
+              "ru": "растения",
+              "en": "plants",
+              "tj": "растаниҳо"
+            }
+          ],
+          [
+            {
+              "ru": "Потребители",
+              "en": "Consumers",
+              "tj": "Истеъмолкунандагон"
+            },
+            {
+              "ru": "животные",
+              "en": "animals",
+              "tj": "ҳайвонот"
+            }
+          ],
+          [
+            {
+              "ru": "Разрушители",
+              "en": "Decomposers",
+              "tj": "Таҷзиякунандагон"
+            },
+            {
+              "ru": "бактерии, грибы",
+              "en": "bacteria, fungi",
+              "tj": "бактерияҳо, занбӯруғҳо"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какую роль играют растения в цепи питания?",
+          "en": "What role do plants play in a food chain?",
+          "tj": "Растаниҳо дар занҷири ғизоӣ кадом нақшро мебозанд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Производители (создают органику).",
+              "en": "Producers (they make organic matter).",
+              "tj": "Истеҳсолкунандагон (органика месозанд)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

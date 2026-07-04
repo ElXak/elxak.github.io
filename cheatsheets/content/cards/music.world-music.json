@@ -1,0 +1,39 @@
+[
+  {
+    "id": "music.world-music.basics",
+    "topicId": "music.world-music",
+    "title": {
+      "ru": "Музыка народов мира",
+      "en": "Music of the world",
+      "tj": "Мусиқии халқҳои ҷаҳон"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "У каждого народа есть своя музыкальная традиция. Классическая европейская музыка: **Бах, Моцарт, Бетховен**. Джаз — из США (афроамериканские корни). Индийская классика — **рага**.",
+          "en": "Each people has its own musical tradition. Classical European music: **Bach, Mozart, Beethoven**. Jazz originated in the USA (African-American roots). Indian classical music — **raga**.",
+          "tj": "Ҳар халқ анъанаи мусиқии хоси худро дорад. Мусиқии классикии аврупоӣ: **Бах, Мотсарт, Бетховен**. Джаз — аз ИМА (решаҳои афроамерикоӣ). Мусиқии классикии Ҳинд — **рага**."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Назовите великих европейских композиторов.",
+          "en": "Name great European composers.",
+          "tj": "Композиторҳои бузурги аврупоиро номбар кунед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Бах, Моцарт, Бетховен.",
+              "en": "Bach, Mozart, Beethoven.",
+              "tj": "Бах, Мотсарт, Бетховен."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

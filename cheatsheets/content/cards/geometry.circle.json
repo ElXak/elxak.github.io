@@ -1,0 +1,52 @@
+[
+  {
+    "id": "geometry.circle.basics",
+    "topicId": "geometry.circle",
+    "title": {
+      "ru": "Окружность и круг",
+      "en": "Circle and disk",
+      "tj": "Давра ва доира"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Окружность** — множество точек на равном расстоянии $R$ (радиус) от центра. **Диаметр** $d = 2R$. Часть плоскости внутри — **круг**.",
+          "en": "A **circle** is the set of points at an equal distance $R$ (the radius) from the centre. **Diameter** $d = 2R$. The region inside is the **disk**.",
+          "tj": "**Давра** — маҷмӯи нуқтаҳое, ки аз марказ ба масофаи баробари $R$ (радиус) ҷойгиранд. **Диаметр** $d = 2R$. Қисми дарунии ҳамворӣ — **доира**."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Вписанный угол** равен половине центрального угла, опирающегося на ту же дугу.",
+          "en": "An **inscribed angle** is half the central angle subtending the same arc.",
+          "tj": "**Кунҷи дохилӣ** ба нисфи кунҷи марказӣ, ки ба ҳамон камон такя мекунад, баробар аст."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "\\beta = \\dfrac{\\alpha}{2}",
+        "caption": {
+          "ru": "β — вписанный, α — центральный",
+          "en": "β — inscribed, α — central",
+          "tj": "β — дохилӣ, α — марказӣ"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Центральный угол равен 80°. Найдите вписанный угол на ту же дугу.",
+          "en": "A central angle is 80°. Find the inscribed angle on the same arc.",
+          "tj": "Кунҷи марказӣ 80° аст. Кунҷи дохилии ҳамон камонро ёбед."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "\\dfrac{80^\\circ}{2} = 40^\\circ"
+          }
+        ]
+      }
+    ]
+  }
+]

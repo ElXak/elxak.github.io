@@ -1,0 +1,43 @@
+[
+  {
+    "id": "math.numbers-20.basics",
+    "topicId": "math.numbers-20",
+    "title": {
+      "ru": "Числа от 11 до 20",
+      "en": "Numbers 11 to 20",
+      "tj": "Ададҳо аз 11 то 20"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "После 10 идут числа **11, 12, …, 20**. Каждое из них — это десяток и единицы.",
+          "en": "After 10 come the numbers **11, 12, …, 20**. Each one is a ten and some units.",
+          "tj": "Пас аз 10 ададҳои **11, 12, …, 20** меоянд. Ҳар яки онҳо як даҳӣ ва якҳо мебошад."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Например, $13 = 10 + 3$.",
+          "en": "For example, $13 = 10 + 3$.",
+          "tj": "Масалан, $13 = 10 + 3$."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько будет $10 + 5$?",
+          "en": "What is $10 + 5$?",
+          "tj": "$10 + 5$ чанд мешавад?"
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "10 + 5 = 15"
+          }
+        ]
+      }
+    ]
+  }
+]

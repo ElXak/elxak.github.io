@@ -1,0 +1,39 @@
+[
+  {
+    "id": "chemistry.carbohydrates.basics",
+    "topicId": "chemistry.carbohydrates",
+    "title": {
+      "ru": "Углеводы",
+      "en": "Carbohydrates",
+      "tj": "Карбогидратҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Углеводы** — это сахара. **Моносахариды** (глюкоза $C_6H_{12}O_6$) — простые, **полисахариды** (крахмал, целлюлоза) — сложные, из многих звеньев.",
+          "en": "**Carbohydrates** are sugars. **Monosaccharides** (glucose $C_6H_{12}O_6$) are simple; **polysaccharides** (starch, cellulose) are complex, made of many units.",
+          "tj": "**Карбогидратҳо** қандҳо мебошанд. **Моносахаридҳо** (глюкозаи $C_6H_{12}O_6$) — содда, **полисахаридҳо** (крахмал, селлюлоза) — мураккаб, аз бисёр ҳалқаҳо."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какова формула глюкозы?",
+          "en": "What is the formula of glucose?",
+          "tj": "Формулаи глюкоза чӣ гуна аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "$C_6H_{12}O_6$.",
+              "en": "$C_6H_{12}O_6$.",
+              "tj": "$C_6H_{12}O_6$."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

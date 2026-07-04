@@ -1,0 +1,47 @@
+[
+  {
+    "id": "russian-literature.lermontov-novel.basics",
+    "topicId": "russian-literature.lermontov-novel",
+    "title": {
+      "ru": "Лермонтов «Герой нашего времени»",
+      "en": "Lermontov, 'A Hero of Our Time'",
+      "tj": "Лермонтов «Қаҳрамони замони мо»"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**«Герой нашего времени»** (1840) — первый психологический роман в русской литературе. Главный герой — Григорий Печорин, «лишний человек»: умный, но разочарованный и одинокий.",
+          "en": "**'A Hero of Our Time'** (1840) is the first psychological novel in Russian literature. The main hero is Grigory Pechorin, a 'superfluous man': intelligent but disillusioned and lonely.",
+          "tj": "**«Қаҳрамони замони мо»** (1840) — аввалин романи психологии адабиёти рус. Қаҳрамони асосӣ — Григорий Печорин, «одами зиёдатӣ»: доно, вале дилсард ва танҳо."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Роман состоит из нескольких частей, написанных в разных жанрах: дневник, записки и повесть.",
+          "en": "The novel consists of several parts in different genres: a diary, notes and a novella.",
+          "tj": "Роман аз якчанд қисм дар жанрҳои гуногун иборат аст: рӯзнома, ёддошт ва қисса."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Кто является главным героем «Героя нашего времени»?",
+          "en": "Who is the main hero of 'A Hero of Our Time'?",
+          "tj": "Қаҳрамони асосии «Қаҳрамони замони мо» кист?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Григорий Печорин.",
+              "en": "Grigory Pechorin.",
+              "tj": "Григорий Печорин."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

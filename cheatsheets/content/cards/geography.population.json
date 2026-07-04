@@ -1,0 +1,39 @@
+[
+  {
+    "id": "geography.population.basics",
+    "topicId": "geography.population",
+    "title": {
+      "ru": "Население",
+      "en": "Population",
+      "tj": "Аҳолӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Население мира** превышает 8 миллиардов человек. Наиболее населённые страны: Индия и Китай. Размещение населения неравномерно: большинство живёт в умеренном поясе и приречных долинах.",
+          "en": "The world **population** exceeds 8 billion people. The most populous countries are India and China. Population distribution is uneven: most people live in temperate zones and river valleys.",
+          "tj": "**Аҳолии ҷаҳон** аз 8 миллиард нафар зиёд аст. Сераҳолитарин кишварҳо Ҳиндустон ва Чин мебошанд. Тақсимоти аҳолӣ нобаробар аст."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько человек живёт на Земле?",
+          "en": "How many people live on Earth?",
+          "tj": "Дар Замин чанд нафар зиндагӣ мекунад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Более 8 миллиардов.",
+              "en": "More than 8 billion.",
+              "tj": "Беш аз 8 миллиард нафар."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

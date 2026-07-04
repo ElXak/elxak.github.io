@@ -1,0 +1,65 @@
+[
+  {
+    "id": "english-language.alphabet.basics",
+    "topicId": "english-language.alphabet",
+    "title": {
+      "ru": "Алфавит",
+      "en": "The alphabet",
+      "tj": "Алифбо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "В английском алфавите **26 букв**. Каждая буква имеет **заглавную** и **строчную** форму.",
+          "en": "The English alphabet has **26 letters**. Each letter has an **uppercase** and a **lowercase** form.",
+          "tj": "Дар алифбои англисӣ **26 ҳарф** ҳаст. Ҳар ҳарф шакли **калон** ва **хурд** дорад."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Гласные",
+            "en": "Vowels",
+            "tj": "Садонокҳо"
+          },
+          {
+            "ru": "Согласные",
+            "en": "Consonants",
+            "tj": "Ҳамсадоҳо"
+          }
+        ],
+        "rows": [
+          [
+            "A E I O U",
+            "B C D F G H J K L M N P Q R S T V W X Y Z"
+          ]
+        ],
+        "caption": {
+          "ru": "Буквы английского алфавита",
+          "en": "English alphabet letters",
+          "tj": "Ҳарфҳои алифбои англисӣ"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько гласных букв в английском алфавите?",
+          "en": "How many vowel letters are in the English alphabet?",
+          "tj": "Дар алифбои англисӣ чанд ҳарфи садонок ҳаст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "5 гласных: A, E, I, O, U.",
+              "en": "5 vowels: A, E, I, O, U.",
+              "tj": "5 садонок: A, E, I, O, U."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

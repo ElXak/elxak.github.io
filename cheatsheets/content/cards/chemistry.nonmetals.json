@@ -1,0 +1,48 @@
+[
+  {
+    "id": "chemistry.nonmetals.basics",
+    "topicId": "chemistry.nonmetals",
+    "title": {
+      "ru": "Неметаллы",
+      "en": "Nonmetals",
+      "tj": "Ғайриметаллҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Неметаллы** расположены в правой верхней части таблицы. Они **принимают электроны**, образуют кислоты и кислотные оксиды. Примеры: кислород, хлор, сера, азот.",
+          "en": "**Nonmetals** are in the upper-right of the table. They **gain electrons** and form acids and acidic oxides. Examples: oxygen, chlorine, sulfur, nitrogen.",
+          "tj": "**Ғайриметаллҳо** дар қисми болоии рости ҷадвал ҷойгиранд. Онҳо **электрон қабул мекунанд**, кислотаҳо ва оксидҳои кислотагӣ ҳосил мекунанд. Мисолҳо: оксиген, хлор, сулфур, нитроген."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "C + O_2 \\rightarrow CO_2",
+        "caption": {
+          "ru": "горение углерода",
+          "en": "combustion of carbon",
+          "tj": "сӯзиши карбон"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какой газ поддерживает горение?",
+          "en": "Which gas supports combustion?",
+          "tj": "Кадом газ сӯзишро дастгирӣ мекунад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Кислород ($O_2$).",
+              "en": "Oxygen ($O_2$).",
+              "tj": "Оксиген ($O_2$)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

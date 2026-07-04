@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tajik-literature.epic-doston.basics",
+    "topicId": "tajik-literature.epic-doston",
+    "title": {
+      "ru": "Эпос и дастан",
+      "en": "Epic and dostan",
+      "tj": "Ҳамоса ва достон"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Эпос (ҳамоса)** — большая повествовательная поэма о героях и великих событиях. **Дастан (достон)** — длинное поэтическое повествование, бывает героическим или любовным.",
+          "en": "An **epic (ҳамоса)** is a large narrative poem about heroes and great events. A **doston** is a long narrative poem, either heroic or romantic.",
+          "tj": "**Ҳамоса** достони бузурги ривоятӣ дар бораи қаҳрамонон ва воқеаҳои бузург аст. **Достон** ривояти дарози манзум буда, қаҳрамонӣ ё ишқӣ мешавад."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "«Шахнаме» — героический эпос, а «Юсуф и Зулейха» — любовный дастан.",
+          "en": "The Shahnameh is a heroic epic, while 'Yusuf and Zulaikha' is a romantic doston.",
+          "tj": "«Шоҳнома» ҳамосаи қаҳрамонӣ, вале «Юсуф ва Зулайхо» достони ишқӣ аст."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "К какому виду относится «Шахнаме»?",
+          "en": "Which kind is the Shahnameh?",
+          "tj": "«Шоҳнома» ба кадом навъ мансуб аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Героический эпос.",
+              "en": "A heroic epic.",
+              "tj": "Ҳамосаи қаҳрамонӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

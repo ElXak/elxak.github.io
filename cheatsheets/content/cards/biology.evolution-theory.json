@@ -1,0 +1,47 @@
+[
+  {
+    "id": "biology.evolution-theory.basics",
+    "topicId": "biology.evolution-theory",
+    "title": {
+      "ru": "Эволюция. Происхождение видов",
+      "en": "Evolution. Origin of species",
+      "tj": "Эволютсия. Пайдоиши намудҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Современная теория объясняет появление **новых видов**: наследственная изменчивость даёт различия, естественный отбор сохраняет полезные, а **изоляция** разделяет популяции.",
+          "en": "Modern theory explains how **new species** appear: hereditary variation creates differences, natural selection keeps the useful ones, and **isolation** separates populations.",
+          "tj": "Назарияи муосир пайдоиши **намудҳои нав**-ро шарҳ медиҳад: тағйирпазирии ирсӣ фарқиятҳо медиҳад, интихоби табиӣ фоиданокҳоро нигоҳ медорад ва **изолятсия** популятсияҳоро ҷудо мекунад."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Доказательства эволюции: ископаемые остатки, сходство в строении и развитии организмов.",
+          "en": "Evidence for evolution: fossils and similarities in the structure and development of organisms.",
+          "tj": "Далелҳои эволютсия: боқимондаҳои сангшуда ва монандӣ дар сохт ва инкишофи организмҳо."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Что разделяет популяции и помогает появлению новых видов?",
+          "en": "What separates populations and helps new species appear?",
+          "tj": "Чӣ популятсияҳоро ҷудо карда, ба пайдоиши намудҳои нав кӯмак мекунад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Изоляция.",
+              "en": "Isolation.",
+              "tj": "Изолятсия."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

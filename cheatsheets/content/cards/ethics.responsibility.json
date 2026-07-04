@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ethics.responsibility.basics",
+    "topicId": "ethics.responsibility",
+    "title": {
+      "ru": "Ответственность",
+      "en": "Responsibility",
+      "tj": "Масъулият"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Ответственность** — готовность отвечать за свои поступки и их последствия. Ответственный человек выполняет обещания и обязанности.",
+          "en": "**Responsibility** is the willingness to answer for one's actions and their consequences. A responsible person keeps promises and fulfils duties.",
+          "tj": "**Масъулият** — омодагӣ барои ҷавобгӯ будан ба амалҳои худ ва оқибатҳои онҳо. Шахси масъул ваъдаҳо ва ӯҳдадориҳояшро иҷро мекунад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Что значит быть ответственным человеком?",
+          "en": "What does it mean to be a responsible person?",
+          "tj": "Шахси масъул будан чӣ маъно дорад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Отвечать за свои поступки и выполнять обещания.",
+              "en": "To answer for your actions and keep your promises.",
+              "tj": "Ба амалҳои худ ҷавобгӯ будан ва ваъдаҳоро иҷро кардан."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

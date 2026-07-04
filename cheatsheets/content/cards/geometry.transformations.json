@@ -1,0 +1,43 @@
+[
+  {
+    "id": "geometry.transformations.basics",
+    "topicId": "geometry.transformations",
+    "title": {
+      "ru": "Движения",
+      "en": "Geometric transformations",
+      "tj": "Ҳаракатҳои геометрӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Движение** — преобразование, сохраняющее расстояния. Основные виды: параллельный перенос, поворот и симметрия (осевая и центральная).",
+          "en": "A **rigid motion** preserves distances. Main types: translation, rotation and symmetry (axial and central).",
+          "tj": "**Ҳаракат** — табдиле, ки масофаро нигоҳ медорад. Навъҳои асосӣ: кӯчонидани параллел, чарх ва симметрия (меҳварӣ ва марказӣ)."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "При симметрии относительно оси $Ox$ точка $(x; y)$ переходит в $(x; -y)$.",
+          "en": "Under reflection in the $Ox$ axis, the point $(x; y)$ maps to $(x; -y)$.",
+          "tj": "Ҳангоми симметрия нисбат ба меҳвари $Ox$ нуқтаи $(x; y)$ ба $(x; -y)$ мегузарад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Найдите образ точки $(3; 2)$ при симметрии относительно оси $Ox$.",
+          "en": "Find the image of $(3; 2)$ under reflection in the $Ox$ axis.",
+          "tj": "Симметрияи нуқтаи $(3; 2)$-ро нисбат ба меҳвари $Ox$ ёбед."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "(3;\\, 2) \\;\\rightarrow\\; (3;\\, -2)"
+          }
+        ]
+      }
+    ]
+  }
+]

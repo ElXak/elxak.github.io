@@ -1,0 +1,47 @@
+[
+  {
+    "id": "russian-literature.slovo.basics",
+    "topicId": "russian-literature.slovo",
+    "title": {
+      "ru": "«Слово о полку Игореве»",
+      "en": "'The Tale of Igor's Campaign'",
+      "tj": "«Достони лашкаркашии Игор»"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**«Слово о полку Игореве»** — величайший памятник древнерусской литературы, созданный около 1187 года. Оно рассказывает о неудачном походе князя Игоря Святославича против половцев.",
+          "en": "**'The Tale of Igor's Campaign'** is the greatest monument of Old Russian literature, written around 1187. It tells of the unsuccessful campaign of Prince Igor against the Polovtsy.",
+          "tj": "**«Достони лашкаркашии Игор»** — бузургтарин ёдгории адабиёти қадимии рус, ки тақрибан дар соли 1187 эҷод шудааст. Он аз лашкаркашии нокоми шоҳзода Игор ба зидди половтсиён нақл мекунад."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Главные темы — любовь к Родине, единство русских князей и трагедия поражения.",
+          "en": "The main themes are love of the homeland, unity of the Russian princes and the tragedy of defeat.",
+          "tj": "Мавзӯъҳои асосӣ — ишқ ба Ватан, ваҳдати шоҳзодагони рус ва фоҷиаи шикаст."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "О чём рассказывает «Слово о полку Игореве»?",
+          "en": "What does 'The Tale of Igor's Campaign' tell of?",
+          "tj": "«Достони лашкаркашии Игор» дар бораи чӣ нақл мекунад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "О походе князя Игоря против половцев.",
+              "en": "The campaign of Prince Igor against the Polovtsy.",
+              "tj": "Дар бораи лашкаркашии шоҳзода Игор ба зидди половтсиён."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

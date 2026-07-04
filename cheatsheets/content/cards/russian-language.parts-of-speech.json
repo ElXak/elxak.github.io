@@ -1,0 +1,39 @@
+[
+  {
+    "id": "russian-language.parts-of-speech.basics",
+    "topicId": "russian-language.parts-of-speech",
+    "title": {
+      "ru": "Части речи",
+      "en": "Parts of speech",
+      "tj": "Ҳиссаҳои нутқ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Слова по значению и вопросу делят на **части речи**. Главные: **имя существительное, глагол, имя прилагательное**, а также местоимение, числительное и наречие.",
+          "en": "By their meaning and the question they answer, words are grouped into **parts of speech**. The main ones: **noun, verb, adjective**, and also pronoun, numeral and adverb.",
+          "tj": "Калимаҳо аз рӯи маъно ва савол ба **ҳиссаҳои нутқ** ҷудо мешаванд. Асосиашон: **исм, феъл, сифат**, инчунин ҷонишин, шумора ва зарф."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "К какой части речи относится слово «книга»?",
+          "en": "Which part of speech is the word «книга» (book)?",
+          "tj": "«Книга» (китоб) ба кадом ҳиссаи нутқ мансуб аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Имя существительное.",
+              "en": "A noun.",
+              "tj": "Исм."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

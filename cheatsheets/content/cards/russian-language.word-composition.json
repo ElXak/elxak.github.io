@@ -1,0 +1,39 @@
+[
+  {
+    "id": "russian-language.word-composition.basics",
+    "topicId": "russian-language.word-composition",
+    "title": {
+      "ru": "Состав слова",
+      "en": "Word composition",
+      "tj": "Таркиби калима"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Слово состоит из частей: **приставка, корень, суффикс** и **окончание**. Главное значение несёт корень.",
+          "en": "A word is made of parts: a **prefix, root, suffix** and **ending**. The root carries the main meaning.",
+          "tj": "Калима аз қисмҳо иборат аст: **пешванд, реша, пасванд** ва **бандак**. Маънои асосиро реша медиҳад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Разберите слово «поездка» по составу.",
+          "en": "Break the word «поездка» (a trip) into its parts.",
+          "tj": "Калимаи «поездка»-ро ба қисмҳо ҷудо кунед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "по- (приставка), езд (корень), -к- (суффикс), -а (окончание).",
+              "en": "по- (prefix), езд (root), -к- (suffix), -а (ending).",
+              "tj": "по- (пешванд), езд (реша), -к- (пасванд), -а (бандак)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

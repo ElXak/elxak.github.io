@@ -1,0 +1,35 @@
+[
+  {
+    "id": "math.rational-numbers.basics",
+    "topicId": "math.rational-numbers",
+    "title": {
+      "ru": "Рациональные числа",
+      "en": "Rational numbers",
+      "tj": "Ададҳои ратсионалӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Рациональное число** можно записать дробью $\\dfrac{p}{q}$, где $p$ и $q$ — целые ($q \\neq 0$). Сюда входят и отрицательные дроби.",
+          "en": "A **rational number** can be written as a fraction $\\dfrac{p}{q}$ with integers $p$ and $q$ ($q \\neq 0$). This includes negative fractions.",
+          "tj": "**Адади ратсионалӣ**-ро бо касри $\\dfrac{p}{q}$ навиштан мумкин аст, ки $p$ ва $q$ бутун ($q \\neq 0$). Касрҳои манфӣ низ дохиланд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Вычислите $-\\dfrac{1}{2} + \\dfrac{3}{4}$.",
+          "en": "Evaluate $-\\dfrac{1}{2} + \\dfrac{3}{4}$.",
+          "tj": "Ҳисоб кунед $-\\dfrac{1}{2} + \\dfrac{3}{4}$."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "-\\dfrac{2}{4} + \\dfrac{3}{4} = \\dfrac{1}{4}"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "id": "algebra.logarithms.basics",
+    "topicId": "algebra.logarithms",
+    "title": {
+      "ru": "Логарифмы",
+      "en": "Logarithms",
+      "tj": "Логарифмҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Логарифм** $\\log_a b$ — показатель степени, в которую нужно возвести $a$, чтобы получить $b$ ($a>0$, $a\\neq1$, $b>0$).",
+          "en": "A **logarithm** $\\log_a b$ is the exponent to which $a$ must be raised to get $b$ ($a>0$, $a\\neq1$, $b>0$).",
+          "tj": "**Логарифм** $\\log_a b$ — нишондиҳандаи дараҷае, ки $a$-ро ба он бардоранд, то $b$ ҳосил шавад ($a>0$, $a\\neq1$, $b>0$)."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "\\log_a b = c \\iff a^c = b"
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Свойство",
+            "en": "Property",
+            "tj": "Хосият"
+          },
+          {
+            "ru": "Формула",
+            "en": "Formula",
+            "tj": "Формула"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Логарифм произведения",
+              "en": "Log of a product",
+              "tj": "Логарифми ҳосили зарб"
+            },
+            "$\\log_a(xy) = \\log_a x + \\log_a y$"
+          ],
+          [
+            {
+              "ru": "Логарифм частного",
+              "en": "Log of a quotient",
+              "tj": "Логарифми бахш"
+            },
+            "$\\log_a\\dfrac{x}{y} = \\log_a x - \\log_a y$"
+          ],
+          [
+            {
+              "ru": "Логарифм степени",
+              "en": "Log of a power",
+              "tj": "Логарифми дараҷа"
+            },
+            "$\\log_a x^p = p\\,\\log_a x$"
+          ],
+          [
+            {
+              "ru": "Новое основание",
+              "en": "Change of base",
+              "tj": "Асоси нав"
+            },
+            "$\\log_a b = \\dfrac{\\log_c b}{\\log_c a}$"
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Вычислите $\\log_2 8$.",
+          "en": "Compute $\\log_2 8$.",
+          "tj": "Ҳисоб кунед $\\log_2 8$."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "\\log_2 8 = \\log_2 2^3 = 3"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "technology.safety.workshop",
+    "topicId": "technology.safety",
+    "title": {
+      "ru": "Правила в мастерской",
+      "en": "Workshop rules",
+      "tj": "Қоидаҳо дар коргоҳ"
+    },
+    "tags": [
+      "безопасность",
+      "мастерская",
+      "safety",
+      "workshop"
+    ],
+    "blocks": [
+      {
+        "type": "list",
+        "ordered": true,
+        "items": [
+          {
+            "ru": "Работай только **исправным** инструментом",
+            "en": "Use only **working** tools",
+            "tj": "Танҳо бо асбоби **солим** кор кун"
+          },
+          {
+            "ru": "Держи рабочее место **в порядке**",
+            "en": "Keep your workspace **tidy**",
+            "tj": "Ҷойи кориро **дар тартиб** нигоҳ дор"
+          },
+          {
+            "ru": "После работы **убери** инструменты",
+            "en": "**Put away** tools when finished",
+            "tj": "Баъди кор асбобҳоро **ҷамъ кун**"
+          }
+        ]
+      }
+    ]
+  }
+]

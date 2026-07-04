@@ -1,0 +1,85 @@
+[
+  {
+    "id": "english-language.present.simple-vs-continuous",
+    "topicId": "english-language.present",
+    "title": "Present Simple vs Present Continuous",
+    "locales": [
+      "ru",
+      "en"
+    ],
+    "tags": [
+      "времена",
+      "present",
+      "grammar"
+    ],
+    "blocks": [
+      {
+        "type": "table",
+        "headers": [
+          "",
+          "Present Simple",
+          "Present Continuous"
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Когда",
+              "en": "When",
+              "tj": "Кай"
+            },
+            {
+              "ru": "Факты, привычки, расписание",
+              "en": "Facts, habits, schedules",
+              "tj": "Далелҳо, одатҳо, ҷадвал"
+            },
+            {
+              "ru": "Действие сейчас, временная ситуация",
+              "en": "Action now, temporary situation",
+              "tj": "Амали ҳозира, вазъияти муваққатӣ"
+            }
+          ],
+          [
+            {
+              "ru": "Маркеры",
+              "en": "Markers",
+              "tj": "Нишондиҳандаҳо"
+            },
+            "usually, always, every day",
+            "now, at the moment, today"
+          ],
+          [
+            {
+              "ru": "Форма",
+              "en": "Form",
+              "tj": "Шакл"
+            },
+            "V / V-s",
+            "am/is/are + V-ing"
+          ],
+          [
+            {
+              "ru": "Пример",
+              "en": "Example",
+              "tj": "Мисол"
+            },
+            "She reads every evening.",
+            "She is reading now."
+          ]
+        ]
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Глаголы состояния (know, like, want, love) обычно **не** употребляются в Continuous.",
+          "en": "Stative verbs (know, like, want, love) are usually **not** used in the Continuous.",
+          "tj": "Феълҳои ҳолат (know, like, want, love) одатан дар Continuous **истифода намешаванд**."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": "She is reading a book right now.",
+        "speechLang": "en"
+      }
+    ]
+  }
+]

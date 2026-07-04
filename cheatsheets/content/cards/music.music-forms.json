@@ -1,0 +1,116 @@
+[
+  {
+    "id": "music.music-forms.basics",
+    "topicId": "music.music-forms",
+    "title": {
+      "ru": "Музыкальные формы",
+      "en": "Musical forms",
+      "tj": "Шаклҳои мусиқӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Музыкальная форма** — структура музыкального произведения.",
+          "en": "A **musical form** is the structure of a musical work.",
+          "tj": "**Шакли мусиқӣ** — сохтори асари мусиқӣ."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Форма",
+            "en": "Form",
+            "tj": "Шакл"
+          },
+          {
+            "ru": "Описание",
+            "en": "Description",
+            "tj": "Тавсиф"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Куплетная",
+              "en": "Verse-chorus",
+              "tj": "Куплет"
+            },
+            {
+              "ru": "куплет + припев",
+              "en": "verse + chorus",
+              "tj": "банд + нақарот"
+            }
+          ],
+          [
+            {
+              "ru": "Двухчастная",
+              "en": "Binary",
+              "tj": "Дуқисмӣ"
+            },
+            {
+              "ru": "AB",
+              "en": "AB",
+              "tj": "AB"
+            }
+          ],
+          [
+            {
+              "ru": "Трёхчастная",
+              "en": "Ternary",
+              "tj": "Сеқисмӣ"
+            },
+            {
+              "ru": "ABA",
+              "en": "ABA",
+              "tj": "ABA"
+            }
+          ],
+          [
+            {
+              "ru": "Рондо",
+              "en": "Rondo",
+              "tj": "Рондо"
+            },
+            {
+              "ru": "A+B+A+C+A…",
+              "en": "A+B+A+C+A…",
+              "tj": "A+B+A+C+A…"
+            }
+          ],
+          [
+            {
+              "ru": "Сонатная",
+              "en": "Sonata",
+              "tj": "Соната"
+            },
+            {
+              "ru": "экспозиция–разработка–реприза",
+              "en": "exposition–development–recapitulation",
+              "tj": "экспозитсия–ишкроф–реприза"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Из чего состоит куплетная форма?",
+          "en": "What does the verse-chorus form consist of?",
+          "tj": "Шакли куплетӣ аз чӣ иборат аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Из куплета и припева.",
+              "en": "A verse and a chorus.",
+              "tj": "Аз банд ва нақарот."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

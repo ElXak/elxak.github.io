@@ -1,0 +1,74 @@
+[
+  {
+    "id": "geometry.congruence.basics",
+    "topicId": "geometry.congruence",
+    "title": {
+      "ru": "Признаки равенства треугольников",
+      "en": "Triangle congruence",
+      "tj": "Аломатҳои баробарии секунҷаҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Два треугольника **равны**, если выполняется один из трёх признаков.",
+          "en": "Two triangles are **congruent** if one of the three criteria holds.",
+          "tj": "Ду секунҷа **баробар**-анд, агар яке аз се аломат иҷро шавад."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Признак",
+            "en": "Criterion",
+            "tj": "Аломат"
+          },
+          {
+            "ru": "Условие",
+            "en": "Condition",
+            "tj": "Шарт"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Первый",
+              "en": "First (SAS)",
+              "tj": "Якум"
+            },
+            {
+              "ru": "две стороны и угол между ними",
+              "en": "two sides and the included angle",
+              "tj": "ду тараф ва кунҷи байни онҳо"
+            }
+          ],
+          [
+            {
+              "ru": "Второй",
+              "en": "Second (ASA)",
+              "tj": "Дуюм"
+            },
+            {
+              "ru": "сторона и два прилежащих угла",
+              "en": "a side and two adjacent angles",
+              "tj": "тараф ва ду кунҷи ҳамшафат"
+            }
+          ],
+          [
+            {
+              "ru": "Третий",
+              "en": "Third (SSS)",
+              "tj": "Сеюм"
+            },
+            {
+              "ru": "три стороны",
+              "en": "three sides",
+              "tj": "се тараф"
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

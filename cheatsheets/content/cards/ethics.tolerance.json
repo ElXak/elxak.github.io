@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ethics.tolerance.basics",
+    "topicId": "ethics.tolerance",
+    "title": {
+      "ru": "Толерантность",
+      "en": "Tolerance",
+      "tj": "Таҳаммулпазирӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Толерантность** — уважение и принятие людей, отличающихся по культуре, религии, языку или взглядам. Она помогает людям мирно жить вместе.",
+          "en": "**Tolerance** is respect for and acceptance of people who differ in culture, religion, language or views. It helps people live together peacefully.",
+          "tj": "**Таҳаммулпазирӣ** — эҳтиром ва қабули одамоне, ки аз рӯи фарҳанг, дин, забон ё афкор фарқ мекунанд. Он ба одамон дар якҷо зиндагии осоишта мадад мерасонад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Зачем нужна толерантность в обществе?",
+          "en": "Why is tolerance needed in society?",
+          "tj": "Барои чӣ дар ҷомеа таҳаммулпазирӣ лозим аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Чтобы люди мирно жили вместе, несмотря на различия.",
+              "en": "So people can live together peacefully despite differences.",
+              "tj": "Барои он ки одамон бо вуҷуди фарқиятҳо осоишта якҷо зиндагӣ кунанд."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

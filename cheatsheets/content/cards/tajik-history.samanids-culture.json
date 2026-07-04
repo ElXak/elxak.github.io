@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-history.samanids-culture.basics",
+    "topicId": "tajik-history.samanids-culture",
+    "title": {
+      "ru": "Культура Саманидов",
+      "en": "Samanid Culture",
+      "tj": "Фарҳанги Сомониён"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Эпоха Саманидов (IX–X вв.) — **золотой век** таджикской культуры. При их дворе жили и творили великие учёные и поэты: **Авиценна (Ибн Сина), Фирдоуси, Рудаки**.",
+          "en": "The Samanid era (9th–10th centuries) was the **golden age** of Tajik culture. Great scholars and poets lived and worked at their court: **Avicenna (Ibn Sina), Ferdowsi, Rudaki**.",
+          "tj": "Давраи Сомониён (асрҳои IX–X) — **асри тиллоии** фарҳанги тоҷик. Дар дарбори онҳо олимону шоирони бузург зиндагӣ ва эҷод мекарданд: **Ибни Сино, Фирдавсӣ, Рӯдакӣ**."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как называется эпоха Саманидов в культурном отношении?",
+          "en": "How is the Samanid era described culturally?",
+          "tj": "Давраи Сомониён аз назари фарҳангӣ чӣ ном дорад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Золотым веком таджикской культуры.",
+              "en": "The golden age of Tajik culture.",
+              "tj": "Асри тиллоии фарҳанги тоҷик."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

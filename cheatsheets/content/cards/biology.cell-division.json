@@ -1,0 +1,87 @@
+[
+  {
+    "id": "biology.cell-division.basics",
+    "topicId": "biology.cell-division",
+    "title": {
+      "ru": "Деление клетки",
+      "en": "Cell division",
+      "tj": "Тақсими ҳуҷайра"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Митоз** даёт две одинаковые клетки (рост и восстановление). **Мейоз** даёт четыре клетки с половинным набором хромосом — это половые клетки.",
+          "en": "**Mitosis** gives two identical cells (growth and repair). **Meiosis** gives four cells with half the chromosomes — the sex cells.",
+          "tj": "**Митоз** ду ҳуҷайраи якхела медиҳад (нашъунамо ва барқароршавӣ). **Мейоз** чор ҳуҷайра бо нисфи хромосомаҳо медиҳад — ин ҳуҷайраҳои ҷинсӣ."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Признак",
+            "en": "Feature",
+            "tj": "Аломат"
+          },
+          {
+            "ru": "Митоз",
+            "en": "Mitosis",
+            "tj": "Митоз"
+          },
+          {
+            "ru": "Мейоз",
+            "en": "Meiosis",
+            "tj": "Мейоз"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Число клеток",
+              "en": "Cells formed",
+              "tj": "Шумораи ҳуҷайраҳо"
+            },
+            "$2$",
+            "$4$"
+          ],
+          [
+            {
+              "ru": "Хромосомы",
+              "en": "Chromosomes",
+              "tj": "Хромосомаҳо"
+            },
+            {
+              "ru": "как у матери",
+              "en": "same as parent",
+              "tj": "мисли модарӣ"
+            },
+            {
+              "ru": "в два раза меньше",
+              "en": "halved",
+              "tj": "ду баробар кам"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какое деление образует половые клетки?",
+          "en": "Which division produces sex cells?",
+          "tj": "Кадом тақсим ҳуҷайраҳои ҷинсиро ба вуҷуд меорад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Мейоз.",
+              "en": "Meiosis.",
+              "tj": "Мейоз."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

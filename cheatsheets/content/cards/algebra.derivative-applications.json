@@ -1,0 +1,43 @@
+[
+  {
+    "id": "algebra.derivative-applications.basics",
+    "topicId": "algebra.derivative-applications",
+    "title": {
+      "ru": "Применение производной",
+      "en": "Applications of the derivative",
+      "tj": "Татбиқи ҳосила"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Производная показывает **возрастание** ($f'(x)>0$) и **убывание** ($f'(x)<0$). В точке экстремума $f'(x)=0$.",
+          "en": "The derivative shows where a function **increases** ($f'(x)>0$) and **decreases** ($f'(x)<0$). At an extremum $f'(x)=0$.",
+          "tj": "Ҳосила **афзоиш** ($f'(x)>0$) ва **коҳиш** ($f'(x)<0$)-ро нишон медиҳад. Дар нуқтаи экстремум $f'(x)=0$."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Найдите точку минимума $f(x)=x^2-4x+1$.",
+          "en": "Find the minimum point of $f(x)=x^2-4x+1$.",
+          "tj": "Нуқтаи минимуми $f(x)=x^2-4x+1$-ро ёбед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "$f'(x) = 2x-4 = 0 \\Rightarrow x = 2$.",
+              "en": "$f'(x) = 2x-4 = 0 \\Rightarrow x = 2$.",
+              "tj": "$f'(x) = 2x-4 = 0 \\Rightarrow x = 2$."
+            }
+          },
+          {
+            "type": "formula",
+            "latex": "f(2) = -3 \\;\\;(\\text{минимум})"
+          }
+        ]
+      }
+    ]
+  }
+]

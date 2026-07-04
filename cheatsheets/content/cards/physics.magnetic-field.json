@@ -1,0 +1,47 @@
+[
+  {
+    "id": "physics.magnetic-field.basics",
+    "topicId": "physics.magnetic-field",
+    "title": {
+      "ru": "Магнитное поле. Электромагнитная индукция",
+      "en": "Magnetic field. Electromagnetic induction",
+      "tj": "Майдони магнитӣ. Индуксияи электромагнитӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Ток создаёт **магнитное поле** (индукция $B$). На проводник с током действует **сила Ампера** $F = BIl$.",
+          "en": "A current creates a **magnetic field** (induction $B$). A current-carrying wire feels the **Ampère force** $F = BIl$.",
+          "tj": "Ҷараён **майдони магнитӣ** ба вуҷуд меорад (индуксия $B$). Ба ноқили ҷараёндор **қувваи Ампер** $F = BIl$ таъсир мекунад."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "При изменении магнитного потока возникает **ЭДС индукции** (закон Фарадея) — основа генераторов.",
+          "en": "A changing magnetic flux induces an **EMF** (Faraday's law) — the basis of generators.",
+          "tj": "Ҳангоми тағйири шори магнитӣ **ҚҲЭ-и индуксия** ба вуҷуд меояд (қонуни Фарадей) — асоси генераторҳо."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "$B = 2$ Тл, $I = 3$ А, $l = 2$ м. Найдите силу Ампера.",
+          "en": "$B = 2$ T, $I = 3$ A, $l = 2$ m. Find the Ampère force.",
+          "tj": "$B = 2$ Тл, $I = 3$ А, $l = 2$ м. Қувваи Амперро ёбед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "$F = 2 \\times 3 \\times 2 = 12$ Н.",
+              "en": "$F = 2 \\times 3 \\times 2 = 12$ N.",
+              "tj": "$F = 2 \\times 3 \\times 2 = 12$ Н."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

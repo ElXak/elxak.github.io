@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tajik-language.word-sentence.basics",
+    "topicId": "tajik-language.word-sentence",
+    "title": {
+      "ru": "Слово и предложение",
+      "en": "Word and sentence",
+      "tj": "Калима ва ҷумла"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Из **слов** составляют **предложения**. Предложение выражает законченную мысль.",
+          "en": "**Words** are combined into **sentences**. A sentence expresses a complete thought.",
+          "tj": "Аз **калимаҳо** **ҷумла** месозанд. Ҷумла фикри пурраро ифода мекунад."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Предложение начинается с заглавной буквы и заканчивается знаком «.», «?» или «!».",
+          "en": "A sentence starts with a capital letter and ends with «.», «?» or «!».",
+          "tj": "Ҷумла бо ҳарфи калон сар мешавад ва бо аломати «.», «?» ё «!» тамом мешавад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Является ли «Гул сурх аст» предложением?",
+          "en": "Is «Гул сурх аст» a sentence?",
+          "tj": "Оё «Гул сурх аст» ҷумла аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Да, оно выражает законченную мысль («Цветок красный»).",
+              "en": "Yes, it expresses a complete thought («The flower is red»).",
+              "tj": "Ҳа, фикри пурраро ифода мекунад («Гул сурх аст»)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

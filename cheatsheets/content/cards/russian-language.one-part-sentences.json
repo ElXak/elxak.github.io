@@ -1,0 +1,39 @@
+[
+  {
+    "id": "russian-language.one-part-sentences.basics",
+    "topicId": "russian-language.one-part-sentences",
+    "title": {
+      "ru": "Односоставные предложения",
+      "en": "One-part sentences",
+      "tj": "Ҷумлаҳои яктаркиба"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Односоставные предложения** имеют только один главный член. Например: **назывное** (Ночь.), **определённо-личное** (Иду домой.), **безличное** (Светает.).",
+          "en": "**One-part sentences** have only one main member. For example: **nominative** (Ночь. — Night.), **definite-personal** (Иду домой. — I'm going home.), **impersonal** (Светает. — It's getting light.).",
+          "tj": "**Ҷумлаҳои яктаркиба** танҳо як аъзои асосӣ доранд. Масалан: **номӣ** (Ночь.), **муайяншахс** (Иду домой.), **бешахс** (Светает.)."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Каким является предложение «Светает.»?",
+          "en": "What kind of sentence is «Светает.» (It is getting light.)?",
+          "tj": "Ҷумлаи «Светает.» кадом навъ аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Односоставное безличное.",
+              "en": "A one-part impersonal sentence.",
+              "tj": "Яктаркибаи бешахс."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

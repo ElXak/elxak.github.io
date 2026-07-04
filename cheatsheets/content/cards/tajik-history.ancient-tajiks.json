@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-history.ancient-tajiks.basics",
+    "topicId": "tajik-history.ancient-tajiks",
+    "title": {
+      "ru": "Древние таджики",
+      "en": "Ancient Tajiks",
+      "tj": "Тоҷикони қадим"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Таджикский народ принадлежит к **иранской группе** индоевропейских народов. Его предки — древние жители Средней Азии: согдийцы, бактрийцы и хорезмийцы.",
+          "en": "The Tajik people belong to the **Iranian branch** of the Indo-European peoples. Their ancestors were ancient inhabitants of Central Asia: Sogdians, Bactrians and Khwarezmians.",
+          "tj": "Мардуми тоҷик ба **гурӯҳи эронии** халқҳои ҳиндуаврупоӣ тааллуқ дорад. Аҷдодони онҳо сокинони қадимии Осиёи Миёна — суғдиён, бохтариён ва хоразмиён буданд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "К какой языковой группе относится таджикский народ?",
+          "en": "Which language group does the Tajik people belong to?",
+          "tj": "Мардуми тоҷик ба кадом гурӯҳи забонӣ тааллуқ дорад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "К иранской группе индоевропейских языков.",
+              "en": "The Iranian branch of the Indo-European languages.",
+              "tj": "Ба гурӯҳи эронии забонҳои ҳиндуаврупоӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

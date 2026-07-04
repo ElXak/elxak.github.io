@@ -1,0 +1,72 @@
+[
+  {
+    "id": "english-language.there-is.basics",
+    "topicId": "english-language.there-is",
+    "title": {
+      "ru": "There is / There are",
+      "en": "There is / There are",
+      "tj": "There is / There are"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**There is** используется с единственным числом, **there are** — с множественным. Они обозначают существование или наличие.",
+          "en": "**There is** is used with singular nouns, **there are** with plural. They express existence or presence.",
+          "tj": "**There is** бо шумораи танҳо, **there are** бо ҷамъ истифода мешавад. Онҳо мавҷудиятро ифода мекунанд."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Форма",
+            "en": "Form",
+            "tj": "Шакл"
+          },
+          {
+            "ru": "Пример",
+            "en": "Example",
+            "tj": "Мисол"
+          }
+        ],
+        "rows": [
+          [
+            "There is …",
+            "There is a book on the desk."
+          ],
+          [
+            "There are …",
+            "There are two cats in the garden."
+          ],
+          [
+            "Is there …?",
+            "Is there a pen here?"
+          ],
+          [
+            "Are there …?",
+            "Are there any apples?"
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как сказать «На столе есть книга»?",
+          "en": "How do you say «На столе есть книга» in English?",
+          "tj": "«Дар мизе китоб ҳаст»-ро ба англисӣ чӣ гуна мегӯянд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "There is a book on the table.",
+              "en": "There is a book on the table.",
+              "tj": "There is a book on the table."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "informatics.office-apps.basics",
+    "topicId": "informatics.office-apps",
+    "title": {
+      "ru": "Офисные приложения",
+      "en": "Office applications",
+      "tj": "Барномаҳои офисӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Офисные приложения** — программы для создания документов, таблиц и презентаций. Пакет **Microsoft Office**: Word (текст), Excel (таблицы), PowerPoint (презентации). Бесплатная альтернатива — **LibreOffice**.",
+          "en": "**Office applications** are programs for creating documents, spreadsheets and presentations. The **Microsoft Office** suite: Word (text), Excel (spreadsheets), PowerPoint (presentations). A free alternative is **LibreOffice**.",
+          "tj": "**Барномаҳои офисӣ** — барномаҳо барои сохтани ҳуҷҷатҳо, ҷадвалҳо ва намоишҳо. Пакети **Microsoft Office**: Word (матн), Excel (ҷадвалҳо), PowerPoint (намоишҳо). Алтернативаи ройгон — **LibreOffice**."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Программа",
+            "en": "Program",
+            "tj": "Барнома"
+          },
+          {
+            "ru": "Для чего",
+            "en": "Purpose",
+            "tj": "Барои чӣ"
+          }
+        ],
+        "rows": [
+          [
+            "Word / Writer",
+            {
+              "ru": "текстовые документы",
+              "en": "text documents",
+              "tj": "ҳуҷҷатҳои матнӣ"
+            }
+          ],
+          [
+            "Excel / Calc",
+            {
+              "ru": "таблицы и расчёты",
+              "en": "tables and calculations",
+              "tj": "ҷадвалҳо ва ҳисобҳо"
+            }
+          ],
+          [
+            "PowerPoint / Impress",
+            {
+              "ru": "презентации",
+              "en": "presentations",
+              "tj": "намоишҳо"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какую программу используют для создания презентаций?",
+          "en": "Which program is used to create presentations?",
+          "tj": "Барои сохтани намоишҳо кадом барнома истифода мешавад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Microsoft PowerPoint (или LibreOffice Impress).",
+              "en": "Microsoft PowerPoint (or LibreOffice Impress).",
+              "tj": "Microsoft PowerPoint (ё LibreOffice Impress)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

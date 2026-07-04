@@ -1,0 +1,47 @@
+[
+  {
+    "id": "english-language.imperatives.basics",
+    "topicId": "english-language.imperatives",
+    "title": {
+      "ru": "Повелительное наклонение",
+      "en": "Imperatives",
+      "tj": "Феъли амрӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Повелительное наклонение (imperative)** — команды и просьбы. Используется **инфинитив без to**: Open the book! Sit down!",
+          "en": "The **imperative** expresses commands and requests. Use the **bare infinitive** (verb without to): Open the book! Sit down!",
+          "tj": "**Феъли амрӣ (imperative)** фармон ва хоҳишро ифода мекунад. **Инфинитиви бе to** истифода мешавад: Open the book! Sit down!"
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Отрицательная форма: **Don't + глагол**: Don't run! Don't be late!",
+          "en": "Negative form: **Don't + verb**: Don't run! Don't be late!",
+          "tj": "Шакли манфӣ: **Don't + феъл**: Don't run! Don't be late!"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как дать команду «Не шуми»?",
+          "en": "How do you give the command 'Don't make noise'?",
+          "tj": "Фармони «Сару садо накун»-ро чӣ гуна мегӯянд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Don't make noise!",
+              "en": "Don't make noise!",
+              "tj": "Don't make noise!"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-language.word-composition.basics",
+    "topicId": "tajik-language.word-composition",
+    "title": {
+      "ru": "Состав слова",
+      "en": "Word composition",
+      "tj": "Таркиби калима"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Слово состоит из частей: **корень (реша)**, **приставка (пешванд)** и **суффикс (пасванд)**. Главное значение несёт корень.",
+          "en": "A word is made of parts: a **root (реша)**, a **prefix (пешванд)** and a **suffix (пасванд)**. The root carries the main meaning.",
+          "tj": "Калима аз қисмҳо иборат аст: **реша**, **пешванд** ва **пасванд**. Маънои асосиро реша медиҳад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Разберите слово «бесавод» (неграмотный) по составу.",
+          "en": "Break the word «бесавод» (illiterate) into its parts.",
+          "tj": "Калимаи «бесавод»-ро ба қисмҳо ҷудо кунед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "**бе-** (приставка) + **савод** (корень).",
+              "en": "**бе-** (prefix) + **савод** (root).",
+              "tj": "**бе-** (пешванд) + **савод** (реша)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

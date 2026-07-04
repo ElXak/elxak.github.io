@@ -1,0 +1,92 @@
+[
+  {
+    "id": "biology.blood-circulation.basics",
+    "topicId": "biology.blood-circulation",
+    "title": {
+      "ru": "Кровь и кровообращение",
+      "en": "Blood and circulation",
+      "tj": "Хун ва гардиши хун"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Кровь** состоит из плазмы и клеток. **Сердце** перекачивает её по сосудам: артериям, венам и капиллярам.",
+          "en": "**Blood** is made of plasma and cells. The **heart** pumps it through vessels: arteries, veins and capillaries.",
+          "tj": "**Хун** аз плазма ва ҳуҷайраҳо иборат аст. **Дил** онро тавассути рагҳо: шараёнҳо, варидҳо ва мӯйрагҳо ҳаракат медиҳад."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Клетки",
+            "en": "Cells",
+            "tj": "Ҳуҷайраҳо"
+          },
+          {
+            "ru": "Функция",
+            "en": "Function",
+            "tj": "Вазифа"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Эритроциты",
+              "en": "Red cells",
+              "tj": "Эритроцитҳо"
+            },
+            {
+              "ru": "переносят кислород",
+              "en": "carry oxygen",
+              "tj": "оксигенро мекашонанд"
+            }
+          ],
+          [
+            {
+              "ru": "Лейкоциты",
+              "en": "White cells",
+              "tj": "Лейкоцитҳо"
+            },
+            {
+              "ru": "защита от микробов",
+              "en": "defence against microbes",
+              "tj": "муҳофизат аз микробҳо"
+            }
+          ],
+          [
+            {
+              "ru": "Тромбоциты",
+              "en": "Platelets",
+              "tj": "Тромбоцитҳо"
+            },
+            {
+              "ru": "свёртывание крови",
+              "en": "blood clotting",
+              "tj": "лахташавии хун"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какие клетки крови переносят кислород?",
+          "en": "Which blood cells carry oxygen?",
+          "tj": "Кадом ҳуҷайраҳои хун оксигенро мекашонанд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Эритроциты (красные клетки).",
+              "en": "Red blood cells.",
+              "tj": "Эритроцитҳо (ҳуҷайраҳои сурх)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

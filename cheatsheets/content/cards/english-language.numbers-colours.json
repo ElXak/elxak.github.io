@@ -1,0 +1,104 @@
+[
+  {
+    "id": "english-language.numbers-colours.basics",
+    "topicId": "english-language.numbers-colours",
+    "title": {
+      "ru": "Цифры и цвета",
+      "en": "Numbers and colours",
+      "tj": "Рақамҳо ва рангҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Числа 1–10**: one, two, three, four, five, six, seven, eight, nine, ten.",
+          "en": "**Numbers 1–10**: one, two, three, four, five, six, seven, eight, nine, ten.",
+          "tj": "**Рақамҳо 1–10**: one, two, three, four, five, six, seven, eight, nine, ten."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Цвет",
+            "en": "Colour",
+            "tj": "Ранг"
+          },
+          {
+            "ru": "По-английски",
+            "en": "In English",
+            "tj": "Ба англисӣ"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "красный",
+              "en": "red",
+              "tj": "сурх"
+            },
+            "red"
+          ],
+          [
+            {
+              "ru": "синий",
+              "en": "blue",
+              "tj": "кабуд"
+            },
+            "blue"
+          ],
+          [
+            {
+              "ru": "зелёный",
+              "en": "green",
+              "tj": "сабз"
+            },
+            "green"
+          ],
+          [
+            {
+              "ru": "жёлтый",
+              "en": "yellow",
+              "tj": "зард"
+            },
+            "yellow"
+          ],
+          [
+            {
+              "ru": "чёрный",
+              "en": "black",
+              "tj": "сиёҳ"
+            },
+            "black"
+          ],
+          [
+            {
+              "ru": "белый",
+              "en": "white",
+              "tj": "сафед"
+            },
+            "white"
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как сказать «три зелёных яблока»?",
+          "en": "How do you say «три зелёных яблока» in English?",
+          "tj": "«Се себи сабз»-ро ба англисӣ чӣ гуна мегӯянд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Three green apples.",
+              "en": "Three green apples.",
+              "tj": "Three green apples."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

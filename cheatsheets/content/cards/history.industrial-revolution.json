@@ -1,0 +1,47 @@
+[
+  {
+    "id": "history.industrial-revolution.basics",
+    "topicId": "history.industrial-revolution",
+    "title": {
+      "ru": "Промышленная революция",
+      "en": "The Industrial Revolution",
+      "tj": "Инқилоби саноатӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Промышленная революция** (XVIII–XIX вв.) — переход от ручного труда к машинному производству. Началась в **Великобритании**, затем распространилась по всей Европе и миру.",
+          "en": "The **Industrial Revolution** (18th–19th centuries) was the transition from hand labour to machine production. It began in **Britain** and then spread across Europe and the world.",
+          "tj": "**Инқилоби саноатӣ** (асрҳои XVIII–XIX) — гузариш аз меҳнати дастӣ ба истеҳсоли мошинӣ. Дар **Британияи Кабир** оғоз шуда, сипас ба Аврупо ва ҷаҳон паҳн шуд."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Главные изобретения: паровой двигатель (Уатт), железные дороги, ткацкие станки. Возникли фабрики и рабочий класс.",
+          "en": "Key inventions: the steam engine (Watt), railways, power looms. Factories and the working class emerged.",
+          "tj": "Ихтироотҳои асосӣ: муҳаррики буғ (Уатт), роҳи оҳан, дастгоҳҳои бофандагӣ. Заводҳо ва синфи коргар пайдо шуданд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Где началась Промышленная революция?",
+          "en": "Where did the Industrial Revolution begin?",
+          "tj": "Инқилоби саноатӣ дар куҷо оғоз шуд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "В Великобритании.",
+              "en": "In Britain.",
+              "tj": "Дар Британияи Кабир."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

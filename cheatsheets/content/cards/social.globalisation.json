@@ -1,0 +1,39 @@
+[
+  {
+    "id": "social.globalisation.basics",
+    "topicId": "social.globalisation",
+    "title": {
+      "ru": "Глобализация и общество",
+      "en": "Globalisation and society",
+      "tj": "Ҷаҳонишавӣ ва ҷомеа"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Глобализация** усиливает связи между странами в экономике, политике и культуре. Её последствия для общества: рост взаимозависимости, распространение технологий, но и угроза потери культурной самобытности.",
+          "en": "**Globalisation** strengthens ties between countries in economics, politics and culture. Its consequences for society: growing interdependence, spread of technology, but also a threat to cultural identity.",
+          "tj": "**Ҷаҳонишавӣ** робитаҳои байни кишварҳоро дар иқтисод, сиёсат ва фарҳанг мустаҳкам мекунад. Оқибатҳои он барои ҷомеа: афзоиши вобастагӣ, паҳншавии технология, аммо таҳдид ба худбудии фарҳангӣ."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Назовите положительное и отрицательное последствие глобализации.",
+          "en": "Name one positive and one negative effect of globalisation.",
+          "tj": "Як оқибати мусбат ва манфии ҷаҳонишавиро номбар кунед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "+ Распространение технологий; − угроза культурной самобытности.",
+              "en": "+ Spread of technology; − threat to cultural identity.",
+              "tj": "+ Паҳншавии технология; − таҳдид ба худбудии фарҳангӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

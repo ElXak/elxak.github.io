@@ -1,0 +1,39 @@
+[
+  {
+    "id": "chemistry.carboxylic.basics",
+    "topicId": "chemistry.carboxylic",
+    "title": {
+      "ru": "Карбоновые кислоты",
+      "en": "Carboxylic acids",
+      "tj": "Кислотаҳои карбон"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Карбоновые кислоты** содержат группу **–COOH**. Пример — уксусная кислота $CH_3COOH$, придающая кислый вкус уксусу.",
+          "en": "**Carboxylic acids** contain the **–COOH** group. An example is acetic acid $CH_3COOH$, which gives vinegar its sour taste.",
+          "tj": "**Кислотаҳои карбон** гурӯҳи **–COOH** доранд. Мисол — кислотаи сирко $CH_3COOH$, ки ба сирко таъми турш медиҳад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какая кислота содержится в уксусе?",
+          "en": "Which acid is found in vinegar?",
+          "tj": "Дар сирко кадом кислота мавҷуд аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Уксусная кислота $CH_3COOH$.",
+              "en": "Acetic acid $CH_3COOH$.",
+              "tj": "Кислотаи сирко $CH_3COOH$."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

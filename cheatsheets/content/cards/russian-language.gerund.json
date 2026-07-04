@@ -1,0 +1,47 @@
+[
+  {
+    "id": "russian-language.gerund.basics",
+    "topicId": "russian-language.gerund",
+    "title": {
+      "ru": "Деепричастие",
+      "en": "The gerund",
+      "tj": "Феъли ҳол"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Деепричастие** — особая форма глагола с признаками наречия. Оно обозначает добавочное действие и отвечает на вопросы «что делая? что сделав?»: читая, прочитав.",
+          "en": "A **gerund (деепричастие)** is a special verb form with features of an adverb. It shows an additional action and answers «что делая? что сделав?»: читая, прочитав.",
+          "tj": "**Феъли ҳол (деепричастие)** шакли махсуси феъл бо аломатҳои зарф аст. Амали иловагиро мефаҳмонад ва ба «что делая? что сделав?» ҷавоб медиҳад: читая, прочитав."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Деепричастие **не изменяется**.",
+          "en": "A gerund **does not change** its form.",
+          "tj": "Феъли ҳол **тағйир намеёбад**."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Чем является слово «читая»?",
+          "en": "What is the word «читая» (while reading)?",
+          "tj": "«Читая» чӣ аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Деепричастие.",
+              "en": "A gerund.",
+              "tj": "Феъли ҳол (деепричастие)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-literature.nosir-khusrav.basics",
+    "topicId": "tajik-literature.nosir-khusrav",
+    "title": {
+      "ru": "Носир Хусрав",
+      "en": "Nosir Khusrav",
+      "tj": "Носири Хусрав"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Носир Хусрав** (1004–1088) — поэт, философ и путешественник. Написал прозаическую книгу **«Сафарнаме» («Книга путешествий»)** и философские касыды о знании, разуме и нравственности.",
+          "en": "**Nosir Khusrav** (1004–1088) was a poet, philosopher and traveller. He wrote the prose book **Safarnoma ('Book of Travels')** and philosophical qasidas about knowledge, reason and morality.",
+          "tj": "**Носири Хусрав** (1004–1088) — шоир, файласуф ва сайёҳ. Китоби насрии **«Сафарнома»** ва қасидаҳои фалсафӣ дар бораи дониш, ақл ва ахлоқ навиштааст."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какую книгу о путешествиях написал Носир Хусрав?",
+          "en": "Which travel book did Nosir Khusrav write?",
+          "tj": "Носири Хусрав кадом китоби сафариро навиштааст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "«Сафарнаме».",
+              "en": "Safarnoma.",
+              "tj": "«Сафарнома»."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

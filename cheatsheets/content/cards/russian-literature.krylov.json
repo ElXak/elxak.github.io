@@ -1,0 +1,47 @@
+[
+  {
+    "id": "russian-literature.krylov.basics",
+    "topicId": "russian-literature.krylov",
+    "title": {
+      "ru": "Крылов и басни",
+      "en": "Krylov and the fable",
+      "tj": "Крилов ва масал"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Иван Андреевич Крылов** (1769–1844) — великий русский **баснописец**.",
+          "en": "**Ivan Krylov** (1769–1844) was a great Russian **fabulist**.",
+          "tj": "**Иван Крилов** (1769–1844) — масалнависи бузурги рус."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Басня** — короткий иносказательный рассказ (часто о животных) с **моралью** в конце. Известные басни: «Ворона и Лисица», «Стрекоза и Муравей».",
+          "en": "A **fable** is a short allegorical story (often about animals) with a **moral** at the end. Famous fables: 'The Crow and the Fox', 'The Dragonfly and the Ant'.",
+          "tj": "**Масал** ҳикояи кӯтоҳи рамзӣ (аксар дар бораи ҳайвонот) бо **мораль** дар охир аст. Масалҳои машҳур: «Зоғ ва Рӯбоҳ», «Сӯзанак ва Мӯрча»."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Что обычно стоит в конце басни?",
+          "en": "What usually comes at the end of a fable?",
+          "tj": "Дар охири масал одатан чӣ меояд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Мораль (поучение).",
+              "en": "A moral (a lesson).",
+              "tj": "Мораль (панд)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

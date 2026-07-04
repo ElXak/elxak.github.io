@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ethics.honesty.basics",
+    "topicId": "ethics.honesty",
+    "title": {
+      "ru": "Честность и правдивость",
+      "en": "Honesty",
+      "tj": "Ростӣ ва ростгӯӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Честность** — качество человека, который говорит правду и не обманывает других. Она строит доверие между людьми.",
+          "en": "**Honesty** is the quality of telling the truth and not deceiving others. It builds trust between people.",
+          "tj": "**Ростӣ** — сифати инсоне, ки ҳақиқатро мегӯяд ва дигаронро фиреб намедиҳад. Он боварро байни одамон месозад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Почему важно быть честным?",
+          "en": "Why is it important to be honest?",
+          "tj": "Чаро бо ростӣ муносибат кардан муҳим аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Это строит доверие между людьми.",
+              "en": "It builds trust between people.",
+              "tj": "Он боварро байни одамон месозад."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

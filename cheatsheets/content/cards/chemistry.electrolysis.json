@@ -1,0 +1,48 @@
+[
+  {
+    "id": "chemistry.electrolysis.basics",
+    "topicId": "chemistry.electrolysis",
+    "title": {
+      "ru": "Электролиз",
+      "en": "Electrolysis",
+      "tj": "Электролиз"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Электролиз** — разложение вещества под действием электрического тока. На **катоде** идёт восстановление, на **аноде** — окисление.",
+          "en": "**Electrolysis** is the decomposition of a substance by an electric current. **Reduction** happens at the **cathode**, **oxidation** at the **anode**.",
+          "tj": "**Электролиз** — таҷзияи модда таҳти таъсири ҷараёни электр. Дар **катод** барқароршавӣ, дар **анод** оксидшавӣ ба амал меояд."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "2H_2O \\rightarrow 2H_2\\uparrow + O_2\\uparrow",
+        "caption": {
+          "ru": "электролиз воды",
+          "en": "electrolysis of water",
+          "tj": "электролизи об"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какие газы выделяются при электролизе воды?",
+          "en": "Which gases are released in the electrolysis of water?",
+          "tj": "Ҳангоми электролизи об кадом газҳо ҷудо мешаванд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Водород и кислород.",
+              "en": "Hydrogen and oxygen.",
+              "tj": "Гидроген ва оксиген."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

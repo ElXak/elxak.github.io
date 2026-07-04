@@ -1,0 +1,39 @@
+[
+  {
+    "id": "russian-language.text.basics",
+    "topicId": "russian-language.text",
+    "title": {
+      "ru": "Текст и его признаки",
+      "en": "Text and its features",
+      "tj": "Матн ва аломатҳои он"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Текст** — несколько предложений, связанных темой и смыслом. Его признаки: единая **тема**, основная **мысль (идея)**, **связность** и завершённость.",
+          "en": "A **text** is several sentences linked by theme and meaning. Its features: a single **theme**, a main **idea**, **coherence** and completeness.",
+          "tj": "**Матн** якчанд ҷумлаи бо мавзӯъ ва маъно алоқаманд аст. Аломатҳои он: **мавзӯи** ягона, **ғояи** асосӣ, **алоқамандӣ** ва мукаммалӣ."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Что связывает предложения в текст?",
+          "en": "What links sentences into a text?",
+          "tj": "Чӣ ҷумлаҳоро ба матн мепайвандад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Общая тема и смысл.",
+              "en": "A common theme and meaning.",
+              "tj": "Мавзӯъ ва маънои умумӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

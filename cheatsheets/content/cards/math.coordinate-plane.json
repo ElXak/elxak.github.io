@@ -1,0 +1,47 @@
+[
+  {
+    "id": "math.coordinate-plane.basics",
+    "topicId": "math.coordinate-plane",
+    "title": {
+      "ru": "Координатная плоскость",
+      "en": "Coordinate plane",
+      "tj": "Ҳамвории координатӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Координатная плоскость** образована осями $Ox$ и $Oy$, пересекающимися в начале $O$. Точку задают парой $(x; y)$.",
+          "en": "The **coordinate plane** is formed by axes $Ox$ and $Oy$ meeting at the origin $O$. A point is given by a pair $(x; y)$.",
+          "tj": "**Ҳамвории координатӣ** аз меҳварҳои $Ox$ ва $Oy$ ташкил меёбад, ки дар ибтидои $O$ мебуранд. Нуқта бо ҷуфти $(x; y)$ муайян мешавад."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Первое число — сдвиг вправо по $Ox$, второе — вверх по $Oy$.",
+          "en": "The first number is the shift right along $Ox$, the second is up along $Oy$.",
+          "tj": "Адади якум — ҳаракат ба рост аз рӯи $Ox$, дуюм — ба боло аз рӯи $Oy$."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Где находится точка $(3; 2)$?",
+          "en": "Where is the point $(3; 2)$?",
+          "tj": "Нуқтаи $(3; 2)$ дар куҷост?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "На 3 вправо и 2 вверх от начала координат.",
+              "en": "3 to the right and 2 up from the origin.",
+              "tj": "3 ба рост ва 2 ба боло аз ибтидои координатаҳо."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

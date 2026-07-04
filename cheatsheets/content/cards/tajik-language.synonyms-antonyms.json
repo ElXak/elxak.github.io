@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-language.synonyms-antonyms.basics",
+    "topicId": "tajik-language.synonyms-antonyms",
+    "title": {
+      "ru": "Синонимы и антонимы",
+      "en": "Synonyms and antonyms",
+      "tj": "Муродифот ва мутазод"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Синонимы (муродифот)** — слова, близкие по значению: калон ≈ бузург (большой). **Антонимы (мутазод)** — слова с противоположным значением: калон ↔ хурд (большой ↔ маленький).",
+          "en": "**Synonyms (муродифот)** are words close in meaning: калон ≈ бузург (big). **Antonyms (мутазод)** have opposite meanings: калон ↔ хурд (big ↔ small).",
+          "tj": "**Муродифот** калимаҳои наздикмаъноянд: калон ≈ бузург. **Мутазод** калимаҳои зидмаъноянд: калон ↔ хурд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Назовите антоним слова «рӯз» (день).",
+          "en": "Give an antonym of «рӯз» (day).",
+          "tj": "Ба калимаи «рӯз» мутазод ёбед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "«шаб» (ночь).",
+              "en": "«шаб» (night).",
+              "tj": "«шаб»."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

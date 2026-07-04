@@ -1,0 +1,51 @@
+[
+  {
+    "id": "geometry.isosceles.basics",
+    "topicId": "geometry.isosceles",
+    "title": {
+      "ru": "Равнобедренный треугольник",
+      "en": "Isosceles triangle",
+      "tj": "Секунҷаи баробарпаҳлӯ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Равнобедренный треугольник** имеет две равные боковые стороны. **Углы при основании равны.**",
+          "en": "An **isosceles triangle** has two equal lateral sides. **Its base angles are equal.**",
+          "tj": "**Секунҷаи баробарпаҳлӯ** ду паҳлӯи баробар дорад. **Кунҷҳои назди асос баробаранд.**"
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Медиана, проведённая к основанию, является одновременно высотой и биссектрисой.",
+          "en": "The median drawn to the base is also the altitude and the bisector.",
+          "tj": "Медианаи ба асос кашидашуда ҳамзамон баландӣ ва биссектриса аст."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Угол при вершине равен 40°. Найдите углы при основании.",
+          "en": "The apex angle is 40°. Find the base angles.",
+          "tj": "Кунҷи сар 40° аст. Кунҷҳои назди асосро ёбед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Сумма углов 180°, при основании равны.",
+              "en": "The angles sum to 180°; base angles are equal.",
+              "tj": "Ҷамъи кунҷҳо 180°, назди асос баробаранд."
+            }
+          },
+          {
+            "type": "formula",
+            "latex": "\\dfrac{180^\\circ - 40^\\circ}{2} = 70^\\circ"
+          }
+        ]
+      }
+    ]
+  }
+]

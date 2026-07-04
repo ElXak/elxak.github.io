@@ -1,0 +1,80 @@
+[
+  {
+    "id": "english-language.future-simple.basics",
+    "topicId": "english-language.future-simple",
+    "title": {
+      "ru": "Future Simple",
+      "en": "Future Simple",
+      "tj": "Future Simple"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Future Simple** описывает будущие действия, решения и предположения. Образуется с помощью **will + инфинитив**.",
+          "en": "**Future Simple** describes future actions, decisions and predictions. Formed with **will + infinitive**.",
+          "tj": "**Future Simple** амалҳои оянда, қарорҳо ва пешгӯиҳоро ифода мекунад. Бо **will + инфинитив** сохта мешавад."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Форма",
+            "en": "Form",
+            "tj": "Шакл"
+          },
+          {
+            "ru": "Пример",
+            "en": "Example",
+            "tj": "Мисол"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Утвердительная",
+              "en": "Affirmative",
+              "tj": "Тасдиқӣ"
+            },
+            "I will help you."
+          ],
+          [
+            {
+              "ru": "Отрицательная",
+              "en": "Negative",
+              "tj": "Манфӣ"
+            },
+            "He won't come. (will not)"
+          ],
+          [
+            {
+              "ru": "Вопрос",
+              "en": "Question",
+              "tj": "Савол"
+            },
+            "Will she call?"
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как сказать «Завтра пойдёт дождь»?",
+          "en": "How do you say «Завтра пойдёт дождь»?",
+          "tj": "«Фардо борон меборад»-ро ба англисӣ чӣ гуна мегӯянд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "It will rain tomorrow.",
+              "en": "It will rain tomorrow.",
+              "tj": "It will rain tomorrow."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

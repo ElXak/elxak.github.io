@@ -1,0 +1,27 @@
+[
+  {
+    "id": "tajik-literature.rudaki.founder",
+    "topicId": "tajik-literature.rudaki",
+    "title": {
+      "ru": "Основоположник поэзии",
+      "en": "Founder of poetry",
+      "tj": "Асосгузори шеър"
+    },
+    "tags": [
+      "рудаки",
+      "поэзия",
+      "rudaki",
+      "poetry"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Абуабдулло Рудаки** (около 858–941) — основоположник таджикско-персидской классической поэзии. Его называют «Одамушшуаро» — «Адам поэтов».",
+          "en": "**Abu Abdullah Rudaki** (c. 858–941) is the founder of classical Tajik-Persian poetry, called the 'Adam of poets'.",
+          "tj": "**Абӯабдуллоҳи Рӯдакӣ** (тахминан 858–941) — асосгузори шеъри классикии тоҷику форс. Ӯро «Одамушшуаро» — «Одами шоирон» меноманд."
+        }
+      }
+    ]
+  }
+]

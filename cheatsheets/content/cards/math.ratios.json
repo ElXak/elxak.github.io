@@ -1,0 +1,43 @@
+[
+  {
+    "id": "math.ratios.basics",
+    "topicId": "math.ratios",
+    "title": {
+      "ru": "Отношения и пропорции",
+      "en": "Ratios and proportions",
+      "tj": "Таносуб ва пропорсия"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Отношение** $a:b$ показывает, во сколько раз одно число больше другого. **Пропорция** — равенство двух отношений $\\dfrac{a}{b} = \\dfrac{c}{d}$.",
+          "en": "A **ratio** $a:b$ shows how many times one number is bigger than another. A **proportion** is an equality of two ratios $\\dfrac{a}{b} = \\dfrac{c}{d}$.",
+          "tj": "**Таносуб** $a:b$ нишон медиҳад, ки як адад чанд маротиба аз дигар калонтар аст. **Пропорсия** — баробарии ду таносуб $\\dfrac{a}{b} = \\dfrac{c}{d}$."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "В пропорции произведения крест-накрест равны: $ad = bc$.",
+          "en": "In a proportion the cross products are equal: $ad = bc$.",
+          "tj": "Дар пропорсия ҳосилҳои салибӣ баробаранд: $ad = bc$."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Решите $\\dfrac{x}{4} = \\dfrac{3}{2}$.",
+          "en": "Solve $\\dfrac{x}{4} = \\dfrac{3}{2}$.",
+          "tj": "Ҳал кунед $\\dfrac{x}{4} = \\dfrac{3}{2}$."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "x = \\dfrac{4 \\times 3}{2} = 6"
+          }
+        ]
+      }
+    ]
+  }
+]

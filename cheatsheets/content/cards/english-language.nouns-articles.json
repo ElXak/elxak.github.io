@@ -1,0 +1,101 @@
+[
+  {
+    "id": "english-language.nouns-articles.basics",
+    "topicId": "english-language.nouns-articles",
+    "title": {
+      "ru": "Существительные и артикли",
+      "en": "Nouns and articles",
+      "tj": "Исмҳо ва артиклҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Существительное (noun)** — название предмета или человека. В английском перед существительными ставится **артикль**.",
+          "en": "A **noun** is the name of a thing or person. In English a **article** is placed before nouns.",
+          "tj": "**Исм (noun)** номи ашё ё одам аст. Дар англисӣ пеш аз исм **артикл** гузошта мешавад."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Артикль",
+            "en": "Article",
+            "tj": "Артикл"
+          },
+          {
+            "ru": "Когда",
+            "en": "When",
+            "tj": "Кай"
+          },
+          {
+            "ru": "Пример",
+            "en": "Example",
+            "tj": "Мисол"
+          }
+        ],
+        "rows": [
+          [
+            "a",
+            {
+              "ru": "перед согласным",
+              "en": "before a consonant",
+              "tj": "пеш аз ҳамсадо"
+            },
+            "a cat, a book"
+          ],
+          [
+            "an",
+            {
+              "ru": "перед гласным",
+              "en": "before a vowel",
+              "tj": "пеш аз садонок"
+            },
+            "an apple, an egg"
+          ],
+          [
+            "the",
+            {
+              "ru": "конкретный предмет",
+              "en": "specific thing",
+              "tj": "ашёи мушаххас"
+            },
+            "the sun, the cat"
+          ],
+          [
+            {
+              "ru": "—",
+              "en": "—",
+              "tj": "—"
+            },
+            {
+              "ru": "множественное число",
+              "en": "plural",
+              "tj": "ҷамъ"
+            },
+            "cats, books"
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какой артикль перед «apple»?",
+          "en": "Which article goes before «apple»?",
+          "tj": "Пеш аз «apple» кадом артикл мегузоранд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "«an» — перед гласным (a).",
+              "en": "«an» — it starts with a vowel (a).",
+              "tj": "«an» — пеш аз садонок (a)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

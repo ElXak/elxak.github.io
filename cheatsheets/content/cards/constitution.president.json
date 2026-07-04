@@ -1,0 +1,47 @@
+[
+  {
+    "id": "constitution.president.basics",
+    "topicId": "constitution.president",
+    "title": {
+      "ru": "Президент",
+      "en": "The President",
+      "tj": "Президент"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Президент** — глава государства и верховный главнокомандующий. Избирается на **7 лет** всенародным голосованием.",
+          "en": "The **President** is the head of state and supreme commander-in-chief. Elected for **7 years** by popular vote.",
+          "tj": "**Президент** — сардори давлат ва фармондеҳи олӣ. Бо овоздиҳии умумихалқӣ ба муддати **7 сол** интихоб мешавад."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Полномочия: назначает Премьер-министра, подписывает законы, руководит внешней политикой и обороной страны.",
+          "en": "Powers: appoints the Prime Minister, signs laws, directs foreign policy and national defence.",
+          "tj": "Ваколатҳо: Сарвазирро таъин мекунад, қонунҳоро имзо мекунад, сиёсати хориҷӣ ва мудофиаи кишварро роҳбарӣ мекунад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "На какой срок избирается Президент Таджикистана?",
+          "en": "For how long is the President of Tajikistan elected?",
+          "tj": "Президенти Тоҷикистон ба муддати чанд сол интихоб мешавад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "На 7 лет.",
+              "en": "For 7 years.",
+              "tj": "Ба муддати 7 сол."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

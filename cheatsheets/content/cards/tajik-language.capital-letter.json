@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-language.capital-letter.basics",
+    "topicId": "tajik-language.capital-letter",
+    "title": {
+      "ru": "Заглавная буква",
+      "en": "Capital letter",
+      "tj": "Ҳарфи калон"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "С **заглавной буквы** пишут первое слово предложения и **имена собственные**: имена людей, названия городов, рек, стран.",
+          "en": "A **capital letter** begins the first word of a sentence and all **proper names**: people, cities, rivers and countries.",
+          "tj": "Бо **ҳарфи калон** калимаи аввали ҷумла ва **номҳои хос** навишта мешаванд: номи одамон, шаҳрҳо, дарёҳо ва кишварҳо."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как пишется название города: «душанбе» или «Душанбе»?",
+          "en": "Which is correct: «душанбе» or «Душанбе»?",
+          "tj": "Номи шаҳр чӣ тавр навишта мешавад: «душанбе» ё «Душанбе»?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "«Душанбе» — с заглавной буквы, это название города.",
+              "en": "«Душанбе» — with a capital letter, it is a city name.",
+              "tj": "«Душанбе» — бо ҳарфи калон, ин номи шаҳр аст."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

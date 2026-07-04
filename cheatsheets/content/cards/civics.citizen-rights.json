@@ -1,0 +1,39 @@
+[
+  {
+    "id": "civics.citizen-rights.basics",
+    "topicId": "civics.citizen-rights",
+    "title": {
+      "ru": "Права и обязанности граждан",
+      "en": "Rights and duties of citizens",
+      "tj": "Ҳуқуқу ӯҳдадориҳои шаҳрвандон"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Гражданин** имеет как **права** (на образование, труд, участие в выборах), так и **обязанности** (соблюдать законы, платить налоги, защищать Родину).",
+          "en": "A **citizen** has both **rights** (to education, work, participation in elections) and **duties** (to obey the law, pay taxes, defend the homeland).",
+          "tj": "**Шаҳрванд** ҳам **ҳуқуқ** (ба таҳсил, меҳнат, иштирок дар интихобот) ва ҳам **ӯҳдадорӣ** (риояи қонун, пардохти андоз, ҳифзи Ватан) дорад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Назовите одну обязанность гражданина.",
+          "en": "Name one duty of a citizen.",
+          "tj": "Як ӯҳдадории шаҳрвандро номбар кунед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Соблюдать законы государства.",
+              "en": "To obey the laws of the state.",
+              "tj": "Риояи қонунҳои давлат."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

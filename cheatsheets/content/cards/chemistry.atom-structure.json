@@ -1,0 +1,100 @@
+[
+  {
+    "id": "chemistry.atom-structure.basics",
+    "topicId": "chemistry.atom-structure",
+    "title": {
+      "ru": "Строение атома",
+      "en": "Atomic structure",
+      "tj": "Сохти атом"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Атом** состоит из **ядра** (протоны и нейтроны) и **электронов** вокруг него. Номер элемента равен числу протонов.",
+          "en": "An **atom** has a **nucleus** (protons and neutrons) with **electrons** around it. The element's number equals the number of protons.",
+          "tj": "**Атом** аз **ядро** (протонҳо ва нейтронҳо) ва **электронҳо**-и атрофи он иборат аст. Рақами элемент ба шумораи протонҳо баробар аст."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Частица",
+            "en": "Particle",
+            "tj": "Зарра"
+          },
+          {
+            "ru": "Заряд",
+            "en": "Charge",
+            "tj": "Заряд"
+          },
+          {
+            "ru": "Где",
+            "en": "Location",
+            "tj": "Ҷой"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Протон",
+              "en": "Proton",
+              "tj": "Протон"
+            },
+            "$+1$",
+            {
+              "ru": "в ядре",
+              "en": "in nucleus",
+              "tj": "дар ядро"
+            }
+          ],
+          [
+            {
+              "ru": "Нейтрон",
+              "en": "Neutron",
+              "tj": "Нейтрон"
+            },
+            "$0$",
+            {
+              "ru": "в ядре",
+              "en": "in nucleus",
+              "tj": "дар ядро"
+            }
+          ],
+          [
+            {
+              "ru": "Электрон",
+              "en": "Electron",
+              "tj": "Электрон"
+            },
+            "$-1$",
+            {
+              "ru": "вокруг ядра",
+              "en": "around nucleus",
+              "tj": "атрофи ядро"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "В атоме 6 протонов. Какой это элемент?",
+          "en": "An atom has 6 protons. Which element is it?",
+          "tj": "Дар атом 6 протон. Ин кадом элемент аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Углерод (C), номер 6.",
+              "en": "Carbon (C), number 6.",
+              "tj": "Карбон (C), рақами 6."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

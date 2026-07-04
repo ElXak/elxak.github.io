@@ -1,0 +1,39 @@
+[
+  {
+    "id": "fine-arts.world-art.basics",
+    "topicId": "fine-arts.world-art",
+    "title": {
+      "ru": "Шедевры мирового искусства",
+      "en": "Masterpieces of world art",
+      "tj": "Шоҳкориҳои санъати ҷаҳонӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "В истории мирового искусства есть произведения, признанные **шедеврами** — образцами высочайшего мастерства. Среди них: скульптура «Давид» Микеланджело, «Мона Лиза» Леонардо да Винчи, Сикстинская капелла.",
+          "en": "In the history of world art there are works recognised as **masterpieces** — examples of the highest skill. Among them: Michelangelo's 'David', Leonardo da Vinci's 'Mona Lisa' and the Sistine Chapel.",
+          "tj": "Дар таърихи санъати ҷаҳон асарҳое ҳастанд, ки **шоҳкорӣ** — намунаҳои баландтарини маҳорат — эътироф шудаанд. Аз он ҷумла: «Довуд»-и Микеланджело, «Мона Лиза»-и Леонардо да Винчи, Капелаи Сикстина."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Кто написал «Мону Лизу»?",
+          "en": "Who painted the 'Mona Lisa'?",
+          "tj": "«Мона Лиза»-ро кӣ кашидааст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Леонардо да Винчи.",
+              "en": "Leonardo da Vinci.",
+              "tj": "Леонардо да Винчи."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

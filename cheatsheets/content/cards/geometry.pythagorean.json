@@ -1,0 +1,44 @@
+[
+  {
+    "id": "geometry.pythagorean.basics",
+    "topicId": "geometry.pythagorean",
+    "title": {
+      "ru": "Теорема Пифагора",
+      "en": "Pythagorean theorem",
+      "tj": "Теоремаи Пифагор"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "В **прямоугольном треугольнике** квадрат гипотенузы равен сумме квадратов катетов.",
+          "en": "In a **right triangle**, the square of the hypotenuse equals the sum of the squares of the legs.",
+          "tj": "Дар **секунҷаи росткунҷа** квадрати гипотенуза ба ҷамъи квадратҳои катетҳо баробар аст."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "c^2 = a^2 + b^2",
+        "caption": {
+          "ru": "c — гипотенуза, a, b — катеты",
+          "en": "c — hypotenuse, a, b — legs",
+          "tj": "c — гипотенуза, a, b — катетҳо"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Катеты равны 3 и 4. Найдите гипотенузу.",
+          "en": "The legs are 3 and 4. Find the hypotenuse.",
+          "tj": "Катетҳо 3 ва 4. Гипотенузаро ёбед."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "c = \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "math.percentages.basics",
+    "topicId": "math.percentages",
+    "title": {
+      "ru": "Проценты",
+      "en": "Percentages",
+      "tj": "Фоизҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Процент** — это сотая часть числа: $1\\% = \\dfrac{1}{100}$.",
+          "en": "A **percent** is one hundredth of a number: $1\\% = \\dfrac{1}{100}$.",
+          "tj": "**Фоиз** — садяки адад аст: $1\\% = \\dfrac{1}{100}$."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Чтобы найти процент от числа, умножают число на этот процент.",
+          "en": "To find a percent of a number, multiply the number by that percent.",
+          "tj": "Барои ёфтани фоизи адад, ададро ба ҳамон фоиз зарб мекунанд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Найдите 20% от 50.",
+          "en": "Find 20% of 50.",
+          "tj": "20%-и 50-ро ёбед."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "50 \\times \\dfrac{20}{100} = 10"
+          }
+        ]
+      }
+    ]
+  }
+]

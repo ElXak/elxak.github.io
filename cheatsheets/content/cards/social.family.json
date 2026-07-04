@@ -1,0 +1,39 @@
+[
+  {
+    "id": "social.family.basics",
+    "topicId": "social.family",
+    "title": {
+      "ru": "Семья",
+      "en": "The family",
+      "tj": "Оила"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Семья** — малая социальная группа, основанная на браке или родстве. Главные функции: воспитание детей, эмоциональная поддержка и передача культуры.",
+          "en": "The **family** is a small social group based on marriage or kinship. Key functions: raising children, emotional support and transmitting culture.",
+          "tj": "**Оила** — гурӯҳи хурди иҷтимоӣ, ки ба издивоҷ ё хешовандӣ асос ёфтааст. Вазифаҳои асосӣ: тарбияи фарзандон, дастгирии эҳсосотӣ ва интиқоли фарҳанг."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Назовите главную функцию семьи.",
+          "en": "Name the main function of the family.",
+          "tj": "Вазифаи асосии оиларо номбар кунед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Воспитание детей.",
+              "en": "Raising children.",
+              "tj": "Тарбияи фарзандон."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

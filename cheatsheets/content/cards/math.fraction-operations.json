@@ -1,0 +1,51 @@
+[
+  {
+    "id": "math.fraction-operations.basics",
+    "topicId": "math.fraction-operations",
+    "title": {
+      "ru": "Действия с дробями",
+      "en": "Operations with fractions",
+      "tj": "Амалҳо бо касрҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Чтобы **сложить или вычесть** дроби, их приводят к общему знаменателю.",
+          "en": "To **add or subtract** fractions, bring them to a common denominator.",
+          "tj": "Барои **ҷамъ ё тарҳи** касрҳо, онҳоро ба махраҷи умумӣ меоранд."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "При **умножении** перемножают числители и знаменатели; при **делении** умножают на перевёрнутую дробь.",
+          "en": "For **multiplication**, multiply numerators and denominators; for **division**, multiply by the reciprocal.",
+          "tj": "Ҳангоми **зарб** суратҳо ва махраҷҳоро зарб мекунанд; ҳангоми **тақсим** ба касри чаппагардида зарб мекунанд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Вычислите $\\dfrac{1}{2} + \\dfrac{1}{3}$.",
+          "en": "Evaluate $\\dfrac{1}{2} + \\dfrac{1}{3}$.",
+          "tj": "Ҳисоб кунед $\\dfrac{1}{2} + \\dfrac{1}{3}$."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Общий знаменатель — 6.",
+              "en": "The common denominator is 6.",
+              "tj": "Махраҷи умумӣ — 6."
+            }
+          },
+          {
+            "type": "formula",
+            "latex": "\\dfrac{1}{2} + \\dfrac{1}{3} = \\dfrac{3}{6} + \\dfrac{2}{6} = \\dfrac{5}{6}"
+          }
+        ]
+      }
+    ]
+  }
+]

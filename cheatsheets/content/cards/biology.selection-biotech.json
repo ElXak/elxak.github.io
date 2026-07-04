@@ -1,0 +1,39 @@
+[
+  {
+    "id": "biology.selection-biotech.basics",
+    "topicId": "biology.selection-biotech",
+    "title": {
+      "ru": "Селекция и биотехнология",
+      "en": "Selection and biotechnology",
+      "tj": "Селексия ва биотехнология"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Селекция** выводит новые сорта растений и породы животных с нужными признаками (искусственный отбор). **Биотехнология** использует живые организмы для получения продуктов (лекарства, ферменты).",
+          "en": "**Selection** breeds new plant varieties and animal breeds with desired traits (artificial selection). **Biotechnology** uses living organisms to make products (medicines, enzymes).",
+          "tj": "**Селексия** навъҳои нави растаниҳо ва зотҳои ҳайвонотро бо аломатҳои зарурӣ ба вуҷуд меорад (интихоби сунъӣ). **Биотехнология** организмҳои зиндаро барои гирифтани маҳсулот (доруҳо, ферментҳо) истифода мебарад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Выведение сорта пшеницы с высоким урожаем — это пример чего?",
+          "en": "Breeding a high-yield wheat variety is an example of what?",
+          "tj": "Ба вуҷуд овардани навъи гандуми ҳосилаш баланд намунаи чист?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Селекции.",
+              "en": "Selection.",
+              "tj": "Селексия."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "geography.maps.scale",
+    "topicId": "geography.maps",
+    "title": {
+      "ru": "Масштаб",
+      "en": "Scale",
+      "tj": "Миқёс"
+    },
+    "tags": [
+      "карта",
+      "масштаб",
+      "scale"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Масштаб** показывает, во сколько раз расстояние на карте меньше реального.",
+          "en": "**Scale** shows how many times the map distance is smaller than the real one.",
+          "tj": "**Миқёс** нишон медиҳад, ки масофа дар харита чанд маротиба аз воқеӣ хурдтар аст."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "M = \\dfrac{l_{map}}{l_{real}}",
+        "caption": {
+          "ru": "Масштаб",
+          "en": "Scale",
+          "tj": "Миқёс"
+        }
+      }
+    ]
+  }
+]

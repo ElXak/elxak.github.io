@@ -1,0 +1,47 @@
+[
+  {
+    "id": "russian-language.vocabulary.basics",
+    "topicId": "russian-language.vocabulary",
+    "title": {
+      "ru": "Лексика",
+      "en": "Vocabulary",
+      "tj": "Луғат"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Лексика** — это все слова языка. Слова бывают **однозначные и многозначные**.",
+          "en": "**Vocabulary** is all the words of a language. Words can be **single-meaning or multi-meaning**.",
+          "tj": "**Лексика (луғат)** ҳамаи калимаҳои забон аст. Калимаҳо **якмаъно ва бисёрмаъно** мешаванд."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Близкие по смыслу слова — **синонимы**, противоположные — **антонимы**, одинаковые по звучанию — **омонимы**.",
+          "en": "Words close in meaning are **synonyms**, opposite ones are **antonyms**, and identical-sounding ones are **homonyms**.",
+          "tj": "Калимаҳои наздикмаъно — **синонимҳо (муродиф)**, зидмаъно — **антонимҳо (мутазод)**, ҳамовоз — **омонимҳо**."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как называются слова, близкие по значению?",
+          "en": "What are words close in meaning called?",
+          "tj": "Калимаҳои наздикмаъно чӣ ном доранд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Синонимы.",
+              "en": "Synonyms.",
+              "tj": "Синонимҳо (муродиф)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

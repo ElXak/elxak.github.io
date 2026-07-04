@@ -1,0 +1,88 @@
+[
+  {
+    "id": "english-language.present-continuous.basics",
+    "topicId": "english-language.present-continuous",
+    "title": {
+      "ru": "Present Continuous",
+      "en": "Present Continuous",
+      "tj": "Present Continuous"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Present Continuous** описывает действие, происходящее **прямо сейчас**. Образуется: **am/is/are + глагол-ing**.",
+          "en": "**Present Continuous** describes an action happening **right now**. Formed with **am/is/are + verb-ing**.",
+          "tj": "**Present Continuous** амалеро, ки **айни ҳол** дар ҷараён аст, ифода мекунад. Сохт: **am/is/are + феъл-ing**."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Форма",
+            "en": "Form",
+            "tj": "Шакл"
+          },
+          {
+            "ru": "Пример",
+            "en": "Example",
+            "tj": "Мисол"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Утвердит.",
+              "en": "Affirmative",
+              "tj": "Тасдиқӣ"
+            },
+            "She is reading a book."
+          ],
+          [
+            {
+              "ru": "Отрицат.",
+              "en": "Negative",
+              "tj": "Манфӣ"
+            },
+            "They are not watching TV."
+          ],
+          [
+            {
+              "ru": "Вопрос",
+              "en": "Question",
+              "tj": "Савол"
+            },
+            "Are you sleeping?"
+          ]
+        ]
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Маркеры: **now, right now, at the moment, look!, listen!**",
+          "en": "Time markers: **now, right now, at the moment, look!, listen!**",
+          "tj": "Нишонгарҳо: **now, right now, at the moment, look!, listen!**"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как сказать «Он сейчас играет в футбол»?",
+          "en": "How do you say «Он сейчас играет в футбол»?",
+          "tj": "«Вай ҳозир футбол мебозад»-ро ба англисӣ чӣ гуна мегӯянд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "He is playing football now.",
+              "en": "He is playing football now.",
+              "tj": "He is playing football now."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

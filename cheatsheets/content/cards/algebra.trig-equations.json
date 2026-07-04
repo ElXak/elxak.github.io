@@ -1,0 +1,69 @@
+[
+  {
+    "id": "algebra.trig-equations.basics",
+    "topicId": "algebra.trig-equations",
+    "title": {
+      "ru": "Тригонометрические уравнения",
+      "en": "Trigonometric equations",
+      "tj": "Муодилаҳои тригонометрӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Простейшие тригонометрические уравнения имеют бесконечно много решений, записываемых общей формулой ($n$ — целое).",
+          "en": "Basic trigonometric equations have infinitely many solutions given by a general formula ($n$ is an integer).",
+          "tj": "Муодилаҳои соддаи тригонометрӣ ҳалли бешумор доранд, ки бо формулаи умумӣ навишта мешаванд ($n$ — бутун)."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Уравнение",
+            "en": "Equation",
+            "tj": "Муодила"
+          },
+          {
+            "ru": "Решение",
+            "en": "Solution",
+            "tj": "Ҳал"
+          }
+        ],
+        "rows": [
+          [
+            "$\\sin x = a$",
+            "$x = (-1)^n \\arcsin a + \\pi n$"
+          ],
+          [
+            "$\\cos x = a$",
+            "$x = \\pm\\arccos a + 2\\pi n$"
+          ],
+          [
+            "$\\tan x = a$",
+            "$x = \\arctan a + \\pi n$"
+          ]
+        ],
+        "caption": {
+          "ru": "n — целое число",
+          "en": "n is an integer",
+          "tj": "n — адади бутун"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Решите $\\sin x = \\dfrac{1}{2}$.",
+          "en": "Solve $\\sin x = \\dfrac{1}{2}$.",
+          "tj": "Ҳал кунед $\\sin x = \\dfrac{1}{2}$."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "x = (-1)^n \\dfrac{\\pi}{6} + \\pi n"
+          }
+        ]
+      }
+    ]
+  }
+]

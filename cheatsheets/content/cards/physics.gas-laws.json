@@ -1,0 +1,80 @@
+[
+  {
+    "id": "physics.gas-laws.basics",
+    "topicId": "physics.gas-laws",
+    "title": {
+      "ru": "Газовые законы",
+      "en": "Gas laws",
+      "tj": "Қонунҳои газ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Для постоянной массы газа связь между давлением, объёмом и температурой задают газовые законы.",
+          "en": "For a fixed mass of gas, the gas laws relate pressure, volume and temperature.",
+          "tj": "Барои массаи доимии газ, алоқаи байни фишор, ҳаҷм ва ҳароратро қонунҳои газ муайян мекунанд."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Процесс",
+            "en": "Process",
+            "tj": "Раванд"
+          },
+          {
+            "ru": "Закон",
+            "en": "Law",
+            "tj": "Қонун"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Изотермический",
+              "en": "Isothermal",
+              "tj": "Изотермӣ"
+            },
+            "$pV = \\text{const}$"
+          ],
+          [
+            {
+              "ru": "Изобарный",
+              "en": "Isobaric",
+              "tj": "Изобарӣ"
+            },
+            "$\\dfrac{V}{T} = \\text{const}$"
+          ],
+          [
+            {
+              "ru": "Изохорный",
+              "en": "Isochoric",
+              "tj": "Изохорӣ"
+            },
+            "$\\dfrac{p}{T} = \\text{const}$"
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "$p_1 = 2$, $V_1 = 3$, $V_2 = 1$ (T = const). Найдите $p_2$.",
+          "en": "$p_1 = 2$, $V_1 = 3$, $V_2 = 1$ (T = const). Find $p_2$.",
+          "tj": "$p_1 = 2$, $V_1 = 3$, $V_2 = 1$ (T = const). $p_2$-ро ёбед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "$p_2 = \\dfrac{2 \\times 3}{1} = 6$.",
+              "en": "$p_2 = \\dfrac{2 \\times 3}{1} = 6$.",
+              "tj": "$p_2 = \\dfrac{2 \\times 3}{1} = 6$."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

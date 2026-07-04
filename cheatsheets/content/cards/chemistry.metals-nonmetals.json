@@ -1,0 +1,94 @@
+[
+  {
+    "id": "chemistry.metals-nonmetals.basics",
+    "topicId": "chemistry.metals-nonmetals",
+    "title": {
+      "ru": "Металлы и неметаллы: обзор",
+      "en": "Metals and nonmetals: overview",
+      "tj": "Металлҳо ва ғайриметаллҳо: шарҳ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Элементы делят на **металлы**, **неметаллы** и промежуточные **металлоиды**.",
+          "en": "Elements are divided into **metals**, **nonmetals** and intermediate **metalloids**.",
+          "tj": "Элементҳо ба **металлҳо**, **ғайриметаллҳо** ва **металлоидҳои** мобайнӣ ҷудо мешаванд."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Свойство",
+            "en": "Property",
+            "tj": "Хосият"
+          },
+          {
+            "ru": "Металлы",
+            "en": "Metals",
+            "tj": "Металлҳо"
+          },
+          {
+            "ru": "Неметаллы",
+            "en": "Nonmetals",
+            "tj": "Ғайриметаллҳо"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Электроны",
+              "en": "Electrons",
+              "tj": "Электронҳо"
+            },
+            {
+              "ru": "отдают",
+              "en": "give up",
+              "tj": "медиҳанд"
+            },
+            {
+              "ru": "принимают",
+              "en": "gain",
+              "tj": "қабул мекунанд"
+            }
+          ],
+          [
+            {
+              "ru": "Ток и тепло",
+              "en": "Heat & current",
+              "tj": "Ҷараён ва гармӣ"
+            },
+            {
+              "ru": "проводят",
+              "en": "conduct",
+              "tj": "мегузаронанд"
+            },
+            {
+              "ru": "не проводят",
+              "en": "do not conduct",
+              "tj": "намегузаронанд"
+            }
+          ],
+          [
+            {
+              "ru": "В таблице",
+              "en": "In the table",
+              "tj": "Дар ҷадвал"
+            },
+            {
+              "ru": "слева",
+              "en": "on the left",
+              "tj": "дар чап"
+            },
+            {
+              "ru": "справа",
+              "en": "on the right",
+              "tj": "дар рост"
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

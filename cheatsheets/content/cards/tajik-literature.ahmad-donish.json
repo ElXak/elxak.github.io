@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tajik-literature.ahmad-donish.basics",
+    "topicId": "tajik-literature.ahmad-donish",
+    "title": {
+      "ru": "Ахмад Дониш",
+      "en": "Ahmad Donish",
+      "tj": "Аҳмади Дониш"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Ахмад Дониш** (1827–1897) — просветитель, писатель и учёный из Бухары. Он критиковал отсталость эмирата и призывал к образованию, науке и реформам.",
+          "en": "**Ahmad Donish** (1827–1897) was an enlightener, writer and scholar from Bukhara. He criticised the backwardness of the emirate and called for education, science and reform.",
+          "tj": "**Аҳмади Дониш** (1827–1897) — маорифпарвар, нависанда ва олим аз Бухоро. Ӯ қафомондагии аморатро танқид кард ва ба маориф, илм ва ислоҳот даъват намуд."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Его известное произведение — **«Наводир-ул-вакоеъ» («Редкие события»)**. Он считается мостом к новой таджикской литературе.",
+          "en": "His well-known work is **Navodir-ul-vaqoe' ('Rare Events')**. He is seen as a bridge to modern Tajik literature.",
+          "tj": "Асари машҳураш — **«Наводир-ул-вақоеъ»**. Ӯ пуле ба сӯи адабиёти нави тоҷик ҳисобида мешавад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "К чему призывал Ахмад Дониш?",
+          "en": "What did Ahmad Donish call for?",
+          "tj": "Аҳмади Дониш ба чӣ даъват мекард?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "К образованию, науке и реформам.",
+              "en": "Education, science and reform.",
+              "tj": "Ба маориф, илм ва ислоҳот."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

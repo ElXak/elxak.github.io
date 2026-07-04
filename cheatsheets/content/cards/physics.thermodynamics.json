@@ -1,0 +1,48 @@
+[
+  {
+    "id": "physics.thermodynamics.basics",
+    "topicId": "physics.thermodynamics",
+    "title": {
+      "ru": "Термодинамика",
+      "en": "Thermodynamics",
+      "tj": "Термодинамика"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Внутренняя энергия** $U$ зависит от температуры. **Первый закон термодинамики**: переданная теплота идёт на изменение внутренней энергии и работу газа.",
+          "en": "**Internal energy** $U$ depends on temperature. **The first law of thermodynamics**: heat supplied changes the internal energy and does work.",
+          "tj": "**Энергияи дохилӣ** $U$ аз ҳарорат вобаста аст. **Қонуни якуми термодинамика**: гармии додашуда ба тағйири энергияи дохилӣ ва кор сарф мешавад."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "Q = \\Delta U + A",
+        "caption": {
+          "ru": "первый закон термодинамики",
+          "en": "first law of thermodynamics",
+          "tj": "қонуни якуми термодинамика"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Газу передали 100 Дж теплоты, он совершил работу 40 Дж. На сколько выросла внутренняя энергия?",
+          "en": "A gas gets 100 J of heat and does 40 J of work. How much did its internal energy rise?",
+          "tj": "Ба газ 100 Ҷ гармӣ доданд, он 40 Ҷ кор иҷро кард. Энергияи дохилӣ чанд афзуд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "$\\Delta U = 100 - 40 = 60$ Дж.",
+              "en": "$\\Delta U = 100 - 40 = 60$ J.",
+              "tj": "$\\Delta U = 100 - 40 = 60$ Ҷ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

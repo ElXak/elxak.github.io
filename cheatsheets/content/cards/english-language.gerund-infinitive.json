@@ -1,0 +1,76 @@
+[
+  {
+    "id": "english-language.gerund-infinitive.basics",
+    "topicId": "english-language.gerund-infinitive",
+    "title": {
+      "ru": "Герундий и инфинитив",
+      "en": "Gerund and infinitive",
+      "tj": "Герундий ва инфинитив"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Герундий (gerund)** — форма глагола с окончанием **-ing**, используемая как существительное: Swimming is fun. **Инфинитив (infinitive)** — базовая форма глагола с **to**: I want to swim.",
+          "en": "A **gerund** is the **-ing** form of a verb used as a noun: Swimming is fun. An **infinitive** is the base form with **to**: I want to swim.",
+          "tj": "**Герундий** — шакли феъл бо **-ing**, ки ҳамчун исм истифода мешавад: Swimming is fun. **Инфинитив** — шакли асосӣ бо **to**: I want to swim."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "После глагола",
+            "en": "After verb",
+            "tj": "Пас аз феъл"
+          },
+          {
+            "ru": "Герундий",
+            "en": "Gerund",
+            "tj": "Герундий"
+          },
+          {
+            "ru": "Инфинитив",
+            "en": "Infinitive",
+            "tj": "Инфинитив"
+          }
+        ],
+        "rows": [
+          [
+            "enjoy / finish / mind / avoid",
+            "✓",
+            "✗"
+          ],
+          [
+            "want / decide / hope / plan",
+            "✗",
+            "✓"
+          ],
+          [
+            "like / love / hate / start",
+            "✓",
+            "✓"
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "«Я люблю плавать» — герундий или инфинитив?",
+          "en": "'I love swimming' — gerund or infinitive?",
+          "tj": "«I love swimming» — герундий ё инфинитив?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Герундий (swimming). Оба варианта верны: I love swimming / I love to swim.",
+              "en": "Gerund (swimming). Both are correct: I love swimming / I love to swim.",
+              "tj": "Герундий (swimming). Ҳарду дуруст аст: I love swimming / I love to swim."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

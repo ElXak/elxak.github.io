@@ -1,0 +1,27 @@
+[
+  {
+    "id": "fine-arts.color.basics",
+    "topicId": "fine-arts.color",
+    "title": {
+      "ru": "Основные и составные цвета",
+      "en": "Primary and secondary colours",
+      "tj": "Рангҳои асосӣ ва таркибӣ"
+    },
+    "tags": [
+      "цвет",
+      "краски",
+      "colour",
+      "palette"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Основные** цвета — красный, жёлтый, синий — нельзя получить смешиванием. Смешивая их, получают **составные**: оранжевый, зелёный, фиолетовый.",
+          "en": "**Primary** colours — red, yellow, blue — cannot be mixed from others. Mixing them gives **secondary** colours: orange, green, purple.",
+          "tj": "Рангҳои **асосӣ** — сурх, зард, кабуд — бо омехтан ҳосил намешаванд. Бо омехтани онҳо рангҳои **таркибӣ** ҳосил мешаванд: норинҷӣ, сабз, бунафш."
+        }
+      }
+    ]
+  }
+]

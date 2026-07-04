@@ -1,0 +1,55 @@
+[
+  {
+    "id": "math.shapes.basics",
+    "topicId": "math.shapes",
+    "title": {
+      "ru": "Простые фигуры",
+      "en": "Simple shapes",
+      "tj": "Шаклҳои содда"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Основные плоские фигуры: **круг, треугольник, квадрат и прямоугольник**.",
+          "en": "The basic flat shapes: **circle, triangle, square and rectangle**.",
+          "tj": "Шаклҳои асосии ҳамвор: **доира, секунҷа, квадрат ва росткунҷа**."
+        }
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "ru": "У треугольника 3 стороны и 3 угла.",
+            "en": "A triangle has 3 sides and 3 corners.",
+            "tj": "Секунҷа 3 тараф ва 3 кунҷ дорад."
+          },
+          {
+            "ru": "У квадрата 4 равные стороны.",
+            "en": "A square has 4 equal sides.",
+            "tj": "Квадрат 4 тарафи баробар дорад."
+          },
+          {
+            "ru": "У круга нет углов.",
+            "en": "A circle has no corners.",
+            "tj": "Доира кунҷ надорад."
+          }
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько сторон у треугольника?",
+          "en": "How many sides does a triangle have?",
+          "tj": "Секунҷа чанд тараф дорад?"
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "3"
+          }
+        ]
+      }
+    ]
+  }
+]

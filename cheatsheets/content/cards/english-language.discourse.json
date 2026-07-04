@@ -1,0 +1,96 @@
+[
+  {
+    "id": "english-language.discourse.basics",
+    "topicId": "english-language.discourse",
+    "title": {
+      "ru": "Связность текста",
+      "en": "Discourse and cohesion",
+      "tj": "Алоқамандии матн"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Связность (cohesion)** достигается с помощью **связующих слов и фраз**, которые соединяют предложения и абзацы.",
+          "en": "**Cohesion** is achieved through **linking words and phrases** that connect sentences and paragraphs.",
+          "tj": "**Алоқамандӣ (cohesion)** бо ёрии **калимаҳо ва ибораҳои пайвандак** ба даст меояд, ки ҷумлаю банд-ҳоро мепайвандад."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Функция",
+            "en": "Function",
+            "tj": "Вазифа"
+          },
+          {
+            "ru": "Слова-связки",
+            "en": "Linkers",
+            "tj": "Пайвандакҳо"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Добавление",
+              "en": "Addition",
+              "tj": "Иловакунӣ"
+            },
+            "also, furthermore, in addition, moreover"
+          ],
+          [
+            {
+              "ru": "Противопоставление",
+              "en": "Contrast",
+              "tj": "Муқобилгузорӣ"
+            },
+            "however, nevertheless, on the other hand"
+          ],
+          [
+            {
+              "ru": "Причина",
+              "en": "Cause",
+              "tj": "Сабаб"
+            },
+            "because, since, as, due to"
+          ],
+          [
+            {
+              "ru": "Следствие",
+              "en": "Result",
+              "tj": "Натиҷа"
+            },
+            "therefore, as a result, consequently"
+          ],
+          [
+            {
+              "ru": "Последовательность",
+              "en": "Sequence",
+              "tj": "Тартиб"
+            },
+            "first, then, next, finally, afterwards"
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как выразить противопоставление в тексте?",
+          "en": "How do you express contrast in a text?",
+          "tj": "Муқобилгузориро дар матн чӣ гуна ифода мекунанд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "However / Nevertheless / On the other hand.",
+              "en": "However / Nevertheless / On the other hand.",
+              "tj": "However / Nevertheless / On the other hand."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

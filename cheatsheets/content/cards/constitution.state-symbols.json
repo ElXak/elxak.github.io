@@ -1,0 +1,92 @@
+[
+  {
+    "id": "constitution.state-symbols.basics",
+    "topicId": "constitution.state-symbols",
+    "title": {
+      "ru": "Символы государства",
+      "en": "State symbols",
+      "tj": "Рамзҳои давлат"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Государственные символы Таджикистана: **флаг, герб и гимн**.",
+          "en": "The state symbols of Tajikistan are the **flag, coat of arms and anthem**.",
+          "tj": "Рамзҳои давлатии Тоҷикистон: **парчам, нишон ва суруди миллӣ**."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Символ",
+            "en": "Symbol",
+            "tj": "Рамз"
+          },
+          {
+            "ru": "Описание",
+            "en": "Description",
+            "tj": "Тавсиф"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Флаг",
+              "en": "Flag",
+              "tj": "Парчам"
+            },
+            {
+              "ru": "три полосы: красная, белая, зелёная; корона и дуги",
+              "en": "three stripes: red, white, green; crown and arcs",
+              "tj": "се навор: сурх, сафед, сабз; тоҷ ва камонҳо"
+            }
+          ],
+          [
+            {
+              "ru": "Герб",
+              "en": "Coat of arms",
+              "tj": "Нишон"
+            },
+            {
+              "ru": "корона, книга, солнце, горы и хлопок",
+              "en": "crown, book, sun, mountains and cotton",
+              "tj": "тоҷ, китоб, офтоб, кӯҳҳо ва пахта"
+            }
+          ],
+          [
+            {
+              "ru": "Гимн",
+              "en": "Anthem",
+              "tj": "Суруди миллӣ"
+            },
+            {
+              "ru": "принят в 1991 году",
+              "en": "adopted in 1991",
+              "tj": "дар соли 1991 қабул шуд"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Назовите три цвета флага Таджикистана.",
+          "en": "Name the three colours of Tajikistan's flag.",
+          "tj": "Се ранги парчами Тоҷикистонро номбар кунед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Красный, белый и зелёный.",
+              "en": "Red, white and green.",
+              "tj": "Сурх, сафед ва сабз."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

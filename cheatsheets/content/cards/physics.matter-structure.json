@@ -1,0 +1,112 @@
+[
+  {
+    "id": "physics.matter-structure.basics",
+    "topicId": "physics.matter-structure",
+    "title": {
+      "ru": "Строение вещества",
+      "en": "Structure of matter",
+      "tj": "Сохти модда"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Все вещества состоят из **молекул** и **атомов**. Между частицами есть промежутки; частицы движутся и притягиваются.",
+          "en": "All substances are made of **molecules** and **atoms**. There are gaps between particles; particles move and attract each other.",
+          "tj": "Ҳамаи моддаҳо аз **молекулаҳо** ва **атомҳо** иборатанд. Байни зарраҳо фосила ҳаст; зарраҳо ҳаракат мекунанд ва ҷазб мешаванд."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Состояние",
+            "en": "State",
+            "tj": "Ҳолат"
+          },
+          {
+            "ru": "Форма",
+            "en": "Shape",
+            "tj": "Шакл"
+          },
+          {
+            "ru": "Объём",
+            "en": "Volume",
+            "tj": "Ҳаҷм"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Твёрдое",
+              "en": "Solid",
+              "tj": "Сахт"
+            },
+            {
+              "ru": "сохраняет",
+              "en": "keeps",
+              "tj": "нигоҳ медорад"
+            },
+            {
+              "ru": "сохраняет",
+              "en": "keeps",
+              "tj": "нигоҳ медорад"
+            }
+          ],
+          [
+            {
+              "ru": "Жидкое",
+              "en": "Liquid",
+              "tj": "Моеъ"
+            },
+            {
+              "ru": "по сосуду",
+              "en": "of container",
+              "tj": "шакли зарф"
+            },
+            {
+              "ru": "сохраняет",
+              "en": "keeps",
+              "tj": "нигоҳ медорад"
+            }
+          ],
+          [
+            {
+              "ru": "Газ",
+              "en": "Gas",
+              "tj": "Газ"
+            },
+            {
+              "ru": "по сосуду",
+              "en": "of container",
+              "tj": "шакли зарф"
+            },
+            {
+              "ru": "весь объём",
+              "en": "fills all",
+              "tj": "тамоми ҳаҷм"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Почему газ занимает весь объём сосуда?",
+          "en": "Why does a gas fill the whole container?",
+          "tj": "Чаро газ тамоми ҳаҷми зарфро мегирад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Его молекулы движутся свободно и разлетаются.",
+              "en": "Its molecules move freely and spread out.",
+              "tj": "Молекулаҳои он озод ҳаракат карда, пароканда мешаванд."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

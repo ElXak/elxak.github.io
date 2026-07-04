@@ -1,0 +1,47 @@
+[
+  {
+    "id": "informatics.databases.basics",
+    "topicId": "informatics.databases",
+    "title": {
+      "ru": "Базы данных",
+      "en": "Databases",
+      "tj": "Базаҳои маълумот"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**База данных (БД)** — организованное хранилище информации. **СУБД** (система управления БД) позволяет создавать, изменять и запрашивать данные. Пример: Microsoft Access, SQLite.",
+          "en": "A **database (DB)** is an organised store of information. A **DBMS** (database management system) lets you create, modify and query data. Examples: Microsoft Access, SQLite.",
+          "tj": "**Базаи маълумот (БМ)** — захираи мунтазами иттилоот. **СИДБМ** (системаи идоракунии базаи маълумот) имкон медиҳад маълумотро созед, тағйир диҳед ва пурсед. Мисол: Microsoft Access, SQLite."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Данные хранятся в **таблицах** из строк (записей) и столбцов (полей).",
+          "en": "Data is stored in **tables** of rows (records) and columns (fields).",
+          "tj": "Маълумот дар **ҷадвалҳо** аз рӯйҳо (сабтҳо) ва сутунҳо (майдонҳо) нигоҳ дошта мешавад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Что такое база данных?",
+          "en": "What is a database?",
+          "tj": "Базаи маълумот чист?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Организованное хранилище информации.",
+              "en": "An organised store of information.",
+              "tj": "Захираи мунтазами иттилоот."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

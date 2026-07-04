@@ -1,0 +1,39 @@
+[
+  {
+    "id": "chemistry.alcohols.basics",
+    "topicId": "chemistry.alcohols",
+    "title": {
+      "ru": "Спирты и фенолы",
+      "en": "Alcohols and phenols",
+      "tj": "Спиртҳо ва фенолҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Спирты** содержат гидроксильную группу **–OH**. Самый известный — этанол $C_2H_5OH$. У **фенолов** группа –OH связана с бензольным кольцом.",
+          "en": "**Alcohols** contain the hydroxyl group **–OH**. The best known is ethanol $C_2H_5OH$. In **phenols** the –OH is bonded to a benzene ring.",
+          "tj": "**Спиртҳо** гурӯҳи гидроксили **–OH** доранд. Машҳуртаринаш этанол $C_2H_5OH$. Дар **фенолҳо** гурӯҳи –OH бо ҳалқаи бензол пайваст аст."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какая группа атомов характерна для спиртов?",
+          "en": "Which group of atoms is characteristic of alcohols?",
+          "tj": "Кадом гурӯҳи атомҳо барои спиртҳо хос аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Группа –OH (гидроксильная).",
+              "en": "The –OH (hydroxyl) group.",
+              "tj": "Гурӯҳи –OH (гидроксил)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "russian-language.compound-complex.basics",
+    "topicId": "russian-language.compound-complex",
+    "title": {
+      "ru": "Сложносочинённые и сложноподчинённые",
+      "en": "Compound and complex sentences",
+      "tj": "Ҷумлаҳои пайваст ва тобеъ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Сложносочинённое** предложение состоит из равноправных частей с союзами «и, а, но».",
+          "en": "A **compound sentence** has equal parts joined by «и, а, но».",
+          "tj": "**Ҷумлаи пайваст** аз қисмҳои баробар бо пайвандакҳои «и, а, но» иборат аст."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Сложноподчинённое** состоит из главной и придаточной части с союзами «что, чтобы, если, когда, потому что».",
+          "en": "A **complex (subordinate) sentence** has a main clause and a subordinate clause joined by «что, чтобы, если, когда, потому что».",
+          "tj": "**Ҷумлаи тобеъ** аз сарҷумла ва ҷумлаи пайрав бо пайвандакҳои «что, чтобы, если, когда, потому что» иборат аст."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "К какому виду относится «Я знаю, что ты придёшь»?",
+          "en": "Which type is «Я знаю, что ты придёшь» (I know that you will come)?",
+          "tj": "«Я знаю, что ты придёшь» кадом навъ аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Сложноподчинённое (с союзом «что»).",
+              "en": "A complex (subordinate) sentence (with «что»).",
+              "tj": "Ҷумлаи тобеъ (бо пайвандаки «что»)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "chemistry.intro.basics",
+    "topicId": "chemistry.intro",
+    "title": {
+      "ru": "Предмет химии. Вещества",
+      "en": "Chemistry. Substances",
+      "tj": "Мавзӯи химия. Моддаҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Химия** изучает вещества и их превращения. Вещества бывают **чистыми** или **смесями**.",
+          "en": "**Chemistry** studies substances and their transformations. Substances can be **pure** or **mixtures**.",
+          "tj": "**Химия** моддаҳо ва табдилоти онҳоро меомӯзад. Моддаҳо **тоза** ё **омехта** мешаванд."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "При **физических** явлениях состав не меняется (таяние льда), при **химических** — образуются новые вещества (горение).",
+          "en": "In **physical** changes the composition stays the same (ice melting); in **chemical** changes new substances form (burning).",
+          "tj": "Ҳангоми ҳодисаҳои **физикӣ** таркиб тағйир намеёбад (обшавии ях), ҳангоми **химиявӣ** — моддаҳои нав ба вуҷуд меоянд (сӯзиш)."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Ржавление железа — это какое явление?",
+          "en": "Is the rusting of iron a physical or chemical change?",
+          "tj": "Зангзании оҳан кадом ҳодиса аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Химическое — образуется новое вещество.",
+              "en": "Chemical — a new substance forms.",
+              "tj": "Химиявӣ — моддаи нав ба вуҷуд меояд."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

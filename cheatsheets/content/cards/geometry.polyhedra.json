@@ -1,0 +1,52 @@
+[
+  {
+    "id": "geometry.polyhedra.basics",
+    "topicId": "geometry.polyhedra",
+    "title": {
+      "ru": "Многогранники",
+      "en": "Polyhedra",
+      "tj": "Бисёррӯяҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Многогранник** — тело, поверхность которого состоит из многоугольников (**граней**). Их стороны — **рёбра**, вершины — **вершины**.",
+          "en": "A **polyhedron** is a solid whose surface consists of polygons (**faces**). Their sides are **edges**, their corners are **vertices**.",
+          "tj": "**Бисёррӯя** — ҷисме, ки рӯяи он аз бисёркунҷаҳо (**рӯяҳо**) иборат аст. Тарафҳои онҳо — **қабурғаҳо**, кунҷҳо — **қуллаҳо**."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "V - E + F = 2",
+        "caption": {
+          "ru": "Формула Эйлера (вершины, рёбра, грани)",
+          "en": "Euler's formula (vertices, edges, faces)",
+          "tj": "Формулаи Эйлер (қуллаҳо, қабурғаҳо, рӯяҳо)"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Проверьте формулу Эйлера для куба.",
+          "en": "Check Euler's formula for a cube.",
+          "tj": "Формулаи Эйлерро барои куб тафтиш кунед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "У куба 8 вершин, 12 рёбер, 6 граней.",
+              "en": "A cube has 8 vertices, 12 edges, 6 faces.",
+              "tj": "Куб 8 қулла, 12 қабурға, 6 рӯя дорад."
+            }
+          },
+          {
+            "type": "formula",
+            "latex": "8 - 12 + 6 = 2"
+          }
+        ]
+      }
+    ]
+  }
+]

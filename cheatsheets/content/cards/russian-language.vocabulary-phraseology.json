@@ -1,0 +1,39 @@
+[
+  {
+    "id": "russian-language.vocabulary-phraseology.basics",
+    "topicId": "russian-language.vocabulary-phraseology",
+    "title": {
+      "ru": "Лексика и фразеология",
+      "en": "Vocabulary and phraseology",
+      "tj": "Луғат ва фразеология"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Лексика** — все слова языка. **Фразеология** изучает **устойчивые выражения (фразеологизмы)**, значение которых не складывается из отдельных слов: «бить баклуши» (бездельничать), «водить за нос» (обманывать).",
+          "en": "**Vocabulary** is all the words of a language. **Phraseology** studies **set expressions (phraseologisms)** whose meaning is not the sum of the separate words: «бить баклуши» (to idle), «водить за нос» (to deceive).",
+          "tj": "**Лексика** ҳамаи калимаҳои забон аст. **Фразеология** **ибораҳои рехта (фразеологизмҳо)**-ро меомӯзад, ки маънояшон аз калимаҳои ҷудогона барнамеояд: «бить баклуши» (бекор гаштан), «водить за нос» (фиреб додан)."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "«Бить баклуши» — свободное словосочетание или фразеологизм?",
+          "en": "Is «бить баклуши» a free phrase or a phraseologism?",
+          "tj": "«Бить баклуши» ибораи озод аст ё рехта?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Фразеологизм.",
+              "en": "A phraseologism.",
+              "tj": "Ибораи рехта (фразеологизм)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "biology.photosynthesis.basics",
+    "topicId": "biology.photosynthesis",
+    "title": {
+      "ru": "Фотосинтез",
+      "en": "Photosynthesis",
+      "tj": "Фотосинтез"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "При **фотосинтезе** растение на свету из углекислого газа и воды создаёт органическое вещество (глюкозу) и выделяет кислород. Идёт в **хлоропластах** с участием **хлорофилла**.",
+          "en": "In **photosynthesis** a plant uses light to make organic matter (glucose) from carbon dioxide and water, releasing oxygen. It occurs in **chloroplasts** with **chlorophyll**.",
+          "tj": "Ҳангоми **фотосинтез** растанӣ дар рӯшноӣ аз гази карбон ва об моддаи органикӣ (глюкоза) месозад ва оксиген ҷудо мекунад. Дар **хлоропластҳо** бо иштироки **хлорофилл** мегузарад."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "6CO_2 + 6H_2O \\rightarrow C_6H_{12}O_6 + 6O_2",
+        "caption": {
+          "ru": "при участии света",
+          "en": "with the help of light",
+          "tj": "бо иштироки рӯшноӣ"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какой газ выделяют растения при фотосинтезе?",
+          "en": "Which gas do plants release during photosynthesis?",
+          "tj": "Растаниҳо ҳангоми фотосинтез кадом газро ҷудо мекунанд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Кислород.",
+              "en": "Oxygen.",
+              "tj": "Оксиген."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

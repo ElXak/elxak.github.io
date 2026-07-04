@@ -1,0 +1,47 @@
+[
+  {
+    "id": "civics.human-rights.basics",
+    "topicId": "civics.human-rights",
+    "title": {
+      "ru": "Права человека",
+      "en": "Human rights",
+      "tj": "Ҳуқуқи инсон"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Права человека** — основные свободы, принадлежащие каждому человеку от рождения, независимо от гражданства, пола и религии. Закреплены во **Всеобщей декларации прав человека ООН (1948)**.",
+          "en": "**Human rights** are fundamental freedoms belonging to every person from birth, regardless of citizenship, sex or religion. They are enshrined in the **UN Universal Declaration of Human Rights (1948)**.",
+          "tj": "**Ҳуқуқи инсон** — озодиҳои асосие, ки аз таваллуд ба ҳар шахс тааллуқ доранд, сарфи назар аз шаҳрвандӣ, ҷинс ё дин. Дар **Эъломияи умумии ҳуқуқи инсони СММ (1948)** мустаҳкам карда шудаанд."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Основные права: на жизнь, образование, труд, свободу слова и равенство перед законом.",
+          "en": "Key rights: to life, education, labour, freedom of speech and equality before the law.",
+          "tj": "Ҳуқуқҳои асосӣ: ба ҳаёт, таҳсил, меҳнат, озодии сухан ва баробарӣ дар назди қонун."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "В каком документе закреплены права человека на международном уровне?",
+          "en": "In which document are human rights enshrined internationally?",
+          "tj": "Ҳуқуқи инсон дар кадом ҳуҷҷати байналмилалӣ мустаҳкам шудааст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Во Всеобщей декларации прав человека ООН (1948).",
+              "en": "The UN Universal Declaration of Human Rights (1948).",
+              "tj": "Эъломияи умумии ҳуқуқи инсони СММ (1948)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

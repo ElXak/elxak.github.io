@@ -1,0 +1,106 @@
+[
+  {
+    "id": "english-language.can-must.basics",
+    "topicId": "english-language.can-must",
+    "title": {
+      "ru": "Модальные глаголы",
+      "en": "Modal verbs",
+      "tj": "Феълҳои модалӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Модальные глаголы** выражают возможность, разрешение или обязательность. После них стоит **инфинитив без to**.",
+          "en": "**Modal verbs** express ability, permission or obligation. They are followed by the **bare infinitive**.",
+          "tj": "**Феълҳои модалӣ** қобилият, иҷозат ё ӯҳдадориро ифода мекунанд. Пас аз онҳо **инфинитиви бе to** меояд."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Глагол",
+            "en": "Modal",
+            "tj": "Феъл"
+          },
+          {
+            "ru": "Значение",
+            "en": "Meaning",
+            "tj": "Маъно"
+          },
+          {
+            "ru": "Пример",
+            "en": "Example",
+            "tj": "Мисол"
+          }
+        ],
+        "rows": [
+          [
+            "can",
+            {
+              "ru": "умею / могу",
+              "en": "ability / permission",
+              "tj": "қобилият / иҷозат"
+            },
+            "I can swim."
+          ],
+          [
+            "can't",
+            {
+              "ru": "не могу / нельзя",
+              "en": "inability / not allowed",
+              "tj": "натавонистан"
+            },
+            "You can't park here."
+          ],
+          [
+            "must",
+            {
+              "ru": "обязан (внутр.)",
+              "en": "strong obligation",
+              "tj": "ӯҳдадории дохилӣ"
+            },
+            "I must study."
+          ],
+          [
+            "mustn't",
+            {
+              "ru": "запрещено",
+              "en": "prohibition",
+              "tj": "манъ аст"
+            },
+            "You mustn't smoke."
+          ],
+          [
+            "should",
+            {
+              "ru": "следует (совет)",
+              "en": "advice",
+              "tj": "маслиҳат"
+            },
+            "You should sleep early."
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как спросить «Ты умеешь плавать»?",
+          "en": "How do you ask «Ты умеешь плавать»?",
+          "tj": "«Оё шино карда метавонӣ?»-ро ба англисӣ чӣ гуна мегӯянд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Can you swim?",
+              "en": "Can you swim?",
+              "tj": "Can you swim?"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

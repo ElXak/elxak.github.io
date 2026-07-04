@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-literature.contemporary.basics",
+    "topicId": "tajik-literature.contemporary",
+    "title": {
+      "ru": "Современная литература",
+      "en": "Contemporary literature",
+      "tj": "Адабиёти муосир"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Современная литература** (после независимости 1991 года) продолжает традиции поэзии и прозы и поднимает новые темы: независимость, национальное возрождение и современную жизнь.",
+          "en": "**Contemporary literature** (after independence in 1991) continues the traditions of poetry and prose and raises new themes: independence, national revival and modern life.",
+          "tj": "**Адабиёти муосир** (пас аз истиқлолияти соли 1991) анъанаҳои назму насрро идома медиҳад ва мавзӯъҳои нав: истиқлолият, эҳёи миллӣ ва ҳаёти муосирро баррасӣ мекунад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какие темы отражает современная таджикская литература?",
+          "en": "What themes does contemporary Tajik literature reflect?",
+          "tj": "Адабиёти муосири тоҷик кадом мавзӯъҳоро инъикос мекунад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Независимость и современную жизнь.",
+              "en": "Independence and modern life.",
+              "tj": "Истиқлолият ва ҳаёти муосир."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

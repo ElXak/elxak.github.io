@@ -1,0 +1,39 @@
+[
+  {
+    "id": "biology.invertebrates.basics",
+    "topicId": "biology.invertebrates",
+    "title": {
+      "ru": "Беспозвоночные",
+      "en": "Invertebrates",
+      "tj": "Бесутунмӯҳраҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Беспозвоночные** не имеют позвоночника. Это самая многочисленная группа: простейшие, кишечнополостные, черви, моллюски и членистоногие (насекомые, пауки, раки).",
+          "en": "**Invertebrates** have no backbone. They are the largest group: protozoa, coelenterates, worms, molluscs and arthropods (insects, spiders, crustaceans).",
+          "tj": "**Бесутунмӯҳраҳо** сутунмӯҳра надоранд. Ин бузургтарин гурӯҳ аст: соддатаринҳо, рӯдаковокҳо, кирмҳо, нармтанҳо ва буғумпойҳо (ҳашарот, тортанакҳо, харчангҳо)."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Являются ли насекомые беспозвоночными?",
+          "en": "Are insects invertebrates?",
+          "tj": "Оё ҳашарот бесутунмӯҳра мебошанд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Да, у них нет позвоночника.",
+              "en": "Yes, they have no backbone.",
+              "tj": "Ҳа, онҳо сутунмӯҳра надоранд."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

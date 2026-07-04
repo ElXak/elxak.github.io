@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tajik-language.simple-sentence.basics",
+    "topicId": "tajik-language.simple-sentence",
+    "title": {
+      "ru": "Простое предложение",
+      "en": "The simple sentence",
+      "tj": "Ҷумлаи содда"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Простое предложение** имеет одну грамматическую основу: подлежащее и сказуемое.",
+          "en": "A **simple sentence** has one grammatical base: a subject and a predicate.",
+          "tj": "**Ҷумлаи содда** як асоси грамматикӣ дорад: мубтадо ва хабар."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "В таджикском обычный порядок слов: подлежащее – дополнение – **сказуемое в конце**: «Ман китоб мехонам» (Я читаю книгу).",
+          "en": "Tajik word order is usually subject – object – **verb at the end**: «Ман китоб мехонам» (I read a book).",
+          "tj": "Дар тоҷикӣ тартиби маъмулии калимаҳо: мубтадо – пуркунанда – **хабар дар охир**: «Ман китоб мехонам»."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько грамматических основ в «Парранда мепарад» (Птица летит)?",
+          "en": "How many grammatical bases are in «Парранда мепарад» (The bird flies)?",
+          "tj": "Дар «Парранда мепарад» чанд асоси грамматикӣ ҳаст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Одна — это простое предложение.",
+              "en": "One — it is a simple sentence.",
+              "tj": "Як — ин ҷумлаи содда аст."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

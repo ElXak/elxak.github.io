@@ -1,0 +1,47 @@
+[
+  {
+    "id": "history.ancient-world.basics",
+    "topicId": "history.ancient-world",
+    "title": {
+      "ru": "Древний мир",
+      "en": "The Ancient World",
+      "tj": "Ҷаҳони қадим"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Древний мир** — первый период истории человечества. Он охватывает время от появления первых цивилизаций (около 3500 лет до н. э.) до падения Западной Римской империи (476 г. н. э.).",
+          "en": "The **Ancient World** is the first period of human history. It spans from the rise of the first civilisations (around 3500 BCE) to the fall of the Western Roman Empire (476 CE).",
+          "tj": "**Ҷаҳони қадим** — аввалин давраи таърихи инсоният. Он аз пайдоиши аввалин тамаддунҳо (тақрибан 3500 пеш аз милод) то суқути империяи Рими Ғарбӣ (476 милодӣ)-ро дар бар мегирад."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Первые цивилизации возникли в долинах рек: **Месопотамия** (Тигр и Евфрат), **Египет** (Нил), **Индия** (Инд) и **Китай** (Хуанхэ).",
+          "en": "The first civilisations arose in river valleys: **Mesopotamia** (Tigris and Euphrates), **Egypt** (Nile), **India** (Indus) and **China** (Yellow River).",
+          "tj": "Аввалин тамаддунҳо дар водиҳои дарёҳо пайдо шуданд: **Байнаннаҳрайн** (Тигру Фурот), **Миср** (Нил), **Ҳиндустон** (Инд) ва **Чин** (Хуанхэ)."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Где возникли первые цивилизации?",
+          "en": "Where did the first civilisations arise?",
+          "tj": "Аввалин тамаддунҳо дар куҷо пайдо шуданд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "В долинах великих рек.",
+              "en": "In the valleys of great rivers.",
+              "tj": "Дар водиҳои дарёҳои бузург."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

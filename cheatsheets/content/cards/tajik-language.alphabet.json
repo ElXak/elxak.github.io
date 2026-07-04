@@ -1,0 +1,27 @@
+[
+  {
+    "id": "tajik-language.alphabet.basics",
+    "topicId": "tajik-language.alphabet",
+    "title": {
+      "ru": "Таджикский алфавит",
+      "en": "Tajik alphabet",
+      "tj": "Алифбои тоҷикӣ"
+    },
+    "tags": [
+      "алфавит",
+      "кириллица",
+      "alphabet",
+      "tajik"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Таджикский язык — один из вариантов **персидского**. В Таджикистане он использует кириллицу с шестью дополнительными буквами: ғ, ӣ, қ, ӯ, ҳ, ҷ.",
+          "en": "Tajik is a variety of **Persian**. In Tajikistan it uses the Cyrillic script with six extra letters: ғ, ӣ, қ, ӯ, ҳ, ҷ.",
+          "tj": "Забони тоҷикӣ яке аз вариантҳои забони **форсӣ** аст. Дар Тоҷикистон он алифбои кириллиро бо шаш ҳарфи иловагӣ истифода мебарад: ғ, ӣ, қ, ӯ, ҳ, ҷ."
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "algebra.exp-log-equations.basics",
+    "topicId": "algebra.exp-log-equations",
+    "title": {
+      "ru": "Показательные и логарифмические уравнения",
+      "en": "Exponential and logarithmic equations",
+      "tj": "Муодилаҳои нишондиҳандагӣ ва логарифмӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Показательное уравнение** сводят к одному основанию и приравнивают показатели. **Логарифмическое** решают по определению логарифма.",
+          "en": "Reduce an **exponential equation** to one base and equate the exponents. Solve a **logarithmic equation** by the definition of a logarithm.",
+          "tj": "**Муодилаи нишондиҳандагӣ**-ро ба як асос меоранд ва нишондиҳандаҳоро баробар мекунанд. **Муодилаи логарифмӣ**-ро бо таърифи логарифм ҳал мекунанд."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "a^{f(x)} = a^{g(x)} \\iff f(x) = g(x)"
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Решите $3^{x} = 81$.",
+          "en": "Solve $3^{x} = 81$.",
+          "tj": "Ҳал кунед $3^{x} = 81$."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "3^{x} = 3^4 \\;\\Rightarrow\\; x = 4"
+          }
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Решите $\\log_2 x = 5$.",
+          "en": "Solve $\\log_2 x = 5$.",
+          "tj": "Ҳал кунед $\\log_2 x = 5$."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "x = 2^5 = 32"
+          }
+        ]
+      }
+    ]
+  }
+]

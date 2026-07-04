@@ -1,0 +1,47 @@
+[
+  {
+    "id": "informatics.programming.basics",
+    "topicId": "informatics.programming",
+    "title": {
+      "ru": "Основы программирования",
+      "en": "Programming basics",
+      "tj": "Асосҳои барномасозӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Программа** — набор инструкций для компьютера. **Язык программирования** — формальный язык для записи алгоритмов. Популярные языки: **Python, Java, C++, JavaScript**.",
+          "en": "A **program** is a set of instructions for a computer. A **programming language** is a formal language for writing algorithms. Popular languages: **Python, Java, C++, JavaScript**.",
+          "tj": "**Барнома** — маҷмӯи дастурҳо барои компютер. **Забони барномасозӣ** — забони расмӣ барои навиштани алгоритмҳо. Забонҳои маъмул: **Python, Java, C++, JavaScript**."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Основные конструкции: **переменные, условия (if/else), циклы (for/while), функции**.",
+          "en": "Key constructs: **variables, conditions (if/else), loops (for/while), functions**.",
+          "tj": "Сохторҳои асосӣ: **тағйирёбандаҳо, шартҳо (if/else), давраҳо (for/while), функсияҳо**."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Назовите популярный язык программирования.",
+          "en": "Name a popular programming language.",
+          "tj": "Як забони маъмули барномасозиро номбар кунед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Python.",
+              "en": "Python.",
+              "tj": "Python."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

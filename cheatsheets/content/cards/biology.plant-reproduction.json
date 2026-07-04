@@ -1,0 +1,39 @@
+[
+  {
+    "id": "biology.plant-reproduction.basics",
+    "topicId": "biology.plant-reproduction",
+    "title": {
+      "ru": "Размножение растений",
+      "en": "Plant reproduction",
+      "tj": "Афзоиши растаниҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Растения размножаются **половым** путём (цветок → опыление → семя) и **бесполым** (черенками, луковицами, усами).",
+          "en": "Plants reproduce **sexually** (flower → pollination → seed) and **asexually** (cuttings, bulbs, runners).",
+          "tj": "Растаниҳо бо роҳи **ҷинсӣ** (гул → гардолудшавӣ → тухмӣ) ва **ғайриҷинсӣ** (қаламча, пиёзак, мӯйлаб) афзоиш меёбанд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как размножается растение, выросшее из семени?",
+          "en": "How does a plant grown from a seed reproduce?",
+          "tj": "Растание, ки аз тухмӣ рӯидааст, чӣ тавр афзоиш меёбад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Половым путём — через цветок и семена.",
+              "en": "Sexually — through flowers and seeds.",
+              "tj": "Бо роҳи ҷинсӣ — тавассути гул ва тухмӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

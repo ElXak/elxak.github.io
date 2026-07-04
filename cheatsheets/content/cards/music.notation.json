@@ -1,0 +1,27 @@
+[
+  {
+    "id": "music.notation.notes",
+    "topicId": "music.notation",
+    "title": {
+      "ru": "Семь нот",
+      "en": "The seven notes",
+      "tj": "Ҳафт нота"
+    },
+    "tags": [
+      "ноты",
+      "нотный стан",
+      "notes",
+      "music"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Семь основных нот: **до, ре, ми, фа, соль, ля, си**. Их записывают на нотном стане из пяти линий.",
+          "en": "The seven basic notes: **do, re, mi, fa, sol, la, ti** — written on a five-line staff.",
+          "tj": "Ҳафт нотаи асосӣ: **до, ре, ми, фа, сол, ля, си**. Онҳоро дар хатти нотагии аз панҷ хат иборат менависанд."
+        }
+      }
+    ]
+  }
+]

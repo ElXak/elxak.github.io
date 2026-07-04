@@ -1,0 +1,59 @@
+[
+  {
+    "id": "chemistry.reaction-rate.basics",
+    "topicId": "chemistry.reaction-rate",
+    "title": {
+      "ru": "Скорость химических реакций",
+      "en": "Rate of chemical reactions",
+      "tj": "Суръати реаксияҳои химиявӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Скорость реакции** показывает, как быстро расходуются реагенты. Она зависит от нескольких условий.",
+          "en": "The **reaction rate** shows how quickly the reactants are used up. It depends on several conditions.",
+          "tj": "**Суръати реаксия** нишон медиҳад, ки реагентҳо то чӣ андоза тез сарф мешаванд. Он аз чанд шарт вобаста аст."
+        }
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "ru": "Температура: выше температура — быстрее реакция.",
+            "en": "Temperature: higher temperature, faster reaction.",
+            "tj": "Ҳарорат: ҳарорат баланд — реаксия тезтар."
+          },
+          {
+            "ru": "Концентрация и площадь поверхности.",
+            "en": "Concentration and surface area.",
+            "tj": "Консентратсия ва масоҳати рӯя."
+          },
+          {
+            "ru": "**Катализатор** ускоряет реакцию, не расходуясь.",
+            "en": "A **catalyst** speeds up a reaction without being used up.",
+            "tj": "**Катализатор** реаксияро тез мекунад ва сарф намешавад."
+          }
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Почему продукты хранят в холодильнике?",
+          "en": "Why is food kept in a fridge?",
+          "tj": "Чаро хӯрокворӣ дар яхдон нигоҳ дошта мешавад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Низкая температура замедляет реакции порчи.",
+              "en": "Low temperature slows the reactions that spoil it.",
+              "tj": "Ҳарорати паст реаксияҳои вайроншавиро суст мекунад."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

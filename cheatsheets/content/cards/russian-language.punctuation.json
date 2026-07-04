@@ -1,0 +1,92 @@
+[
+  {
+    "id": "russian-language.punctuation.basics",
+    "topicId": "russian-language.punctuation",
+    "title": {
+      "ru": "Пунктуация",
+      "en": "Punctuation",
+      "tj": "Аломатҳои китобат"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Знаки препинания** разделяют и выделяют части предложения и помогают верно понять текст.",
+          "en": "**Punctuation marks** separate and highlight parts of a sentence and help understand the text correctly.",
+          "tj": "**Аломатҳои китобат** қисмҳои ҷумларо ҷудо ва ҷобаҷо мекунанд ва ба дуруст фаҳмидани матн кӯмак мерасонанд."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Знак",
+            "en": "Mark",
+            "tj": "Аломат"
+          },
+          {
+            "ru": "Где ставится",
+            "en": "Where used",
+            "tj": "Дар куҷо"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "«,» запятая",
+              "en": "«,» comma",
+              "tj": "«,» вергул"
+            },
+            {
+              "ru": "между частями и членами",
+              "en": "between parts and members",
+              "tj": "байни қисмҳо ва аъзоҳо"
+            }
+          ],
+          [
+            {
+              "ru": "«—» тире",
+              "en": "«—» dash",
+              "tj": "«—» тире"
+            },
+            {
+              "ru": "между подлежащим и сказуемым",
+              "en": "between subject and predicate",
+              "tj": "байни мубтадо ва хабар"
+            }
+          ],
+          [
+            {
+              "ru": "«:» двоеточие",
+              "en": "«:» colon",
+              "tj": "«:» дунуқта"
+            },
+            {
+              "ru": "перед перечислением",
+              "en": "before a list",
+              "tj": "пеш аз рӯйхат"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какой знак чаще всего ставят между частями сложного предложения?",
+          "en": "Which mark is most often placed between parts of a complex sentence?",
+          "tj": "Байни қисмҳои ҷумлаи мураккаб бештар кадом аломат гузошта мешавад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Запятая.",
+              "en": "A comma.",
+              "tj": "Вергул."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,266 @@
+[
+  {
+    "id": "math",
+    "name": {
+      "ru": "Математика",
+      "en": "Mathematics",
+      "tj": "Математика"
+    },
+    "icon": "calculate",
+    "color": "#2563eb",
+    "order": 0
+  },
+  {
+    "id": "algebra",
+    "name": {
+      "ru": "Алгебра",
+      "en": "Algebra",
+      "tj": "Алгебра"
+    },
+    "icon": "functions",
+    "color": "#1d4ed8",
+    "order": 1
+  },
+  {
+    "id": "geometry",
+    "name": {
+      "ru": "Геометрия",
+      "en": "Geometry",
+      "tj": "Геометрия"
+    },
+    "icon": "square_foot",
+    "color": "#4f46e5",
+    "order": 2
+  },
+  {
+    "id": "physics",
+    "name": {
+      "ru": "Физика",
+      "en": "Physics",
+      "tj": "Физика"
+    },
+    "icon": "bolt",
+    "color": "#7c3aed",
+    "order": 3
+  },
+  {
+    "id": "chemistry",
+    "name": {
+      "ru": "Химия",
+      "en": "Chemistry",
+      "tj": "Химия"
+    },
+    "icon": "flask",
+    "color": "#059669",
+    "order": 4
+  },
+  {
+    "id": "biology",
+    "name": {
+      "ru": "Биология",
+      "en": "Biology",
+      "tj": "Биология"
+    },
+    "icon": "eco",
+    "color": "#16a34a",
+    "order": 5
+  },
+  {
+    "id": "geography",
+    "name": {
+      "ru": "География",
+      "en": "Geography",
+      "tj": "География"
+    },
+    "icon": "public",
+    "color": "#0d9488",
+    "order": 6
+  },
+  {
+    "id": "informatics",
+    "name": {
+      "ru": "Информатика",
+      "en": "Computer science",
+      "tj": "Информатика"
+    },
+    "icon": "computer",
+    "color": "#0891b2",
+    "order": 7
+  },
+  {
+    "id": "russian-language",
+    "name": {
+      "ru": "Русский язык",
+      "en": "Russian",
+      "tj": "Забони русӣ"
+    },
+    "icon": "book",
+    "color": "#dc2626",
+    "order": 8
+  },
+  {
+    "id": "russian-literature",
+    "name": {
+      "ru": "Русская литература",
+      "en": "Russian Literature",
+      "tj": "Адабиёти русӣ"
+    },
+    "icon": "auto_stories",
+    "color": "#b91c1c",
+    "order": 9
+  },
+  {
+    "id": "english-language",
+    "name": {
+      "ru": "Английский язык",
+      "en": "English",
+      "tj": "Забони англисӣ"
+    },
+    "icon": "language",
+    "color": "#ea580c",
+    "order": 10
+  },
+  {
+    "id": "history",
+    "name": {
+      "ru": "История",
+      "en": "History",
+      "tj": "Таърих"
+    },
+    "icon": "history_edu",
+    "color": "#b45309",
+    "order": 11
+  },
+  {
+    "id": "social",
+    "name": {
+      "ru": "Обществознание",
+      "en": "Social studies",
+      "tj": "Ҷомеашиносӣ"
+    },
+    "icon": "groups",
+    "color": "#d97706",
+    "order": 12
+  },
+  {
+    "id": "tajik-language",
+    "name": {
+      "ru": "Таджикский язык",
+      "en": "Tajik Language",
+      "tj": "Забони тоҷикӣ"
+    },
+    "icon": "translate",
+    "color": "#0f766e",
+    "order": 13
+  },
+  {
+    "id": "tajik-literature",
+    "name": {
+      "ru": "Таджикская литература",
+      "en": "Tajik Literature",
+      "tj": "Адабиёти тоҷик"
+    },
+    "icon": "menu_book",
+    "color": "#14b8a6",
+    "order": 14
+  },
+  {
+    "id": "tajik-history",
+    "name": {
+      "ru": "История таджикского народа",
+      "en": "History of the Tajik People",
+      "tj": "Таърихи халқи тоҷик"
+    },
+    "icon": "history_edu",
+    "color": "#0d9488",
+    "order": 15
+  },
+  {
+    "id": "civics",
+    "name": {
+      "ru": "Право и обществознание",
+      "en": "Civics and Law",
+      "tj": "Ҳуқуқ ва ҷомеашиносӣ"
+    },
+    "icon": "gavel",
+    "color": "#7c2d12",
+    "order": 16
+  },
+  {
+    "id": "constitution",
+    "name": {
+      "ru": "Конституция Республики Таджикистан",
+      "en": "Constitution of Tajikistan",
+      "tj": "Конститутсияи Ҷумҳурии Тоҷикистон"
+    },
+    "icon": "description",
+    "color": "#b45309",
+    "order": 17
+  },
+  {
+    "id": "technology",
+    "name": {
+      "ru": "Технология",
+      "en": "Technology",
+      "tj": "Технология"
+    },
+    "icon": "build",
+    "color": "#475569",
+    "order": 18
+  },
+  {
+    "id": "drawing",
+    "name": {
+      "ru": "Черчение",
+      "en": "Technical Drawing",
+      "tj": "Расмкашӣ"
+    },
+    "icon": "architecture",
+    "color": "#64748b",
+    "order": 19
+  },
+  {
+    "id": "fine-arts",
+    "name": {
+      "ru": "Изобразительное искусство",
+      "en": "Fine Arts",
+      "tj": "Санъати тасвирӣ"
+    },
+    "icon": "palette",
+    "color": "#db2777",
+    "order": 20
+  },
+  {
+    "id": "music",
+    "name": {
+      "ru": "Музыка",
+      "en": "Music",
+      "tj": "Мусиқӣ"
+    },
+    "icon": "music_note",
+    "color": "#c026d3",
+    "order": 21
+  },
+  {
+    "id": "ethics",
+    "name": {
+      "ru": "Этика и культура",
+      "en": "Ethics and Culture",
+      "tj": "Одоб ва фарҳанг"
+    },
+    "icon": "groups",
+    "color": "#9333ea",
+    "order": 22
+  },
+  {
+    "id": "astronomy",
+    "name": {
+      "ru": "Астрономия",
+      "en": "Astronomy",
+      "tj": "Астрономия"
+    },
+    "icon": "nights_stay",
+    "color": "#4338ca",
+    "order": 23
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "russian-language.vowels-consonants.basics",
+    "topicId": "russian-language.vowels-consonants",
+    "title": {
+      "ru": "Гласные и согласные",
+      "en": "Vowels and consonants",
+      "tj": "Садонокҳо ва ҳамсадоҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Гласные** буквы (а, о, у, ы, э, я, ё, ю, и, е) образуют слог. **Согласных** букв 21. Буквы **ъ** и **ь** звука не дают.",
+          "en": "**Vowel** letters (а, о, у, ы, э, я, ё, ю, и, е) form syllables. There are 21 **consonant** letters. The letters **ъ** and **ь** give no sound.",
+          "tj": "Ҳарфҳои **садонок** (а, о, у, ы, э, я, ё, ю, и, е) ҳиҷо месозанд. Ҳарфҳои **ҳамсадо** 21-тоянд. Ҳарфҳои **ъ** ва **ь** овоз намедиҳанд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Буква «о» — гласная или согласная?",
+          "en": "Is the letter «о» a vowel or a consonant?",
+          "tj": "Ҳарфи «о» садонок аст ё ҳамсадо?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Гласная.",
+              "en": "A vowel.",
+              "tj": "Садонок."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

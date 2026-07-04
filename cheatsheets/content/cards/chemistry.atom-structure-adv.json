@@ -1,0 +1,47 @@
+[
+  {
+    "id": "chemistry.atom-structure-adv.basics",
+    "topicId": "chemistry.atom-structure-adv",
+    "title": {
+      "ru": "Строение атома и периодический закон",
+      "en": "Atomic structure and the periodic law",
+      "tj": "Сохти атом ва қонуни даврӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Электроны располагаются по **энергетическим уровням** и подуровням (s, p, d). Заполнение определяет химические свойства.",
+          "en": "Electrons occupy **energy levels** and sublevels (s, p, d). Their filling determines chemical properties.",
+          "tj": "Электронҳо аз рӯи **сатҳҳои энергетикӣ** ва зерсатҳҳо (s, p, d) ҷойгир мешаванд. Пуршавии онҳо хосиятҳои химиявиро муайян мекунад."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Периодический закон**: свойства элементов периодически зависят от заряда ядра. По периоду слева направо растёт **электроотрицательность**.",
+          "en": "**Periodic law**: element properties depend periodically on the nuclear charge. Across a period, **electronegativity** increases left to right.",
+          "tj": "**Қонуни даврӣ**: хосиятҳои элементҳо аз заряди ядро ба таври даврӣ вобастаанд. Дар давр аз чап ба рост **электроманфигӣ** меафзояд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как меняется электроотрицательность по периоду слева направо?",
+          "en": "How does electronegativity change across a period, left to right?",
+          "tj": "Электроманфигӣ дар давр аз чап ба рост чӣ тавр тағйир меёбад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Увеличивается.",
+              "en": "It increases.",
+              "tj": "Меафзояд."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

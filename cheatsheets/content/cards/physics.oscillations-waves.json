@@ -1,0 +1,48 @@
+[
+  {
+    "id": "physics.oscillations-waves.basics",
+    "topicId": "physics.oscillations-waves",
+    "title": {
+      "ru": "Колебания и волны",
+      "en": "Oscillations and waves",
+      "tj": "Лаппишҳо ва мавҷҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Колебание** повторяется через **период** $T$. **Частота** $f = \\dfrac{1}{T}$ (Гц) — число колебаний в секунду.",
+          "en": "An **oscillation** repeats every **period** $T$. **Frequency** $f = \\dfrac{1}{T}$ (Hz) is the number of oscillations per second.",
+          "tj": "**Лаппиш** пас аз **давра** $T$ такрор мешавад. **Басомад** $f = \\dfrac{1}{T}$ (Гц) — шумораи лаппишҳо дар сония."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "v = \\lambda f",
+        "caption": {
+          "ru": "скорость волны, м/с",
+          "en": "wave speed, m/s",
+          "tj": "суръати мавҷ, м/с"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "$\\lambda = 2$ м, $f = 50$ Гц. Найдите скорость волны.",
+          "en": "$\\lambda = 2$ m, $f = 50$ Hz. Find the wave speed.",
+          "tj": "$\\lambda = 2$ м, $f = 50$ Гц. Суръати мавҷро ёбед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "$v = 2 \\times 50 = 100$ м/с.",
+              "en": "$v = 2 \\times 50 = 100$ m/s.",
+              "tj": "$v = 2 \\times 50 = 100$ м/с."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "technology.woodwork.basics",
+    "topicId": "technology.woodwork",
+    "title": {
+      "ru": "Обработка древесины",
+      "en": "Woodworking",
+      "tj": "Коркарди чӯб"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Обработка древесины** включает разметку, пиление, строгание, сверление и шлифовку. Для работы нужны: **верстак, пила, рубанок** и наждачная бумага.",
+          "en": "**Woodworking** includes marking, sawing, planing, drilling and sanding. Tools needed: **workbench, saw, plane** and sandpaper.",
+          "tj": "**Коркарди чӯб** аз нишонгузорӣ, арракашӣ, тарошкарӣ, буркарӣ ва сайқалкорӣ иборат аст. Асбобҳо: **верстак, арра, рандак** ва қоғази зангзада."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Порядок работы: **разметка → пиление → строгание → сборка → шлифовка → покрытие лаком**.",
+          "en": "Order of work: **marking → sawing → planing → assembly → sanding → varnishing**.",
+          "tj": "Тартиби кор: **нишонгузорӣ → арракашӣ → тарошкарӣ → монтаж → сайқалкорӣ → лакзанӣ**."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какой первый шаг при обработке древесины?",
+          "en": "What is the first step in woodworking?",
+          "tj": "Аввалин қадам дар коркарди чӯб кадом аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Разметка.",
+              "en": "Marking.",
+              "tj": "Нишонгузорӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

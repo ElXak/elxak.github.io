@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-language.word-meaning.basics",
+    "topicId": "tajik-language.word-meaning",
+    "title": {
+      "ru": "Значение слова",
+      "en": "Word meaning",
+      "tj": "Маънои калима"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Каждое **слово** что-то называет: предмет, действие или признак. Некоторые слова имеют несколько значений — это **многозначность**.",
+          "en": "Every **word** names something: an object, an action or a quality. Some words have several meanings — this is **polysemy**.",
+          "tj": "Ҳар **калима** чизеро ном мебарад: ашё, амал ё аломат. Баъзе калимаҳо якчанд маъно доранд — ин **бисёрмаъноӣ** аст."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Слово «сар» означает и часть тела, и начало. Что это показывает?",
+          "en": "The word «сар» means both a body part and a beginning. What does this show?",
+          "tj": "Калимаи «сар» ҳам узви бадан, ҳам оғозро ифода мекунад. Ин чиро нишон медиҳад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Что слово может быть многозначным.",
+              "en": "That a word can have several meanings.",
+              "tj": "Ки калима метавонад бисёрмаъно бошад."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

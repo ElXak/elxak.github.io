@@ -1,0 +1,35 @@
+[
+  {
+    "id": "math.numbers-100.basics",
+    "topicId": "math.numbers-100",
+    "title": {
+      "ru": "Числа до 100",
+      "en": "Numbers up to 100",
+      "tj": "Ададҳо то 100"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Двузначное число** состоит из десятков и единиц. Например, $47 = 40 + 7$ — это 4 десятка и 7 единиц.",
+          "en": "A **two-digit number** is made of tens and units. For example, $47 = 40 + 7$ — that is 4 tens and 7 units.",
+          "tj": "**Адади дурақама** аз даҳҳо ва якҳо иборат аст. Масалан, $47 = 40 + 7$ — ин 4 даҳӣ ва 7 якӣ аст."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какое число — это 6 десятков и 2 единицы?",
+          "en": "What number is 6 tens and 2 units?",
+          "tj": "6 даҳӣ ва 2 якӣ кадом адад аст?"
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "60 + 2 = 62"
+          }
+        ]
+      }
+    ]
+  }
+]

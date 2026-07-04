@@ -1,0 +1,47 @@
+[
+  {
+    "id": "biology.genetics.basics",
+    "topicId": "biology.genetics",
+    "title": {
+      "ru": "Основы генетики",
+      "en": "Genetics basics",
+      "tj": "Асосҳои генетика"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Генетика** изучает наследственность и изменчивость. Признаки передаются через **гены**, расположенные в **хромосомах** (молекулы ДНК).",
+          "en": "**Genetics** studies heredity and variation. Traits are passed on through **genes** located on **chromosomes** (DNA molecules).",
+          "tj": "**Генетика** ирсият ва тағйирпазириро меомӯзад. Аломатҳо тавассути **генҳо**-и дар **хромосомаҳо** ҷойгир (молекулаҳои ДНК) мегузаранд."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Генотип** — набор генов, **фенотип** — внешние признаки. Гены бывают **доминантными** и **рецессивными**.",
+          "en": "The **genotype** is the set of genes; the **phenotype** is the visible traits. Genes can be **dominant** or **recessive**.",
+          "tj": "**Генотип** — маҷмӯи генҳо, **фенотип** — аломатҳои зоҳирӣ. Генҳо **доминантӣ** ва **рецессивӣ** мешаванд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Где хранится наследственная информация?",
+          "en": "Where is hereditary information stored?",
+          "tj": "Маълумоти ирсӣ дар куҷо нигоҳ дошта мешавад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "В генах (молекулах ДНК).",
+              "en": "In genes (DNA molecules).",
+              "tj": "Дар генҳо (молекулаҳои ДНК)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

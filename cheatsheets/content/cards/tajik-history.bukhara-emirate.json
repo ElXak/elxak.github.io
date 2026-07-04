@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tajik-history.bukhara-emirate.basics",
+    "topicId": "tajik-history.bukhara-emirate",
+    "title": {
+      "ru": "Бухарский эмират",
+      "en": "The Bukhara Emirate",
+      "tj": "Аморати Бухоро"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Бухарский эмират** (1785–1920) — феодальное государство в Средней Азии со столицей в **Бухаре**. Управлялось эмирами из династии Мангытов.",
+          "en": "The **Bukhara Emirate** (1785–1920) was a feudal state in Central Asia with its capital in **Bukhara**. It was ruled by emirs of the Manghyt dynasty.",
+          "tj": "**Аморати Бухоро** (1785–1920) — давлати феодалии Осиёи Миёна бо пойтахт **Бухоро**. Аз ҷониби амирони сулолаи Манғит идора мешуд."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Просветитель Ахмад Дониш критиковал застой и отсталость эмирата.",
+          "en": "The enlightener Ahmad Donish criticised the stagnation and backwardness of the emirate.",
+          "tj": "Маорифпарвар Аҳмади Дониш стагнатсия ва қафомондагии аморатро танқид кард."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какова столица Бухарского эмирата?",
+          "en": "What was the capital of the Bukhara Emirate?",
+          "tj": "Пойтахти Аморати Бухоро кадом шаҳр буд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Бухара.",
+              "en": "Bukhara.",
+              "tj": "Бухоро."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

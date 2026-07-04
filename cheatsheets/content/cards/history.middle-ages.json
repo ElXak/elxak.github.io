@@ -1,0 +1,47 @@
+[
+  {
+    "id": "history.middle-ages.basics",
+    "topicId": "history.middle-ages",
+    "title": {
+      "ru": "Средние века",
+      "en": "The Middle Ages",
+      "tj": "Асрҳои миёна"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Средние века** — период истории с V по XV век (476–1492). Начались с падения Западной Римской империи и завершились эпохой Великих географических открытий.",
+          "en": "The **Middle Ages** is the period from the 5th to the 15th century (476–1492). It began with the fall of the Western Roman Empire and ended with the Age of Discovery.",
+          "tj": "**Асрҳои миёна** — давраи таърих аз асри V то асри XV (476–1492). Бо суқути империяи Рими Ғарбӣ оғоз шуда, бо давраи Кашфиётҳои бузург анҷом ёфт."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Главные черты: господство **церкви**, феодальная система, рыцарство и строительство замков.",
+          "en": "Key features: dominance of the **Church**, the feudal system, knighthood and castle-building.",
+          "tj": "Хусусиятҳои асосӣ: ҳукмронии **калисо**, системаи феодалӣ, рыцарство ва сохтани қалъаҳо."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какими годами ограничиваются Средние века?",
+          "en": "Which years mark the boundaries of the Middle Ages?",
+          "tj": "Асрҳои миёна дар байни кадом солҳо ҷойгиранд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "476–1492 годы.",
+              "en": "476–1492.",
+              "tj": "Солҳои 476–1492."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

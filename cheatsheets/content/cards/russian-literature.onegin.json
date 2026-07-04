@@ -1,0 +1,47 @@
+[
+  {
+    "id": "russian-literature.onegin.basics",
+    "topicId": "russian-literature.onegin",
+    "title": {
+      "ru": "Пушкин «Евгений Онегин»",
+      "en": "Pushkin, 'Eugene Onegin'",
+      "tj": "Пушкин «Евгений Онегин»"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**«Евгений Онегин»** (1823–1831) — роман в стихах Пушкина, написанный особой «онегинской строфой». Главные герои: светский повеса Онегин и искренняя Татьяна Ларина.",
+          "en": "**'Eugene Onegin'** (1823–1831) is Pushkin's novel in verse, written in the special 'Onegin stanza'. The main characters are the society idler Onegin and the sincere Tatyana Larina.",
+          "tj": "**«Евгений Онегин»** (1823–1831) — романи манзуми Пушкин, ки бо «банди Онегин»-и махсус навишта шудааст. Қаҳрамонони асосӣ: Онегини сабукрӯҳ ва Татьянаи самимӣ."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Белинский назвал роман «энциклопедией русской жизни».",
+          "en": "Belinsky called the novel 'an encyclopaedia of Russian life'.",
+          "tj": "Белинский романро «энсиклопедияи ҳаёти рус» номид."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как Белинский назвал «Евгения Онегина»?",
+          "en": "What did Belinsky call 'Eugene Onegin'?",
+          "tj": "Белинский «Евгений Онегин»-ро чӣ номид?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "«Энциклопедией русской жизни».",
+              "en": "'An encyclopaedia of Russian life'.",
+              "tj": "«Энсиклопедияи ҳаёти рус»."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-literature.loiq-sherali.basics",
+    "topicId": "tajik-literature.loiq-sherali",
+    "title": {
+      "ru": "Лоик Шерали",
+      "en": "Loiq Sherali",
+      "tj": "Лоиқ Шералӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Лоик Шерали** (1941–2000) — любимый народом таджикский поэт. Возродил национальную лирику, воспевал родину, родной язык, мать и предков.",
+          "en": "**Loiq Sherali** (1941–2000) was a much-loved Tajik poet. He revived national lyric poetry and celebrated the homeland, the mother tongue, the mother and ancestors.",
+          "tj": "**Лоиқ Шералӣ** (1941–2000) — шоири маҳбуби тоҷик. Лирикаи миллиро эҳё кард ва ватан, забони модарӣ, модар ва ниёгонро васф намуд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "О чём прежде всего писал Лоик Шерали?",
+          "en": "What did Loiq Sherali write about above all?",
+          "tj": "Лоиқ Шералӣ пеш аз ҳама дар бораи чӣ менавишт?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "О родине и родном языке.",
+              "en": "The homeland and the mother tongue.",
+              "tj": "Дар бораи ватан ва забони модарӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

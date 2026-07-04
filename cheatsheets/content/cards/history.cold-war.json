@@ -1,0 +1,47 @@
+[
+  {
+    "id": "history.cold-war.basics",
+    "topicId": "history.cold-war",
+    "title": {
+      "ru": "Холодная война",
+      "en": "The Cold War",
+      "tj": "Ҷанги Сард"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Холодная война** (1947–1991) — геополитическое противостояние **США** и **СССР** без прямого военного столкновения. Мир разделился на два лагеря: капиталистический и социалистический.",
+          "en": "The **Cold War** (1947–1991) was a geopolitical confrontation between the **USA** and the **USSR** without direct military conflict. The world divided into two camps: capitalist and socialist.",
+          "tj": "**Ҷанги Сард** (1947–1991) — муқовимати геополитикии **ИМА** ва **СССР** бе бархӯрди мустақими ҳарбӣ. Ҷаҳон ба ду лагер: капиталистӣ ва сотсиалистӣ тақсим шуд."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Главные события: **гонка вооружений, космическая гонка** (Спутник, полёт Гагарина), Карибский кризис (1962), война во Вьетнаме. Завершилась **распадом СССР** в 1991 году.",
+          "en": "Key events: the **arms race, space race** (Sputnik, Gagarin's flight), Cuban Missile Crisis (1962), Vietnam War. It ended with the **collapse of the USSR** in 1991.",
+          "tj": "Рӯйдодҳои асосӣ: **мусобиқаи силоҳ, мусобиқаи кайҳонӣ** (Спутник, парвози Гагарин), Бӯҳрони Куба (1962), ҷанги Вьетнам. Бо **пошхӯрии СССР** дар соли 1991 анҷом ёфт."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Между какими странами шла Холодная война?",
+          "en": "Between which countries was the Cold War fought?",
+          "tj": "Ҷанги Сард байни кадом кишварҳо буд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Между США и СССР.",
+              "en": "Between the USA and the USSR.",
+              "tj": "Байни ИМА ва СССР."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

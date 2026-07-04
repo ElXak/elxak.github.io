@@ -1,0 +1,88 @@
+[
+  {
+    "id": "english-language.past-continuous.basics",
+    "topicId": "english-language.past-continuous",
+    "title": {
+      "ru": "Past Continuous",
+      "en": "Past Continuous",
+      "tj": "Past Continuous"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Past Continuous** описывает действие, которое **длилось в определённый момент в прошлом**. Образуется: **was/were + глагол-ing**.",
+          "en": "**Past Continuous** describes an action that **was in progress at a specific moment in the past**. Formed with **was/were + verb-ing**.",
+          "tj": "**Past Continuous** амалеро, ки **дар лаҳзаи муайяни гузашта идома дошт**, ифода мекунад. Сохт: **was/were + феъл-ing**."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Форма",
+            "en": "Form",
+            "tj": "Шакл"
+          },
+          {
+            "ru": "Пример",
+            "en": "Example",
+            "tj": "Мисол"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Утвердит.",
+              "en": "Affirmative",
+              "tj": "Тасдиқӣ"
+            },
+            "I was reading at 8 pm."
+          ],
+          [
+            {
+              "ru": "Отрицат.",
+              "en": "Negative",
+              "tj": "Манфӣ"
+            },
+            "She wasn't sleeping."
+          ],
+          [
+            {
+              "ru": "Вопрос",
+              "en": "Question",
+              "tj": "Савол"
+            },
+            "Were they playing?"
+          ]
+        ]
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Часто используется вместе с **Past Simple**: While I was cooking, the phone rang.",
+          "en": "Often used with **Past Simple**: While I was cooking, the phone rang.",
+          "tj": "Аксар бо **Past Simple** истифода мешавад: While I was cooking, the phone rang."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как сказать «Вчера в 7 вечера я смотрел телевизор»?",
+          "en": "How do you say «Вчера в 7 вечера я смотрел телевизор»?",
+          "tj": "«Дирӯз соати 7-и бегоҳ ман телевизор тамошо мекардам»-ро ба англисӣ чӣ гуна мегӯянд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "I was watching TV at 7 pm yesterday.",
+              "en": "I was watching TV at 7 pm yesterday.",
+              "tj": "I was watching TV at 7 pm yesterday."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

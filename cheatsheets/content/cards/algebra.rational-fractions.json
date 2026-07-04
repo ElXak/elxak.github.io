@@ -1,0 +1,59 @@
+[
+  {
+    "id": "algebra.rational-fractions.basics",
+    "topicId": "algebra.rational-fractions",
+    "title": {
+      "ru": "Рациональные дроби",
+      "en": "Rational fractions",
+      "tj": "Касрҳои ратсионалӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Рациональная дробь** — отношение двух многочленов $\\dfrac{P}{Q}$, где $Q \\neq 0$.",
+          "en": "A **rational fraction** is a ratio of two polynomials $\\dfrac{P}{Q}$ with $Q \\neq 0$.",
+          "tj": "**Касри ратсионалӣ** — таносуби ду бисёрузва $\\dfrac{P}{Q}$, ки дар он $Q \\neq 0$."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Дробь **сокращают**: раскладывают числитель и знаменатель на множители и убирают общий множитель.",
+          "en": "To **reduce** a fraction, factor the numerator and denominator, then cancel the common factor.",
+          "tj": "Касрро **ихтисор** мекунанд: сурат ва махраҷро ба зарбкунандаҳо ҷудо карда, зарбкунандаи умумиро мебароранд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сократите: $\\dfrac{x^2 - 9}{x + 3}$.",
+          "en": "Reduce: $\\dfrac{x^2 - 9}{x + 3}$.",
+          "tj": "Ихтисор кунед: $\\dfrac{x^2 - 9}{x + 3}$."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Разложим числитель по разности квадратов: $x^2 - 9 = (x-3)(x+3)$.",
+              "en": "Factor the numerator with the difference of squares: $x^2 - 9 = (x-3)(x+3)$.",
+              "tj": "Сураторо бо фарқи квадратҳо ҷудо мекунем: $x^2 - 9 = (x-3)(x+3)$."
+            }
+          },
+          {
+            "type": "formula",
+            "latex": "\\dfrac{x^2-9}{x+3} = \\dfrac{(x-3)(x+3)}{x+3} = x - 3"
+          },
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "При $x \\neq -3$.",
+              "en": "For $x \\neq -3$.",
+              "tj": "Ҳангоми $x \\neq -3$."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

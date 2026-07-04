@@ -1,0 +1,76 @@
+[
+  {
+    "id": "math.times-table.basics",
+    "topicId": "math.times-table",
+    "title": {
+      "ru": "Таблица умножения",
+      "en": "Multiplication table",
+      "tj": "Ҷадвали зарб"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Таблицу умножения** учат наизусть — она помогает быстро считать.",
+          "en": "The **multiplication table** is learned by heart — it helps you calculate quickly.",
+          "tj": "**Ҷадвали зарб**-ро аз ёд мекунанд — он барои тез ҳисоб кардан кӯмак мекунад."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          "$n$",
+          "$2 \\times n$",
+          "$5 \\times n$",
+          "$10 \\times n$"
+        ],
+        "rows": [
+          [
+            "$1$",
+            "$2$",
+            "$5$",
+            "$10$"
+          ],
+          [
+            "$2$",
+            "$4$",
+            "$10$",
+            "$20$"
+          ],
+          [
+            "$3$",
+            "$6$",
+            "$15$",
+            "$30$"
+          ],
+          [
+            "$4$",
+            "$8$",
+            "$20$",
+            "$40$"
+          ],
+          [
+            "$5$",
+            "$10$",
+            "$25$",
+            "$50$"
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько будет $6 \\times 7$?",
+          "en": "What is $6 \\times 7$?",
+          "tj": "$6 \\times 7$ чанд мешавад?"
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "6 \\times 7 = 42"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "biology.evolution.basics",
+    "topicId": "biology.evolution",
+    "title": {
+      "ru": "Эволюционное учение",
+      "en": "Theory of evolution",
+      "tj": "Таълимоти эволютсионӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "По теории **Чарльза Дарвина** виды изменяются со временем. Движущие силы: **наследственная изменчивость**, **борьба за существование** и **естественный отбор** — выживают наиболее приспособленные.",
+          "en": "By **Charles Darwin's** theory, species change over time. The driving forces are **hereditary variation**, the **struggle for existence** and **natural selection** — the fittest survive.",
+          "tj": "Аз рӯи назарияи **Чарлз Дарвин** намудҳо бо мурури замон тағйир меёбанд. Қувваҳои ҳаракатдиҳанда: **тағйирпазирии ирсӣ**, **мубориза барои ҳастӣ** ва **интихоби табиӣ** — мутобиқтаринҳо зинда мемонанд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Что, по Дарвину, является главной движущей силой эволюции?",
+          "en": "What, according to Darwin, is the main driving force of evolution?",
+          "tj": "Ба гуфти Дарвин, қувваи асосии ҳаракатдиҳандаи эволютсия чист?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Естественный отбор.",
+              "en": "Natural selection.",
+              "tj": "Интихоби табиӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "russian-literature.fairy-tales.basics",
+    "topicId": "russian-literature.fairy-tales",
+    "title": {
+      "ru": "Литературная сказка",
+      "en": "The literary fairy tale",
+      "tj": "Афсонаи адабӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Литературная сказка** написана конкретным автором, в отличие от народной. Например, А. С. Пушкин написал «Сказку о рыбаке и рыбке» и «Сказку о царе Салтане».",
+          "en": "A **literary fairy tale** is written by a particular author, unlike a folk tale. For example, Pushkin wrote 'The Tale of the Fisherman and the Fish' and 'The Tale of Tsar Saltan'.",
+          "tj": "**Афсонаи адабӣ** аз ҷониби муаллифи мушаххас навишта мешавад, бар хилофи афсонаи халқӣ. Масалан, Пушкин «Афсона дар бораи моҳигир ва моҳӣ»-ро навиштааст."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "В сказках есть волшебство, борьба добра и зла и поучение.",
+          "en": "Fairy tales contain magic, the struggle of good and evil, and a lesson.",
+          "tj": "Дар афсонаҳо ҷоду, муборизаи неку бад ва панд ҳаст."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Чем литературная сказка отличается от народной?",
+          "en": "How does a literary fairy tale differ from a folk one?",
+          "tj": "Афсонаи адабӣ аз афсонаи халқӣ бо чӣ фарқ мекунад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "У литературной сказки есть известный автор.",
+              "en": "A literary fairy tale has a known author.",
+              "tj": "Афсонаи адабӣ муаллифи муайян дорад."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

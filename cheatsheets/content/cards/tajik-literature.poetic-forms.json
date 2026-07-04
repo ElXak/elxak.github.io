@@ -1,0 +1,104 @@
+[
+  {
+    "id": "tajik-literature.poetic-forms.basics",
+    "topicId": "tajik-literature.poetic-forms",
+    "title": {
+      "ru": "Формы таджикской поэзии",
+      "en": "Forms of Tajik poetry",
+      "tj": "Шаклҳои назми тоҷикӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "В классической таджикско-персидской поэзии есть свои **формы**, различающиеся по рифме и строению. Основная единица — **байт** (двустишие).",
+          "en": "Classical Persian-Tajik poetry has its own **forms**, distinguished by rhyme and structure. The basic unit is the **beyt** (couplet).",
+          "tj": "Дар назми классикии тоҷикӣ-форсӣ **шаклҳои** хос мавҷуданд, ки аз рӯи қофия ва сохт фарқ мекунанд. Воҳиди асосӣ — **байт**."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Форма",
+            "en": "Form",
+            "tj": "Шакл"
+          },
+          {
+            "ru": "Описание",
+            "en": "Description",
+            "tj": "Тавсиф"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Газель (ғазал)",
+              "en": "Ghazal (ғазал)",
+              "tj": "Ғазал"
+            },
+            {
+              "ru": "лирика о любви",
+              "en": "lyric about love",
+              "tj": "лирика дар бораи ишқ"
+            }
+          ],
+          [
+            {
+              "ru": "Рубаи (рубоӣ)",
+              "en": "Rubai (рубоӣ)",
+              "tj": "Рубоӣ"
+            },
+            {
+              "ru": "четверостишие-раздумье",
+              "en": "four-line reflection",
+              "tj": "чоргонаи андешаманд"
+            }
+          ],
+          [
+            {
+              "ru": "Касыда (қасида)",
+              "en": "Qasida (қасида)",
+              "tj": "Қасида"
+            },
+            {
+              "ru": "большая хвалебная ода",
+              "en": "long ode of praise",
+              "tj": "қасидаи мадҳӣ"
+            }
+          ],
+          [
+            {
+              "ru": "Маснави (маснавӣ)",
+              "en": "Masnavi (маснавӣ)",
+              "tj": "Маснавӣ"
+            },
+            {
+              "ru": "парные рифмы для поэм",
+              "en": "couplets for long poems",
+              "tj": "қофияи ҷуфт барои достон"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как называется четверостишие с философским содержанием?",
+          "en": "What is a four-line philosophical poem called?",
+          "tj": "Чоргонаи дорои мазмуни фалсафӣ чӣ ном дорад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Рубаи (рубоӣ).",
+              "en": "A rubai (рубоӣ).",
+              "tj": "Рубоӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

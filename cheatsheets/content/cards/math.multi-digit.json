@@ -1,0 +1,43 @@
+[
+  {
+    "id": "math.multi-digit.basics",
+    "topicId": "math.multi-digit",
+    "title": {
+      "ru": "Многозначные числа",
+      "en": "Multi-digit numbers",
+      "tj": "Ададҳои бисёррақама"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Многозначные числа** больше 1000. Цифры объединяют в классы: единицы, тысячи, миллионы.",
+          "en": "**Multi-digit numbers** are greater than 1000. Digits are grouped into classes: units, thousands, millions.",
+          "tj": "**Ададҳои бисёррақама** аз 1000 калонтаранд. Рақамҳо ба синфҳо муттаҳид мешаванд: якҳо, ҳазорҳо, миллионҳо."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Например, $25\\,340$ — это $25$ тысяч и $340$.",
+          "en": "For example, $25\\,340$ is $25$ thousand and $340$.",
+          "tj": "Масалан, $25\\,340$ — ин $25$ ҳазор ва $340$ аст."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько тысяч в числе $7\\,209$?",
+          "en": "How many thousands are in $7\\,209$?",
+          "tj": "Дар адади $7\\,209$ чанд ҳазор аст?"
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "7"
+          }
+        ]
+      }
+    ]
+  }
+]

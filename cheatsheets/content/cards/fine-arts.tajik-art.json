@@ -1,0 +1,39 @@
+[
+  {
+    "id": "fine-arts.tajik-art.basics",
+    "topicId": "fine-arts.tajik-art",
+    "title": {
+      "ru": "Таджикское прикладное искусство",
+      "en": "Tajik applied arts",
+      "tj": "Санъати амалии тоҷик"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Таджикское прикладное искусство** — вид творчества, в котором красота сочетается с практическим назначением. Виды: **ганч** (лепнина из гипса), **кашидадӯзӣ** (вышивка), **зилолабофӣ** (ковроткачество), **кулолгарӣ** (гончарство).",
+          "en": "**Tajik applied arts** combine beauty with practical use. Types: **ganch** (plaster carving), **kashidadozi** (embroidery), **zilolabofi** (carpet weaving), **kulolgari** (pottery).",
+          "tj": "**Санъати амалии тоҷик** — навъи эҷодиёт, ки дар он зебоӣ бо мақсади амалӣ омезиш меёбад. Намудҳо: **ганч** (гачкорӣ), **кашидадӯзӣ**, **зилолабофӣ** (гиламбофӣ), **кулолгарӣ**."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Что такое «ганч» в таджикском искусстве?",
+          "en": "What is 'ganch' in Tajik art?",
+          "tj": "«Ганч» дар санъати тоҷик чист?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Лепнина из гипса — традиционный декоративный орнамент.",
+              "en": "Plaster carving — a traditional decorative ornament.",
+              "tj": "Гачкорӣ — зиннати анъанавии ороишӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

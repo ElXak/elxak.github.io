@@ -1,0 +1,47 @@
+[
+  {
+    "id": "physics.work-power-energy.basics",
+    "topicId": "physics.work-power-energy",
+    "title": {
+      "ru": "Работа, мощность, энергия",
+      "en": "Work, power, energy",
+      "tj": "Кор, тавоноӣ, энергия"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Работа** $A = F s$ (джоуль, Дж). **Мощность** $N = \\dfrac{A}{t}$ (ватт, Вт) — работа за единицу времени.",
+          "en": "**Work** $A = F s$ (joule, J). **Power** $N = \\dfrac{A}{t}$ (watt, W) is work per unit time.",
+          "tj": "**Кор** $A = F s$ (ҷоул, Ҷ). **Тавоноӣ** $N = \\dfrac{A}{t}$ (ватт, Вт) — кор дар воҳиди вақт."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Энергия** — способность совершать работу. Бывает кинетическая (движения) и потенциальная (положения).",
+          "en": "**Energy** is the ability to do work. It can be kinetic (of motion) or potential (of position).",
+          "tj": "**Энергия** — қобилияти кор иҷро кардан. Кинетикӣ (ҳаракат) ва потенсиалӣ (мавқеъ) мешавад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сила 10 Н переместила тело на 5 м. Найдите работу.",
+          "en": "A force of 10 N moves a body 5 m. Find the work.",
+          "tj": "Қувваи 10 Н ҷисмро ба 5 м кӯчонид. Корро ёбед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "$A = 10 \\times 5 = 50$ Дж.",
+              "en": "$A = 10 \\times 5 = 50$ J.",
+              "tj": "$A = 10 \\times 5 = 50$ Ҷ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

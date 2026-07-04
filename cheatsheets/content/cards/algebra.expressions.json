@@ -1,0 +1,68 @@
+[
+  {
+    "id": "algebra.expressions.basics",
+    "topicId": "algebra.expressions",
+    "title": {
+      "ru": "Преобразование выражений",
+      "en": "Transforming expressions",
+      "tj": "Соддагардонии ифодаҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Буквенное выражение** содержит числа, переменные и действия. **Тождественные преобразования** меняют вид выражения, но не его значение.",
+          "en": "A **literal expression** contains numbers, variables and operations. **Identity transformations** change the form of an expression but not its value.",
+          "tj": "**Ифодаи ҳарфӣ** аз ададҳо, тағйирёбандаҳо ва амалҳо иборат аст. **Табдилҳои айнӣ** намуди ифодаро тағйир медиҳанд, аммо қимати онро не."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Подобные слагаемые** имеют одинаковую буквенную часть. Их складывают, складывая коэффициенты: $3x + 5x = 8x$.",
+          "en": "**Like terms** have the same letter part. Combine them by adding coefficients: $3x + 5x = 8x$.",
+          "tj": "**Ҳадҳои монанд** қисми ҳарфии якхела доранд. Онҳоро бо ҷамъи коэффитсиентҳо ҷамъ мекунанд: $3x + 5x = 8x$."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "a(b + c) = ab + ac",
+        "caption": {
+          "ru": "Распределительный закон",
+          "en": "Distributive law",
+          "tj": "Қонуни тақсимӣ"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Упростите: $3x + 2(x - 4)$.",
+          "en": "Simplify: $3x + 2(x - 4)$.",
+          "tj": "Содда кунед: $3x + 2(x - 4)$."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Раскроем скобки: $3x + 2x - 8$.",
+              "en": "Expand the brackets: $3x + 2x - 8$.",
+              "tj": "Қавсҳоро воз мекунем: $3x + 2x - 8$."
+            }
+          },
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Приведём подобные слагаемые.",
+              "en": "Combine like terms.",
+              "tj": "Ҳадҳои монандро ҷамъ мекунем."
+            }
+          },
+          {
+            "type": "formula",
+            "latex": "3x + 2(x-4) = 5x - 8"
+          }
+        ]
+      }
+    ]
+  }
+]

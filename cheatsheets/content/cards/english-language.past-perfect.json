@@ -1,0 +1,88 @@
+[
+  {
+    "id": "english-language.past-perfect.basics",
+    "topicId": "english-language.past-perfect",
+    "title": {
+      "ru": "Past Perfect",
+      "en": "Past Perfect",
+      "tj": "Past Perfect"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Past Perfect** описывает действие, которое завершилось **до другого момента в прошлом**. Образуется: **had + причастие II (V3)**.",
+          "en": "**Past Perfect** describes an action completed **before another point in the past**. Formed with **had + past participle (V3)**.",
+          "tj": "**Past Perfect** амалеро ифода мекунад, ки **пеш аз лаҳзаи дигари гузашта** анҷом ёфтааст. Сохт: **had + шакли III-юм**."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Форма",
+            "en": "Form",
+            "tj": "Шакл"
+          },
+          {
+            "ru": "Пример",
+            "en": "Example",
+            "tj": "Мисол"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Утвердит.",
+              "en": "Affirmative",
+              "tj": "Тасдиқӣ"
+            },
+            "She had left before I arrived."
+          ],
+          [
+            {
+              "ru": "Отрицат.",
+              "en": "Negative",
+              "tj": "Манфӣ"
+            },
+            "He hadn't eaten when we called."
+          ],
+          [
+            {
+              "ru": "Вопрос",
+              "en": "Question",
+              "tj": "Савол"
+            },
+            "Had you seen him before?"
+          ]
+        ]
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Маркеры: **by the time, before, after, when, already, just, never**.",
+          "en": "Time markers: **by the time, before, after, when, already, just, never**.",
+          "tj": "Нишонгарҳо: **by the time, before, after, when, already, just, never**."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как сказать «К тому времени как я пришёл, она ушла»?",
+          "en": "How do you say «К тому времени как я пришёл, она ушла»?",
+          "tj": "«Вақте ки ман омадам, вай рафта буд»-ро ба англисӣ чӣ гуна мегӯянд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "By the time I arrived, she had left.",
+              "en": "By the time I arrived, she had left.",
+              "tj": "By the time I arrived, she had left."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

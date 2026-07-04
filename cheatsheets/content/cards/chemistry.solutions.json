@@ -1,0 +1,48 @@
+[
+  {
+    "id": "chemistry.solutions.basics",
+    "topicId": "chemistry.solutions",
+    "title": {
+      "ru": "Растворы",
+      "en": "Solutions",
+      "tj": "Маҳлулҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Раствор** состоит из **растворённого вещества** и **растворителя**. **Массовая доля** показывает, какую часть массы раствора составляет вещество.",
+          "en": "A **solution** consists of a **solute** and a **solvent**. The **mass fraction** shows what part of the solution's mass is the solute.",
+          "tj": "**Маҳлул** аз **моддаи ҳалшаванда** ва **ҳалкунанда** иборат аст. **Ҳиссаи массавӣ** нишон медиҳад, ки кадом қисми массаи маҳлулро модда ташкил медиҳад."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "w = \\dfrac{m_1}{m} \\cdot 100\\%",
+        "caption": {
+          "ru": "m₁ — масса вещества, m — масса раствора",
+          "en": "m₁ — solute mass, m — solution mass",
+          "tj": "m₁ — массаи модда, m — массаи маҳлул"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "20 г соли растворили в 80 г воды. Найдите массовую долю соли.",
+          "en": "20 g of salt is dissolved in 80 g of water. Find the salt's mass fraction.",
+          "tj": "20 г намак дар 80 г об ҳал шуд. Ҳиссаи массавии намакро ёбед."
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "$w = \\dfrac{20}{100} \\cdot 100\\% = 20\\%$.",
+              "en": "$w = \\dfrac{20}{100} \\cdot 100\\% = 20\\%$.",
+              "tj": "$w = \\dfrac{20}{100} \\cdot 100\\% = 20\\%$."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

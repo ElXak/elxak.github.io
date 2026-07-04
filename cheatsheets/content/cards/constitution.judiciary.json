@@ -1,0 +1,39 @@
+[
+  {
+    "id": "constitution.judiciary.basics",
+    "topicId": "constitution.judiciary",
+    "title": {
+      "ru": "Судебная власть",
+      "en": "The judiciary",
+      "tj": "Ҳокимияти судӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Судебная власть** в Таджикистане независима и осуществляется судами. Высший орган — **Конституционный суд**, проверяющий соответствие законов Конституции.",
+          "en": "The **judiciary** in Tajikistan is independent and exercised by the courts. The highest body is the **Constitutional Court**, which checks that laws conform to the Constitution.",
+          "tj": "**Ҳокимияти судӣ** дар Тоҷикистон мустақил аст ва тавассути судҳо амалӣ мегардад. Мақоми олӣ — **Суди конститутсионӣ**, ки мувофиқати қонунҳоро ба Конститутсия санҷад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какой суд проверяет соответствие законов Конституции?",
+          "en": "Which court checks that laws conform to the Constitution?",
+          "tj": "Кадом суд мувофиқати қонунҳоро ба Конститутсия санҷад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Конституционный суд.",
+              "en": "The Constitutional Court.",
+              "tj": "Суди конститутсионӣ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tajik-language.vowels-consonants.basics",
+    "topicId": "tajik-language.vowels-consonants",
+    "title": {
+      "ru": "Гласные и согласные",
+      "en": "Vowels and consonants",
+      "tj": "Садонокҳо ва ҳамсадоҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Гласные** произносятся свободно и образуют слоги. В таджикском языке шесть гласных: **а, е, и, о, у, ӯ**.",
+          "en": "**Vowels** are pronounced freely and form syllables. Tajik has six vowels: **а, е, и, о, у, ӯ**.",
+          "tj": "**Садонокҳо** озод талаффуз мешаванд ва ҳиҷо месозанд. Дар забони тоҷикӣ шаш садонок ҳаст: **а, е, и, о, у, ӯ**."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Остальные звуки — **согласные**; их произносят с преградой для воздуха.",
+          "en": "The other sounds are **consonants**; they are pronounced with an obstruction to the airflow.",
+          "tj": "Овозҳои дигар **ҳамсадо**-анд; онҳо бо монеаи ҳаво талаффуз мешаванд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Звук «о» — гласный или согласный?",
+          "en": "Is the sound «о» a vowel or a consonant?",
+          "tj": "Овози «о» садонок аст ё ҳамсадо?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Гласный.",
+              "en": "A vowel.",
+              "tj": "Садонок."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-language.syllable.basics",
+    "topicId": "tajik-language.syllable",
+    "title": {
+      "ru": "Слог",
+      "en": "Syllable",
+      "tj": "Ҳиҷо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Слово делится на **слоги**. В каждом слоге есть один гласный звук. Слова читают по слогам.",
+          "en": "A word divides into **syllables**. Each syllable has one vowel sound. Words are read syllable by syllable.",
+          "tj": "Калима ба **ҳиҷоҳо** ҷудо мешавад. Дар ҳар ҳиҷо як овози садонок ҳаст. Калимаҳоро ҳиҷо ба ҳиҷо мехонанд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько слогов в слове «китоб» (книга)?",
+          "en": "How many syllables are in «китоб» (book)?",
+          "tj": "Дар калимаи «китоб» чанд ҳиҷо ҳаст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Ки-тоб — два слога.",
+              "en": "Ки-тоб — two syllables.",
+              "tj": "Ки-тоб — ду ҳиҷо."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "russian-language.orthography.basics",
+    "topicId": "russian-language.orthography",
+    "title": {
+      "ru": "Орфография и пунктуация",
+      "en": "Spelling and punctuation",
+      "tj": "Имло ва аломатҳои китобат"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Орфография** — это правила правильного написания слов. **Пунктуация** — правила постановки знаков препинания. Вместе они обеспечивают грамотное письмо.",
+          "en": "**Orthography** is the set of rules for spelling words correctly. **Punctuation** is the set of rules for placing punctuation marks. Together they ensure correct writing.",
+          "tj": "**Имло (орфография)** қоидаҳои дурусти навиштани калимаҳост. **Пунктуатсия** қоидаҳои гузоштани аломатҳои китобат аст. Якҷоя онҳо саводнокии хаттиро таъмин мекунанд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Что определяет орфография?",
+          "en": "What does orthography deal with?",
+          "tj": "Имло чиро муайян мекунад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Правила написания слов.",
+              "en": "The rules for spelling words.",
+              "tj": "Қоидаҳои навиштани калимаҳо."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "biology.variation.basics",
+    "topicId": "biology.variation",
+    "title": {
+      "ru": "Изменчивость",
+      "en": "Variation",
+      "tj": "Тағйирпазирӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Изменчивость** — способность организмов приобретать новые признаки. Она бывает наследственной и ненаследственной.",
+          "en": "**Variation** is the ability of organisms to acquire new traits. It can be hereditary or non-hereditary.",
+          "tj": "**Тағйирпазирӣ** — қобилияти организмҳо барои гирифтани аломатҳои нав. Он ирсӣ ва ғайриирсӣ мешавад."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Тип",
+            "en": "Type",
+            "tj": "Намуд"
+          },
+          {
+            "ru": "Причина",
+            "en": "Cause",
+            "tj": "Сабаб"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Наследственная",
+              "en": "Hereditary",
+              "tj": "Ирсӣ"
+            },
+            {
+              "ru": "мутации, новые сочетания генов",
+              "en": "mutations, new gene combinations",
+              "tj": "мутатсияҳо, омезиши нави генҳо"
+            }
+          ],
+          [
+            {
+              "ru": "Ненаследственная",
+              "en": "Non-hereditary",
+              "tj": "Ғайриирсӣ"
+            },
+            {
+              "ru": "влияние среды",
+              "en": "effect of the environment",
+              "tj": "таъсири муҳит"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Загар на коже от солнца — какая это изменчивость?",
+          "en": "A suntan from the sun — which kind of variation is it?",
+          "tj": "Сабзиши пӯст аз офтоб — ин кадом тағйирпазирӣ аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Ненаследственная (модификационная).",
+              "en": "Non-hereditary (modification).",
+              "tj": "Ғайриирсӣ (модификатсионӣ)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

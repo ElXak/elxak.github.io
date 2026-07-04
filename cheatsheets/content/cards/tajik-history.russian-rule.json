@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-history.russian-rule.basics",
+    "topicId": "tajik-history.russian-rule",
+    "title": {
+      "ru": "Присоединение к России",
+      "en": "Incorporation into Russia",
+      "tj": "Ҳамроҳшавӣ ба Россия"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "В 1860-е–1880-е годы Россия завоевала Среднюю Азию. Бухарский эмират стал **протекторатом** России (1868). Присоединение принесло новые торговые связи и образование, но сопровождалось сопротивлением населения.",
+          "en": "In the 1860s–1880s Russia conquered Central Asia. The Bukhara Emirate became a **Russian protectorate** (1868). Incorporation brought new trade links and education, but was accompanied by resistance.",
+          "tj": "Дар солҳои 1860–1880 Россия Осиёи Миёнаро забт кард. Аморати Бухоро **протекторати** Россия шуд (1868). Ҳамроҳшавӣ пайвандҳои нави тиҷоратӣ ва маорифро овард, аммо бо муқовимати аҳолӣ ҳамроҳ буд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Каким стал Бухарский эмират в 1868 году?",
+          "en": "What did the Bukhara Emirate become in 1868?",
+          "tj": "Аморати Бухоро дар соли 1868 чӣ шуд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Протекторатом России.",
+              "en": "A Russian protectorate.",
+              "tj": "Протекторати Россия."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

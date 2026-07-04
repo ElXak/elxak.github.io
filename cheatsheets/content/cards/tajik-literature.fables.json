@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-literature.fables.basics",
+    "topicId": "tajik-literature.fables",
+    "title": {
+      "ru": "Басни",
+      "en": "Fables",
+      "tj": "Масалҳо"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Басня (масал)** — короткий иносказательный рассказ, часто о животных, с **поучением (панд)** в конце. Она высмеивает недостатки и учит мудрости.",
+          "en": "A **fable (масал)** is a short allegorical story, often about animals, with a **moral (панд)** at the end. It mocks faults and teaches wisdom.",
+          "tj": "**Масал** ҳикояи кӯтоҳи рамзӣ, аксар дар бораи ҳайвонот, бо **панд** дар охир аст. Он камбудиҳоро масхара мекунад ва ҳикмат меомӯзонад."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Что обычно стоит в конце басни?",
+          "en": "What usually comes at the end of a fable?",
+          "tj": "Дар охири масал одатан чӣ меояд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Поучение (панд).",
+              "en": "A moral (панд).",
+              "tj": "Панд."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

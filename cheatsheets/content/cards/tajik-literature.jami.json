@@ -1,0 +1,39 @@
+[
+  {
+    "id": "tajik-literature.jami.basics",
+    "topicId": "tajik-literature.jami",
+    "title": {
+      "ru": "Джами",
+      "en": "Jami",
+      "tj": "Ҷомӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Абдуррахман Джами** (1414–1492) — последний великий классик, поэт и суфий из Герата. Знаменит сборником **«Хафт авранг» («Семь престолов»)** — семь поэм-маснави, включая «Юсуф и Зулейха».",
+          "en": "**Abdurahmon Jami** (1414–1492) was the last great classical poet, a scholar and Sufi from Herat. He is famous for **Haft Awrang ('Seven Thrones')** — seven masnavi poems, including 'Yusuf and Zulaikha'.",
+          "tj": "**Абдурраҳмони Ҷомӣ** (1414–1492) — охирин классики бузург, шоир ва сӯфӣ аз Ҳирот. Бо маҷмӯаи **«Ҳафт авранг»** — ҳафт достони маснавӣ, аз ҷумла «Юсуф ва Зулайхо» машҳур аст."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как называется сборник семи поэм Джами?",
+          "en": "What is Jami's collection of seven poems called?",
+          "tj": "Маҷмӯаи ҳафт достони Ҷомӣ чӣ ном дорад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "«Хафт авранг» («Семь престолов»).",
+              "en": "Haft Awrang ('Seven Thrones').",
+              "tj": "«Ҳафт авранг»."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

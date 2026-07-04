@@ -1,0 +1,39 @@
+[
+  {
+    "id": "russian-literature.epic-genres.basics",
+    "topicId": "russian-literature.epic-genres",
+    "title": {
+      "ru": "Эпические жанры",
+      "en": "Epic genres",
+      "tj": "Жанрҳои эпикӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Эпические (повествовательные) жанры** различаются по объёму: **рассказ** (небольшое произведение об одном событии), **повесть** (средняя по объёму), **роман** (большое произведение со многими героями и сюжетными линиями).",
+          "en": "**Epic (narrative) genres** differ in size: the **short story** (a small work about one event), the **novella** (medium-sized), and the **novel** (a large work with many characters and storylines).",
+          "tj": "**Жанрҳои эпикӣ (ривоятӣ)** аз рӯи ҳаҷм фарқ мекунанд: **ҳикоя** (асари хурд дар бораи як воқеа), **қисса** (ҳаҷман миёна), **роман** (асари калон бо қаҳрамонон ва хатҳои сюжетии зиёд)."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как называется большое произведение со многими героями и сюжетными линиями?",
+          "en": "What is a large work with many characters and storylines called?",
+          "tj": "Асари калон бо қаҳрамонону хатҳои сюжетии зиёд чӣ ном дорад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Роман.",
+              "en": "A novel.",
+              "tj": "Роман."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

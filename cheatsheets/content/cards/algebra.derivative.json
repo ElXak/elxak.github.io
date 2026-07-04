@@ -1,0 +1,76 @@
+[
+  {
+    "id": "algebra.derivative.basics",
+    "topicId": "algebra.derivative",
+    "title": {
+      "ru": "Производная",
+      "en": "Derivative",
+      "tj": "Ҳосила"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Производная** $f'(x)$ — скорость изменения функции; геометрически — угловой коэффициент касательной к графику.",
+          "en": "The **derivative** $f'(x)$ is the rate of change of a function; geometrically, the slope of the tangent line.",
+          "tj": "**Ҳосила** $f'(x)$ — суръати тағйирёбии функсия; аз ҷиҳати геометрӣ — коэффитсиенти кунҷии хати уринанда."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Функция",
+            "en": "Function",
+            "tj": "Функсия"
+          },
+          {
+            "ru": "Производная",
+            "en": "Derivative",
+            "tj": "Ҳосила"
+          }
+        ],
+        "rows": [
+          [
+            "$c$",
+            "$0$"
+          ],
+          [
+            "$x^n$",
+            "$n\\,x^{n-1}$"
+          ],
+          [
+            "$\\sin x$",
+            "$\\cos x$"
+          ],
+          [
+            "$\\cos x$",
+            "$-\\sin x$"
+          ],
+          [
+            "$e^x$",
+            "$e^x$"
+          ],
+          [
+            "$\\ln x$",
+            "$\\dfrac{1}{x}$"
+          ]
+        ]
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Найдите $f'(x)$ для $f(x)=x^3$ и значение в $x=2$.",
+          "en": "Find $f'(x)$ for $f(x)=x^3$ and its value at $x=2$.",
+          "tj": "Барои $f(x)=x^3$ $f'(x)$ ва қимати онро дар $x=2$ ёбед."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "f'(x) = 3x^2,\\quad f'(2) = 12"
+          }
+        ]
+      }
+    ]
+  }
+]

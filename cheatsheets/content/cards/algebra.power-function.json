@@ -1,0 +1,35 @@
+[
+  {
+    "id": "algebra.power-function.basics",
+    "topicId": "algebra.power-function",
+    "title": {
+      "ru": "Степенная функция",
+      "en": "Power function",
+      "tj": "Функсияи дараҷагӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Степенная функция** $y = x^p$. Её график зависит от показателя $p$: $y=x^2$ — парабола, $y=x^3$ — кубическая, $y=x^{-1}$ — гипербола.",
+          "en": "A **power function** $y = x^p$. Its graph depends on $p$: $y=x^2$ is a parabola, $y=x^3$ a cubic, $y=x^{-1}$ a hyperbola.",
+          "tj": "**Функсияи дараҷагӣ** $y = x^p$. Графики он аз нишондиҳандаи $p$ вобаста аст: $y=x^2$ — парабола, $y=x^3$ — кубӣ, $y=x^{-1}$ — гипербола."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Чему равно $y$ для $y=x^{1/2}$ при $x=9$?",
+          "en": "Find $y$ for $y=x^{1/2}$ at $x=9$.",
+          "tj": "Барои $y=x^{1/2}$ ҳангоми $x=9$ $y$-ро ёбед."
+        },
+        "solution": [
+          {
+            "type": "formula",
+            "latex": "y = 9^{1/2} = \\sqrt{9} = 3"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "id": "english-language.present-perfect.basics",
+    "topicId": "english-language.present-perfect",
+    "title": {
+      "ru": "Present Perfect",
+      "en": "Present Perfect",
+      "tj": "Present Perfect"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Present Perfect** связывает прошлое с настоящим: действие в прошлом, но результат важен **сейчас**. Образуется: **have/has + причастие II (V3)**.",
+          "en": "**Present Perfect** links the past with the present: a past action whose result matters **now**. Formed with **have/has + past participle (V3)**.",
+          "tj": "**Present Perfect** гузаштаро бо ҳол мепайвандад: амали гузашта, аммо натиҷааш **ҳозир** муҳим аст. Сохт: **have/has + шакли III-юми феъл**."
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "ru": "Форма",
+            "en": "Form",
+            "tj": "Шакл"
+          },
+          {
+            "ru": "Пример",
+            "en": "Example",
+            "tj": "Мисол"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Утвердит.",
+              "en": "Affirmative",
+              "tj": "Тасдиқӣ"
+            },
+            "I have seen this film."
+          ],
+          [
+            {
+              "ru": "Отрицат.",
+              "en": "Negative",
+              "tj": "Манфӣ"
+            },
+            "She hasn't eaten yet."
+          ],
+          [
+            {
+              "ru": "Вопрос",
+              "en": "Question",
+              "tj": "Савол"
+            },
+            "Have you ever been to London?"
+          ]
+        ]
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Маркеры: **already, yet, just, ever, never, since, for**.",
+          "en": "Time markers: **already, yet, just, ever, never, since, for**.",
+          "tj": "Нишонгарҳо: **already, yet, just, ever, never, since, for**."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Как спросить «Ты когда-нибудь был в Лондоне»?",
+          "en": "How do you ask «Ты когда-нибудь был в Лондоне»?",
+          "tj": "«Оё ту ягон бор дар Лондон будаӣ?»-ро ба англисӣ чӣ гуна мегӯянд?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Have you ever been to London?",
+              "en": "Have you ever been to London?",
+              "tj": "Have you ever been to London?"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tajik-language.adjective-intro.basics",
+    "topicId": "tajik-language.adjective-intro",
+    "title": {
+      "ru": "Имя прилагательное",
+      "en": "The adjective",
+      "tj": "Сифат"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Прилагательное (сифат)** называет признак предмета и отвечает на вопрос **«чӣ гуна?»** (какой?). Примеры: **сурх** (красный), **калон** (большой).",
+          "en": "An **adjective (сифат)** names a quality of an object and answers **«чӣ гуна?»** (what kind?). Examples: **сурх** (red), **калон** (big).",
+          "tj": "**Сифат** аломати ашёро ном мебарад ва ба саволи **«чӣ гуна?»** ҷавоб медиҳад. Мисолҳо: **сурх**, **калон**."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "В таджикском прилагательное обычно стоит после существительного: «гули сурх» (красный цветок).",
+          "en": "In Tajik the adjective usually comes after the noun: «гули сурх» (red flower).",
+          "tj": "Дар тоҷикӣ сифат одатан пас аз исм меояд: «гули сурх»."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какая часть речи слово «калон» (большой)?",
+          "en": "What part of speech is «калон» (big)?",
+          "tj": "«Калон» кадом ҳиссаи нутқ аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Прилагательное (сифат).",
+              "en": "An adjective (сифат).",
+              "tj": "Сифат."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

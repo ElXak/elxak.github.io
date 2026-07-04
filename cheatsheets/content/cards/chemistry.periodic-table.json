@@ -1,0 +1,47 @@
+[
+  {
+    "id": "chemistry.periodic-table.basics",
+    "topicId": "chemistry.periodic-table",
+    "title": {
+      "ru": "Периодическая система",
+      "en": "The periodic table",
+      "tj": "Ҷадвали даврӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "В таблице Менделеева элементы расположены по возрастанию заряда ядра. Строки — **периоды**, столбцы — **группы**.",
+          "en": "In Mendeleev's table elements are arranged by increasing nuclear charge. Rows are **periods**, columns are **groups**.",
+          "tj": "Дар ҷадвали Менделеев элементҳо аз рӯи афзоиши заряди ядро ҷойгир шудаанд. Сатрҳо — **давр**, сутунҳо — **гурӯҳ**."
+        }
+      },
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "Свойства элементов **периодически повторяются** с ростом номера. У главных подгрупп номер группы равен числу внешних электронов.",
+          "en": "Element properties **repeat periodically** as the number grows. For main groups, the group number equals the number of outer electrons.",
+          "tj": "Хосиятҳои элементҳо бо афзоиши рақам **давра ба давра такрор** мешаванд. Дар зергурӯҳҳои асосӣ рақами гурӯҳ ба шумораи электронҳои берунӣ баробар аст."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Натрий (Na) в группе 1. Сколько у него внешних электронов?",
+          "en": "Sodium (Na) is in group 1. How many outer electrons does it have?",
+          "tj": "Натрий (Na) дар гурӯҳи 1. Чанд электрони берунӣ дорад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Один.",
+              "en": "One.",
+              "tj": "Як."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

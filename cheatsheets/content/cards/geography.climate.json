@@ -1,0 +1,39 @@
+[
+  {
+    "id": "geography.climate.basics",
+    "topicId": "geography.climate",
+    "title": {
+      "ru": "Климат",
+      "en": "Climate",
+      "tj": "Иқлим"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Климат** — многолетний режим погоды на определённой территории. Определяется температурой, осадками и ветрами. Зависит от **широты, рельефа и близости к океану**.",
+          "en": "**Climate** is the long-term weather pattern of a particular area. It is determined by temperature, precipitation and winds. It depends on **latitude, relief and proximity to the ocean**.",
+          "tj": "**Иқлим** — реҷаи дарозмуддати об-ҳаво дар қаламрави муайян. Бо ҳарорат, боришот ва бодҳо муайян мешавад. Аз **арзи ҷуғрофӣ, рельеф ва наздикӣ ба уқёнус** вобаста аст."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "От чего зависит климат?",
+          "en": "What does climate depend on?",
+          "tj": "Иқлим аз чӣ вобаста аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "От широты, рельефа и близости к океану.",
+              "en": "From latitude, relief and proximity to the ocean.",
+              "tj": "Аз арзи ҷуғрофӣ, рельеф ва наздикӣ ба уқёнус."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

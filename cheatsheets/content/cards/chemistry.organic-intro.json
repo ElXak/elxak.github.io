@@ -1,0 +1,39 @@
+[
+  {
+    "id": "chemistry.organic-intro.basics",
+    "topicId": "chemistry.organic-intro",
+    "title": {
+      "ru": "Введение в органическую химию",
+      "en": "Introduction to organic chemistry",
+      "tj": "Муқаддима ба химияи органикӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Органическая химия** изучает соединения углерода. Атом углерода образует **четыре связи** и соединяется в цепи и кольца — поэтому органических веществ очень много.",
+          "en": "**Organic chemistry** studies carbon compounds. A carbon atom forms **four bonds** and links into chains and rings — that is why there are so many organic substances.",
+          "tj": "**Химияи органикӣ** пайвастагиҳои карбонро меомӯзад. Атоми карбон **чор банд** ҳосил мекунад ва ба занҷир ва ҳалқаҳо пайваст мешавад — бинобар ин моддаҳои органикӣ хеле зиёданд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько связей образует углерод в метане $CH_4$?",
+          "en": "How many bonds does carbon form in methane $CH_4$?",
+          "tj": "Карбон дар метани $CH_4$ чанд банд ҳосил мекунад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Четыре — с каждым атомом водорода.",
+              "en": "Four — one to each hydrogen atom.",
+              "tj": "Чор — бо ҳар атоми гидроген."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "russian-language.pronoun-intro.basics",
+    "topicId": "russian-language.pronoun-intro",
+    "title": {
+      "ru": "Местоимение",
+      "en": "The pronoun",
+      "tj": "Ҷонишин"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "**Местоимение** заменяет имя существительное. Личные местоимения: **я, ты, он, она, оно, мы, вы, они**. Они изменяются по лицам и числам.",
+          "en": "A **pronoun** replaces a noun. Personal pronouns: **я, ты, он, она, оно, мы, вы, они**. They change by person and number.",
+          "tj": "**Ҷонишин** ҷои исмро мегирад. Ҷонишинҳои шахсӣ: **я, ты, он, она, оно, мы, вы, они**. Онҳо аз рӯи шахс ва шумора тағйир меёбанд."
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Какое слово в «Он читает» — местоимение?",
+          "en": "Which word in «Он читает» (He reads) is a pronoun?",
+          "tj": "Дар «Он читает» кадом калима ҷонишин аст?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Слово «он».",
+              "en": "The word «он» (he).",
+              "tj": "Калимаи «он»."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

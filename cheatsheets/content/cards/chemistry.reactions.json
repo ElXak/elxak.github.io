@@ -1,0 +1,48 @@
+[
+  {
+    "id": "chemistry.reactions.basics",
+    "topicId": "chemistry.reactions",
+    "title": {
+      "ru": "Химические реакции",
+      "en": "Chemical reactions",
+      "tj": "Реаксияҳои химиявӣ"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "markdown": {
+          "ru": "В реакции **реагенты** превращаются в **продукты**. По закону сохранения массы число атомов каждого элемента до и после реакции одинаково — поэтому уравнения **уравнивают** коэффициентами.",
+          "en": "In a reaction **reactants** turn into **products**. By conservation of mass the number of atoms of each element is the same before and after — so equations are **balanced** with coefficients.",
+          "tj": "Дар реаксия **реагентҳо** ба **маҳсулот** табдил меёбанд. Аз рӯи қонуни бақои масса шумораи атомҳои ҳар элемент пеш ва пас аз реаксия якхела аст — бинобар ин муодилаҳоро бо коэффитсиентҳо **баробар** мекунанд."
+        }
+      },
+      {
+        "type": "formula",
+        "latex": "2H_2 + O_2 \\rightarrow 2H_2O",
+        "caption": {
+          "ru": "образование воды",
+          "en": "formation of water",
+          "tj": "ҳосилшавии об"
+        }
+      },
+      {
+        "type": "example",
+        "problem": {
+          "ru": "Сколько молекул воды образуется из 2 молекул $H_2$ и 1 молекулы $O_2$?",
+          "en": "How many water molecules form from 2 $H_2$ and 1 $O_2$?",
+          "tj": "Аз 2 молекулаи $H_2$ ва 1 молекулаи $O_2$ чанд молекулаи об ҳосил мешавад?"
+        },
+        "solution": [
+          {
+            "type": "text",
+            "markdown": {
+              "ru": "Две молекулы $H_2O$.",
+              "en": "Two $H_2O$ molecules.",
+              "tj": "Ду молекулаи $H_2O$."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
