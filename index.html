@@ -365,7 +365,7 @@
 
   /* Contact */
   .contact-lede { color: var(--muted); font-size: 1.1rem; max-width: 50ch; margin-bottom: 36px; }
-  .links { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; max-width: 620px; }
+  .links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
   .link-card {
     display: flex;
     align-items: center;
@@ -379,7 +379,9 @@
     transition: border-color 0.2s, color 0.2s, transform 0.15s;
   }
   .link-card .label { color: var(--faint); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 5px; }
-  .link-card .val { color: var(--text); }
+  .link-card > span:first-child { min-width: 0; overflow: hidden; }
+  .link-card .val { color: var(--text); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .link-card:hover .val { overflow: visible; white-space: normal; }
   .link-card:hover { border-color: var(--accent); transform: translateY(-2px); }
   .link-card:hover .val { color: var(--accent); }
 
@@ -413,7 +415,7 @@
     .hero-text { max-width: 100%; }
     .about-grid { grid-template-columns: 1fr; gap: 28px; }
     .stack-grid { grid-template-columns: 1fr; }
-    .links { grid-template-columns: 1fr; }
+    .links { grid-template-columns: 1fr 1fr; }
     .project { grid-template-columns: 1fr; gap: 12px; }
     .project .num { display: none; }
     .project .arrow { display: none; }
@@ -627,7 +629,7 @@
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;width:100%;">
     <span data-i18n="footer.name">© 2026 Элмурод Бобоев</span>
-    <span><span data-i18n="footer.build">собрано вручную</span> · build 3.18</span>
+    <span><span data-i18n="footer.build">собрано вручную</span> · build 3.19</span>
   </div>
 </footer>
 
