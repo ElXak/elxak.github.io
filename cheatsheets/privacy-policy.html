@@ -33,7 +33,12 @@
       font-size: 17px;
     }
     .wrap { max-width: 720px; margin: 0 auto; padding: 0 22px 88px; }
-    header { border-top: 4px solid var(--brand); background: var(--bg); margin-bottom: 14px; }
+    header {
+      border-top: 4px solid var(--brand); background: rgba(255,255,255,.82);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line); margin-bottom: 14px;
+      position: sticky; top: 0; z-index: 50;
+    }
     .head-inner {
       max-width: 720px; margin: 0 auto; padding: 30px 22px 24px;
       display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
