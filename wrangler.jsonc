@@ -1,7 +1,27 @@
 {
   "name": "elxak-dev",
   "compatibility_date": "2026-08-18",
+  "main": "src/worker.js",
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // Only /api/* invokes the Worker script; every other request (index.html,
+    // socials.html, ...) is served as a static asset directly, no Worker cold
+    // start involved.
+    "run_worker_first": ["/api/*"]
+  },
+  "kv_namespaces": [
+    // Holds the Instagram long-lived access token (key "ig_access_token"),
+    // seeded once by hand and kept fresh by the scheduled() cron below.
+    { "binding": "SOCIALS_KV", "id": "64eb2b2cc0fd45a1a9c31a537ac61ca3" }
+  ],
+  "vars": {
+    // Public, non-secret — the YouTube handle to resolve to a channel ID.
+    "YOUTUBE_CHANNEL_HANDLE": "@elmurod.boboev"
+  },
+  "triggers": {
+    // Refresh the Instagram token daily — it's valid 60 days and refreshable
+    // any time after 24h, so a daily cron leaves a huge safety margin.
+    "crons": ["0 3 * * *"]
   }
 }

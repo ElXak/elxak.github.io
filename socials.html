@@ -1,0 +1,423 @@
+<!--
+  ════════════════════════════════════════════════════════════════
+  СОЦСЕТИ — YouTube + Instagram, подгружаются с /api/youtube и
+  /api/instagram (Cloudflare Worker, см. src/worker.js). Живёт как
+  отдельная страница рядом с index.html, тот же дизайн-язык.
+  ════════════════════════════════════════════════════════════════
+-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <script>
+    // Apply saved theme before first paint — same mechanism as index.html,
+    // same localStorage key, so the choice carries over between pages.
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        if (saved === "light" || saved === "dark") {
+          document.documentElement.setAttribute("data-theme", saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Соцсети — Элмурод Бобоев</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+CiAgPHRleHQgeD0iMSIgeT0iMjQiIGZvbnQtZmFtaWx5PSInQ291cmllciBOZXcnLG1vbm9zcGFjZSx1aS1tb25vc3BhY2UiCiAgICAgICAgZm9udC13ZWlnaHQ9IjgwMCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI2ZmYjQ1NCI+fi88L3RleHQ+Cjwvc3ZnPg==">
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAACEElEQVRYhe2TS2gTQQCG/9k8liS0TU0MObRFIqJ4KNRqkVrrAyS4GLWVxh4CVVERH/QieKmYeNBKoQiCKRRvQUgEBbPZmoOgCCJKpXpSCFK20YpJSVJqzCa7O94kJ022IQfZ7zzz/R8DA+jo6Oj8j3jjs6fz/IjSw+9a8MVgbu56ctkW5U+lCO9TSNwx9K/jTKP3/XL0vA9rnn34+vrBr5Wnjfb/lZbHFx0JPvCN4Tl5QGg7WMudhr7ASXPn+CGU3MeQTgpvCy+aGrBB2NwRwMcrFqzKfSR1ozUItf6AIGXeCIdblWD9YWNq4NoAyvYzNP3oHFecr/UeAQDEZ6wRsnDfi9ywA0qLGbLkQmXejVKym0jJd/K2xTsGZ4cNH0bDmLsVO4JctcQ5V9r6TBl7vwdZskRf7XD5yp9qDTACgFVN2DsNllEnVBYAKjCygLEfsPSDIgRDHkAeLIpSyISpWLWBlsnlxMT1HsjWqxDD9Yz/CTCymdKWiimUUnKRSNu9ZfvPl107kdnvpmvcRkbqs1LZ7YCUHUTx4XYFhWqBR/jc68eivx0rBR9NT9Yzvn6CE8wUP56g/LB6N+65rUVhXM9+d+/gAT9mvS76I0MNX6a1OLR/w9iQ4QJ5crMLMjNDxOksh0xTA/baRo6fQHb3JnwXjzJiWKtHW4BwiT1LnwddKJMoFSdNHFa1Bujo6Oj8Bp69uYXAluR4AAAAAElFTkSuQmCC">
+  <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAApUlEQVQ4jWNgGAVEA8vNqwJlthif/LqfgYV03ftrWWZtiTvBuFk4EF2KiSjbv+j6NjFcZfzC83YzuhwLw5nprDNfXFqUxvDUzu//y6UqDH+6fjGo6jN+X3FsShjDd4b9tSyJX7eUp/9/0MHtyPAH0wX3bNl9/58//ea/VnQBk4FqM6Piyz2M9ybxijL8J2Q7VlC5LVe0bj8DByG/EwVoFvKjABUAAD7eS2lGbq+8AAAAAElFTkSuQmCC">
+  <link rel="apple-touch-icon" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAACEElEQVRYhe2TS2gTQQCG/9k8liS0TU0MObRFIqJ4KNRqkVrrAyS4GLWVxh4CVVERH/QieKmYeNBKoQiCKRRvQUgEBbPZmoOgCCJKpXpSCFK20YpJSVJqzCa7O94kJ022IQfZ7zzz/R8DA+jo6Oj8j3jjs6fz/IjSw+9a8MVgbu56ctkW5U+lCO9TSNwx9K/jTKP3/XL0vA9rnn34+vrBr5Wnjfb/lZbHFx0JPvCN4Tl5QGg7WMudhr7ASXPn+CGU3MeQTgpvCy+aGrBB2NwRwMcrFqzKfSR1ozUItf6AIGXeCIdblWD9YWNq4NoAyvYzNP3oHFecr/UeAQDEZ6wRsnDfi9ywA0qLGbLkQmXejVKym0jJd/K2xTsGZ4cNH0bDmLsVO4JctcQ5V9r6TBl7vwdZskRf7XD5yp9qDTACgFVN2DsNllEnVBYAKjCygLEfsPSDIgRDHkAeLIpSyISpWLWBlsnlxMT1HsjWqxDD9Yz/CTCymdKWiimUUnKRSNu9ZfvPl107kdnvpmvcRkbqs1LZ7YCUHUTx4XYFhWqBR/jc68eivx0rBR9NT9Yzvn6CE8wUP56g/LB6N+65rUVhXM9+d+/gAT9mvS76I0MNX6a1OLR/w9iQ4QJ5crMLMjNDxOksh0xTA/baRo6fQHb3JnwXjzJiWKtHW4BwiT1LnwddKJMoFSdNHFa1Bujo6Oj8Bp69uYXAluR4AAAAAElFTkSuQmCC">
+  <style>
+    :root {
+      --bg:        #0c0e14;
+      --bg-2:      #0f121b;
+      --surface:   #141823;
+      --surface-2: #181d2a;
+      --border:    #242b3a;
+      --text:      #e8eaf0;
+      --muted:     #8a92a6;
+      --faint:     #565e72;
+      --accent:    #ffb454;
+      --accent-soft: rgba(255, 180, 84, 0.12);
+      --accent-line: rgba(255, 180, 84, 0.35);
+      --bg-rgb: 12, 14, 20;
+      color-scheme: dark;
+
+      --display: "Space Grotesk", system-ui, sans-serif;
+      --body:    "Inter", system-ui, sans-serif;
+      --mono:    "JetBrains Mono", ui-monospace, monospace;
+
+      --maxw: 1040px;
+    }
+
+    :root[data-theme="light"] {
+      --bg:        #f8f7f4;
+      --bg-2:      #f1efe8;
+      --surface:   #ffffff;
+      --surface-2: #f4f2ec;
+      --border:    #e3dfd3;
+      --text:      #1c1b18;
+      --muted:     #6b6558;
+      --faint:     #a49c8b;
+      --accent:    #b5690d;
+      --accent-soft: rgba(181, 105, 13, 0.10);
+      --accent-line: rgba(181, 105, 13, 0.35);
+      --bg-rgb: 248, 247, 244;
+      color-scheme: light;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+    a { color: inherit; text-decoration: none; }
+
+    .eyebrow { font-family: var(--mono); font-size: 0.82rem; letter-spacing: 0.02em; color: var(--muted); margin-bottom: 18px; }
+    .eyebrow .slash { color: var(--accent); }
+
+    /* ════════ NAV ════════ */
+    header {
+      position: sticky; top: 0; z-index: 20;
+      backdrop-filter: blur(10px);
+      background: color-mix(in srgb, var(--bg) 78%, transparent);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand { font-family: var(--mono); font-size: 0.92rem; color: var(--muted); }
+    .brand b { color: var(--text); font-weight: 600; }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a { font-family: var(--mono); font-size: 0.82rem; color: var(--muted); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-right { display: flex; align-items: center; gap: 22px; }
+    .lang-switch { display: flex; gap: 3px; border: 1px solid var(--border); border-radius: 999px; padding: 3px; background: var(--surface); }
+    .lang-btn {
+      font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.04em;
+      color: var(--muted); background: transparent; border: none; cursor: pointer;
+      padding: 5px 11px; border-radius: 999px; transition: color 0.2s, background 0.2s;
+    }
+    .lang-btn:hover { color: var(--text); }
+    .lang-btn.active { color: #1a1205; background: var(--accent); font-weight: 600; }
+
+    .theme-toggle {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 32px; height: 32px; flex: none;
+      border: 1px solid var(--border); border-radius: 999px;
+      background: var(--surface); color: var(--muted); cursor: pointer;
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+    }
+    .theme-toggle:hover { color: var(--accent); border-color: var(--accent-line); }
+    .theme-toggle svg { width: 16px; height: 16px; }
+    .theme-toggle .icon-sun { display: none; }
+    .theme-toggle .icon-moon { display: block; }
+    :root[data-theme="light"] .theme-toggle .icon-sun { display: block; }
+    :root[data-theme="light"] .theme-toggle .icon-moon { display: none; }
+
+    /* ════════ CONTENT ════════ */
+    section.block { padding: 56px 0; border-top: 1px solid var(--border); }
+    section.intro { border-top: none; padding-bottom: 40px; }
+    .section-head { font-family: var(--display); font-weight: 600; font-size: clamp(1.6rem, 4vw, 2.2rem); letter-spacing: -0.02em; margin-bottom: 14px; }
+    .lede { color: var(--muted); font-size: 1.05rem; max-width: 58ch; margin-bottom: 28px; }
+
+    .cta-row { display: flex; flex-wrap: wrap; gap: 14px; }
+    .btn {
+      font-family: var(--mono); font-size: 0.88rem; padding: 12px 20px; border-radius: 10px;
+      border: 1px solid var(--border); transition: transform 0.15s, border-color 0.2s, color 0.2s;
+      display: inline-flex; align-items: center; gap: 9px;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-ghost { color: var(--text); }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* ── media grid ── */
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; margin-top: 28px; }
+    .grid[hidden] { display: none; }
+    .card {
+      border: 1px solid var(--border); background: var(--surface); border-radius: 14px;
+      overflow: hidden; display: flex; flex-direction: column;
+      transition: border-color 0.25s, transform 0.2s;
+    }
+    a.card:hover, .card:hover { border-color: var(--accent-line); }
+    .thumb { position: relative; aspect-ratio: 1 / 1; background: var(--surface-2); border: none; padding: 0; width: 100%; cursor: pointer; overflow: hidden; }
+    .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .thumb iframe { width: 100%; height: 100%; border: 0; display: block; }
+    .thumb .play {
+      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem; color: #fff; background: rgba(0,0,0,0.25); transition: background 0.2s;
+      pointer-events: none;
+    }
+    .thumb:hover .play { background: rgba(0,0,0,0.4); }
+    .thumb.playing .play { display: none; }
+    .badge-tag {
+      position: absolute; top: 8px; right: 8px; font-family: var(--mono); font-size: 0.66rem;
+      color: #fff; background: rgba(0,0,0,0.55); padding: 3px 9px; border-radius: 999px;
+      letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    .card-body { padding: 14px 16px; }
+    .card-body h3 {
+      font-family: var(--body); font-weight: 500; font-size: 0.92rem; line-height: 1.35;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+      margin-bottom: 8px;
+    }
+    .card-body .caption {
+      font-family: var(--body); font-size: 0.9rem; color: var(--text); line-height: 1.4;
+      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+      margin-bottom: 8px; white-space: pre-line;
+    }
+    .card-body .date { font-family: var(--mono); font-size: 0.74rem; color: var(--faint); }
+
+    /* ── loading skeletons ── */
+    .skel { aspect-ratio: 1 / 1; border-radius: 14px; background: var(--surface); border: 1px solid var(--border); animation: skel-pulse 1.4s ease-in-out infinite; }
+    @keyframes skel-pulse { 0%, 100% { opacity: 0.6; } 50% { opacity: 1; } }
+
+    .error-msg { color: var(--muted); font-size: 0.95rem; margin-top: 20px; }
+    .error-msg a { color: var(--accent); }
+    .error-msg a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--border); padding: 32px 0; font-family: var(--mono);
+      font-size: 0.8rem; color: var(--faint); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+    }
+    footer a:hover { color: var(--accent); }
+
+    @media (max-width: 760px) {
+      .nav-links { display: none; }
+      .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">~/<b>elxak</b>.dev</a>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="index.html" data-i18n="nav.home">← на главную</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button class="lang-btn active" data-lang="ru" type="button">RU</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+        <button class="lang-btn" data-lang="tj" type="button">TJ</button>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="block intro">
+    <div class="wrap">
+      <div class="eyebrow"><span class="slash">// 05 —</span> <span data-i18n="social.eyebrow">соцсети</span></div>
+      <h1 class="section-head" data-i18n="social.head">Соцсети</h1>
+      <p class="lede" data-i18n="social.lede">Свежие видео с YouTube и посты/рилсы из Instagram — подгружаются напрямую с площадок.</p>
+      <div class="cta-row">
+        <a class="btn btn-ghost" href="https://instagram.com/elmurod.bsh" target="_blank" rel="noopener">Instagram →</a>
+        <a class="btn btn-ghost" href="https://youtube.com/@elmurod.boboev" target="_blank" rel="noopener">YouTube →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="youtube">
+    <div class="wrap">
+      <div class="eyebrow"><span class="slash">// 01 —</span> YouTube</div>
+      <h2 class="section-head">YouTube</h2>
+      <div class="grid" id="ytGrid">
+        <div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>
+      </div>
+      <p class="error-msg" id="ytError" hidden>
+        <span data-i18n="social.error">Не удалось загрузить видео.</span>
+        <a href="https://youtube.com/@elmurod.boboev" target="_blank" rel="noopener" data-i18n="social.errorLinkYt">Открыть канал на YouTube →</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="block" id="instagram">
+    <div class="wrap">
+      <div class="eyebrow"><span class="slash">// 02 —</span> Instagram</div>
+      <h2 class="section-head">Instagram</h2>
+      <div class="grid" id="igGrid">
+        <div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>
+      </div>
+      <p class="error-msg" id="igError" hidden>
+        <span data-i18n="social.error">Не удалось загрузить посты.</span>
+        <a href="https://instagram.com/elmurod.bsh" target="_blank" rel="noopener" data-i18n="social.errorLinkIg">Открыть профиль в Instagram →</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+    <span data-i18n="footer.name">© 2026 Элмурод Бобоев</span>
+    <a href="index.html" data-i18n="nav.home">← на главную</a>
+  </div>
+</footer>
+
+<script>
+  var I18N = {
+    ru: {
+      "_title": "Соцсети — Элмурод Бобоев",
+      "nav.home": "← на главную",
+      "social.eyebrow": "соцсети",
+      "social.head": "Соцсети",
+      "social.lede": "Свежие видео с YouTube и посты/рилсы из Instagram — подгружаются напрямую с площадок.",
+      "social.error": "Не удалось загрузить контент прямо сейчас.",
+      "social.errorLinkYt": "Открыть канал на YouTube →",
+      "social.errorLinkIg": "Открыть профиль в Instagram →",
+      "footer.name": "© 2026 Элмурод Бобоев",
+    },
+    en: {
+      "_title": "Socials — Elmurod Boboev",
+      "nav.home": "← back home",
+      "social.eyebrow": "socials",
+      "social.head": "Socials",
+      "social.lede": "Latest YouTube videos and Instagram posts/reels — loaded straight from the platforms.",
+      "social.error": "Couldn't load this right now.",
+      "social.errorLinkYt": "Open the channel on YouTube →",
+      "social.errorLinkIg": "Open the profile on Instagram →",
+      "footer.name": "© 2026 Elmurod Boboev",
+    },
+    tj: {
+      "_title": "Шабакаҳои иҷтимоӣ — Элмурод Бобоев",
+      "nav.home": "← ба саҳифаи асосӣ",
+      "social.eyebrow": "шабакаҳои иҷтимоӣ",
+      "social.head": "Шабакаҳои иҷтимоӣ",
+      "social.lede": "Видеоҳои нави YouTube ва постҳо/рилсҳои Instagram — мустақиман аз платформаҳо бор карда мешаванд.",
+      "social.error": "Ҳоло бор карда нашуд.",
+      "social.errorLinkYt": "Каналро дар YouTube кушоед →",
+      "social.errorLinkIg": "Профилро дар Instagram кушоед →",
+      "footer.name": "© 2026 Элмурод Бобоев",
+    },
+  };
+
+  function setLang(lang) {
+    var dict = I18N[lang] || I18N.ru;
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var k = el.getAttribute("data-i18n");
+      if (dict[k] != null) el.textContent = dict[k];
+    });
+    if (dict._title) document.title = dict._title;
+    document.querySelectorAll(".lang-btn").forEach(function (b) {
+      b.classList.toggle("active", b.getAttribute("data-lang") === lang);
+    });
+  }
+
+  document.querySelectorAll(".lang-btn").forEach(function (b) {
+    b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
+  });
+  setLang("ru");
+
+  var themeToggle = document.getElementById("themeToggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+      var current = document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark";
+      var next = current === "light" ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+    });
+  }
+
+  function esc(s) {
+    return String(s || "").replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function fmtDate(iso) {
+    try {
+      var lang = document.documentElement.lang === "en" ? "en-GB" : "ru-RU";
+      return new Date(iso).toLocaleDateString(lang, { year: "numeric", month: "short", day: "numeric" });
+    } catch (e) { return ""; }
+  }
+
+  // ── YouTube ──
+  function ytCard(v) {
+    return (
+      '<article class="card yt-card">' +
+        '<button class="thumb" type="button" data-video-id="' + esc(v.id) + '" aria-label="' + esc(v.title) + '">' +
+          '<img src="' + esc(v.thumbnail) + '" alt="" loading="lazy">' +
+          '<span class="play">▶</span>' +
+        '</button>' +
+        '<div class="card-body">' +
+          '<h3>' + esc(v.title) + '</h3>' +
+          '<span class="date">' + fmtDate(v.publishedAt) + '</span>' +
+        '</div>' +
+      '</article>'
+    );
+  }
+
+  function loadYouTube() {
+    var grid = document.getElementById("ytGrid");
+    var errorEl = document.getElementById("ytError");
+    fetch("/api/youtube")
+      .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, data: d }; }); })
+      .then(function (res) {
+        if (!res.ok || res.data.error || !res.data.videos || !res.data.videos.length) throw new Error("empty");
+        grid.innerHTML = res.data.videos.map(ytCard).join("");
+        grid.querySelectorAll(".thumb").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-video-id");
+            btn.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id +
+              '?autoplay=1" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            btn.classList.add("playing");
+          });
+        });
+      })
+      .catch(function () {
+        grid.hidden = true;
+        errorEl.hidden = false;
+      });
+  }
+
+  // ── Instagram ──
+  function igCard(p) {
+    var tag = p.isReel ? "Reel" : (p.isVideo ? "Video" : "");
+    return (
+      '<a class="card ig-card" href="' + esc(p.permalink) + '" target="_blank" rel="noopener">' +
+        '<div class="thumb">' +
+          '<img src="' + esc(p.thumbnail) + '" alt="" loading="lazy">' +
+          (tag ? '<span class="badge-tag">' + tag + '</span>' : "") +
+        '</div>' +
+        '<div class="card-body">' +
+          '<p class="caption">' + esc(p.caption) + '</p>' +
+          '<span class="date">' + fmtDate(p.timestamp) + '</span>' +
+        '</div>' +
+      '</a>'
+    );
+  }
+
+  function loadInstagram() {
+    var grid = document.getElementById("igGrid");
+    var errorEl = document.getElementById("igError");
+    fetch("/api/instagram")
+      .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, data: d }; }); })
+      .then(function (res) {
+        if (!res.ok || res.data.error || !res.data.posts || !res.data.posts.length) throw new Error("empty");
+        grid.innerHTML = res.data.posts.map(igCard).join("");
+      })
+      .catch(function () {
+        grid.hidden = true;
+        errorEl.hidden = false;
+      });
+  }
+
+  loadYouTube();
+  loadInstagram();
+</script>
+</body>
+</html>

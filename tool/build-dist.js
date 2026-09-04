@@ -25,6 +25,7 @@ const ROOT_EXCLUDE = new Set([
   'wrangler.jsonc',
   'dist',
   'tool',
+  'src', // Worker source (src/worker.js) — run via `main`, not a static asset
 ]);
 
 fs.rmSync(DIST, { recursive: true, force: true });
