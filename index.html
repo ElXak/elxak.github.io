@@ -7,6 +7,17 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <script>
+    // Apply saved theme before first paint, so there's no dark→light flash.
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        if (saved === "light" || saved === "dark") {
+          document.documentElement.setAttribute("data-theme", saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-31SLJ3QEGB"></script>
   <script>
@@ -35,12 +46,31 @@
       --accent:    #ffb454;
       --accent-soft: rgba(255, 180, 84, 0.12);
       --accent-line: rgba(255, 180, 84, 0.35);
+      --bg-rgb: 12, 14, 20;
+      color-scheme: dark;
 
       --display: "Space Grotesk", system-ui, sans-serif;
       --body:    "Inter", system-ui, sans-serif;
       --mono:    "JetBrains Mono", ui-monospace, monospace;
 
       --maxw: 1040px;
+    }
+
+    /* ── light theme — toggled via [data-theme] on <html>, see .theme-toggle ── */
+    :root[data-theme="light"] {
+      --bg:        #f8f7f4;
+      --bg-2:      #f1efe8;
+      --surface:   #ffffff;
+      --surface-2: #f4f2ec;
+      --border:    #e3dfd3;
+      --text:      #1c1b18;
+      --muted:     #6b6558;
+      --faint:     #a49c8b;
+      --accent:    #b5690d;
+      --accent-soft: rgba(181, 105, 13, 0.10);
+      --accent-line: rgba(181, 105, 13, 0.35);
+      --bg-rgb: 248, 247, 244;
+      color-scheme: light;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -54,6 +84,7 @@
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
+      transition: background-color 0.25s ease, color 0.25s ease;
     }
 
     /* faint grid texture, like an editor backdrop */
@@ -131,6 +162,20 @@
     .lang-btn:hover { color: var(--text); }
     .lang-btn.active { color: #1a1205; background: var(--accent); font-weight: 600; }
 
+    .theme-toggle {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 32px; height: 32px; flex: none;
+      border: 1px solid var(--border); border-radius: 999px;
+      background: var(--surface); color: var(--muted); cursor: pointer;
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+    }
+    .theme-toggle:hover { color: var(--accent); border-color: var(--accent-line); }
+    .theme-toggle svg { width: 16px; height: 16px; }
+    .theme-toggle .icon-sun { display: none; }
+    .theme-toggle .icon-moon { display: block; }
+    :root[data-theme="light"] .theme-toggle .icon-sun { display: block; }
+    :root[data-theme="light"] .theme-toggle .icon-moon { display: none; }
+
     /* ════════ HERO ════════ */
     .hero { padding: 120px 0 96px; }
     .hero { position: relative; overflow: hidden; }
@@ -152,8 +197,8 @@
       z-index: 1;
       pointer-events: none;
       background:
-        linear-gradient(to right, var(--bg) 0%, rgba(12,14,20,0) 44%),
-        linear-gradient(to bottom, var(--bg) 0%, rgba(12,14,20,0) 16%, rgba(12,14,20,0) 80%, var(--bg) 100%);
+        linear-gradient(to right, var(--bg) 0%, rgba(var(--bg-rgb),0) 44%),
+        linear-gradient(to bottom, var(--bg) 0%, rgba(var(--bg-rgb),0) 16%, rgba(var(--bg-rgb),0) 80%, var(--bg) 100%);
     }
     .hero .wrap { position: relative; z-index: 2; }
     .hero-text { max-width: 560px; }
@@ -418,8 +463,8 @@
       .hero-bg { width: 86%; background-position: 52% center; }
       .hero-scrim {
         background:
-          linear-gradient(to right, var(--bg) 0%, rgba(12,14,20,0.55) 40%, rgba(12,14,20,0) 78%),
-          linear-gradient(to bottom, rgba(12,14,20,0) 30%, var(--bg) 92%);
+          linear-gradient(to right, var(--bg) 0%, rgba(var(--bg-rgb),0.55) 40%, rgba(var(--bg-rgb),0) 78%),
+          linear-gradient(to bottom, rgba(var(--bg-rgb),0) 30%, var(--bg) 92%);
       }
       .hero-text { max-width: 100%; }
       .about-grid { grid-template-columns: 1fr; gap: 28px; }
@@ -479,6 +524,10 @@
         <button class="lang-btn" data-lang="en" type="button">EN</button>
         <button class="lang-btn" data-lang="tj" type="button">TJ</button>
       </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </div>
   </div>
 </header>
@@ -662,7 +711,7 @@
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;width:100%;">
     <span data-i18n="footer.name">© 2026 Элмурод Бобоев</span>
-    <span><span data-i18n="footer.build">собрано вручную</span> · build 3.24</span>
+    <span><span data-i18n="footer.build">собрано вручную</span> · build 3.25</span>
   </div>
 </footer>
 
@@ -874,6 +923,18 @@
   });
 
   setLang("ru");
+
+  // Theme toggle (dark/light), persisted in localStorage; initial value is
+  // already applied pre-paint by the inline script in <head>.
+  var themeToggle = document.getElementById("themeToggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+      var current = document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark";
+      var next = current === "light" ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+    });
+  }
 
   // Reveal blocks on scroll
   (function () {
