@@ -50,7 +50,7 @@
       --body:    "Inter", system-ui, sans-serif;
       --mono:    "JetBrains Mono", ui-monospace, monospace;
 
-      --maxw: 1040px;
+      --maxw: 1200px;
     }
 
     :root[data-theme="light"] {
@@ -150,14 +150,12 @@
     a.card:hover, .card:hover { border-color: var(--accent-line); }
     .thumb { position: relative; aspect-ratio: 1 / 1; background: var(--surface-2); border: none; padding: 0; width: 100%; cursor: pointer; overflow: hidden; }
     .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .thumb iframe { width: 100%; height: 100%; border: 0; display: block; }
     .thumb .play {
       position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
       font-size: 1.6rem; color: #fff; background: rgba(0,0,0,0.25); transition: background 0.2s;
       pointer-events: none;
     }
     .thumb:hover .play { background: rgba(0,0,0,0.4); }
-    .thumb.playing .play { display: none; }
     .badge-tag {
       position: absolute; top: 8px; right: 8px; font-family: var(--mono); font-size: 0.66rem;
       color: #fff; background: rgba(0,0,0,0.55); padding: 3px 9px; border-radius: 999px;
@@ -183,6 +181,30 @@
     .error-msg { color: var(--muted); font-size: 0.95rem; margin-top: 20px; }
     .error-msg a { color: var(--accent); }
     .error-msg a:hover { text-decoration: underline; }
+
+    /* ── YouTube lightbox ── */
+    .lightbox {
+      position: fixed; inset: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: center;
+      padding: 48px 24px; overflow-y: auto;
+    }
+    .lightbox[hidden] { display: none; }
+    .lightbox-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.85); }
+    .lightbox-content { position: relative; z-index: 1; width: 100%; max-width: 960px; margin: auto; }
+    .lightbox-frame {
+      position: relative; aspect-ratio: 16 / 9; background: #000;
+      border-radius: 12px; overflow: hidden; box-shadow: 0 20px 60px -12px rgba(0,0,0,0.6);
+    }
+    .lightbox-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+    .lightbox-close {
+      position: absolute; top: -44px; right: 0;
+      width: 34px; height: 34px; border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.25); background: rgba(255,255,255,0.08);
+      color: #fff; font-size: 1.4rem; line-height: 1; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .lightbox-close:hover { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); }
 
     footer {
       border-top: 1px solid var(--border); padding: 32px 0; font-family: var(--mono);
@@ -259,6 +281,14 @@
     </div>
   </section>
 </main>
+
+<div class="lightbox" id="lightbox" hidden>
+  <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+  <div class="lightbox-content">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close">&times;</button>
+    <div class="lightbox-frame" id="lightboxFrame"></div>
+  </div>
+</div>
 
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
@@ -345,6 +375,29 @@
     } catch (e) { return ""; }
   }
 
+  // ── lightbox (YouTube video playback) ──
+  var lightbox = document.getElementById("lightbox");
+  var lightboxFrame = document.getElementById("lightboxFrame");
+
+  function openLightbox(videoId) {
+    lightboxFrame.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + videoId +
+      '?autoplay=1" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    lightbox.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    lightbox.hidden = true;
+    lightboxFrame.innerHTML = ""; // stop playback
+    document.body.style.overflow = "";
+  }
+
+  document.getElementById("lightboxBackdrop").addEventListener("click", closeLightbox);
+  document.getElementById("lightboxClose").addEventListener("click", closeLightbox);
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !lightbox.hidden) closeLightbox();
+  });
+
   // ── YouTube ──
   function ytCard(v) {
     return (
@@ -371,10 +424,7 @@
         grid.innerHTML = res.data.videos.map(ytCard).join("");
         grid.querySelectorAll(".thumb").forEach(function (btn) {
           btn.addEventListener("click", function () {
-            var id = btn.getAttribute("data-video-id");
-            btn.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id +
-              '?autoplay=1" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-            btn.classList.add("playing");
+            openLightbox(btn.getAttribute("data-video-id"));
           });
         });
       })
