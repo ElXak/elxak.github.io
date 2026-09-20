@@ -104,6 +104,7 @@ async function fetchInstagram(env) {
     isVideo: p.media_type === "VIDEO",
     isReel: p.media_product_type === "REELS",
     thumbnail: p.media_type === "VIDEO" ? p.thumbnail_url || p.media_url : p.media_url,
+    mediaUrl: p.media_url,
     permalink: p.permalink,
     timestamp: p.timestamp,
   }));

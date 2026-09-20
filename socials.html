@@ -196,6 +196,23 @@
       border-radius: 12px; overflow: hidden; box-shadow: 0 20px 60px -12px rgba(0,0,0,0.6);
     }
     .lightbox-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+    .lightbox-frame.lightbox-frame-ig {
+      aspect-ratio: auto; display: flex; align-items: center; justify-content: center;
+    }
+    .lightbox-frame-ig img, .lightbox-frame-ig video {
+      display: block; max-width: 100%; max-height: 80vh; width: auto; height: auto; object-fit: contain;
+    }
+    .lightbox-info {
+      background: var(--surface); border: 1px solid var(--border); border-top: none;
+      border-radius: 0 0 12px 12px; padding: 14px 16px; margin-top: -1px;
+    }
+    .lightbox-info[hidden] { display: none; }
+    .lightbox-info .caption {
+      font-family: var(--body); font-size: 0.9rem; color: var(--text); line-height: 1.4;
+      white-space: pre-line; margin-bottom: 8px;
+    }
+    .lightbox-info a { color: var(--accent); font-family: var(--mono); font-size: 0.8rem; }
+    .lightbox-info a:hover { text-decoration: underline; }
     .lightbox-close {
       position: absolute; top: -44px; right: 0;
       width: 34px; height: 34px; border-radius: 999px;
@@ -287,6 +304,10 @@
   <div class="lightbox-content">
     <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close">&times;</button>
     <div class="lightbox-frame" id="lightboxFrame"></div>
+    <div class="lightbox-info" id="lightboxInfo" hidden>
+      <p class="caption" id="lightboxCaption"></p>
+      <a id="lightboxLink" href="#" target="_blank" rel="noopener">Instagram ↗</a>
+    </div>
   </div>
 </div>
 
@@ -375,13 +396,31 @@
     } catch (e) { return ""; }
   }
 
-  // ── lightbox (YouTube video playback) ──
+  // ── lightbox (YouTube video / Instagram post playback) ──
   var lightbox = document.getElementById("lightbox");
   var lightboxFrame = document.getElementById("lightboxFrame");
+  var lightboxInfo = document.getElementById("lightboxInfo");
+  var lightboxCaption = document.getElementById("lightboxCaption");
+  var lightboxLink = document.getElementById("lightboxLink");
 
   function openLightbox(videoId) {
+    lightboxFrame.className = "lightbox-frame";
     lightboxFrame.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + videoId +
       '?autoplay=1" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    lightboxInfo.hidden = true;
+    lightbox.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+
+  function openInstagramLightbox(post) {
+    lightboxFrame.className = "lightbox-frame lightbox-frame-ig";
+    lightboxFrame.innerHTML = post.isVideo
+      ? '<video src="' + esc(post.mediaUrl) + '" controls autoplay playsinline></video>'
+      : '<img src="' + esc(post.mediaUrl) + '" alt="">';
+    lightboxCaption.textContent = post.caption || "";
+    lightboxCaption.hidden = !post.caption;
+    lightboxLink.href = post.permalink;
+    lightboxInfo.hidden = false;
     lightbox.hidden = false;
     document.body.style.overflow = "hidden";
   }
@@ -435,19 +474,22 @@
   }
 
   // ── Instagram ──
+  var igPosts = {};
+
   function igCard(p) {
     var tag = p.isReel ? "Reel" : (p.isVideo ? "Video" : "");
     return (
-      '<a class="card ig-card" href="' + esc(p.permalink) + '" target="_blank" rel="noopener">' +
-        '<div class="thumb">' +
+      '<article class="card ig-card">' +
+        '<button class="thumb" type="button" data-post-id="' + esc(p.id) + '" aria-label="' + esc(p.caption || "Instagram") + '">' +
           '<img src="' + esc(p.thumbnail) + '" alt="" loading="lazy">' +
+          (p.isVideo ? '<span class="play">▶</span>' : "") +
           (tag ? '<span class="badge-tag">' + tag + '</span>' : "") +
-        '</div>' +
+        '</button>' +
         '<div class="card-body">' +
           '<p class="caption">' + esc(p.caption) + '</p>' +
           '<span class="date">' + fmtDate(p.timestamp) + '</span>' +
         '</div>' +
-      '</a>'
+      '</article>'
     );
   }
 
@@ -458,7 +500,14 @@
       .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, data: d }; }); })
       .then(function (res) {
         if (!res.ok || res.data.error || !res.data.posts || !res.data.posts.length) throw new Error("empty");
+        res.data.posts.forEach(function (p) { igPosts[p.id] = p; });
         grid.innerHTML = res.data.posts.map(igCard).join("");
+        grid.querySelectorAll(".thumb").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var post = igPosts[btn.getAttribute("data-post-id")];
+            if (post) openInstagramLightbox(post);
+          });
+        });
       })
       .catch(function () {
         grid.hidden = true;
