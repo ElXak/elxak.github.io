@@ -202,6 +202,14 @@
     .lightbox-frame-ig img, .lightbox-frame-ig video {
       display: block; max-width: 100%; max-height: 80vh; width: auto; height: auto; object-fit: contain;
     }
+    .lightbox-fallback { position: relative; display: block; max-width: 100%; max-height: 80vh; }
+    .lightbox-fallback img { max-height: 80vh; }
+    .lightbox-fallback .play {
+      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      gap: 8px; background: rgba(0,0,0,0.5); color: #fff; font-family: var(--mono); font-size: 0.9rem;
+      text-align: center; padding: 0 16px; transition: background 0.2s;
+    }
+    .lightbox-fallback:hover .play { background: rgba(0,0,0,0.65); }
     .lightbox-info {
       background: var(--surface); border: 1px solid var(--border); border-top: none;
       border-radius: 0 0 12px 12px; padding: 14px 16px; margin-top: -1px;
@@ -306,7 +314,7 @@
     <div class="lightbox-frame" id="lightboxFrame"></div>
     <div class="lightbox-info" id="lightboxInfo" hidden>
       <p class="caption" id="lightboxCaption"></p>
-      <a id="lightboxLink" href="#" target="_blank" rel="noopener">Instagram ↗</a>
+      <a id="lightboxLink" data-i18n="lightbox.viewInstagram" href="#" target="_blank" rel="noopener">Открыть в Instagram ↗</a>
     </div>
   </div>
 </div>
@@ -330,6 +338,8 @@
       "social.errorLinkYt": "Открыть канал на YouTube →",
       "social.errorLinkIg": "Открыть профиль в Instagram →",
       "footer.name": "© 2026 Элмурод Бобоев",
+      "lightbox.viewInstagram": "Открыть в Instagram ↗",
+      "lightbox.watchOnInstagram": "▶ Смотреть в Instagram",
     },
     en: {
       "_title": "Socials — Elmurod Boboev",
@@ -341,6 +351,8 @@
       "social.errorLinkYt": "Open the channel on YouTube →",
       "social.errorLinkIg": "Open the profile on Instagram →",
       "footer.name": "© 2026 Elmurod Boboev",
+      "lightbox.viewInstagram": "View on Instagram ↗",
+      "lightbox.watchOnInstagram": "▶ Watch on Instagram",
     },
     tj: {
       "_title": "Шабакаҳои иҷтимоӣ — Элмурод Бобоев",
@@ -352,6 +364,8 @@
       "social.errorLinkYt": "Каналро дар YouTube кушоед →",
       "social.errorLinkIg": "Профилро дар Instagram кушоед →",
       "footer.name": "© 2026 Элмурод Бобоев",
+      "lightbox.viewInstagram": "Дар Instagram кушоед ↗",
+      "lightbox.watchOnInstagram": "▶ Дар Instagram тамошо кунед",
     },
   };
 
@@ -413,10 +427,22 @@
   }
 
   function openInstagramLightbox(post) {
+    var dict = I18N[document.documentElement.lang] || I18N.ru;
     lightboxFrame.className = "lightbox-frame lightbox-frame-ig";
-    lightboxFrame.innerHTML = post.isVideo
-      ? '<video src="' + esc(post.mediaUrl) + '" controls autoplay playsinline></video>'
-      : '<img src="' + esc(post.mediaUrl) + '" alt="">';
+    if (post.isVideo && post.mediaUrl) {
+      lightboxFrame.innerHTML = '<video src="' + esc(post.mediaUrl) + '" controls autoplay playsinline></video>';
+    } else if (post.isVideo) {
+      // Instagram withholds media_url for some reels (licensed-music audio
+      // tracks) — nothing playable to embed, so fall back to the poster
+      // frame with a prominent link out instead of a broken <video>.
+      lightboxFrame.innerHTML =
+        '<a class="lightbox-fallback" href="' + esc(post.permalink) + '" target="_blank" rel="noopener">' +
+          '<img src="' + esc(post.thumbnail) + '" alt="">' +
+          '<span class="play">' + esc(dict["lightbox.watchOnInstagram"]) + '</span>' +
+        '</a>';
+    } else {
+      lightboxFrame.innerHTML = '<img src="' + esc(post.mediaUrl || post.thumbnail) + '" alt="">';
+    }
     lightboxCaption.textContent = post.caption || "";
     lightboxCaption.hidden = !post.caption;
     lightboxLink.href = post.permalink;
