@@ -21,6 +21,15 @@
 
 const CACHE_TTL_SECONDS = 30 * 60; // 30 min
 
+// Cloudflare's Cache API is keyed by request URL, not by Worker version — a
+// redeploy that changes what a cached route returns (new fields, etc.) does
+// NOT invalidate an already-cached entry; it just keeps serving the old
+// shape until the TTL above naturally expires. Bump this string (any change
+// works, e.g. today's date) whenever a deploy changes the JSON shape of a
+// cached route, so the cache key changes and stale entries are bypassed
+// immediately instead of silently serving old data for up to 30 more min.
+const CACHE_VERSION = "2";
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -45,7 +54,9 @@ export default {
 
 async function withCache(request, ctx, handler) {
   const cache = caches.default;
-  const cacheKey = new Request(new URL(request.url).toString(), { method: "GET" });
+  const keyUrl = new URL(request.url);
+  keyUrl.searchParams.set("cv", CACHE_VERSION);
+  const cacheKey = new Request(keyUrl.toString(), { method: "GET" });
   const cached = await cache.match(cacheKey);
   if (cached) return cached;
 
