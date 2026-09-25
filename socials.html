@@ -142,6 +142,11 @@
     /* ── media grid ── */
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; margin-top: 28px; }
     .grid[hidden] { display: none; }
+    .sub-head {
+      font-family: var(--mono); font-weight: 500; font-size: 0.8rem; color: var(--muted);
+      text-transform: uppercase; letter-spacing: 0.06em; margin-top: 28px;
+    }
+    .sub-head + .grid { margin-top: 12px; }
     .card {
       border: 1px solid var(--border); background: var(--surface); border-radius: 14px;
       overflow: hidden; display: flex; flex-direction: column;
@@ -296,8 +301,17 @@
     <div class="wrap">
       <div class="eyebrow"><span class="slash">// 02 —</span> Instagram</div>
       <h2 class="section-head">Instagram</h2>
-      <div class="grid" id="igGrid">
-        <div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>
+      <div id="igReels">
+        <h3 class="sub-head" data-i18n="social.reels">Рилсы</h3>
+        <div class="grid" id="igReelsGrid">
+          <div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>
+        </div>
+      </div>
+      <div id="igPosts">
+        <h3 class="sub-head" data-i18n="social.posts">Посты</h3>
+        <div class="grid" id="igPostsGrid">
+          <div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>
+        </div>
       </div>
       <p class="error-msg" id="igError" hidden>
         <span data-i18n="social.error">Не удалось загрузить посты.</span>
@@ -338,6 +352,8 @@
       "social.errorLinkYt": "Открыть канал на YouTube →",
       "social.errorLinkIg": "Открыть профиль в Instagram →",
       "footer.name": "© 2026 Элмурод Бобоев",
+      "social.reels": "Рилсы",
+      "social.posts": "Посты",
       "lightbox.viewInstagram": "Открыть в Instagram ↗",
       "lightbox.watchOnInstagram": "▶ Смотреть в Instagram",
     },
@@ -351,6 +367,8 @@
       "social.errorLinkYt": "Open the channel on YouTube →",
       "social.errorLinkIg": "Open the profile on Instagram →",
       "footer.name": "© 2026 Elmurod Boboev",
+      "social.reels": "Reels",
+      "social.posts": "Posts",
       "lightbox.viewInstagram": "View on Instagram ↗",
       "lightbox.watchOnInstagram": "▶ Watch on Instagram",
     },
@@ -364,6 +382,8 @@
       "social.errorLinkYt": "Каналро дар YouTube кушоед →",
       "social.errorLinkIg": "Профилро дар Instagram кушоед →",
       "footer.name": "© 2026 Элмурод Бобоев",
+      "social.reels": "Рилсҳо",
+      "social.posts": "Постҳо",
       "lightbox.viewInstagram": "Дар Instagram кушоед ↗",
       "lightbox.watchOnInstagram": "▶ Дар Instagram тамошо кунед",
     },
@@ -519,24 +539,38 @@
     );
   }
 
+  var IG_PER_GRID = 12;
+
+  function renderIgGrid(wrapId, gridId, items) {
+    var wrap = document.getElementById(wrapId);
+    var grid = document.getElementById(gridId);
+    if (!items.length) { wrap.hidden = true; return; }
+    grid.innerHTML = items.slice(0, IG_PER_GRID).map(igCard).join("");
+    grid.querySelectorAll(".thumb").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var post = igPosts[btn.getAttribute("data-post-id")];
+        if (post) openInstagramLightbox(post);
+      });
+    });
+  }
+
   function loadInstagram() {
-    var grid = document.getElementById("igGrid");
     var errorEl = document.getElementById("igError");
     fetch("/api/instagram")
       .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, data: d }; }); })
       .then(function (res) {
         if (!res.ok || res.data.error || !res.data.posts || !res.data.posts.length) throw new Error("empty");
-        res.data.posts.forEach(function (p) { igPosts[p.id] = p; });
-        grid.innerHTML = res.data.posts.map(igCard).join("");
-        grid.querySelectorAll(".thumb").forEach(function (btn) {
-          btn.addEventListener("click", function () {
-            var post = igPosts[btn.getAttribute("data-post-id")];
-            if (post) openInstagramLightbox(post);
-          });
+        var reels = [], posts = [];
+        res.data.posts.forEach(function (p) {
+          igPosts[p.id] = p;
+          (p.isReel || p.isVideo ? reels : posts).push(p);
         });
+        renderIgGrid("igReels", "igReelsGrid", reels);
+        renderIgGrid("igPosts", "igPostsGrid", posts);
       })
       .catch(function () {
-        grid.hidden = true;
+        document.getElementById("igReels").hidden = true;
+        document.getElementById("igPosts").hidden = true;
         errorEl.hidden = false;
       });
   }

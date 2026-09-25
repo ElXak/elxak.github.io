@@ -28,7 +28,7 @@ const CACHE_TTL_SECONDS = 30 * 60; // 30 min
 // works, e.g. today's date) whenever a deploy changes the JSON shape of a
 // cached route, so the cache key changes and stale entries are bypassed
 // immediately instead of silently serving old data for up to 30 more min.
-const CACHE_VERSION = "2";
+const CACHE_VERSION = "3";
 
 export default {
   async fetch(request, env, ctx) {
@@ -104,7 +104,7 @@ async function fetchInstagram(env) {
 
   const fields = "id,caption,media_type,media_product_type,media_url,thumbnail_url,permalink,timestamp";
   const igRes = await fetch(
-    `https://graph.instagram.com/me/media?fields=${fields}&limit=12&access_token=${token}`
+    `https://graph.instagram.com/me/media?fields=${fields}&limit=50&access_token=${token}`
   );
   const igData = await igRes.json();
   if (igData.error) return json({ error: igData.error.message || "Instagram fetch failed" }, 502);
