@@ -28,7 +28,7 @@ const CACHE_TTL_SECONDS = 30 * 60; // 30 min
 // works, e.g. today's date) whenever a deploy changes the JSON shape of a
 // cached route, so the cache key changes and stale entries are bypassed
 // immediately instead of silently serving old data for up to 30 more min.
-const CACHE_VERSION = "3";
+const CACHE_VERSION = "4";
 
 export default {
   async fetch(request, env, ctx) {
@@ -102,14 +102,31 @@ async function fetchInstagram(env) {
   const token = await env.SOCIALS_KV.get("ig_access_token");
   if (!token) return json({ error: "Instagram not configured" }, 503);
 
+  // Recent media can be all reels, so keep paging back until there are
+  // enough of both kinds for the page's Reels and Posts grids (or the
+  // account runs out / MAX_PAGES is hit).
+  const WANT_EACH = 12;
+  const MAX_PAGES = 10;
   const fields = "id,caption,media_type,media_product_type,media_url,thumbnail_url,permalink,timestamp";
-  const igRes = await fetch(
-    `https://graph.instagram.com/me/media?fields=${fields}&limit=50&access_token=${token}`
-  );
-  const igData = await igRes.json();
-  if (igData.error) return json({ error: igData.error.message || "Instagram fetch failed" }, 502);
+  let next = `https://graph.instagram.com/me/media?fields=${fields}&limit=100&access_token=${token}`;
+  const items = [];
+  let reels = 0, others = 0;
+  for (let page = 0; next && page < MAX_PAGES && (reels < WANT_EACH || others < WANT_EACH); page++) {
+    const igData = await (await fetch(next)).json();
+    if (igData.error) {
+      if (!items.length) return json({ error: igData.error.message || "Instagram fetch failed" }, 502);
+      break; // keep what we already have
+    }
+    for (const p of igData.data || []) {
+      const isReelish = p.media_type === "VIDEO" || p.media_product_type === "REELS";
+      if (isReelish ? reels >= WANT_EACH : others >= WANT_EACH) continue;
+      isReelish ? reels++ : others++;
+      items.push(p);
+    }
+    next = igData.paging && igData.paging.next;
+  }
 
-  const posts = (igData.data || []).map((p) => ({
+  const posts = items.map((p) => ({
     id: p.id,
     caption: p.caption || "",
     isVideo: p.media_type === "VIDEO",
